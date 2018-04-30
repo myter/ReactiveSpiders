@@ -504,6 +504,103 @@ describe("Glitch Freedom", () => {
             });
         }, 8000);
     });
+    it("QPROP dynamic glitch freedom", function (done) {
+        this.timeout(20000);
+        class MyApp extends spiders_js_1.Application {
+            constructor() {
+                super(new spiders_js_1.SpiderActorMirror(), "127.0.0.1", 8000);
+                this.libs.setupPSServer();
+                console.log("constructed");
+            }
+        }
+        let app = new MyApp();
+        let sourcetype = new app.libs.PubSubTag("Source");
+        let sinkType = new app.libs.PubSubTag("Sink");
+        let aType = new app.libs.PubSubTag("A");
+        let bType = new app.libs.PubSubTag("B");
+        class TestSignal extends Signal_1.Signal {
+            constructor(actorMirror) {
+                super(actorMirror);
+                this.val = 5;
+            }
+            inc() {
+                this.val++;
+            }
+            noInc() {
+                //do nothing
+            }
+            equals(other) {
+                return this.val == other.val;
+            }
+        }
+        __decorate([
+            Signal_1.mutating
+        ], TestSignal.prototype, "inc", null);
+        __decorate([
+            Signal_1.mutating
+        ], TestSignal.prototype, "noInc", null);
+        class TestSource extends QPROPActor_1.QPROPActor {
+            constructor(ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+                super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
+                this.TestSignal = TestSignal;
+            }
+            start() {
+                this.sig = new this.TestSignal(this.libs.reflectOnActor());
+                return this.sig;
+            }
+            inc() {
+                this.sig.inc();
+            }
+        }
+        class A extends QPROPActor_1.QPROPActor {
+            start(source) {
+                return this.libs.liftApp((s) => {
+                    return s.val + 1;
+                }, source);
+            }
+        }
+        class B extends QPROPActor_1.QPROPActor {
+            start(source) {
+                return this.libs.liftApp((s) => {
+                    return s.val + 1;
+                }, source);
+            }
+        }
+        class TestSink extends QPROPActor_1.QPROPActor {
+            start(...args) {
+                return this.libs.lift((...argsC) => {
+                    this.lastVal = argsC;
+                })(...args);
+            }
+            addDep(btype) {
+                this.addDependency(btype);
+            }
+        }
+        let source = app.spawnActor(TestSource, [sourcetype, [], [aType, bType]]);
+        let a = app.spawnActor(A, [aType, [sourcetype], [sinkType]]);
+        let b = app.spawnActor(B, [bType, [sourcetype], []]);
+        let sink = app.spawnActor(TestSink, [sinkType, [aType], []]);
+        source.inc();
+        //It is unclear from SID-UP semantics what should happen if a dependency change happens before an change orignally propagates (i.e. what "initial" pulse does the parent provide to its new child), wait to make sure that graph propagates value first before changing dependency
+        setTimeout(() => {
+            sink.addDependency(bType);
+            source.inc();
+        }, 5000);
+        setTimeout(() => {
+            sink.lastVal.then((v) => {
+                try {
+                    expect(v[0]).to.equal(8);
+                    expect(v[0]).to.equal(8);
+                    app.kill();
+                    done();
+                }
+                catch (e) {
+                    app.kill();
+                    done(e);
+                }
+            });
+        }, 8000);
+    });
 });
 describe("Remote Reactivity", () => {
     it("main to actor", function (done) {

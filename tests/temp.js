@@ -121,7 +121,7 @@ class TestSource extends QPROPActor_1.QPROPActor {
         this.sig.inc();
         setTimeout(() => {
             this.inc();
-        }, 100);
+        }, 50);
     }
 }
 class A extends QPROPActor_1.QPROPActor {
@@ -143,16 +143,24 @@ class B extends QPROPActor_1.QPROPActor {
     }
 }
 class TestSink extends QPROPActor_1.QPROPActor {
-    start(a, b) {
+    constructor(ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+        super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
+        this.bType = bType;
+    }
+    start(...args) {
         console.log("Sink started");
+        setTimeout(() => {
+            console.log("Adding dependency");
+            this.addDependency(this.bType);
+        }, 5000);
         return this.libs.lift((...argsC) => {
             console.log("Change in sink: " + argsC);
-        })(a, b);
+        })(...args);
     }
 }
 let source = app.spawnActor(TestSource, [sourcetype, [], [aType, bType]]);
 let a = app.spawnActor(A, [aType, [sourcetype], [sinkType]]);
-let b = app.spawnActor(B, [bType, [sourcetype], [sinkType]]);
-let sink = app.spawnActor(TestSink, [sinkType, [aType, bType], []]);
+let b = app.spawnActor(B, [bType, [sourcetype], []]);
+let sink = app.spawnActor(TestSink, [sinkType, [aType], []]);
 source.inc();
 //# sourceMappingURL=temp.js.map

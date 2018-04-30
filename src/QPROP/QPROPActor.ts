@@ -48,6 +48,9 @@ export class QPROPActor extends ReactiveActor{
     inputSignals                : Map<string,Signal>
     ready                       : boolean
     readyListeners              : Array<Function>
+    inChange                    : boolean
+    changeDoneListeners         : Array<Function>
+    brittle                     : Map<string,Array<PropagationValue>>
     //Pub-Sub
     psClient                    : PSClient
     serverAddress               : string
@@ -70,21 +73,24 @@ export class QPROPActor extends ReactiveActor{
         (Array.prototype as any).flatMap = function(lambda) {
             return Array.prototype.concat.apply([], this.map(lambda));
         };
-        this.PropagationValue   = require(this.thisDir+"/PropagationValue").PropagationValue
-        this.childRefs          = []
-        this.parentRefs         = []
-        this.sourcesReceived    = 0
-        this.startsReceived     = 0
-        this.clock              = 0
-        this.allChildListeners  = []
-        this.allParentListeners = []
-        this.I                  = new Map()
-        this.S                  = new Map()
-        this.inputSignals       = new Map()
-        this.ready              = false
-        this.readyListeners     = []
-        this.psClient           = this.libs.setupPSClient(this.serverAddress,this.serverPort)
-        this.lastProp           = new this.PropagationValue(this.ownType,null,new Map(),this.clock)
+        this.PropagationValue       = require(this.thisDir+"/PropagationValue").PropagationValue
+        this.childRefs              = []
+        this.parentRefs             = []
+        this.sourcesReceived        = 0
+        this.startsReceived         = 0
+        this.clock                  = 0
+        this.allChildListeners      = []
+        this.allParentListeners     = []
+        this.I                      = new Map()
+        this.S                      = new Map()
+        this.inputSignals           = new Map()
+        this.ready                  = false
+        this.readyListeners         = []
+        this.inChange               = false
+        this.changeDoneListeners    = []
+        this.brittle                = new Map()
+        this.psClient               = this.libs.setupPSClient(this.serverAddress,this.serverPort)
+        this.lastProp               = new this.PropagationValue(this.ownType,null,new Map(),this.clock)
         if(this.amSource()){
             this.lastProp.value = this.invokeStart()
         }
@@ -186,6 +192,13 @@ export class QPROPActor extends ReactiveActor{
         })
     }
 
+    nextChange(){
+        if(this.changeDoneListeners.length > 0){
+            let perform = this.changeDoneListeners.splice(0,1)[0]
+            perform()
+        }
+    }
+
     //xs >>= k = join $ fmap k xs
     //xs :: [a]k  ::  a->[b]
 
@@ -227,6 +240,17 @@ export class QPROPActor extends ReactiveActor{
         return ret
     }
 
+    getSourcesFor(parentType : string){
+        let ret = []
+        this.S.forEach((parents : Array<PubSubTag>,source : string)=>{
+            let p : any = parents.map((parent)=>{return parent.tagVal})
+            if(p.includes(parentType)){
+                ret.push(source)
+            }
+        })
+        return ret
+    }
+
     getMatchArgs(allArgs : Array<Array<PropagationValue>>){
         return this.oneOf(allArgs,(args : Array<PropagationValue>)=>{
             let okSourceClock = true
@@ -246,6 +270,15 @@ export class QPROPActor extends ReactiveActor{
         })
     }
 
+    addToI(parent : string,prop : PropagationValue | Array<PropagationValue>){
+        if(this.I.has(parent)){
+            let prevProps = this.I.get(parent)
+            this.I.set(parent,prevProps.concat(prop))
+        }
+        else{
+            this.I.set(parent,[prop as PropagationValue])
+        }
+    }
 
     ////////////////////////////////////////
     // Calls made by other QPROP nodes    //
@@ -310,10 +343,57 @@ export class QPROPActor extends ReactiveActor{
         }
     }
 
+    prePropagation(prop : PropagationValue){
+        let from        = prop.from.tagVal
+        if(this.brittle.has(from)){
+            let prevProps = this.brittle.get(from)
+            this.brittle.set(from,prevProps.concat(prop))
+        }
+        else{
+            this.addToI(from,prop)
+            let sources = this.getSourcesFor(from)
+            let cont    = true
+            sources.forEach((source : string)=>{
+                let parents         = this.S.get(source)
+                let brittleCousins  = parents.filter((parent : PubSubTag)=>{return this.brittle.has(parent.tagVal)})
+                brittleCousins.forEach((br : PubSubTag)=>{
+                    cont = cont && (this.brittle.get(br.tagVal).length == 0)
+                })
+            })
+            if(cont){
+                return this.newPropagation(prop)
+            }
+        }
+        this.brittle.forEach((brittleProps : Array<PropagationValue>,br : string)=>{
+            let sources = this.getSourcesFor(br)
+            sources.forEach((source : string)=>{
+                let preds = this.S.get(source)
+                let check = preds.filter((pred : PubSubTag)=>{
+                    if(pred.tagVal == br){
+                        return false
+                    }
+                    else{
+                        let predFirst   = this.I.get(pred.tagVal)[0]
+                        let brFirst     = this.brittle.get(br)[0]
+                        return  (predFirst.sClocks.get(source) - brFirst.sClocks.get(source)) > 1
+                    }
+                })
+                if(check.length == 0){
+                    if(this.I.has(br)){
+                        this.addToI(br,this.brittle.get(br))
+                    }
+                    else{
+                        this.I.set(br,this.brittle.get(br))
+                    }
+                    this.brittle.delete(br)
+                    return this.newPropagation(prop)
+                }
+            })
+        })
+    }
+
     newPropagation(prop : PropagationValue){
         let from        = prop.from.tagVal
-        let prevProps   = this.I.get(from)
-        this.I.set(from,prevProps.concat(prop))
         let is          = []
         this.I.forEach((vals : Array<PropagationValue>,parent : string)=>{
             if(parent != from){
@@ -342,7 +422,6 @@ export class QPROPActor extends ReactiveActor{
     // Calls made by dist glitch prevention //
     //////////////////////////////////////////
 
-
     //Internal propagation starts in "newPropagation", the reactive mirror catches the end of the internal propagation and invokes this method which will ensure that distributed propagation continues
     internalSignalChanged(signal : Signal){
         if(signal.id == this.publishedSignalId){
@@ -362,7 +441,7 @@ export class QPROPActor extends ReactiveActor{
                 this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
-                        child.newPropagation(this.lastProp)
+                        child.prePropagation(this.lastProp)
                     })
                 })
             }
@@ -373,6 +452,69 @@ export class QPROPActor extends ReactiveActor{
                 })
             }
         }
+    }
+
+    ////////////////////////////////////////
+    // QPROPD API                         //
+    ////////////////////////////////////////
+
+    newChild(childType : PubSubTag,childRef : FarRef<QPROPActor>) : Promise<Array<any>>{
+        this.childTypes.push(childType)
+        this.childRefs.push(childRef)
+        if(this.amSource()){
+            return [this.lastProp,[this.ownType.tagVal]] as any
+        }
+        else{
+            return [this.lastProp,Array.from(this.S.keys())] as any
+        }
+    }
+
+    addDependency(toParent : PubSubTag){
+        if(this.inChange){
+            this.changeDoneListeners.push(()=>{
+                this.addDependency(toParent)
+            })
+        }
+        else{
+            this.inChange = true
+            this.psClient.subscribe(toParent).once((newParentRef : FarRef<QPROPActor>)=>{
+                newParentRef.newChild(this.ownType,this).then(([lastProp,sources])=>{
+                    let knownSources = sources.filter((source : string)=>{return this.S.has(source)})
+                    if(knownSources.length == 0){
+                        this.addToI(toParent.tagVal,lastProp)
+                    }
+                    this.addSources(toParent,sources).then(()=>{
+                        this.parentTypes.push(toParent)
+                        this.parentRefs.push(newParentRef)
+                        this.I.set(toParent.tagVal,[])
+                        this.inputSignals.forEach((iSignal)=>{
+                            let deps = (this.libs.reflectOnActor() as ReactiveMirror).localGraph.getDependants(iSignal.id)
+                            deps.forEach((dependant : Signal)=>{
+                                (this.libs.reflectOnActor() as ReactiveMirror).localGraph.newSource(lastProp.value);
+                                (this.libs.reflectOnActor() as ReactiveMirror).localGraph.addDependency(dependant.id,lastProp.value.id)
+                            })
+                        })
+                        this.inputSignals.set(toParent.tagVal,lastProp.value)
+                        this.inChange = false
+                        this.nextChange()
+                    })
+                })
+            })
+        }
+    }
+
+    addSources(from : PubSubTag,sources : Array<string>) : Promise<any>{
+        sources.forEach((source : string)=>{
+            if(this.S.has(source)){
+                this.S.get(source).push(from)
+                this.brittle.set(from.tagVal,[])
+            }
+            else{
+                this.S.set(source,[from])
+            }
+        })
+        let childPromises = this.childRefs.map((child : FarRef<QPROPActor>)=>{return child.addSources(this.ownType,sources)})
+        return Promise.all(childPromises)
     }
 
 }

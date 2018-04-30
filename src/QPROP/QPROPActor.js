@@ -43,6 +43,9 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         this.inputSignals = new Map();
         this.ready = false;
         this.readyListeners = [];
+        this.inChange = false;
+        this.changeDoneListeners = [];
+        this.brittle = new Map();
         this.psClient = this.libs.setupPSClient(this.serverAddress, this.serverPort);
         this.lastProp = new this.PropagationValue(this.ownType, null, new Map(), this.clock);
         if (this.amSource()) {
@@ -132,6 +135,12 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
             readyList();
         });
     }
+    nextChange() {
+        if (this.changeDoneListeners.length > 0) {
+            let perform = this.changeDoneListeners.splice(0, 1)[0];
+            perform();
+        }
+    }
     //xs >>= k = join $ fmap k xs
     //xs :: [a]k  ::  a->[b]
     // oneOf :: M a -> a -> M b -> M b
@@ -169,6 +178,16 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         });
         return ret;
     }
+    getSourcesFor(parentType) {
+        let ret = [];
+        this.S.forEach((parents, source) => {
+            let p = parents.map((parent) => { return parent.tagVal; });
+            if (p.includes(parentType)) {
+                ret.push(source);
+            }
+        });
+        return ret;
+    }
     getMatchArgs(allArgs) {
         return this.oneOf(allArgs, (args) => {
             let okSourceClock = true;
@@ -186,6 +205,15 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                 return [args];
             });
         });
+    }
+    addToI(parent, prop) {
+        if (this.I.has(parent)) {
+            let prevProps = this.I.get(parent);
+            this.I.set(parent, prevProps.concat(prop));
+        }
+        else {
+            this.I.set(parent, [prop]);
+        }
     }
     ////////////////////////////////////////
     // Calls made by other QPROP nodes    //
@@ -247,10 +275,56 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
             this.flushReady();
         }
     }
+    prePropagation(prop) {
+        let from = prop.from.tagVal;
+        if (this.brittle.has(from)) {
+            let prevProps = this.brittle.get(from);
+            this.brittle.set(from, prevProps.concat(prop));
+        }
+        else {
+            this.addToI(from, prop);
+            let sources = this.getSourcesFor(from);
+            let cont = true;
+            sources.forEach((source) => {
+                let parents = this.S.get(source);
+                let brittleCousins = parents.filter((parent) => { return this.brittle.has(parent.tagVal); });
+                brittleCousins.forEach((br) => {
+                    cont = cont && (this.brittle.get(br.tagVal).length == 0);
+                });
+            });
+            if (cont) {
+                return this.newPropagation(prop);
+            }
+        }
+        this.brittle.forEach((brittleProps, br) => {
+            let sources = this.getSourcesFor(br);
+            sources.forEach((source) => {
+                let preds = this.S.get(source);
+                let check = preds.filter((pred) => {
+                    if (pred.tagVal == br) {
+                        return false;
+                    }
+                    else {
+                        let predFirst = this.I.get(pred.tagVal)[0];
+                        let brFirst = this.brittle.get(br)[0];
+                        return (predFirst.sClocks.get(source) - brFirst.sClocks.get(source)) > 1;
+                    }
+                });
+                if (check.length == 0) {
+                    if (this.I.has(br)) {
+                        this.addToI(br, this.brittle.get(br));
+                    }
+                    else {
+                        this.I.set(br, this.brittle.get(br));
+                    }
+                    this.brittle.delete(br);
+                    return this.newPropagation(prop);
+                }
+            });
+        });
+    }
     newPropagation(prop) {
         let from = prop.from.tagVal;
-        let prevProps = this.I.get(from);
-        this.I.set(from, prevProps.concat(prop));
         let is = [];
         this.I.forEach((vals, parent) => {
             if (parent != from) {
@@ -296,7 +370,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                 this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
-                        child.newPropagation(this.lastProp);
+                        child.prePropagation(this.lastProp);
                     });
                 });
             }
@@ -307,6 +381,65 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                 });
             }
         }
+    }
+    ////////////////////////////////////////
+    // QPROPD API                         //
+    ////////////////////////////////////////
+    newChild(childType, childRef) {
+        this.childTypes.push(childType);
+        this.childRefs.push(childRef);
+        if (this.amSource()) {
+            return [this.lastProp, [this.ownType.tagVal]];
+        }
+        else {
+            return [this.lastProp, Array.from(this.S.keys())];
+        }
+    }
+    addDependency(toParent) {
+        if (this.inChange) {
+            this.changeDoneListeners.push(() => {
+                this.addDependency(toParent);
+            });
+        }
+        else {
+            this.inChange = true;
+            this.psClient.subscribe(toParent).once((newParentRef) => {
+                newParentRef.newChild(this.ownType, this).then(([lastProp, sources]) => {
+                    let knownSources = sources.filter((source) => { return this.S.has(source); });
+                    if (knownSources.length == 0) {
+                        this.addToI(toParent.tagVal, lastProp);
+                    }
+                    this.addSources(toParent, sources).then(() => {
+                        this.parentTypes.push(toParent);
+                        this.parentRefs.push(newParentRef);
+                        this.I.set(toParent.tagVal, []);
+                        this.inputSignals.forEach((iSignal) => {
+                            let deps = this.libs.reflectOnActor().localGraph.getDependants(iSignal.id);
+                            deps.forEach((dependant) => {
+                                this.libs.reflectOnActor().localGraph.newSource(lastProp.value);
+                                this.libs.reflectOnActor().localGraph.addDependency(dependant.id, lastProp.value.id);
+                            });
+                        });
+                        this.inputSignals.set(toParent.tagVal, lastProp.value);
+                        this.inChange = false;
+                        this.nextChange();
+                    });
+                });
+            });
+        }
+    }
+    addSources(from, sources) {
+        sources.forEach((source) => {
+            if (this.S.has(source)) {
+                this.S.get(source).push(from);
+                this.brittle.set(from.tagVal, []);
+            }
+            else {
+                this.S.set(source, [from]);
+            }
+        });
+        let childPromises = this.childRefs.map((child) => { return child.addSources(this.ownType, sources); });
+        return Promise.all(childPromises);
     }
 }
 exports.QPROPActor = QPROPActor;
