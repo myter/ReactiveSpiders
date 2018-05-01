@@ -67,13 +67,13 @@ export class QPROPActor extends ReactiveActor{
         this.childTypes         = childTypes
         this.serverAddress      = psServerAddress
         this.serverPort         = psServerPort
+        this.PropagationValue   = PropagationValue
     }
 
     init(){
         (Array.prototype as any).flatMap = function(lambda) {
             return Array.prototype.concat.apply([], this.map(lambda));
         };
-        this.PropagationValue       = require(this.thisDir+"/PropagationValue").PropagationValue
         this.childRefs              = []
         this.parentRefs             = []
         this.sourcesReceived        = 0

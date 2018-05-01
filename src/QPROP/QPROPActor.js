@@ -2,6 +2,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const ReactiveActor_1 = require("../ReactiveActor");
 const spiders_js_1 = require("spiders.js");
 const ReactiveMirror_1 = require("../ReactiveMirror");
+const PropagationValue_1 = require("./PropagationValue");
 class QPROP extends spiders_js_1.SpiderIsolate {
     setMirror(actorMirror) {
         this.actorMirror = actorMirror;
@@ -25,12 +26,12 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         this.childTypes = childTypes;
         this.serverAddress = psServerAddress;
         this.serverPort = psServerPort;
+        this.PropagationValue = PropagationValue_1.PropagationValue;
     }
     init() {
         Array.prototype.flatMap = function (lambda) {
             return Array.prototype.concat.apply([], this.map(lambda));
         };
-        this.PropagationValue = require(this.thisDir + "/PropagationValue").PropagationValue;
         this.childRefs = [];
         this.parentRefs = [];
         this.sourcesReceived = 0;
