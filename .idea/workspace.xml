@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" afterDir="false" />
     </list>
@@ -59,12 +59,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
+                <element signature="e#1174#1451#0" expanded="true" />
+                <element signature="e#1222#1436#0" expanded="true" />
+                <element signature="e#1341#1412#0" expanded="true" />
                 <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
                 <element signature="n#!!block;n#runLoops#0" expanded="true" />
               </folding>
@@ -72,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="210" column="66" lean-forward="true" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
+            <state relative-caret-position="356">
+              <caret line="713" column="91" selection-start-line="713" selection-start-column="91" selection-end-line="713" selection-end-column="91" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#FleetData#0" />
@@ -91,6 +94,7 @@
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="e#6311#6362#0" expanded="true" />
                 <element signature="n#SIDUPDataAccessService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
@@ -119,8 +123,6 @@
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
-                <element signature="e#20831#22553#0" expanded="true" />
                 <element signature="e#22317#22510#0" expanded="true" />
                 <element signature="e#22408#22487#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
@@ -254,8 +256,8 @@
         <option value="$PROJECT_DIR$/benchmarks/General/Services.ts" />
         <option value="$PROJECT_DIR$/benchmarks/General/Regular.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
       </list>
     </option>
   </component>
@@ -310,6 +312,24 @@
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="benchmarks" type="462c0819:PsiDirectoryNode" />
               <item name="UseCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -422,7 +442,7 @@
       <workItem from="1525166533514" duration="382000" />
       <workItem from="1525166946519" duration="953000" />
       <workItem from="1525172319296" duration="1655000" />
-      <workItem from="1525244340955" duration="21014000" />
+      <workItem from="1525244340955" duration="21611000" />
     </task>
     <task id="LOCAL-00001" summary="Finished usecase benchmarks">
       <created>1525260618031</created>
@@ -515,7 +535,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525276024500</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed write after close bug">
+      <created>1525276694428</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1525276694428</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed write after close bug">
+      <created>1525276827001</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1525276827001</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -551,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128568000" />
+    <option name="totallyTimeSpent" value="129165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1336" extended-state="6" />
@@ -643,13 +677,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SID-UP/NodePulse.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SID-UP/Mirror.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -990,10 +1017,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#1174#1451#0" expanded="true" />
+            <element signature="e#1222#1436#0" expanded="true" />
+            <element signature="e#1341#1412#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="210" column="66" lean-forward="true" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
+        <state relative-caret-position="356">
+          <caret line="713" column="91" selection-start-line="713" selection-start-column="91" selection-end-line="713" selection-end-column="91" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#FleetData#0" />
@@ -1008,6 +1058,7 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#6311#6362#0" expanded="true" />
             <element signature="n#SIDUPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
@@ -1036,8 +1087,6 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="e#20831#22553#0" expanded="true" />
             <element signature="e#22317#22510#0" expanded="true" />
             <element signature="e#22408#22487#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
@@ -1045,17 +1094,6 @@
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
           </folding>
         </state>
       </provider>
