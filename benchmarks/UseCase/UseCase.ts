@@ -198,7 +198,6 @@ export class QPROPConfigService extends QPROPActor{
     }
 
     update(signal){
-        console.log("Config Updating")
         for(var i = 0;i < this.rate ;i++){
             this.totalVals--
             this.produced++
@@ -206,16 +205,13 @@ export class QPROPConfigService extends QPROPActor{
         }
         //Memory not measured for max throughput benchmarks
         if(this.totalVals <= 0){
-            console.log("Config produced: " + this.produced)
             this.close = true
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Config")
         }
-        else{
-            setTimeout(()=>{
-                this.update(signal)
-            },1000)
-        }
+        setTimeout(()=>{
+            this.update(signal)
+        },1000)
     }
 
     snapMem(){
@@ -334,23 +330,19 @@ export class QPROPDataAccessService extends QPROPActor{
     }
 
     update(signal){
-        console.log("Data updating")
         for(var i = 0;i < this.rate;i++){
             this.totalVals--
             this.produced++
             signal.actualise()
         }
         if(this.totalVals <= 0){
-            console.log("Data produced: " + this.produced)
             this.close = true
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Data")
         }
-        else{
-            setTimeout(()=>{
-                this.update(signal)
-            },1000)
-        }
+        setTimeout(()=>{
+            this.update(signal)
+        },1000)
     }
 
     snapMem(){
