@@ -186,6 +186,7 @@ export class SIDUPActor extends ReactiveActor{
     receiveSignal(signal : Signal,from : PubSubTag){
         if(!this.inputSignals.has(from.tagVal)){
             this.inputSignals.set(from.tagVal,signal);
+            this.mirrors.get(from.tagVal).steadyValue = signal;
             (this.libs.reflectOnActor() as ReactiveMirror).newSource(signal)
         }
         if(this.inputSignals.size == this.parentTypes.length && Reflect.has(this,"start")){
@@ -256,8 +257,7 @@ export class SIDUPActor extends ReactiveActor{
             this.lastTriggerPulse = pulse
             if(anyChanged){
                 this.ownPulse.setChanged();
-                //(this.libs.reflectOnActor() as ReactiveMirror).sourceChanged(pulse.value)
-                (this.libs.reflectOnActor() as ReactiveMirror).sourcesChanged(values)
+               (this.libs.reflectOnActor() as ReactiveMirror).sourcesChanged(values)
             }
             else{
                 this.ownPulse.setUnchanged()

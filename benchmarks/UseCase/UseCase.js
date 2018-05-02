@@ -9,6 +9,7 @@ const Signal_1 = require("../../src/Signal");
 const SIDUPAdmitter_1 = require("../../src/SID-UP/SIDUPAdmitter");
 const QPROPActor_1 = require("../../src/QPROP/QPROPActor");
 const spiders_js_1 = require("spiders.js");
+const SIDUPActor_1 = require("../../src/SID-UP/SIDUPActor");
 class FleetData extends Signal_1.Signal {
     constructor(mirr) {
         super(mirr);
@@ -24,7 +25,7 @@ class FleetData extends Signal_1.Signal {
 __decorate([
     Signal_1.mutating
 ], FleetData.prototype, "actualise", null);
-class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
+class UseCaseAdmitter extends SIDUPAdmitter_1.SIDUPAdmitter {
     constructor(admitterTag, totalVals, csvFileName, dataRate) {
         super(admitterTag, 2, 1);
         this.totalVals = totalVals;
@@ -82,7 +83,58 @@ class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
         }
     }
 }
-exports.Admitter = Admitter;
+exports.UseCaseAdmitter = UseCaseAdmitter;
+class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
+    constructor(rate, totalVals, csvFileName, ownType, admType, parents, ...rest) {
+        super(ownType, admType, parents, ...rest);
+        this.rate = rate / 2;
+        this.totalVals = totalVals / 2;
+        this.FleetData = FleetData;
+        this.csvFileName = csvFileName;
+        this.produced = 0;
+        this.close = false;
+        this.thisDir = __dirname;
+    }
+    init() {
+        let writing = require(this.thisDir + "/writing");
+        this.memWriter = new writing.MemoryWriter("Config");
+        this.averageMem = writing.averageMem;
+        this.snapMem();
+        let sig = new this.FleetData(this.libs.reflectOnActor());
+        //Wait for construction to be completed (for both QPROP and SIDUP)
+        setTimeout(() => {
+            this.update(sig);
+        }, 2000);
+        this.publishSignal(sig);
+    }
+    update(signal) {
+        for (var i = 0; i < this.rate; i++) {
+            this.totalVals--;
+            this.produced++;
+            signal.actualise();
+        }
+        //Memory not measured for max throughput benchmarks
+        if (this.totalVals <= 0) {
+            this.close = true;
+            this.memWriter.end();
+            this.averageMem(this.csvFileName, this.rate * 2, "Config");
+        }
+        else {
+            setTimeout(() => {
+                this.update(signal);
+            }, 1000);
+        }
+    }
+    snapMem() {
+        if (!this.close) {
+            setTimeout(() => {
+                this.memWriter.snapshot();
+                this.snapMem();
+            }, 500);
+        }
+    }
+}
+exports.SIDUPConfigService = SIDUPConfigService;
 class QPROPConfigService extends QPROPActor_1.QPROPActor {
     constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
@@ -136,6 +188,56 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
     }
 }
 exports.QPROPConfigService = QPROPConfigService;
+class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
+    constructor(rate, totalVals, csvFileName, ownType, admType, parents, ...rest) {
+        super(ownType, admType, parents, ...rest);
+        this.rate = rate / 2;
+        this.totalVals = totalVals / 2;
+        this.csvFileName = csvFileName;
+        this.produced = 0;
+        this.close = false;
+        this.thisDir = __dirname;
+        this.FleetData = FleetData;
+    }
+    init() {
+        let writing = require(this.thisDir + "/writing");
+        this.memWriter = new writing.MemoryWriter("Data");
+        this.averageMem = writing.averageMem;
+        this.snapMem();
+        let sig = new this.FleetData(this.libs.reflectOnActor());
+        //Wait for construction to be completed (for both QPROP and SIDUP)
+        setTimeout(() => {
+            this.update(sig);
+        }, 2000);
+        this.publishSignal(sig);
+    }
+    update(signal) {
+        for (var i = 0; i < this.rate; i++) {
+            this.totalVals--;
+            this.produced++;
+            signal.actualise();
+        }
+        if (this.totalVals <= 0) {
+            this.close = true;
+            this.memWriter.end();
+            this.averageMem(this.csvFileName, this.rate * 2, "Data");
+        }
+        else {
+            setTimeout(() => {
+                this.update(signal);
+            }, 1000);
+        }
+    }
+    snapMem() {
+        if (!this.close) {
+            setTimeout(() => {
+                this.memWriter.snapshot();
+                this.snapMem();
+            }, 500);
+        }
+    }
+}
+exports.SIDUPDataAccessService = SIDUPDataAccessService;
 class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
     constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
@@ -188,6 +290,44 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
     }
 }
 exports.QPROPDataAccessService = QPROPDataAccessService;
+class SIDUPGeoService extends SIDUPActor_1.SIDUPActor {
+    constructor(rate, totalVals, csvFileName, ownType, admType, parents, ...rest) {
+        super(ownType, admType, parents, ...rest);
+        this.close = false;
+        this.thisdir = __dirname;
+        this.totalVals = totalVals;
+        this.rate = rate;
+        this.csvFileName = csvFileName;
+    }
+    init() {
+        let writing = require(this.thisdir + "/writing");
+        this.memWriter = new writing.MemoryWriter("Geo");
+        this.averageMem = writing.averageMem;
+        this.snapMem();
+    }
+    start(imp) {
+        let propagated = 0;
+        let sig = this.libs.lift((fleetData) => {
+            propagated++;
+            if (propagated == this.totalVals / 2) {
+                this.close = true;
+                this.memWriter.end();
+                this.averageMem(this.csvFileName, this.rate, "Geo");
+            }
+            return fleetData;
+        })(imp);
+        this.publishSignal(sig);
+    }
+    snapMem() {
+        if (!this.close) {
+            setTimeout(() => {
+                this.memWriter.snapshot();
+                this.snapMem();
+            }, 500);
+        }
+    }
+}
+exports.SIDUPGeoService = SIDUPGeoService;
 class QPROPGeoService extends QPROPActor_1.QPROPActor {
     constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
@@ -225,6 +365,44 @@ class QPROPGeoService extends QPROPActor_1.QPROPActor {
     }
 }
 exports.QPROPGeoService = QPROPGeoService;
+class SIDUPDrivingService extends SIDUPActor_1.SIDUPActor {
+    constructor(rate, totalVals, csvFileName, ownType, admType, parents, ...rest) {
+        super(ownType, admType, parents, ...rest);
+        this.close = false;
+        this.thisDir = __dirname;
+        this.rate = rate;
+        this.totalVals = totalVals;
+        this.csvFileName = csvFileName;
+    }
+    init() {
+        let writing = require(this.thisDir + "/writing");
+        this.memWriter = new writing.MemoryWriter("Driving");
+        this.averageMem = writing.averageMem;
+        this.snapMem();
+    }
+    start(data, geo) {
+        let propagated = 0;
+        let sig = this.libs.lift((data, geo) => {
+            propagated++;
+            if (propagated == this.totalVals / 2) {
+                this.close = true;
+                this.memWriter.end();
+                this.averageMem(this.csvFileName, this.rate, "Driving");
+            }
+            return data;
+        })(data, geo);
+        this.publishSignal(sig);
+    }
+    snapMem() {
+        if (!this.close) {
+            setTimeout(() => {
+                this.memWriter.snapshot();
+                this.snapMem();
+            }, 500);
+        }
+    }
+}
+exports.SIDUPDrivingService = SIDUPDrivingService;
 class QPROPDrivingService extends QPROPActor_1.QPROPActor {
     constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
@@ -262,14 +440,15 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
     }
 }
 exports.QPROPDrivingService = QPROPDrivingService;
-class QPROPDashboardService extends QPROPActor_1.QPROPActor {
-    constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
+class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
+    constructor(rate, totalVals, csvFileName, killRef, ownType, admType, parents, ...rest) {
+        super(ownType, admType, parents, ...rest);
         this.close = false;
         this.rate = rate;
         this.totalVals = totalVals;
         this.csvFileName = csvFileName;
         this.thisDir = __dirname;
+        this.killRef = killRef;
     }
     init() {
         var csvWriter = require('csv-write-stream');
@@ -294,7 +473,81 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         let benchStart;
         let processingTimes = [];
         return this.libs.lift((driving, geo, config) => {
-            console.log("Dash Update");
+            if (firstPropagation) {
+                benchStart = Date.now();
+                firstPropagation = false;
+            }
+            let timeToPropagate;
+            if (lastDriving != driving) {
+                timeToPropagate = Date.now() - driving.constructionTime;
+            }
+            else {
+                timeToPropagate = Date.now() - config.constructionTime;
+            }
+            lastDriving = driving;
+            lastConfig = config;
+            valsReceived++;
+            this.writer.write([timeToPropagate]);
+            processingTimes.push(timeToPropagate);
+            if (valsReceived == this.totalVals) {
+                this.close = true;
+                console.log("Benchmark Finished");
+                this.writer.end();
+                this.memWriter.end();
+                let benchStop = Date.now();
+                this.tWriter.write({ time: (benchStop - benchStart), values: this.totalVals });
+                this.tWriter.end();
+                this.averageResults(this.csvFileName, this.rate).then(() => {
+                    this.averageMem(this.csvFileName, this.rate, "Dashboard").then(() => {
+                        this.killRef.dashDone();
+                    });
+                });
+            }
+        })(driving, geo, config);
+    }
+    snapMem() {
+        if (!this.close) {
+            setTimeout(() => {
+                this.memWriter.snapshot();
+                this.snapMem();
+            }, 500);
+        }
+    }
+}
+exports.SIDUPDashboardService = SIDUPDashboardService;
+class QPROPDashboardService extends QPROPActor_1.QPROPActor {
+    constructor(rate, totalVals, csvFileName, killRef, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+        super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
+        this.close = false;
+        this.rate = rate;
+        this.totalVals = totalVals;
+        this.csvFileName = csvFileName;
+        this.thisDir = __dirname;
+        this.killRef = killRef;
+    }
+    init() {
+        var csvWriter = require('csv-write-stream');
+        var fs = require('fs');
+        let writing = require(this.thisDir + "/writing");
+        this.memWriter = new writing.MemoryWriter("Dashboard");
+        this.averageMem = writing.averageMem;
+        this.averageResults = writing.averageResults;
+        this.snapMem();
+        this.writer = csvWriter({ headers: ["TTP"] });
+        this.tWriter = csvWriter({ sendHeaders: false });
+        this.pWriter = csvWriter({ sendHeaders: false });
+        this.writer.pipe(fs.createWriteStream(this.thisDir + '/temp.csv'));
+        this.tWriter.pipe(fs.createWriteStream(this.thisDir + "/Throughput/" + this.csvFileName + this.rate + ".csv", { flags: 'a' }));
+        this.pWriter.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.rate + ".csv", { flags: 'a' }));
+    }
+    start(driving, geo, config) {
+        let valsReceived = 0;
+        let lastDriving;
+        let lastConfig;
+        let firstPropagation = true;
+        let benchStart;
+        let processingTimes = [];
+        return this.libs.lift((driving, geo, config) => {
             if (firstPropagation) {
                 benchStart = Date.now();
                 firstPropagation = false;
@@ -326,8 +579,11 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
                 let avg = total / processingTimes.length;
                 this.pWriter.write({ pTime: avg });
                 this.pWriter.end();
-                this.averageResults(this.csvFileName, this.rate);
-                this.averageMem(this.csvFileName, this.rate, "Dashboard");
+                this.averageResults(this.csvFileName, this.rate).then(() => {
+                    this.averageMem(this.csvFileName, this.rate, "Dashboard").then(() => {
+                        this.killRef.dashDone();
+                    });
+                });
             }
         })(driving, geo, config);
     }
@@ -345,6 +601,16 @@ class UseCaseApp extends spiders_js_1.Application {
     constructor() {
         super(new spiders_js_1.SpiderActorMirror(), "127.0.0.1", 8000);
         this.libs.setupPSServer();
+    }
+    dashDone() {
+        this.kill();
+        this.libs.setupPSServer();
+        this.completeResolve();
+    }
+    onComplete() {
+        return new Promise((resolve) => {
+            this.completeResolve = resolve;
+        });
     }
 }
 exports.UseCaseApp = UseCaseApp;

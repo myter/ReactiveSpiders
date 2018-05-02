@@ -3,6 +3,7 @@ import {mutating, Signal} from "../../src/Signal";
 import {SIDUPAdmitter} from "../../src/SID-UP/SIDUPAdmitter";
 import {QPROPActor} from "../../src/QPROP/QPROPActor";
 import {Application, PubSubTag, SpiderActorMirror} from "spiders.js";
+import {SIDUPActor} from "../../src/SID-UP/SIDUPActor";
 
 class FleetData extends Signal{
     constructionTime
@@ -22,7 +23,7 @@ class FleetData extends Signal{
     }
 }
 
-export class Admitter extends SIDUPAdmitter{
+export class UseCaseAdmitter extends SIDUPAdmitter{
     totalVals
     memWriter
     close
@@ -90,6 +91,70 @@ export class Admitter extends SIDUPAdmitter{
     }
 }
 
+export class SIDUPConfigService extends SIDUPActor{
+    FleetData
+    rate
+    totalVals
+    memWriter
+    averageMem
+    csvFileName
+    produced
+    close
+    thisDir
+
+    constructor(rate,totalVals,csvFileName,ownType,admType,parents,...rest){
+        super(ownType,admType,parents,...rest)
+        this.rate           = rate / 2
+        this.totalVals      = totalVals / 2
+        this.FleetData      = FleetData
+        this.csvFileName    = csvFileName
+        this.produced       = 0
+        this.close          = false
+        this.thisDir        = __dirname
+    }
+
+    init(){
+        let writing         = require(this.thisDir+"/writing")
+        this.memWriter      = new writing.MemoryWriter("Config")
+        this.averageMem     = writing.averageMem
+        this.snapMem()
+        let sig = new this.FleetData(this.libs.reflectOnActor())
+        //Wait for construction to be completed (for both QPROP and SIDUP)
+        setTimeout(()=>{
+            this.update(sig)
+        },2000)
+        this.publishSignal(sig)
+    }
+
+    update(signal){
+        for(var i = 0;i < this.rate;i++){
+            this.totalVals--
+            this.produced++
+            signal.actualise()
+        }
+        //Memory not measured for max throughput benchmarks
+        if(this.totalVals <= 0){
+            this.close = true
+            this.memWriter.end()
+            this.averageMem(this.csvFileName,this.rate*2,"Config")
+        }
+        else{
+            setTimeout(()=>{
+                this.update(signal)
+            },1000)
+        }
+    }
+
+    snapMem(){
+        if(!this.close){
+            setTimeout(()=>{
+                this.memWriter.snapshot()
+                this.snapMem()
+            },500)
+        }
+    }
+}
+
 export class QPROPConfigService extends QPROPActor{
     FleetData
     rate
@@ -139,6 +204,69 @@ export class QPROPConfigService extends QPROPActor{
             this.close = true
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Config")
+        }
+        else{
+            setTimeout(()=>{
+                this.update(signal)
+            },1000)
+        }
+    }
+
+    snapMem(){
+        if(!this.close){
+            setTimeout(()=>{
+                this.memWriter.snapshot()
+                this.snapMem()
+            },500)
+        }
+    }
+}
+
+export class SIDUPDataAccessService extends SIDUPActor{
+    rate
+    totalVals
+    memWriter
+    averageMem
+    csvFileName
+    produced
+    close
+    thisDir
+    FleetData
+
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,admType,parents,...rest){
+        super(ownType,admType,parents,...rest)
+        this.rate           = rate / 2
+        this.totalVals      = totalVals / 2
+        this.csvFileName    = csvFileName
+        this.produced       = 0
+        this.close          = false
+        this.thisDir        = __dirname
+        this.FleetData      = FleetData
+    }
+
+    init(){
+        let writing     = require(this.thisDir+"/writing")
+        this.memWriter  = new writing.MemoryWriter("Data")
+        this.averageMem = writing.averageMem
+        this.snapMem()
+        let sig = new this.FleetData(this.libs.reflectOnActor())
+        //Wait for construction to be completed (for both QPROP and SIDUP)
+        setTimeout(()=>{
+            this.update(sig)
+        },2000)
+        this.publishSignal(sig)
+    }
+
+    update(signal){
+        for(var i = 0;i < this.rate;i++){
+            this.totalVals--
+            this.produced++
+            signal.actualise()
+        }
+        if(this.totalVals <= 0){
+            this.close = true
+            this.memWriter.end()
+            this.averageMem(this.csvFileName,this.rate*2,"Data")
         }
         else{
             setTimeout(()=>{
@@ -223,6 +351,56 @@ export class QPROPDataAccessService extends QPROPActor{
     }
 }
 
+export class SIDUPGeoService extends SIDUPActor{
+    memWriter
+    averageMem
+    close
+    thisdir
+    rate
+    totalVals
+    csvFileName
+
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,admType,parents,...rest){
+        super(ownType,admType,parents,...rest)
+        this.close          = false
+        this.thisdir        = __dirname
+        this.totalVals      = totalVals
+        this.rate           = rate
+        this.csvFileName    = csvFileName
+
+    }
+
+    init(){
+        let writing     = require(this.thisdir+"/writing")
+        this.memWriter  = new writing.MemoryWriter("Geo")
+        this.averageMem = writing.averageMem
+        this.snapMem()
+    }
+
+    start(imp){
+        let propagated = 0
+        let sig = this.libs.lift((fleetData)=>{
+            propagated++
+            if(propagated == this.totalVals / 2){
+                this.close = true
+                this.memWriter.end()
+                this.averageMem(this.csvFileName,this.rate,"Geo")
+            }
+            return fleetData
+        })(imp)
+        this.publishSignal(sig)
+    }
+
+    snapMem(){
+        if(!this.close){
+            setTimeout(()=>{
+                this.memWriter.snapshot()
+                this.snapMem()
+            },500)
+        }
+    }
+}
+
 export class QPROPGeoService extends QPROPActor{
     memWriter
     averageMem
@@ -260,6 +438,55 @@ export class QPROPGeoService extends QPROPActor{
             }
             return fleetData
         })(imp)
+    }
+
+    snapMem(){
+        if(!this.close){
+            setTimeout(()=>{
+                this.memWriter.snapshot()
+                this.snapMem()
+            },500)
+        }
+    }
+}
+
+export class SIDUPDrivingService extends SIDUPActor{
+    memWriter
+    averageMem
+    close
+    rate
+    totalVals
+    csvFileName
+    thisDir
+
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,admType,parents,...rest){
+        super(ownType,admType,parents,...rest)
+        this.close          = false
+        this.thisDir        = __dirname
+        this.rate           = rate
+        this.totalVals      = totalVals
+        this.csvFileName    = csvFileName
+    }
+
+    init(){
+        let writing     = require(this.thisDir+"/writing")
+        this.memWriter  = new writing.MemoryWriter("Driving")
+        this.averageMem = writing.averageMem
+        this.snapMem()
+    }
+
+    start(data,geo){
+        let propagated = 0
+        let sig = this.libs.lift((data,geo)=>{
+            propagated++
+            if(propagated == this.totalVals / 2){
+                this.close = true
+                this.memWriter.end()
+                this.averageMem(this.csvFileName,this.rate,"Driving")
+            }
+            return data
+        })(data,geo)
+        this.publishSignal(sig)
     }
 
     snapMem(){
@@ -320,7 +547,7 @@ export class QPROPDrivingService extends QPROPActor{
     }
 }
 
-export class QPROPDashboardService extends QPROPActor{
+export class SIDUPDashboardService extends SIDUPActor{
     memWriter
     averageMem
     averageResults
@@ -332,14 +559,16 @@ export class QPROPDashboardService extends QPROPActor{
     writer
     tWriter
     pWriter
+    killRef
 
-    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
+    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,admType,parents,...rest){
+        super(ownType,admType,parents,...rest)
         this.close          = false
         this.rate           = rate
         this.totalVals      = totalVals
         this.csvFileName    = csvFileName
         this.thisDir        = __dirname
+        this.killRef        = killRef
     }
 
     init(){
@@ -366,7 +595,97 @@ export class QPROPDashboardService extends QPROPActor{
         let benchStart
         let processingTimes = []
         return this.libs.lift((driving,geo,config)=>{
-            console.log("Dash Update")
+            if(firstPropagation){
+                benchStart = Date.now()
+                firstPropagation = false
+            }
+            let timeToPropagate
+            if(lastDriving != driving){
+                timeToPropagate = Date.now() - driving.constructionTime
+            }
+            else{
+                timeToPropagate = Date.now() - config.constructionTime
+            }
+            lastDriving = driving
+            lastConfig  = config
+            valsReceived++
+            this.writer.write([timeToPropagate])
+            processingTimes.push(timeToPropagate)
+            if(valsReceived == this.totalVals){
+                this.close = true
+                console.log("Benchmark Finished")
+                this.writer.end()
+                this.memWriter.end()
+                let benchStop = Date.now()
+                this.tWriter.write({time: (benchStop - benchStart),values: this.totalVals})
+                this.tWriter.end()
+                this.averageResults(this.csvFileName,this.rate).then(()=>{
+                    this.averageMem(this.csvFileName,this.rate,"Dashboard").then(()=>{
+                        this.killRef.dashDone()
+                    })
+                })
+            }
+        })(driving,geo,config)
+    }
+
+    snapMem(){
+        if(!this.close){
+            setTimeout(()=>{
+                this.memWriter.snapshot()
+                this.snapMem()
+            },500)
+        }
+    }
+}
+
+export class QPROPDashboardService extends QPROPActor{
+    memWriter
+    averageMem
+    averageResults
+    close
+    thisDir
+    rate
+    totalVals
+    csvFileName
+    writer
+    tWriter
+    pWriter
+    killRef
+
+    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
+        super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
+        this.close          = false
+        this.rate           = rate
+        this.totalVals      = totalVals
+        this.csvFileName    = csvFileName
+        this.thisDir        = __dirname
+        this.killRef        = killRef
+    }
+
+    init(){
+        var csvWriter           = require('csv-write-stream')
+        var fs                  = require('fs')
+        let writing             = require(this.thisDir+"/writing")
+        this.memWriter          = new writing.MemoryWriter("Dashboard")
+        this.averageMem         = writing.averageMem
+        this.averageResults     = writing.averageResults
+        this.snapMem()
+        this.writer             = csvWriter({headers: ["TTP"]})
+        this.tWriter            = csvWriter({sendHeaders: false})
+        this.pWriter            = csvWriter({sendHeaders: false})
+        this.writer.pipe(fs.createWriteStream(this.thisDir+'/temp.csv'))
+        this.tWriter.pipe(fs.createWriteStream(this.thisDir+"/Throughput/"+this.csvFileName+this.rate+".csv",{flags: 'a'}))
+        this.pWriter.pipe(fs.createWriteStream(this.thisDir+"/Processing/"+this.csvFileName+this.rate+".csv",{flags: 'a'}))
+    }
+
+    start(driving,geo,config){
+        let valsReceived = 0
+        let lastDriving
+        let lastConfig
+        let firstPropagation = true
+        let benchStart
+        let processingTimes = []
+        return this.libs.lift((driving,geo,config)=>{
             if(firstPropagation){
                 benchStart = Date.now()
                 firstPropagation = false
@@ -398,8 +717,11 @@ export class QPROPDashboardService extends QPROPActor{
                 let avg = total / processingTimes.length
                 this.pWriter.write({pTime: avg})
                 this.pWriter.end()
-                this.averageResults(this.csvFileName,this.rate)
-                this.averageMem(this.csvFileName,this.rate,"Dashboard")
+                this.averageResults(this.csvFileName,this.rate).then(()=>{
+                    this.averageMem(this.csvFileName,this.rate,"Dashboard").then(()=>{
+                        this.killRef.dashDone()
+                    })
+                })
             }
         })(driving,geo,config)
     }
@@ -415,9 +737,22 @@ export class QPROPDashboardService extends QPROPActor{
 }
 
 export class UseCaseApp extends Application{
+    completeResolve
     constructor(){
         super(new SpiderActorMirror(),"127.0.0.1",8000)
         this.libs.setupPSServer()
+    }
+
+    dashDone(){
+        this.kill()
+        this.libs.setupPSServer()
+        this.completeResolve()
+    }
+
+    onComplete(){
+        return new Promise((resolve)=>{
+            this.completeResolve = resolve
+        })
     }
 }
 
