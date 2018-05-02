@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const spiders_js_1 = require("spiders.js");
 const Signal_1 = require("../../src/Signal");
+const SIDUPAdmitter_1 = require("../../src/SID-UP/SIDUPAdmitter");
 var csvWriter = require('csv-write-stream');
 var fs = require('fs');
 var csv = require('fast-csv');
@@ -101,6 +102,10 @@ let base = 8003;
 exports.piPorts = exports.piIds.map((id, index) => {
     return base + index;
 });
+function mapToName(piHostName) {
+    return piHostName;
+}
+exports.mapToName = mapToName;
 //PI tags
 class PropagationValue extends Signal_1.Signal {
     constructor(mirr) {
@@ -128,69 +133,6 @@ class ServiceInfo {
     }
 }
 exports.ServiceInfo = ServiceInfo;
-function averageResults(writeTo, dataRate) {
-    var stream = fs.createReadStream('temp.csv');
-    let length = 0;
-    let total = 0;
-    let header = true;
-    var csvStream = csv()
-        .on("data", function (data) {
-        if (!header) {
-            length++;
-            total += parseInt(data);
-        }
-        header = false;
-    })
-        .on("end", function () {
-        let avg = total / length;
-        let writer = csvWriter({ sendHeaders: false });
-        writer.pipe(fs.createWriteStream("Latency/" + writeTo + dataRate + ".csv", { flags: 'a' }));
-        writer.write({ avg: avg });
-        writer.end();
-    });
-    stream.pipe(csvStream);
-}
-function averageMem(writeTo, dataRate, node, kill) {
-    var stream = fs.createReadStream('temp' + node + "Memory.csv");
-    let length = 0;
-    let totalHeap = 0;
-    let totalRss = 0;
-    var csvStream = csv()
-        .on("data", function (data) {
-        length++;
-        totalHeap += parseInt(data[0]);
-        totalRss += parseInt(data[1]);
-    })
-        .on("end", function () {
-        let avgHeap = totalHeap / length;
-        let avgRss = totalRss / length;
-        let writer = csvWriter({ sendHeaders: false });
-        writer.pipe(fs.createWriteStream("Memory/" + writeTo + dataRate + node + "Memory.csv", { flags: 'a' }));
-        writer.write({ heap: avgHeap, rss: avgRss });
-        writer.end();
-        if (kill) {
-            require('child_process').exec("killall node");
-        }
-    });
-    stream.pipe(csvStream);
-}
-class MemoryWriter {
-    constructor(node) {
-        this.writer = csvWriter({ sendHeaders: false });
-        this.writer.pipe(fs.createWriteStream("temp" + node + "Memory.csv"));
-    }
-    snapshot() {
-        let mem = process.memoryUsage();
-        try {
-            this.writer.write({ heap: mem.heapUsed, rss: mem.rss });
-        }
-        catch (e) {
-        }
-    }
-    end() {
-        this.writer.end();
-    }
-}
 class PersistMemWriter {
     snapshot(writeTo, dataRate, node) {
         let mem = process.memoryUsage();
@@ -204,11 +146,7 @@ class PersistMemWriter {
         }
     }
 }
-function mapToName(piHostName) {
-    return piHostName;
-}
-exports.mapToName = mapToName;
-class Admitter extends MicroServiceApp {
+class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
     constructor(totalVals, csvFileName, dataRate, numSources, dynamicLinks, changes) {
         super(exports.admitterIP, exports.admitterPort, exports.monitorIP, exports.monitorPort);
         this.close = false;
@@ -264,8 +202,8 @@ class Admitter extends MicroServiceApp {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }

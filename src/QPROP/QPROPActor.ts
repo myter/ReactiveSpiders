@@ -361,7 +361,13 @@ export class QPROPActor extends ReactiveActor{
                 })
             })
             if(cont){
-                return this.newPropagation(prop)
+                try{
+                    return this.newPropagation(prop)
+                }
+                catch(e){
+                    console.log("Failed for: " + this.ownType.tagVal)
+                    throw(e)
+                }
             }
         }
         this.brittle.forEach((brittleProps : Array<PropagationValue>,br : string)=>{

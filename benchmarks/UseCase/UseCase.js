@@ -473,35 +473,37 @@ class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
         let benchStart;
         let processingTimes = [];
         return this.libs.lift((driving, geo, config) => {
-            if (firstPropagation) {
-                benchStart = Date.now();
-                firstPropagation = false;
-            }
-            let timeToPropagate;
-            if (lastDriving != driving) {
-                timeToPropagate = Date.now() - driving.constructionTime;
-            }
-            else {
-                timeToPropagate = Date.now() - config.constructionTime;
-            }
-            lastDriving = driving;
-            lastConfig = config;
-            valsReceived++;
-            this.writer.write([timeToPropagate]);
-            processingTimes.push(timeToPropagate);
-            if (valsReceived == this.totalVals) {
-                this.close = true;
-                console.log("Benchmark Finished");
-                this.writer.end();
-                this.memWriter.end();
-                let benchStop = Date.now();
-                this.tWriter.write({ time: (benchStop - benchStart), values: this.totalVals });
-                this.tWriter.end();
-                this.averageResults(this.csvFileName, this.rate).then(() => {
-                    this.averageMem(this.csvFileName, this.rate, "Dashboard").then(() => {
-                        this.killRef.dashDone();
+            if (valsReceived + 1 <= this.totalVals) {
+                if (firstPropagation) {
+                    benchStart = Date.now();
+                    firstPropagation = false;
+                }
+                let timeToPropagate;
+                if (lastDriving != driving) {
+                    timeToPropagate = Date.now() - driving.constructionTime;
+                }
+                else {
+                    timeToPropagate = Date.now() - config.constructionTime;
+                }
+                lastDriving = driving;
+                lastConfig = config;
+                valsReceived++;
+                this.writer.write([timeToPropagate]);
+                processingTimes.push(timeToPropagate);
+                if (valsReceived == this.totalVals) {
+                    this.close = true;
+                    console.log("Benchmark Finished");
+                    this.writer.end();
+                    this.memWriter.end();
+                    let benchStop = Date.now();
+                    this.tWriter.write({ time: (benchStop - benchStart), values: this.totalVals });
+                    this.tWriter.end();
+                    this.averageResults(this.csvFileName, this.rate).then(() => {
+                        this.averageMem(this.csvFileName, this.rate, "Dashboard").then(() => {
+                            this.killRef.dashDone();
+                        });
                     });
-                });
+                }
             }
         })(driving, geo, config);
     }
@@ -548,42 +550,45 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         let benchStart;
         let processingTimes = [];
         return this.libs.lift((driving, geo, config) => {
-            if (firstPropagation) {
-                benchStart = Date.now();
-                firstPropagation = false;
-            }
-            let timeToPropagate;
-            if (lastDriving != driving) {
-                timeToPropagate = Date.now() - driving.constructionTime;
-            }
-            else {
-                timeToPropagate = Date.now() - config.constructionTime;
-            }
-            lastDriving = driving;
-            lastConfig = config;
-            valsReceived++;
-            this.writer.write([timeToPropagate]);
-            processingTimes.push(timeToPropagate);
-            if (valsReceived == this.totalVals) {
-                this.close = true;
-                console.log("Benchmark Finished");
-                this.writer.end();
-                this.memWriter.end();
-                let benchStop = Date.now();
-                this.tWriter.write({ time: (benchStop - benchStart), values: this.totalVals });
-                this.tWriter.end();
-                let total = 0;
-                processingTimes.forEach((pTime) => {
-                    total += pTime;
-                });
-                let avg = total / processingTimes.length;
-                this.pWriter.write({ pTime: avg });
-                this.pWriter.end();
-                this.averageResults(this.csvFileName, this.rate).then(() => {
-                    this.averageMem(this.csvFileName, this.rate, "Dashboard").then(() => {
-                        this.killRef.dashDone();
+            if (valsReceived + 1 <= this.totalVals) {
+                console.log("Received: " + valsReceived + " needed: " + this.totalVals);
+                if (firstPropagation) {
+                    benchStart = Date.now();
+                    firstPropagation = false;
+                }
+                let timeToPropagate;
+                if (lastDriving != driving) {
+                    timeToPropagate = Date.now() - driving.constructionTime;
+                }
+                else {
+                    timeToPropagate = Date.now() - config.constructionTime;
+                }
+                lastDriving = driving;
+                lastConfig = config;
+                valsReceived++;
+                this.writer.write([timeToPropagate]);
+                processingTimes.push(timeToPropagate);
+                if (valsReceived == this.totalVals) {
+                    this.close = true;
+                    console.log("Benchmark Finished");
+                    this.writer.end();
+                    this.memWriter.end();
+                    let benchStop = Date.now();
+                    this.tWriter.write({ time: (benchStop - benchStart), values: this.totalVals });
+                    this.tWriter.end();
+                    let total = 0;
+                    processingTimes.forEach((pTime) => {
+                        total += pTime;
                     });
-                });
+                    let avg = total / processingTimes.length;
+                    this.pWriter.write({ pTime: avg });
+                    this.pWriter.end();
+                    this.averageResults(this.csvFileName, this.rate).then(() => {
+                        this.averageMem(this.csvFileName, this.rate, "Dashboard").then(() => {
+                            this.killRef.dashDone();
+                        });
+                    });
+                }
             }
         })(driving, geo, config);
     }
