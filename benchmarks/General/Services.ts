@@ -138,28 +138,14 @@ export class ServiceInfo{
     }
 }
 
-class PersistMemWriter{
 
-    snapshot(writeTo,dataRate,node){
-        let mem = process.memoryUsage()
-        let writer = csvWriter({sendHeaders: false})
-        writer.pipe(fs.createWriteStream("Memory/"+writeTo+dataRate+node+"Memory.csv",{flags: 'a'}))
-        try{
-            writer.write({heap:mem.heapUsed,rss:mem.rss})
-            writer.end()
-        }
-        catch(e){
-
-        }
-    }
-}
 
 export class Admitter extends SIDUPAdmitter{
     memWriter
     close
     dynamicLinks
 
-    constructor(totalVals,csvFileName,dataRate,numSources,dynamicLinks,changes){
+    constructor(admitterTag,admitterIP,admitterPorttotalVals,csvFileName,dataRate,numSources,dynamicLinks,changes){
         super(admitterIP,admitterPort,monitorIP,monitorPort)
         this.close = false
         this.dynamicLinks = dynamicLinks

@@ -153,6 +153,7 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start() {
+        console.log("Config start");
         let sig = new this.FleetData(this.libs.reflectOnActor());
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
@@ -256,6 +257,7 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start() {
+        console.log("Data start");
         let sig = new this.FleetData(this.libs.reflectOnActor());
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
@@ -344,6 +346,7 @@ class QPROPGeoService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start(imp) {
+        console.log("Geo start");
         let propagated = 0;
         return this.libs.lift((fleetData) => {
             propagated++;
@@ -419,6 +422,7 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start(data, geo) {
+        console.log("Driving start");
         let propagated = 0;
         return this.libs.lift((data, geo) => {
             propagated++;
@@ -543,6 +547,7 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         this.pWriter.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.rate + ".csv", { flags: 'a' }));
     }
     start(driving, geo, config) {
+        console.log("Dash start");
         let valsReceived = 0;
         let lastDriving;
         let lastConfig;

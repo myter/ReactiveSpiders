@@ -16,7 +16,7 @@ function runQPROPLoop(rate) {
                     console.log("Finished QPROP " + rate + " iteration " + index);
                     setTimeout(() => {
                         resolve(loop(index - 1));
-                    }, 2000);
+                    }, 5000);
                 });
             });
         }
@@ -43,7 +43,7 @@ function runSIDUPLoop(rate) {
                     console.log("Finished SIDUP " + rate + " iteration " + index);
                     setTimeout(() => {
                         resolve(loop(index - 1));
-                    }, 2000);
+                    }, 5000);
                 });
             });
         }
@@ -63,7 +63,7 @@ function runLoops(loopRunner, rates) {
     };
     return loop(0);
 }
-runLoops(runQPROPLoop, [2, 50, 100, 150, 200, 250, 300]).then(() => {
+runLoops(runQPROPLoop, [100, 150, 200, 250, 300]).then(() => {
     runLoops(runSIDUPLoop, [2, 50, 100, 150, 200, 250, 300]).then(() => {
         console.log("ALL BENCHMARKS FINISHED");
     });

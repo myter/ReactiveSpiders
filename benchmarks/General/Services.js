@@ -133,22 +133,9 @@ class ServiceInfo {
     }
 }
 exports.ServiceInfo = ServiceInfo;
-class PersistMemWriter {
-    snapshot(writeTo, dataRate, node) {
-        let mem = process.memoryUsage();
-        let writer = csvWriter({ sendHeaders: false });
-        writer.pipe(fs.createWriteStream("Memory/" + writeTo + dataRate + node + "Memory.csv", { flags: 'a' }));
-        try {
-            writer.write({ heap: mem.heapUsed, rss: mem.rss });
-            writer.end();
-        }
-        catch (e) {
-        }
-    }
-}
 class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
-    constructor(totalVals, csvFileName, dataRate, numSources, dynamicLinks, changes) {
-        super(exports.admitterIP, exports.admitterPort, exports.monitorIP, exports.monitorPort);
+    constructor(admitterTag, admitterIP, admitterPorttotalVals, csvFileName, dataRate, numSources, dynamicLinks, changes) {
+        super(admitterIP, exports.admitterPort, exports.monitorIP, exports.monitorPort);
         this.close = false;
         this.dynamicLinks = dynamicLinks;
         this.memWriter = new MemoryWriter("Admitter");
@@ -198,7 +185,7 @@ class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
         let admit = () => {
             admitTimes.push(Date.now());
         };
-        this.SIDUPAdmitter(exports.admitterTag, numSources, 1, idle, change, admit);
+        this.SIDUPAdmitter(admitterTag, numSources, 1, idle, change, admit);
     }
     snapMem() {
         if (!this.close) {
