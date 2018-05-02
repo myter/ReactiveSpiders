@@ -564,6 +564,9 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         this.psClient.publish("ok", this.okType);
         return this.libs.lift((driving, geo, config) => {
             if (valsReceived + 1 <= this.totalVals) {
+                if (valsReceived % 1000 == 0) {
+                    console.log("Received: " + valsReceived + " needed: " + this.totalVals);
+                }
                 if (firstPropagation) {
                     benchStart = Date.now();
                     firstPropagation = false;
