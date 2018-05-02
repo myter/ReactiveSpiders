@@ -171,6 +171,7 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
         }
         //Memory not measured for max throughput benchmarks
         if (this.totalVals <= 0) {
+            console.log("Config produced: " + this.produced);
             this.close = true;
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Config");
@@ -276,6 +277,7 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
             signal.actualise();
         }
         if (this.totalVals <= 0) {
+            console.log("Data produced: " + this.produced);
             this.close = true;
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Data");
