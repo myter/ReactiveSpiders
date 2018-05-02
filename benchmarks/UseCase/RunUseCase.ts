@@ -5,11 +5,16 @@ function runQPROPLoop(rate) : Promise<any>{
     let loop = (index)=>{
         let app = new UseCaseApp()
         let tags : UseCaseTags  = getTags(app)
-        app.spawnActor(QPROPConfigService,[rate,totalValues,"qprop",tags.configTag,tags.okTag,[],[tags.dashTag]])
-        app.spawnActor(QPROPDataAccessService,[rate,totalValues,"qprop",tags.dataTag,tags.okTag,[],[tags.geoTag,tags.drivingTag]])
-        app.spawnActor(QPROPGeoService,[rate,totalValues,"qprop",tags.geoTag,[tags.dataTag],[tags.drivingTag,tags.dashTag]])
-        app.spawnActor(QPROPDrivingService,[rate,totalValues,"qprop",tags.drivingTag,[tags.dataTag,tags.geoTag],[tags.dashTag]])
-        app.spawnActor(QPROPDashboardService,[rate,totalValues,"qprop",app,tags.dashTag,tags.okTag,[tags.drivingTag,tags.geoTag,tags.configTag],[]])
+        app.spawnActorFromFile(__dirname +"/UseCase.js","QPROPConfigService",[rate,totalValues,"qprop",tags.configTag,tags.okTag,[],[tags.dashTag]])
+        //app.spawnActor(QPROPConfigService,[rate,totalValues,"qprop",tags.configTag,tags.okTag,[],[tags.dashTag]])
+        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDataAccessService",[rate,totalValues,"qprop",tags.dataTag,tags.okTag,[],[tags.geoTag,tags.drivingTag]])
+        //app.spawnActor(QPROPDataAccessService,[rate,totalValues,"qprop",tags.dataTag,tags.okTag,[],[tags.geoTag,tags.drivingTag]])
+        app.spawnActorFromFile(__dirname+"/UseCase","QPROPGeoService",[rate,totalValues,"qprop",tags.geoTag,[tags.dataTag],[tags.drivingTag,tags.dashTag]])
+        //app.spawnActor(QPROPGeoService,[rate,totalValues,"qprop",tags.geoTag,[tags.dataTag],[tags.drivingTag,tags.dashTag]])
+        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDrivingService",[rate,totalValues,"qprop",tags.drivingTag,[tags.dataTag,tags.geoTag],[tags.dashTag]])
+        //app.spawnActor(QPROPDrivingService,[rate,totalValues,"qprop",tags.drivingTag,[tags.dataTag,tags.geoTag],[tags.dashTag]])
+        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,tags.dashTag,tags.okTag,[tags.drivingTag,tags.geoTag,tags.configTag],[]])
+        //app.spawnActor(QPROPDashboardService,[rate,totalValues,"qprop",app,tags.dashTag,tags.okTag,[tags.drivingTag,tags.geoTag,tags.configTag],[]])
         if(index > 0){
             return app.onComplete().then(()=>{
                 return new Promise((resolve)=>{
