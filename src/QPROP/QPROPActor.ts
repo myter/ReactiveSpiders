@@ -408,7 +408,9 @@ export class QPROPActor extends ReactiveActor{
         is.push([prop])
         //Find cross product of new propagation value and all other values
         let allArgs     = this.getAllArgs(is)
-        console.log("Size of args in: " + this.ownType.tagVal + " = " + allArgs.length)
+        if(this.ownType.tagVal == "Dash"){
+            console.log("Size of args in: " + this.ownType.tagVal + " = " + allArgs.length)
+        }
         let matches     = this.getMatchArgs(allArgs)
         matches.forEach((match : Array<PropagationValue>)=>{
             this.lastMatch  = match;
