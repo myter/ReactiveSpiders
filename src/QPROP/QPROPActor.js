@@ -54,6 +54,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         }
         this.childTypes.forEach((childType) => {
             this.psClient.subscribe(childType).once((childRef) => {
+                console.log("Discovered: " + childType.tagVal + " in " + this.ownType.tagVal);
                 this.childRefs.push(childRef);
                 if (this.amSource()) {
                     this.lastProp.sClocks.set(this.ownType.tagVal, this.clock);
@@ -66,6 +67,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         });
         this.parentTypes.forEach((parentType) => {
             this.psClient.subscribe(parentType).once((parentRef) => {
+                console.log("Discovered: " + parentType.tagVal + " in " + this.ownType.tagVal);
                 this.parentRefs.push(parentRef);
                 if (this.gotAllParents()) {
                     this.flushParentMessages();

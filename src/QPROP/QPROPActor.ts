@@ -96,6 +96,7 @@ export class QPROPActor extends ReactiveActor{
         }
         this.childTypes.forEach((childType : PubSubTag)=>{
             this.psClient.subscribe(childType).once((childRef : FarRef<QPROPActor>)=>{
+                console.log("Discovered: " + childType.tagVal + " in " + this.ownType.tagVal)
                 this.childRefs.push(childRef)
                 if(this.amSource()){
                     this.lastProp.sClocks.set(this.ownType.tagVal,this.clock)
@@ -108,6 +109,7 @@ export class QPROPActor extends ReactiveActor{
         })
         this.parentTypes.forEach((parentType : PubSubTag)=>{
             this.psClient.subscribe(parentType).once((parentRef : FarRef<QPROPActor>)=>{
+                console.log("Discovered: " + parentType.tagVal + " in " + this.ownType.tagVal)
                 this.parentRefs.push(parentRef)
                 if(this.gotAllParents()){
                     this.flushParentMessages()

@@ -188,6 +188,7 @@ export class QPROPConfigService extends QPROPActor{
     }
 
     start(){
+        console.log("Config ready")
         let sig = new this.FleetData(this.libs.reflectOnActor())
         //Wait for construction to be completed (for both QPROP and SIDUP)
         this.psClient.subscribe(this.okType).once(()=>{
@@ -197,6 +198,7 @@ export class QPROPConfigService extends QPROPActor{
     }
 
     update(signal){
+        console.log("Config Updating")
         for(var i = 0;i < this.rate;i++){
             this.totalVals--
             this.produced++
@@ -321,6 +323,7 @@ export class QPROPDataAccessService extends QPROPActor{
     }
 
     start(){
+        console.log("Data ready")
         let sig = new this.FleetData(this.libs.reflectOnActor())
         //Wait for construction to be completed (for both QPROP and SIDUP)
         this.psClient.subscribe(this.okType).once(()=>{
@@ -330,6 +333,7 @@ export class QPROPDataAccessService extends QPROPActor{
     }
 
     update(signal){
+        console.log("Data updating")
         for(var i = 0;i < this.rate;i++){
             this.totalVals--
             this.produced++
@@ -434,6 +438,7 @@ export class QPROPGeoService extends QPROPActor{
     }
 
     start(imp){
+        console.log("Geo ready")
         let propagated = 0
         return this.libs.lift((fleetData)=>{
             propagated++
@@ -531,6 +536,7 @@ export class QPROPDrivingService extends QPROPActor{
     }
 
     start(data,geo){
+        console.log("Driving ready")
         let propagated = 0
         return this.libs.lift((data,geo)=>{
             propagated++
@@ -692,6 +698,7 @@ export class QPROPDashboardService extends QPROPActor{
     }
 
     start(driving,geo,config){
+        console.log("Dash ready")
         let valsReceived = 0
         let lastDriving
         let lastConfig
@@ -700,6 +707,7 @@ export class QPROPDashboardService extends QPROPActor{
         let processingTimes = []
         this.psClient.publish("ok",this.okType)
         return this.libs.lift((driving,geo,config)=>{
+            console.log("Received: " + valsReceived + " needed " + this.totalVals)
             if(valsReceived +1 <= this.totalVals){
                 if(firstPropagation){
                     benchStart = Date.now()

@@ -258,13 +258,13 @@ class QPROPSourceService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            if (this.changes > 0) {
+                this.memWriter.snapshot(this.csvFileName, this.changes, this.myTag.tagVal);
+            }
+            else {
+                this.memWriter.snapshot(this.csvFileName, this.rate, this.myTag.tagVal);
+            }
             setTimeout(() => {
-                if (this.changes > 0) {
-                    this.memWriter.snapshot(this.csvFileName, this.changes, this.myTag.tagVal);
-                }
-                else {
-                    this.memWriter.snapshot(this.csvFileName, this.rate, this.myTag.tagVal);
-                }
                 this.snapMem();
             }, 500);
         }
@@ -305,10 +305,8 @@ class QPROPDerivedService extends QPROPActor_1.QPROPActor {
     start(imp) {
         let firstPropagation = true;
         let lastArgs;
-        setTimeout(() => {
-            this.checkDynamicLinks();
-        }, 10000);
         return this.libs.lift((args) => {
+            this.checkDynamicLinks();
             if (firstPropagation) {
                 firstPropagation = false;
                 lastArgs = args;
@@ -335,13 +333,13 @@ class QPROPDerivedService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            if (this.changes > 0) {
+                this.memWriter.snapshot(this.csvfileName, this.changes, this.myTag.tagVal);
+            }
+            else {
+                this.memWriter.snapshot(this.csvfileName, this.rate, this.myTag.tagVal);
+            }
             setTimeout(() => {
-                if (this.changes > 0) {
-                    this.memWriter.snapshot(this.csvfileName, this.changes, this.myTag.tagVal);
-                }
-                else {
-                    this.memWriter.snapshot(this.csvfileName, this.rate, this.myTag.tagVal);
-                }
                 this.snapMem();
             }, 500);
         }
@@ -370,35 +368,40 @@ class QPROPSinkService extends QPROPActor_1.QPROPActor {
         this.changes = changes;
         this.dynamicLinks = dynamicLinks;
         this.thisDir = __dirname;
-        this.myTag;
-        myTag;
-        this.memWriter = new MemoryWriter(myTag.tagVal);
-        this.snapMem();
-        let valsReceived = 0;
-        let writer = csvWriter({ headers: ["TTP"] });
-        let tWriter = csvWriter({ sendHeaders: false });
-        let pWriter = csvWriter({ sendHeaders: false });
-        writer.pipe(fs.createWriteStream('temp.csv'));
-        if (changes > 0) {
-            tWriter.pipe(fs.createWriteStream("Throughput/" + csvFileName + changes + ".csv", { flags: 'a' }));
-            pWriter.pipe(fs.createWriteStream("Processing/" + csvFileName + changes + ".csv", { flags: 'a' }));
-        }
-        else {
-            tWriter.pipe(fs.createWriteStream("Throughput/" + csvFileName + rate + ".csv", { flags: 'a' }));
-            pWriter.pipe(fs.createWriteStream("Processing/" + csvFileName + rate + ".csv", { flags: 'a' }));
-        }
+        this.myTag = myTag;
+        this.csvFileName = csvFileName;
+        this.rate = rate;
+        this.totalVals = totalVals;
     }
     init() {
+        let writing = require(this.thisDir + "/writing");
+        var csvWriter = require('csv-write-stream');
+        var fs = require('fs');
+        this.memWriter = new writing.MemoryWriter(this.myTag.tagVal);
+        this.averageResults = writing.averageResults;
+        this.averageMem = writing.averageMem;
+        this.snapMem();
+        this.writer = csvWriter({ headers: ["TTP"] });
+        this.tWriter = csvWriter({ sendHeaders: false });
+        this.pWriter = csvWriter({ sendHeaders: false });
+        this.writer.pipe(fs.createWriteStream(this.thisDir + '/temp.csv'));
+        if (this.changes > 0) {
+            this.tWriter.pipe(fs.createWriteStream(this.thisDir + "/Throughput/" + this.csvFileName + this.changes + ".csv", { flags: 'a' }));
+            this.pWriter.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.changes + ".csv", { flags: 'a' }));
+        }
+        else {
+            this.tWriter.pipe(fs.createWriteStream(this.thisDir + "/Throughput/" + this.csvFileName + this.rate + ".csv", { flags: 'a' }));
+            this.pWriter.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.rate + ".csv", { flags: 'a' }));
+        }
     }
     start(imp) {
-        setTimeout(() => {
-            this.checkDynamicLinks();
-        }, 10000);
         let lastArgs;
         let firstPropagation = true;
         let benchStart;
         let processingTimes = [];
+        let valsReceived = 0;
         return this.libs.lift((args) => {
+            this.checkDynamicLinks();
             let timeToPropagate;
             if (firstPropagation) {
                 benchStart = Date.now();
@@ -423,39 +426,38 @@ class QPROPSinkService extends QPROPActor_1.QPROPActor {
             lastArgs = args;
             valsReceived++;
             console.log("Values propagated: " + valsReceived);
-            writer.write([timeToPropagate]);
+            this.writer.write([timeToPropagate]);
             processingTimes.push(timeToPropagate);
-            if (valsReceived == totalVals) {
+            if (valsReceived == this.totalVals) {
                 console.log("Benchmark Finished");
-                writer.end();
+                this.writer.end();
                 let benchStop = Date.now();
-                tWriter.write({ time: (benchStop - benchStart), values: totalVals });
-                tWriter.end();
+                this.tWriter.write({ time: (benchStop - benchStart), values: this.totalVals });
+                this.tWriter.end();
                 this.memWriter.end();
-                if (isQPROP) {
-                    let total = 0;
-                    processingTimes.forEach((pTime) => {
-                        total += pTime;
-                    });
-                    let avg = total / processingTimes.length;
-                    pWriter.write({ pTime: avg });
-                    pWriter.end();
-                }
-                if (changes > 0) {
-                    averageResults(csvFileName, changes);
-                    averageMem(csvFileName, changes, myTag.tagVal, isQPROP);
+                //QPROP SPECIFIC
+                let total = 0;
+                processingTimes.forEach((pTime) => {
+                    total += pTime;
+                });
+                let avg = total / processingTimes.length;
+                this.pWriter.write({ pTime: avg });
+                this.pWriter.end();
+                if (this.changes > 0) {
+                    this.averageResults(this.csvFileName, this.changes);
+                    this.averageMem(this.csvFileName, this.changes, this.myTag.tagVal);
                 }
                 else {
-                    averageResults(csvFileName, rate);
-                    averageMem(csvFileName, rate, myTag.tagVal, isQPROP);
+                    this.averageResults(this.csvFileName, this.rate);
+                    this.averageMem(this.csvFileName, this.rate, this.myTag.tagVal);
                 }
             }
         })(imp);
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
