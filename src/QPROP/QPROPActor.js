@@ -268,6 +268,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
     getStart() {
         this.startsReceived += 1;
         if (this.gotAllStarts()) {
+            console.log("Got all starts in: " + this.ownType.tagVal);
             let send = () => {
                 this.parentRefs.forEach((ref) => {
                     ref.getStart();
@@ -340,9 +341,6 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         is.push([prop]);
         //Find cross product of new propagation value and all other values
         let allArgs = this.getAllArgs(is);
-        if (this.ownType.tagVal == "Dash") {
-            console.log("Size of args in: " + this.ownType.tagVal + " = " + allArgs.length);
-        }
         let matches = this.getMatchArgs(allArgs);
         matches.forEach((match) => {
             this.lastMatch = match;
