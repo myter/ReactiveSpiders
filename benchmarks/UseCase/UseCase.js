@@ -104,7 +104,7 @@ class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 2000);
+        }, 5000);
         this.publishSignal(sig);
     }
     update(signal) {
@@ -158,7 +158,7 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 2000);
+        }, 5000);
         return sig;
     }
     update(signal) {
@@ -209,7 +209,7 @@ class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 2000);
+        }, 5000);
         this.publishSignal(sig);
     }
     update(signal) {
@@ -262,7 +262,7 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 2000);
+        }, 5000);
         return sig;
     }
     update(signal) {

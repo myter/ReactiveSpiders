@@ -144,18 +144,32 @@ export class Admitter extends SIDUPAdmitter{
     memWriter
     close
     dynamicLinks
+    thisDir
+    changes
+    totalVals
+    csvFileName
+    dataRate
 
-    constructor(admitterTag,admitterIP,admitterPorttotalVals,csvFileName,dataRate,numSources,dynamicLinks,changes){
-        super(admitterIP,admitterPort,monitorIP,monitorPort)
-        this.close = false
-        this.dynamicLinks = dynamicLinks
-        this.memWriter = new MemoryWriter("Admitter")
-        let writer = csvWriter({ sendHeaders: false})
-        if(changes > 0){
-            writer.pipe(fs.createWriteStream("Processing/"+csvFileName+changes+".csv",{flags: 'a'}))
+    constructor(admiterTag,psServerAddress,psServerPort,totalVals,csvFileName,dataRate,numSources,dynamicLinks,changes){
+        super(admiterTag,numSources,1,psServerAddress,psServerPort)
+        this.close          = false
+        this.dynamicLinks   = dynamicLinks
+        this.thisDir        = __dirname
+        this.changes        = changes
+        this.totalVals      = totalVals
+        this.csvFileName    = csvFileName
+        this.dataRate       = dataRate
+    }
+
+    init(){
+        let writing             = require(this.thisDir+"/writing")
+        this.memWriter          = new writing.MemoryWriter("Admitter")
+        let writer              = csvWriter({ sendHeaders: false})
+        if(this.changes > 0){
+            writer.pipe(fs.createWriteStream(this.thisDir +"/Processing/"+this.csvFileName+this.changes+".csv",{flags: 'a'}))
         }
         else{
-            writer.pipe(fs.createWriteStream("Processing/"+csvFileName+dataRate+".csv",{flags: 'a'}))
+            writer.pipe(fs.createWriteStream(this.thisDir+"/Processing/"+this.csvFileName+this.dataRate+".csv",{flags: 'a'}))
         }
         this.snapMem()
         let change = (newValue) => {

@@ -134,17 +134,25 @@ class ServiceInfo {
 }
 exports.ServiceInfo = ServiceInfo;
 class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
-    constructor(admitterTag, admitterIP, admitterPorttotalVals, csvFileName, dataRate, numSources, dynamicLinks, changes) {
-        super(admitterIP, exports.admitterPort, exports.monitorIP, exports.monitorPort);
+    constructor(admiterTag, psServerAddress, psServerPort, totalVals, csvFileName, dataRate, numSources, dynamicLinks, changes) {
+        super(admiterTag, numSources, 1, psServerAddress, psServerPort);
         this.close = false;
         this.dynamicLinks = dynamicLinks;
-        this.memWriter = new MemoryWriter("Admitter");
+        this.thisDir = __dirname;
+        this.changes = changes;
+        this.totalVals = totalVals;
+        this.csvFileName = csvFileName;
+        this.dataRate = dataRate;
+    }
+    init() {
+        let writing = require(this.thisDir + "/writing");
+        this.memWriter = new writing.MemoryWriter("Admitter");
         let writer = csvWriter({ sendHeaders: false });
-        if (changes > 0) {
-            writer.pipe(fs.createWriteStream("Processing/" + csvFileName + changes + ".csv", { flags: 'a' }));
+        if (this.changes > 0) {
+            writer.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.changes + ".csv", { flags: 'a' }));
         }
         else {
-            writer.pipe(fs.createWriteStream("Processing/" + csvFileName + dataRate + ".csv", { flags: 'a' }));
+            writer.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.dataRate + ".csv", { flags: 'a' }));
         }
         this.snapMem();
         let change = (newValue) => {
@@ -185,7 +193,7 @@ class Admitter extends SIDUPAdmitter_1.SIDUPAdmitter {
         let admit = () => {
             admitTimes.push(Date.now());
         };
-        this.SIDUPAdmitter(admitterTag, numSources, 1, idle, change, admit);
+        this.SIDUPAdmitter(exports.admitterTag, numSources, 1, idle, change, admit);
     }
     snapMem() {
         if (!this.close) {
