@@ -3,6 +3,7 @@ import {SIDUPAdmitter} from "../../src/SID-UP/SIDUPAdmitter";
 import {QPROPActor} from "../../src/QPROP/QPROPActor";
 import {Application, PubSubTag, SpiderActorMirror} from "spiders.js";
 import {SIDUPActor} from "../../src/SID-UP/SIDUPActor";
+import {ok} from "assert";
 
 class FleetData extends Signal{
     constructionTime
@@ -100,8 +101,9 @@ export class SIDUPConfigService extends SIDUPActor{
     produced
     close
     thisDir
+    okType
 
-    constructor(rate,totalVals,csvFileName,ownType,admType,parents,...rest){
+    constructor(rate,totalVals,csvFileName,ownType,okType,admType,parents,...rest){
         super(ownType,admType,parents,...rest)
         this.rate           = rate / 2
         this.totalVals      = totalVals / 2
@@ -110,6 +112,7 @@ export class SIDUPConfigService extends SIDUPActor{
         this.produced       = 0
         this.close          = false
         this.thisDir        = __dirname
+        this.okType         = okType
     }
 
     init(){
@@ -118,10 +121,9 @@ export class SIDUPConfigService extends SIDUPActor{
         this.averageMem     = writing.averageMem
         this.snapMem()
         let sig = new this.FleetData(this.libs.reflectOnActor())
-        //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(()=>{
+        this.psClient.subscribe(this.okType).once(()=>{
             this.update(sig)
-        },5000)
+        })
         this.publishSignal(sig)
     }
 
@@ -164,8 +166,9 @@ export class QPROPConfigService extends QPROPActor{
     produced
     close
     thisDir
+    okType
 
-    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
         super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
         this.rate           = rate / 2
         this.totalVals      = totalVals / 2
@@ -173,6 +176,7 @@ export class QPROPConfigService extends QPROPActor{
         this.csvFileName    = csvFileName
         this.produced       = 0
         this.close          = false
+        this.okType         = okType
         this.thisDir        = __dirname
     }
 
@@ -184,12 +188,11 @@ export class QPROPConfigService extends QPROPActor{
     }
 
     start(){
-        console.log("Config start")
         let sig = new this.FleetData(this.libs.reflectOnActor())
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(()=>{
+        this.psClient.subscribe(this.okType).once(()=>{
             this.update(sig)
-        },5000)
+        })
         return sig
     }
 
@@ -232,8 +235,9 @@ export class SIDUPDataAccessService extends SIDUPActor{
     close
     thisDir
     FleetData
+    okType
 
-    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,admType,parents,...rest){
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,admType,parents,...rest){
         super(ownType,admType,parents,...rest)
         this.rate           = rate / 2
         this.totalVals      = totalVals / 2
@@ -242,6 +246,7 @@ export class SIDUPDataAccessService extends SIDUPActor{
         this.close          = false
         this.thisDir        = __dirname
         this.FleetData      = FleetData
+        this.okType         = okType
     }
 
     init(){
@@ -250,10 +255,9 @@ export class SIDUPDataAccessService extends SIDUPActor{
         this.averageMem = writing.averageMem
         this.snapMem()
         let sig = new this.FleetData(this.libs.reflectOnActor())
-        //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(()=>{
+        this.psClient.subscribe(this.okType).once(()=>{
             this.update(sig)
-        },5000)
+        })
         this.publishSignal(sig)
     }
 
@@ -295,8 +299,9 @@ export class QPROPDataAccessService extends QPROPActor{
     close
     thisDir
     FleetData
+    okType
 
-    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
         super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
         this.rate           = rate / 2
         this.totalVals      = totalVals / 2
@@ -305,6 +310,7 @@ export class QPROPDataAccessService extends QPROPActor{
         this.close          = false
         this.thisDir        = __dirname
         this.FleetData      = FleetData
+        this.okType         = okType
     }
 
     init(){
@@ -315,12 +321,11 @@ export class QPROPDataAccessService extends QPROPActor{
     }
 
     start(){
-        console.log("Data start")
         let sig = new this.FleetData(this.libs.reflectOnActor())
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(()=>{
+        this.psClient.subscribe(this.okType).once(()=>{
             this.update(sig)
-        },5000)
+        })
         return sig
     }
 
@@ -429,7 +434,6 @@ export class QPROPGeoService extends QPROPActor{
     }
 
     start(imp){
-        console.log("Geo start")
         let propagated = 0
         return this.libs.lift((fleetData)=>{
             propagated++
@@ -527,7 +531,6 @@ export class QPROPDrivingService extends QPROPActor{
     }
 
     start(data,geo){
-        console.log("Driving start")
         let propagated = 0
         return this.libs.lift((data,geo)=>{
             propagated++
@@ -563,8 +566,9 @@ export class SIDUPDashboardService extends SIDUPActor{
     tWriter
     pWriter
     killRef
+    okType
 
-    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,admType,parents,...rest){
+    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,okType : PubSubTag,admType,parents,...rest){
         super(ownType,admType,parents,...rest)
         this.close          = false
         this.rate           = rate
@@ -572,6 +576,7 @@ export class SIDUPDashboardService extends SIDUPActor{
         this.csvFileName    = csvFileName
         this.thisDir        = __dirname
         this.killRef        = killRef
+        this.okType         = okType
     }
 
     init(){
@@ -597,6 +602,7 @@ export class SIDUPDashboardService extends SIDUPActor{
         let firstPropagation = true
         let benchStart
         let processingTimes = []
+        this.psClient.publish("ok",this.okType)
         return this.libs.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
                 if(firstPropagation){
@@ -656,8 +662,9 @@ export class QPROPDashboardService extends QPROPActor{
     tWriter
     pWriter
     killRef
+    okType
 
-    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
+    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
         super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
         this.close          = false
         this.rate           = rate
@@ -665,6 +672,7 @@ export class QPROPDashboardService extends QPROPActor{
         this.csvFileName    = csvFileName
         this.thisDir        = __dirname
         this.killRef        = killRef
+        this.okType         = okType
     }
 
     init(){
@@ -684,16 +692,15 @@ export class QPROPDashboardService extends QPROPActor{
     }
 
     start(driving,geo,config){
-        console.log("Dash start")
         let valsReceived = 0
         let lastDriving
         let lastConfig
         let firstPropagation = true
         let benchStart
         let processingTimes = []
+        this.psClient.publish("ok",this.okType)
         return this.libs.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
-                console.log("Received: " + valsReceived + " needed: " + this.totalVals)
                 if(firstPropagation){
                     benchStart = Date.now()
                     firstPropagation = false
@@ -772,6 +779,7 @@ export interface UseCaseTags{
     drivingTag
     dashTag
     admitterTag
+    okTag
 }
 
 export function getTags(app : Application) : UseCaseTags{
@@ -781,6 +789,7 @@ export function getTags(app : Application) : UseCaseTags{
         geoTag              : new app.libs.PubSubTag("Geo"),
         drivingTag          : new app.libs.PubSubTag("Driving"),
         dashTag             : new app.libs.PubSubTag("Dash"),
-        admitterTag         : new app.libs.PubSubTag("Admitter")
+        admitterTag         : new app.libs.PubSubTag("Admitter"),
+        okTag               : new app.libs.PubSubTag("ok")
     }
 }

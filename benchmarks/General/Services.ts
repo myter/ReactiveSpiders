@@ -1,6 +1,8 @@
 import {Application} from "spiders.js";
 import {mutating, Signal} from "../../src/Signal";
 import {SIDUPAdmitter} from "../../src/SID-UP/SIDUPAdmitter";
+import {QPROPActor} from "../../src/QPROP/QPROPActor";
+import {PersistMemWriter} from "./writing";
 
 var csvWriter = require('csv-write-stream')
 var fs = require('fs')
@@ -164,6 +166,8 @@ export class Admitter extends SIDUPAdmitter{
     init(){
         let writing             = require(this.thisDir+"/writing")
         this.memWriter          = new writing.MemoryWriter("Admitter")
+        var csvWriter           = require('csv-write-stream')
+        var fs                  = require('fs')
         let writer              = csvWriter({ sendHeaders: false})
         if(this.changes > 0){
             writer.pipe(fs.createWriteStream(this.thisDir +"/Processing/"+this.csvFileName+this.changes+".csv",{flags: 'a'}))
@@ -172,7 +176,7 @@ export class Admitter extends SIDUPAdmitter{
             writer.pipe(fs.createWriteStream(this.thisDir+"/Processing/"+this.csvFileName+this.dataRate+".csv",{flags: 'a'}))
         }
         this.snapMem()
-        let change = (newValue) => {
+        this.changeListener = (newValue) => {
             let propagationTime = Date.now()
             newValue.constructionTime = propagationTime
             return newValue
@@ -180,7 +184,7 @@ export class Admitter extends SIDUPAdmitter{
         let valsReceived = -1
         let admitTimes = []
         let processTimes = []
-        let idle = ()=>{
+        this.idleListener = ()=>{
             valsReceived++
             if(valsReceived > 0){
                 if(valsReceived == 1){
@@ -189,7 +193,7 @@ export class Admitter extends SIDUPAdmitter{
                 this.close = true
                 let processTime = Date.now() - (admitTimes.splice(0,1)[0])
                 processTimes.push(processTime)
-                if(valsReceived == totalVals){
+                if(valsReceived == this.totalVals){
                     let total = 0
                     processTimes.forEach((pTime)=>{
                         total += pTime
@@ -198,19 +202,18 @@ export class Admitter extends SIDUPAdmitter{
                     writer.write({pTime: avg})
                     writer.end()
                     this.memWriter.end()
-                    if(changes > 0){
-                        averageMem(csvFileName,changes,"Admitter",true)
+                    if(this.changes > 0){
+                        writing.averageMem(this.csvFileName,this.changes,"Admitter",true)
                     }
                     else{
-                        averageMem(csvFileName,dataRate,"Admitter",true)
+                        writing.averageMem(this.csvFileName,this.dataRate,"Admitter",true)
                     }
                 }
             }
         }
-        let admit = ()=>{
+        this.admitListener = ()=>{
             admitTimes.push(Date.now())
         }
-        this.SIDUPAdmitter(admitterTag,numSources,1,idle,change,admit)
     }
 
     snapMem(){
@@ -237,7 +240,7 @@ export class Admitter extends SIDUPAdmitter{
     }
 }
 
-export class SourceService extends MicroServiceApp{
+export class QPROPSourceService extends QPROPActor{
     rate
     totalVals
     csvFileName
@@ -246,34 +249,36 @@ export class SourceService extends MicroServiceApp{
     myTag
     dynamicLinks
     changes
+    PropagationValue
+    thisDir
 
-    constructor(isQPROP,rate,totalVals,csvFileName,myAddress,myPort,myTag,directParentsTags,directChildrenTags,dynamicLinkTags,changes){
-        super(myAddress,myPort,monitorIP,monitorPort)
-        this.rate = rate
-        this.changes = changes
-        this.close = false
-        this.myTag = myTag
-        this.dynamicLinks = dynamicLinkTags
-        this.memWriter = new PersistMemWriter()
+    constructor(rate,totalVals,csvFileName,serverAddress,serverPort,myTag,directParentsTags,directChildrenTags,dynamicLinkTags,changes){
+        super(myTag,directParentsTags,directChildrenTags,serverAddress,serverPort)
+        this.rate               = rate
+        this.changes            = changes
+        this.PropagationValue   = PropagationValue
+        this.close              = false
+        this.myTag              = myTag
+        this.dynamicLinks       = dynamicLinkTags
+        this.totalVals          = totalVals
+        this.csvFileName        = csvFileName
+        this.thisDir            = __dirname
+    }
+
+    init(){
+        let writing             = require(this.thisDir+"/writing")
+        this.memWriter          = new writing.PersistMemWriter()
         this.snapMem()
-        this.totalVals = totalVals
-        this.csvFileName = csvFileName
-        if(isQPROP){
-            this.QPROP(myTag,directParentsTags,directChildrenTags,null)
-        }
-        else{
-            this.SIDUP(myTag,directParentsTags,admitterTag)
-        }
-        let sig = this.newSignal(PropagationValue)
+    }
 
-        this.publishSignal(sig)
+    start(){
+        let sig = this.PropagationValue(this.libs.reflectOnActor())
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(()=>{
             this.update(sig)
-            if(isQPROP){
-                this.checkDynamicLinks()
-            }
-        },5000)
+            this.checkDynamicLinks()
+        },10000)
+        return sig
     }
 
     update(signal){
@@ -307,41 +312,51 @@ export class SourceService extends MicroServiceApp{
                 let link = this.dynamicLinks.splice(0,1)[0]
                 let from = link.from
                 let to  = link.to
-                console.log("ADDING DYNAMIC DEPENDENCY")
-                console.log("From: " + from.tagVal + " to: " + to.tagVal)
-                this.addDependency(from,to)
-                this.checkDynamicLinks()
+                if(this.myTag.equals(to)){
+                    console.log("ADDING DYNAMIC DEPENDENCY")
+                    console.log("From: " + from.tagVal + " to: " + to.tagVal)
+                    this.addDependency(from)
+                    this.checkDynamicLinks()
+                }
             },Math.floor(Math.random() * 100) + 50)
         }
     }
 }
 
-export class DerivedService extends MicroServiceApp{
+export class QPROPDerivedService extends QPROPActor{
     close
     memWriter : PersistMemWriter
     csvfileName
     rate
     myTag
     changes
-    constructor(isQPROP,rate,totalVals,csvFileName,myAddress,myPort,myTag,directParentsTag,directChildrenTags,changes){
-        super(myAddress,myPort,monitorIP,monitorPort)
-        this.close = false
-        this.rate = rate
-        this.changes = changes
-        this.csvfileName = csvFileName
-        this.myTag = myTag
-        this.memWriter = new PersistMemWriter()
+    thisDir
+    dynamicLinks
+
+    constructor(rate,totalVals,csvFileName,serverAddress,serverPort,myTag,directParentsTag,directChildrenTags,dynamicLinkTags,changes){
+        super(myTag,directParentsTag,directChildrenTags,serverAddress,serverPort)
+        this.close              = false
+        this.rate               = rate
+        this.changes            = changes
+        this.csvfileName        = csvFileName
+        this.myTag              = myTag
+        this.thisDir            = __dirname
+        this.dynamicLinks       = dynamicLinkTags
+    }
+
+    init(){
+        let writing     = require(this.thisDir+"/writing")
+        this.memWriter = new writing.PersistMemWriter()
         this.snapMem()
-        let imp
-        if(isQPROP){
-            imp = this.QPROP(myTag,directParentsTag,directChildrenTags,null)
-        }
-        else{
-            imp = this.SIDUP(myTag,directParentsTag,admitterTag)
-        }
+    }
+
+    start(imp){
         let firstPropagation = true
         let lastArgs
-        let exp = this.lift((args)=>{
+        setTimeout(()=>{
+            this.checkDynamicLinks()
+        },10000)
+        return this.libs.lift((args)=>{
             if(firstPropagation){
                 firstPropagation = false
                 lastArgs = args
@@ -365,7 +380,6 @@ export class DerivedService extends MicroServiceApp{
                 return newV
             }
         })(imp)
-        this.publishSignal(exp)
     }
 
     snapMem(){
@@ -381,17 +395,44 @@ export class DerivedService extends MicroServiceApp{
             },500)
         }
     }
+
+    checkDynamicLinks(){
+        if(this.dynamicLinks.length > 0){
+            setTimeout(()=>{
+                let link = this.dynamicLinks.splice(0,1)[0]
+                let from = link.from
+                let to  = link.to
+                if(this.myTag.equals(to)){
+                    console.log("ADDING DYNAMIC DEPENDENCY")
+                    console.log("From: " + from.tagVal + " to: " + to.tagVal)
+                    this.addDependency(from)
+                    this.checkDynamicLinks()
+                }
+            },Math.floor(Math.random() * 100) + 50)
+        }
+    }
 }
 
-export class SinkService extends MicroServiceApp{
+export class QPROPSinkService extends QPROPActor{
     close
     memWriter
     changes
+    myTag
+    dynamicLinks
+    averageMem
+    averageResults
+    writer
+    tWriter
+    pWriter
+    killRef
 
-    constructor(isQPROP,rate,totalVals,csvFileName,myAddress,myPort,myTag,directParentTags,directChildrenTags,numSources,changes){
-        super(myAddress,myPort,monitorIP,monitorPort)
+    constructor(rate,totalVals,csvFileName,serverAddress,serverPort,myTag,directParentTags,directChildrenTags,numSources,dynamicLinks,changes){
+        super(myTag,directParentTags,directChildrenTags,serverAddress,serverPort)
         this.close = false
         this.changes = changes
+        this.dynamicLinks = dynamicLinks
+        this.thisDir = __dirname
+        this.myTag myTag
         this.memWriter = new MemoryWriter(myTag.tagVal)
         this.snapMem()
         let valsReceived = 0
@@ -407,18 +448,22 @@ export class SinkService extends MicroServiceApp{
             tWriter.pipe(fs.createWriteStream("Throughput/"+csvFileName+rate+".csv",{flags: 'a'}))
             pWriter.pipe(fs.createWriteStream("Processing/"+csvFileName+rate+".csv",{flags: 'a'}))
         }
-        let imp
-        if(isQPROP){
-            imp = this.QPROP(myTag,directParentTags,directChildrenTags,null)
-        }
-        else{
-            imp = this.SIDUP(myTag,directParentTags,admitterTag,true)
-        }
+
+    }
+
+    init(){
+
+    }
+
+    start(imp){
+        setTimeout(()=>{
+            this.checkDynamicLinks()
+        },10000)
         let lastArgs
         let firstPropagation = true
         let benchStart
         let processingTimes = []
-        this.lift((args)=>{
+        return this.libs.lift((args)=>{
             let timeToPropagate
             if(firstPropagation){
                 benchStart = Date.now()
@@ -480,6 +525,22 @@ export class SinkService extends MicroServiceApp{
                 this.memWriter.snapshot()
                 this.snapMem()
             },500)
+        }
+    }
+
+    checkDynamicLinks(){
+        if(this.dynamicLinks.length > 0){
+            setTimeout(()=>{
+                let link = this.dynamicLinks.splice(0,1)[0]
+                let from = link.from
+                let to  = link.to
+                if(this.myTag.equals(to)){
+                    console.log("ADDING DYNAMIC DEPENDENCY")
+                    console.log("From: " + from.tagVal + " to: " + to.tagVal)
+                    this.addDependency(from)
+                    this.checkDynamicLinks()
+                }
+            },Math.floor(Math.random() * 100) + 50)
         }
     }
 }

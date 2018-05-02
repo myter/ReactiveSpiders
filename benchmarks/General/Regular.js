@@ -158,6 +158,7 @@ else if (changes == 20) {
         dynLinks.push({from: from.tag,to: to.tag})
     }
 }*/
+//TODO all nodes know need to know the dynamic links (change in API)
 switch (toSpawn) {
     case "admitter":
         new Services_1.Admitter(totalVals, csvFile, dataRate, 10, dynLinks, changes);

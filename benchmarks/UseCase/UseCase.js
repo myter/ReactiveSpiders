@@ -85,7 +85,7 @@ class UseCaseAdmitter extends SIDUPAdmitter_1.SIDUPAdmitter {
 }
 exports.UseCaseAdmitter = UseCaseAdmitter;
 class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
-    constructor(rate, totalVals, csvFileName, ownType, admType, parents, ...rest) {
+    constructor(rate, totalVals, csvFileName, ownType, okType, admType, parents, ...rest) {
         super(ownType, admType, parents, ...rest);
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
@@ -94,6 +94,7 @@ class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
         this.produced = 0;
         this.close = false;
         this.thisDir = __dirname;
+        this.okType = okType;
     }
     init() {
         let writing = require(this.thisDir + "/writing");
@@ -101,10 +102,9 @@ class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
         this.averageMem = writing.averageMem;
         this.snapMem();
         let sig = new this.FleetData(this.libs.reflectOnActor());
-        //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(() => {
+        this.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
-        }, 5000);
+        });
         this.publishSignal(sig);
     }
     update(signal) {
@@ -136,7 +136,7 @@ class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
 }
 exports.SIDUPConfigService = SIDUPConfigService;
 class QPROPConfigService extends QPROPActor_1.QPROPActor {
-    constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+    constructor(rate, totalVals, csvFileName, ownType, okType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
@@ -144,6 +144,7 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
         this.csvFileName = csvFileName;
         this.produced = 0;
         this.close = false;
+        this.okType = okType;
         this.thisDir = __dirname;
     }
     init() {
@@ -153,12 +154,11 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start() {
-        console.log("Config start");
         let sig = new this.FleetData(this.libs.reflectOnActor());
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(() => {
+        this.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
-        }, 5000);
+        });
         return sig;
     }
     update(signal) {
@@ -190,7 +190,7 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
 }
 exports.QPROPConfigService = QPROPConfigService;
 class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
-    constructor(rate, totalVals, csvFileName, ownType, admType, parents, ...rest) {
+    constructor(rate, totalVals, csvFileName, ownType, okType, admType, parents, ...rest) {
         super(ownType, admType, parents, ...rest);
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
@@ -199,6 +199,7 @@ class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
         this.close = false;
         this.thisDir = __dirname;
         this.FleetData = FleetData;
+        this.okType = okType;
     }
     init() {
         let writing = require(this.thisDir + "/writing");
@@ -206,10 +207,9 @@ class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
         this.averageMem = writing.averageMem;
         this.snapMem();
         let sig = new this.FleetData(this.libs.reflectOnActor());
-        //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(() => {
+        this.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
-        }, 5000);
+        });
         this.publishSignal(sig);
     }
     update(signal) {
@@ -240,7 +240,7 @@ class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
 }
 exports.SIDUPDataAccessService = SIDUPDataAccessService;
 class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
-    constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+    constructor(rate, totalVals, csvFileName, ownType, okType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
@@ -249,6 +249,7 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
         this.close = false;
         this.thisDir = __dirname;
         this.FleetData = FleetData;
+        this.okType = okType;
     }
     init() {
         let writing = require(this.thisDir + "/writing");
@@ -257,12 +258,11 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start() {
-        console.log("Data start");
         let sig = new this.FleetData(this.libs.reflectOnActor());
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(() => {
+        this.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
-        }, 5000);
+        });
         return sig;
     }
     update(signal) {
@@ -346,7 +346,6 @@ class QPROPGeoService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start(imp) {
-        console.log("Geo start");
         let propagated = 0;
         return this.libs.lift((fleetData) => {
             propagated++;
@@ -422,7 +421,6 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
         this.snapMem();
     }
     start(data, geo) {
-        console.log("Driving start");
         let propagated = 0;
         return this.libs.lift((data, geo) => {
             propagated++;
@@ -445,7 +443,7 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
 }
 exports.QPROPDrivingService = QPROPDrivingService;
 class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
-    constructor(rate, totalVals, csvFileName, killRef, ownType, admType, parents, ...rest) {
+    constructor(rate, totalVals, csvFileName, killRef, ownType, okType, admType, parents, ...rest) {
         super(ownType, admType, parents, ...rest);
         this.close = false;
         this.rate = rate;
@@ -453,6 +451,7 @@ class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
         this.csvFileName = csvFileName;
         this.thisDir = __dirname;
         this.killRef = killRef;
+        this.okType = okType;
     }
     init() {
         var csvWriter = require('csv-write-stream');
@@ -476,6 +475,7 @@ class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
         let firstPropagation = true;
         let benchStart;
         let processingTimes = [];
+        this.psClient.publish("ok", this.okType);
         return this.libs.lift((driving, geo, config) => {
             if (valsReceived + 1 <= this.totalVals) {
                 if (firstPropagation) {
@@ -522,7 +522,7 @@ class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
 }
 exports.SIDUPDashboardService = SIDUPDashboardService;
 class QPROPDashboardService extends QPROPActor_1.QPROPActor {
-    constructor(rate, totalVals, csvFileName, killRef, ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+    constructor(rate, totalVals, csvFileName, killRef, ownType, okType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
         this.close = false;
         this.rate = rate;
@@ -530,6 +530,7 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         this.csvFileName = csvFileName;
         this.thisDir = __dirname;
         this.killRef = killRef;
+        this.okType = okType;
     }
     init() {
         var csvWriter = require('csv-write-stream');
@@ -547,16 +548,15 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         this.pWriter.pipe(fs.createWriteStream(this.thisDir + "/Processing/" + this.csvFileName + this.rate + ".csv", { flags: 'a' }));
     }
     start(driving, geo, config) {
-        console.log("Dash start");
         let valsReceived = 0;
         let lastDriving;
         let lastConfig;
         let firstPropagation = true;
         let benchStart;
         let processingTimes = [];
+        this.psClient.publish("ok", this.okType);
         return this.libs.lift((driving, geo, config) => {
             if (valsReceived + 1 <= this.totalVals) {
-                console.log("Received: " + valsReceived + " needed: " + this.totalVals);
                 if (firstPropagation) {
                     benchStart = Date.now();
                     firstPropagation = false;
@@ -631,7 +631,8 @@ function getTags(app) {
         geoTag: new app.libs.PubSubTag("Geo"),
         drivingTag: new app.libs.PubSubTag("Driving"),
         dashTag: new app.libs.PubSubTag("Dash"),
-        admitterTag: new app.libs.PubSubTag("Admitter")
+        admitterTag: new app.libs.PubSubTag("Admitter"),
+        okTag: new app.libs.PubSubTag("ok")
     };
 }
 exports.getTags = getTags;
