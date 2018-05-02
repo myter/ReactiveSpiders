@@ -199,7 +199,7 @@ export class QPROPConfigService extends QPROPActor{
 
     update(signal){
         console.log("Config Updating")
-        for(var i = 0;i < this.rate;i++){
+        for(var i = 0;i < this.rate ;i++){
             this.totalVals--
             this.produced++
             signal.actualise()

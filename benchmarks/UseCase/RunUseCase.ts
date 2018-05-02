@@ -16,7 +16,7 @@ function runQPROPLoop(rate) : Promise<any>{
                     console.log("Finished QPROP " + rate + " iteration " + index)
                     setTimeout(()=>{
                         resolve(loop(index -1))
-                    },5000)
+                    },10000)
                 })
             })
         }
