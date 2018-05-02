@@ -83,8 +83,8 @@ export class UseCaseAdmitter extends SIDUPAdmitter{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -147,8 +147,8 @@ export class SIDUPConfigService extends SIDUPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -214,8 +214,8 @@ export class QPROPConfigService extends QPROPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -277,8 +277,8 @@ export class SIDUPDataAccessService extends SIDUPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -343,8 +343,8 @@ export class QPROPDataAccessService extends QPROPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -393,8 +393,8 @@ export class SIDUPGeoService extends SIDUPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -442,8 +442,8 @@ export class QPROPGeoService extends QPROPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -491,8 +491,8 @@ export class SIDUPDrivingService extends SIDUPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -539,8 +539,8 @@ export class QPROPDrivingService extends QPROPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -630,8 +630,8 @@ export class SIDUPDashboardService extends SIDUPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }
@@ -728,8 +728,8 @@ export class QPROPDashboardService extends QPROPActor{
 
     snapMem(){
         if(!this.close){
+            this.memWriter.snapshot()
             setTimeout(()=>{
-                this.memWriter.snapshot()
                 this.snapMem()
             },500)
         }

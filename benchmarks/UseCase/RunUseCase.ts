@@ -65,10 +65,12 @@ function runLoops(loopRunner : Function,rates : Array<number>){
     return loop(0)
 }
 //runLoops(runQPROPLoop,[2,50,100,150,200,250,300])
-runLoops(runQPROPLoop,[2,50,100,150,200,250,300]).then(()=>{
+/*runLoops(runQPROPLoop,[2,50,100,150,200,250,300]).then(()=>{
     runLoops(runSIDUPLoop,[2,50,100,150,200,250,300]).then(()=>{
         console.log("ALL BENCHMARKS FINISHED")
     })
-})
+})*/
+
+runQPROPLoop(100)
 
 

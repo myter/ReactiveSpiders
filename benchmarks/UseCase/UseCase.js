@@ -76,8 +76,8 @@ class UseCaseAdmitter extends SIDUPAdmitter_1.SIDUPAdmitter {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -127,8 +127,8 @@ class SIDUPConfigService extends SIDUPActor_1.SIDUPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -180,8 +180,8 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -230,8 +230,8 @@ class SIDUPDataAccessService extends SIDUPActor_1.SIDUPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -282,8 +282,8 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -320,8 +320,8 @@ class SIDUPGeoService extends SIDUPActor_1.SIDUPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -357,8 +357,8 @@ class QPROPGeoService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -395,8 +395,8 @@ class SIDUPDrivingService extends SIDUPActor_1.SIDUPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -432,8 +432,8 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -507,8 +507,8 @@ class SIDUPDashboardService extends SIDUPActor_1.SIDUPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
@@ -589,8 +589,8 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
     }
     snapMem() {
         if (!this.close) {
+            this.memWriter.snapshot();
             setTimeout(() => {
-                this.memWriter.snapshot();
                 this.snapMem();
             }, 500);
         }
