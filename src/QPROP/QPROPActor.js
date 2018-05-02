@@ -280,7 +280,10 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
     }
     prePropagation(prop) {
         let from = prop.from.tagVal;
-        if (this.brittle.has(from)) {
+        if (this.brittle.size == 0) {
+            return this.newPropagation(prop);
+        }
+        else if (this.brittle.has(from)) {
             let prevProps = this.brittle.get(from);
             this.brittle.set(from, prevProps.concat(prop));
         }
@@ -296,13 +299,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                 });
             });
             if (cont) {
-                try {
-                    return this.newPropagation(prop);
-                }
-                catch (e) {
-                    console.log("Failed for: " + this.ownType.tagVal);
-                    throw (e);
-                }
+                return this.newPropagation(prop);
             }
         }
         this.brittle.forEach((brittleProps, br) => {
@@ -343,6 +340,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         is.push([prop]);
         //Find cross product of new propagation value and all other values
         let allArgs = this.getAllArgs(is);
+        console.log("Size of args in: " + this.ownType.tagVal + " = " + allArgs.length);
         let matches = this.getMatchArgs(allArgs);
         matches.forEach((match) => {
             this.lastMatch = match;
