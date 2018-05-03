@@ -3,9 +3,141 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/Memory/qprop0ConfigMemory.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/Memory/qprop0DataMemory.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/Processing/qpropundefined.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/Throughput/qpropundefined.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/arraybuffer.slice/LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/arraybuffer.slice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/arraybuffer.slice/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/coverage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/sort-arrow-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov-report/sorter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/coverage/lcov.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async-limiter/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.coveralls.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/polling-xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/polling-xhr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/websocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/utf8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/engine.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/engine.io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/transports/polling.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/transports/polling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/node_modules/isarray/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/node_modules/isarray/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/node_modules/isarray/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-binary2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-adapter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-adapter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-adapter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-adapter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.dev.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.dev.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/binary.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/binary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/is-buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/is-buffer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/parent-namespace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ultron/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ultron/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ultron/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ultron/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ultron/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ultron/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/BufferUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/BufferUtil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/ErrorCodes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/ErrorCodes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/EventTarget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Extensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/PerMessageDeflate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/PerMessageDeflate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Receiver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Receiver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Sender.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Sender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/WebSocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/WebSocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/WebSocketServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/WebSocketServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +151,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="120" column="1" lean-forward="true" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+            <state relative-caret-position="292">
+              <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
               <folding>
                 <element signature="e#0#483#0" expanded="true" />
                 <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
@@ -31,10 +163,24 @@
                 <element signature="e#2082#2360#0" expanded="true" />
                 <element signature="e#2130#2345#0" expanded="true" />
                 <element signature="e#2249#2320#0" expanded="true" />
+                <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+                <element signature="e#2502#3623#0" expanded="true" />
+                <element signature="e#3282#3559#0" expanded="true" />
+                <element signature="e#3330#3544#0" expanded="true" />
+                <element signature="e#3449#3520#0" expanded="true" />
                 <element signature="n#!!block;n#runLoops#0" expanded="true" />
                 <element signature="e#3768#3927#0" expanded="true" />
                 <element signature="e#3857#3910#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidup100.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/sidup100.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -62,11 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="488" column="19" selection-start-line="488" selection-start-column="19" selection-end-line="488" selection-end-column="19" />
+            <state relative-caret-position="288">
+              <caret line="951" column="16" selection-start-line="951" selection-start-column="16" selection-end-line="951" selection-end-column="16" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#FleetData#0" />
@@ -84,6 +230,7 @@
                 <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="e#5836#5876#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="n#QPROPConfigServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
@@ -99,9 +246,11 @@
                 <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="e#11449#11489#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#QPROPDataAccessServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
                 <element signature="n#SIDUPGeoService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -133,8 +282,6 @@
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
-                <element signature="e#27701#29579#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#QPROPDashboardServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
@@ -148,6 +295,29 @@
                 <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qprop100.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop100.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sockets.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="n#!!block;n#openConnection#0;n#SocketHandler#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#ServerSocketManager#0" expanded="true" />
+                <element signature="n#!!block;n#sendMessage#0;n#ServerSocketManager#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,9 +372,9 @@
       <find>sourcesChanged</find>
       <find>PubSubTag</find>
       <find>tags.</find>
-      <find>ack</find>
       <find>set</find>
       <find>setTime</find>
+      <find>ack</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
@@ -246,11 +416,11 @@
         <option value="$PROJECT_DIR$/tests/temp.ts" />
         <option value="$PROJECT_DIR$/src/ReactiveApplication.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/test.sh" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
       </list>
     </option>
   </component>
@@ -293,6 +463,30 @@
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="benchmarks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="benchmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="UseCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +596,7 @@
       <workItem from="1525172319296" duration="1655000" />
       <workItem from="1525244340955" duration="23250000" />
       <workItem from="1525282610848" duration="2673000" />
-      <workItem from="1525349864234" duration="5738000" />
+      <workItem from="1525349864234" duration="7488000" />
     </task>
     <task id="LOCAL-00001" summary="Finished usecase benchmarks">
       <created>1525260618031</created>
@@ -586,19 +780,17 @@
       <option name="project" value="LOCAL" />
       <updated>1525358916590</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fixing Performance issue with Spiders.js">
+      <created>1525359133514</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1525359133514</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_reactivity_Test_ts - 2018.04.27 at 16h 54m 40s.xml">
-      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_reactivity_Test_ts - 2018.04.27 at 16h 55m 03s.xml">
-      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_reactivity_Test_ts - 2018.04.27 at 16h 55m 45s.xml">
-      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="tests_reactivity_Test_ts - 2018.04.27 at 16h 57m 13s.xml">
       <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -620,21 +812,30 @@
     <history-entry file="tests_reactivity_Test_ts - 2018.05.02 at 09h 12m 05s.xml">
       <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="tests_reactivity_Test_ts - 2018.05.03 at 17h 07m 58s.xml">
+      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests_reactivity_Test_ts - 2018.05.03 at 17h 08m 57s.xml">
+      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests_reactivity_Test_ts - 2018.05.03 at 17h 15m 54s.xml">
+      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139215000" />
+    <option name="totallyTimeSpent" value="140965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33092487" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33092487" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
@@ -729,6 +930,11 @@
             <element signature="e#2082#2360#0" expanded="true" />
             <element signature="e#2130#2345#0" expanded="true" />
             <element signature="e#2249#2320#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="e#2502#3623#0" expanded="true" />
+            <element signature="e#3282#3559#0" expanded="true" />
+            <element signature="e#3330#3544#0" expanded="true" />
+            <element signature="e#3449#3520#0" expanded="true" />
             <element signature="n#!!block;n#runLoops#0" expanded="true" />
             <element signature="e#3768#3927#0" expanded="true" />
             <element signature="e#3857#3910#0" expanded="true" />
@@ -767,6 +973,7 @@
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#QPROPConfigServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
@@ -782,9 +989,11 @@
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="e#11449#11489#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#QPROPDataAccessServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#SIDUPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -816,8 +1025,6 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="e#27701#29579#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#QPROPDashboardServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
@@ -867,6 +1074,11 @@
             <element signature="e#2082#2360#0" expanded="true" />
             <element signature="e#2130#2345#0" expanded="true" />
             <element signature="e#2249#2320#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="e#2502#3623#0" expanded="true" />
+            <element signature="e#3282#3559#0" expanded="true" />
+            <element signature="e#3330#3544#0" expanded="true" />
+            <element signature="e#3449#3520#0" expanded="true" />
             <element signature="n#!!block;n#runLoops#0" expanded="true" />
             <element signature="e#3768#3927#0" expanded="true" />
             <element signature="e#3857#3910#0" expanded="true" />
@@ -895,6 +1107,7 @@
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#QPROPConfigServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
@@ -910,9 +1123,11 @@
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="e#11449#11489#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#QPROPDataAccessServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#SIDUPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -944,8 +1159,6 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="e#27701#29579#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#QPROPDashboardServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
@@ -1208,16 +1421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="100" column="84" selection-start-line="100" selection-start-column="84" selection-end-line="100" selection-end-column="84" />
-          <folding>
-            <element signature="n#!!block;n#sendMessage#0;n#SocketHandler#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunQPROPBench.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1267,6 +1470,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1295,28 +1503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="120" column="1" lean-forward="true" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#483#0" expanded="true" />
-            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
-            <element signature="e#665#2424#0" expanded="true" />
-            <element signature="e#2082#2360#0" expanded="true" />
-            <element signature="e#2130#2345#0" expanded="true" />
-            <element signature="e#2249#2320#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
-            <element signature="e#3768#3927#0" expanded="true" />
-            <element signature="e#3857#3910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="488" column="19" selection-start-line="488" selection-start-column="19" selection-end-line="488" selection-end-column="19" />
+        <state relative-caret-position="288">
+          <caret line="951" column="16" selection-start-line="951" selection-start-column="16" selection-end-line="951" selection-end-column="16" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#FleetData#0" />
@@ -1334,6 +1524,7 @@
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#QPROPConfigServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
@@ -1349,9 +1540,11 @@
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="e#11449#11489#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#QPROPDataAccessServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#SIDUPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -1383,8 +1576,6 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="e#27701#29579#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#QPROPDashboardServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
@@ -1398,6 +1589,55 @@
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/sidup100.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="n#!!block;n#openConnection#0;n#SocketHandler#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ServerSocketManager#0" expanded="true" />
+            <element signature="n#!!block;n#sendMessage#0;n#ServerSocketManager#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop100.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#483#0" expanded="true" />
+            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+            <element signature="e#665#2424#0" expanded="true" />
+            <element signature="e#2082#2360#0" expanded="true" />
+            <element signature="e#2130#2345#0" expanded="true" />
+            <element signature="e#2249#2320#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="e#2502#3623#0" expanded="true" />
+            <element signature="e#3282#3559#0" expanded="true" />
+            <element signature="e#3330#3544#0" expanded="true" />
+            <element signature="e#3449#3520#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+            <element signature="e#3768#3927#0" expanded="true" />
+            <element signature="e#3857#3910#0" expanded="true" />
           </folding>
         </state>
       </provider>

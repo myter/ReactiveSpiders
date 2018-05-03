@@ -51,11 +51,10 @@ function runQPROPLoop(rate) : Promise<any>{
 }
 //runQPROPLoop(2)
 
-/*function runSIDUPLoop(rate){
+function runSIDUPLoop(rate){
     let totalValues = rate * 30
     let loop = (index)=>{
         let app = new UseCaseApp()
-        let tags : UseCaseTags  = getTags(app)
         app.spawnActor(UseCaseAdmitter,[admitterTag,totalValues,"sidup",rate])
         app.spawnActor(SIDUPConfigService,[rate,totalValues,"sidup",configTag,okTag,admitterTag,[]])
         app.spawnActor(SIDUPDataAccessService,[rate,totalValues,"sidup",dataTag,okTag,admitterTag,[]])
@@ -76,8 +75,8 @@ function runQPROPLoop(rate) : Promise<any>{
             app.kill()
         }
     }
-    return loop(10)
-}*/
+    return loop(2)
+}
 function runLoops(loopRunner : Function,rates : Array<number>){
     let loop = (index)=>{
         if(index < rates.length){
@@ -94,7 +93,12 @@ function runLoops(loopRunner : Function,rates : Array<number>){
     })
 })*/
 
-let toSpawn     = process.argv[2]
+runQPROPLoop(100).then(()=>{
+    runSIDUPLoop(100)
+})
+//runSIDUPLoop(100)
+
+/*let toSpawn     = process.argv[2]
 let rate        = 200
 let totalValues = rate * 30
 switch (toSpawn){
@@ -118,6 +122,6 @@ switch (toSpawn){
         break
     default:
         throw new Error("unknown spawning argument")
-}
+}*/
 
 
