@@ -93,12 +93,12 @@ function runLoops(loopRunner : Function,rates : Array<number>){
     })
 })*/
 
-runQPROPLoop(100).then(()=>{
+/*runQPROPLoop(100).then(()=>{
     runSIDUPLoop(100)
-})
+})*/
 //runSIDUPLoop(100)
 
-/*let toSpawn     = process.argv[2]
+let toSpawn     = process.argv[2]
 let rate        = 200
 let totalValues = rate * 30
 switch (toSpawn){
@@ -122,6 +122,6 @@ switch (toSpawn){
         break
     default:
         throw new Error("unknown spawning argument")
-}*/
+}
 
 
