@@ -65,102 +65,113 @@ x
 let y = matchArgs(x)
 y
 */
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const spiders_js_1 = require("spiders.js");
-const Signal_1 = require("../src/Signal");
-const QPROPActor_1 = require("../src/QPROP/QPROPActor");
-class MyApp extends spiders_js_1.Application {
-    constructor() {
-        super(new spiders_js_1.SpiderActorMirror(), "127.0.0.1", 8000);
-        this.libs.setupPSServer();
+const ReactiveApplication_1 = require("../src/ReactiveApplication");
+/*class MyApp extends Application{
+    constructor(){
+        super(new SpiderActorMirror(),"127.0.0.1",8000)
+        this.libs.setupPSServer()
     }
 }
-let app = new MyApp();
-let sourcetype = new app.libs.PubSubTag("Source");
-let sinkType = new app.libs.PubSubTag("Sink");
-let aType = new app.libs.PubSubTag("A");
-let bType = new app.libs.PubSubTag("B");
-class TestSignal extends Signal_1.Signal {
-    constructor(actorMirror) {
-        super(actorMirror);
-        this.val = 5;
+let app = new MyApp()
+let sourcetype  = new app.libs.PubSubTag("Source")
+let sinkType    = new app.libs.PubSubTag("Sink")
+let aType       = new app.libs.PubSubTag("A")
+let bType       = new app.libs.PubSubTag("B")
+
+class TestSignal extends Signal{
+    val
+    constructor(actorMirror : ReactiveMirror){
+        super(actorMirror)
+        this.val = 5
     }
-    inc() {
-        this.val++;
+
+    @mutating
+    inc(){
+        this.val++
     }
-    noInc() {
+
+    @mutating
+    noInc(){
         //do nothing
     }
-    equals(other) {
-        return this.val == other.val;
+
+    equals(other : TestSignal){
+        return this.val == other.val
     }
 }
-__decorate([
-    Signal_1.mutating
-], TestSignal.prototype, "inc", null);
-__decorate([
-    Signal_1.mutating
-], TestSignal.prototype, "noInc", null);
-class TestSource extends QPROPActor_1.QPROPActor {
-    constructor(ownType, parentTypes, childTypes, initVal, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
-        this.TestSignal = TestSignal;
+
+class TestSource extends QPROPActor{
+    TestSignal
+    sig
+
+    constructor(ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,initVal,psServerAddress = "127.0.0.1",psServerPort = 8000){
+        super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
+        this.TestSignal = TestSignal
     }
-    start() {
-        console.log("Source started");
-        this.sig = new this.TestSignal(this.libs.reflectOnActor());
-        return this.sig;
+
+    start(){
+        console.log("Source started")
+        this.sig = new this.TestSignal(this.libs.reflectOnActor())
+        return this.sig
     }
-    inc() {
-        this.sig.inc();
-        setTimeout(() => {
-            this.inc();
-        }, 50);
+
+    inc(){
+        this.sig.inc()
+        setTimeout(()=>{
+            this.inc()
+        },50)
     }
 }
-class A extends QPROPActor_1.QPROPActor {
-    start(source) {
-        console.log("A started");
-        return this.libs.liftApp((s) => {
+
+class A extends QPROPActor{
+    start(source){
+        console.log("A started")
+        return this.libs.liftApp((s : TestSignal)=>{
             //console.log("Change in A with: " + s.val)
-            return s.val + 1;
-        }, source);
+            return s.val + 1
+        },source)
     }
 }
-class B extends QPROPActor_1.QPROPActor {
-    start(source) {
-        console.log("B started");
-        return this.libs.liftApp((s) => {
+
+class B extends QPROPActor{
+    start(source){
+        console.log("B started")
+        return this.libs.liftApp((s : TestSignal)=>{
             //console.log("Change in B with: " + s.val)
-            return s.val + 1;
-        }, source);
+            return s.val + 1
+        },source)
     }
 }
-class TestSink extends QPROPActor_1.QPROPActor {
-    constructor(ownType, parentTypes, childTypes, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, psServerAddress, psServerPort);
-        this.bType = bType;
+
+class TestSink extends QPROPActor{
+    bType
+
+    constructor(ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,psServerAddress = "127.0.0.1",psServerPort = 8000){
+        super(ownType,parentTypes,childTypes,psServerAddress,psServerPort)
+        this.bType = bType
     }
-    start(...args) {
-        console.log("Sink started");
-        setTimeout(() => {
-            console.log("Adding dependency");
-            this.addDependency(this.bType);
-        }, 5000);
-        return this.libs.lift((...argsC) => {
-            console.log("Change in sink: " + argsC);
-        })(...args);
+    start(...args){
+        console.log("Sink started")
+        setTimeout(()=>{
+            console.log("Adding dependency")
+            this.addDependency(this.bType)
+        },5000)
+        return this.libs.lift((...argsC)=>{
+            console.log("Change in sink: " + argsC)
+        })(...args)
     }
 }
-let source = app.spawnActor(TestSource, [sourcetype, [], [aType, bType]]);
-let a = app.spawnActor(A, [aType, [sourcetype], [sinkType]]);
-let b = app.spawnActor(B, [bType, [sourcetype], []]);
-let sink = app.spawnActor(TestSink, [sinkType, [aType], []]);
-source.inc();
+
+let source : FarRef<TestSource> = app.spawnActor(TestSource,[sourcetype,[],[aType,bType]])
+let a      = app.spawnActor(A,[aType,[sourcetype],[sinkType]])
+let b      = app.spawnActor(B,[bType,[sourcetype],[]])
+let sink   = app.spawnActor(TestSink,[sinkType,[aType],[]])
+source.inc()*/
+class Test extends ReactiveApplication_1.ReactiveApplication {
+    init() {
+        console.log("Init called on app");
+    }
+}
+let a = new Test();
 //# sourceMappingURL=temp.js.map

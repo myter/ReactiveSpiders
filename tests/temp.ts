@@ -75,7 +75,7 @@ import {QPROPActor} from "../src/QPROP/QPROPActor";
 import {PropagationValue} from "../src/QPROP/PropagationValue";
 import {ReactiveApplication} from "../src/ReactiveApplication";
 
-class MyApp extends Application{
+/*class MyApp extends Application{
     constructor(){
         super(new SpiderActorMirror(),"127.0.0.1",8000)
         this.libs.setupPSServer()
@@ -175,7 +175,14 @@ let source : FarRef<TestSource> = app.spawnActor(TestSource,[sourcetype,[],[aTyp
 let a      = app.spawnActor(A,[aType,[sourcetype],[sinkType]])
 let b      = app.spawnActor(B,[bType,[sourcetype],[]])
 let sink   = app.spawnActor(TestSink,[sinkType,[aType],[]])
-source.inc()
+source.inc()*/
+
+class Test extends ReactiveApplication{
+    init(){
+        console.log("Init called on app")
+    }
+}
+let a = new Test()
 
 
 

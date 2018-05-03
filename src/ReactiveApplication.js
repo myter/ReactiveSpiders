@@ -3,8 +3,8 @@ const spiders_js_1 = require("spiders.js");
 const ReactiveMirror_1 = require("./ReactiveMirror");
 const NoDistGlitch_1 = require("./NoDistGlitch");
 class ReactiveApplication extends spiders_js_1.Application {
-    constructor() {
-        super(new ReactiveMirror_1.ReactiveMirror(new NoDistGlitch_1.NoDistGlitch()));
+    constructor(mirror = new ReactiveMirror_1.ReactiveMirror(new NoDistGlitch_1.NoDistGlitch()), address, port) {
+        super(mirror, address, port);
     }
 }
 exports.ReactiveApplication = ReactiveApplication;

@@ -6,7 +6,7 @@ import {NoDistGlitch} from "./NoDistGlitch";
 export class ReactiveApplication extends Application{
     libs : ReactiveSTDLib
 
-    constructor(){
-        super(new ReactiveMirror(new NoDistGlitch()))
+    constructor(mirror : ReactiveMirror = new ReactiveMirror(new NoDistGlitch()),address,port){
+        super(mirror,address,port)
     }
 }

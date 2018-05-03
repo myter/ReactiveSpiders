@@ -31,6 +31,37 @@ function runQPROPLoop(rate) {
     };
     return loop(10);
 }
+function runQPROPLoop2(rate) {
+    let totalValues = rate * 30;
+    let loop = (index) => {
+        let app = new UseCase_1.UseCaseApp();
+        let tags = UseCase_1.getTags(app);
+        let conf = new UseCase_1.QPROPConfigServiceApp(rate, totalValues, "qprop", tags.configTag, tags.okTag, [], [tags.dashTag], "127.0.0.1", 8001);
+        let dat = new UseCase_1.QPROPDataAccessServiceApp(rate, totalValues, "qprop", tags.dataTag, tags.okTag, [], [tags.geoTag, tags.drivingTag], "127.0.0.1", 8002);
+        let geo = new UseCase_1.QPROPGeoServiceApp(rate, totalValues, "qprop", tags.geoTag, [tags.dataTag], [tags.drivingTag, tags.dashTag], "127.0.0.1", 8003);
+        let driv = new UseCase_1.QPROPDrivingServiceApp(rate, totalValues, "qprop", tags.drivingTag, [tags.dataTag, tags.geoTag], [tags.dashTag], "127.0.0.1", 8010);
+        let dash = new UseCase_1.QPROPDashboardServiceApp(rate, totalValues, "qprop", app, tags.dashTag, tags.okTag, [tags.drivingTag, tags.geoTag, tags.configTag], [], "127.0.0.1", 8011);
+        if (index > 0) {
+            return app.onComplete().then(() => {
+                return new Promise((resolve) => {
+                    console.log("Finished QPROP " + rate + " iteration " + index);
+                    setTimeout(() => {
+                        resolve(loop(index - 1));
+                    }, 10000);
+                });
+            });
+        }
+        else {
+            app.kill();
+            conf.kill();
+            dat.kill();
+            geo.kill();
+            driv.kill();
+            dash.kill();
+        }
+    };
+    return loop(10);
+}
 function runSIDUPLoop(rate) {
     let totalValues = rate * 30;
     let loop = (index) => {
@@ -73,5 +104,5 @@ function runLoops(loopRunner, rates) {
         console.log("ALL BENCHMARKS FINISHED")
     })
 })*/
-runQPROPLoop(200);
+runQPROPLoop2(200);
 //# sourceMappingURL=RunUseCase.js.map
