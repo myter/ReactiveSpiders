@@ -945,9 +945,7 @@ export class QPROPDashboardService extends QPROPActor{
         this.psClient.publish("ok",this.okType)
         return this.libs.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
-                if(valsReceived % 1000 == 0){
-                    console.log("Received: " + valsReceived + " needed: " + this.totalVals)
-                }
+                console.log("Received: " + valsReceived + " needed: " + this.totalVals)
                 if(firstPropagation){
                     benchStart = Date.now()
                     firstPropagation = false
@@ -1053,7 +1051,6 @@ export class QPROPDashboardServiceApp extends QPROPApplication{
         return this.libs.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
                 console.log("Received: " + valsReceived + " needed: " + this.totalVals)
-                console.log(driving,geo,config)
                 if(firstPropagation){
                     benchStart = Date.now()
                     firstPropagation = false

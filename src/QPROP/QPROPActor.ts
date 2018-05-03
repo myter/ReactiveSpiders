@@ -350,6 +350,7 @@ export class QPROPApplication extends ReactiveApplication{
     prePropagation(prop : PropagationValue){
         let from        = prop.from.tagVal
         if(this.brittle.size == 0){
+            this.addToI(from,prop)
             return this.newPropagation(prop)
         }
         else if(this.brittle.has(from)){
@@ -588,6 +589,7 @@ export class QPROPActor extends ReactiveActor{
         this.changeDoneListeners    = []
         this.brittle                = new Map()
         this.psClient               = this.libs.setupPSClient(this.serverAddress,this.serverPort)
+        this.psClient.publish(this,this.ownType)
         this.lastProp               = new this.PropagationValue(this.ownType,null,new Map(),this.clock)
         if(this.amSource()){
             this.lastProp.value = this.invokeStart()
@@ -612,7 +614,6 @@ export class QPROPActor extends ReactiveActor{
                 }
             })
         })
-        this.psClient.publish(this,this.ownType)
     }
 
     ////////////////////////////////////////
@@ -844,6 +845,7 @@ export class QPROPActor extends ReactiveActor{
     prePropagation(prop : PropagationValue){
         let from        = prop.from.tagVal
         if(this.brittle.size == 0){
+            this.addToI(from,prop)
             return this.newPropagation(prop)
         }
         else if(this.brittle.has(from)){

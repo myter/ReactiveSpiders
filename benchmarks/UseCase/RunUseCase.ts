@@ -19,21 +19,20 @@ import {
 } from "./UseCase"
 import {Application} from "spiders.js";
 
-/*function runQPROPLoop(rate) : Promise<any>{
+function runQPROPLoop(rate) : Promise<any>{
     let totalValues = rate * 30
     let loop = (index)=>{
         let app = new UseCaseApp()
-        let tags : UseCaseTags  = getTags(app)
-        app.spawnActorFromFile(__dirname +"/UseCase.js","QPROPConfigService",[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
-        //app.spawnActor(QPROPConfigService,[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDataAccessService",[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
-        //app.spawnActor(QPROPDataAccessService,[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPGeoService",[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
-        //app.spawnActor(QPROPGeoService,[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDrivingService",[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
-        //app.spawnActor(QPROPDrivingService,[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
-        //app.spawnActor(QPROPDashboardService,[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
+        //app.spawnActorFromFile(__dirname +"/UseCase.js","QPROPConfigService",[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
+        app.spawnActor(QPROPConfigService,[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDataAccessService",[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
+        app.spawnActor(QPROPDataAccessService,[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPGeoService",[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
+        app.spawnActor(QPROPGeoService,[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDrivingService",[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
+        app.spawnActor(QPROPDrivingService,[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
+        app.spawnActor(QPROPDashboardService,[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
         if(index > 0){
             return app.onComplete().then(()=>{
                 return new Promise((resolve)=>{
@@ -48,8 +47,9 @@ import {Application} from "spiders.js";
             app.kill()
         }
     }
-    return loop(10)
-}*/
+    return loop(2)
+}
+//runQPROPLoop(2)
 
 /*function runSIDUPLoop(rate){
     let totalValues = rate * 30

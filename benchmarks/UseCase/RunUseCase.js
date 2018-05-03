@@ -1,36 +1,36 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const UseCase_1 = require("./UseCase");
-/*function runQPROPLoop(rate) : Promise<any>{
-    let totalValues = rate * 30
-    let loop = (index)=>{
-        let app = new UseCaseApp()
-        let tags : UseCaseTags  = getTags(app)
-        app.spawnActorFromFile(__dirname +"/UseCase.js","QPROPConfigService",[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
-        //app.spawnActor(QPROPConfigService,[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDataAccessService",[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
-        //app.spawnActor(QPROPDataAccessService,[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPGeoService",[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
-        //app.spawnActor(QPROPGeoService,[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDrivingService",[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
-        //app.spawnActor(QPROPDrivingService,[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
-        app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
-        //app.spawnActor(QPROPDashboardService,[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
-        if(index > 0){
-            return app.onComplete().then(()=>{
-                return new Promise((resolve)=>{
-                    console.log("Finished QPROP " + rate + " iteration " + index)
-                    setTimeout(()=>{
-                        resolve(loop(index -1))
-                    },10000)
-                })
-            })
+function runQPROPLoop(rate) {
+    let totalValues = rate * 30;
+    let loop = (index) => {
+        let app = new UseCase_1.UseCaseApp();
+        //app.spawnActorFromFile(__dirname +"/UseCase.js","QPROPConfigService",[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
+        app.spawnActor(UseCase_1.QPROPConfigService, [rate, totalValues, "qprop", UseCase_1.configTag, UseCase_1.okTag, [], [UseCase_1.dashTag]]);
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDataAccessService",[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
+        app.spawnActor(UseCase_1.QPROPDataAccessService, [rate, totalValues, "qprop", UseCase_1.dataTag, UseCase_1.okTag, [], [UseCase_1.geoTag, UseCase_1.drivingTag]]);
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPGeoService",[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
+        app.spawnActor(UseCase_1.QPROPGeoService, [rate, totalValues, "qprop", UseCase_1.geoTag, [UseCase_1.dataTag], [UseCase_1.drivingTag, UseCase_1.dashTag]]);
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDrivingService",[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
+        app.spawnActor(UseCase_1.QPROPDrivingService, [rate, totalValues, "qprop", UseCase_1.drivingTag, [UseCase_1.dataTag, UseCase_1.geoTag], [UseCase_1.dashTag]]);
+        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
+        app.spawnActor(UseCase_1.QPROPDashboardService, [rate, totalValues, "qprop", app, UseCase_1.dashTag, UseCase_1.okTag, [UseCase_1.drivingTag, UseCase_1.geoTag, UseCase_1.configTag], []]);
+        if (index > 0) {
+            return app.onComplete().then(() => {
+                return new Promise((resolve) => {
+                    console.log("Finished QPROP " + rate + " iteration " + index);
+                    setTimeout(() => {
+                        resolve(loop(index - 1));
+                    }, 10000);
+                });
+            });
         }
-        else{
-            app.kill()
+        else {
+            app.kill();
         }
-    }
-    return loop(10)
-}*/
+    };
+    return loop(2);
+}
+//runQPROPLoop(2)
 /*function runSIDUPLoop(rate){
     let totalValues = rate * 30
     let loop = (index)=>{
