@@ -1,5 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const UseCase_1 = require("./UseCase");
+const spiders_js_1 = require("spiders.js");
 function runQPROPLoop(rate) {
     let totalValues = rate * 30;
     let loop = (index) => {
@@ -27,37 +28,6 @@ function runQPROPLoop(rate) {
         }
         else {
             app.kill();
-        }
-    };
-    return loop(10);
-}
-function runQPROPLoop2(rate) {
-    let totalValues = rate * 30;
-    let loop = (index) => {
-        let app = new UseCase_1.UseCaseApp();
-        let tags = UseCase_1.getTags(app);
-        let conf = new UseCase_1.QPROPConfigServiceApp(rate, totalValues, "qprop", tags.configTag, tags.okTag, [], [tags.dashTag], "127.0.0.1", 8001);
-        let dat = new UseCase_1.QPROPDataAccessServiceApp(rate, totalValues, "qprop", tags.dataTag, tags.okTag, [], [tags.geoTag, tags.drivingTag], "127.0.0.1", 8002);
-        let geo = new UseCase_1.QPROPGeoServiceApp(rate, totalValues, "qprop", tags.geoTag, [tags.dataTag], [tags.drivingTag, tags.dashTag], "127.0.0.1", 8003);
-        let driv = new UseCase_1.QPROPDrivingServiceApp(rate, totalValues, "qprop", tags.drivingTag, [tags.dataTag, tags.geoTag], [tags.dashTag], "127.0.0.1", 8010);
-        let dash = new UseCase_1.QPROPDashboardServiceApp(rate, totalValues, "qprop", app, tags.dashTag, tags.okTag, [tags.drivingTag, tags.geoTag, tags.configTag], [], "127.0.0.1", 8011);
-        if (index > 0) {
-            return app.onComplete().then(() => {
-                return new Promise((resolve) => {
-                    console.log("Finished QPROP " + rate + " iteration " + index);
-                    setTimeout(() => {
-                        resolve(loop(index - 1));
-                    }, 10000);
-                });
-            });
-        }
-        else {
-            app.kill();
-            conf.kill();
-            dat.kill();
-            geo.kill();
-            driv.kill();
-            dash.kill();
         }
     };
     return loop(10);
@@ -104,5 +74,33 @@ function runLoops(loopRunner, rates) {
         console.log("ALL BENCHMARKS FINISHED")
     })
 })*/
-runQPROPLoop2(200);
+let temp = new spiders_js_1.Application();
+let tags = UseCase_1.getTags(temp);
+temp.kill();
+temp = null;
+let toSpawn = process.argv[2];
+let rate = 200;
+let totalValues = rate * 30;
+switch (toSpawn) {
+    case "app":
+        new UseCase_1.UseCaseApp();
+        break;
+    case "data":
+        new UseCase_1.QPROPDataAccessServiceApp(rate, totalValues, "qprop", tags.dataTag, tags.okTag, [], [tags.geoTag, tags.drivingTag], "127.0.0.1", 8002);
+        break;
+    case "config":
+        new UseCase_1.QPROPConfigServiceApp(rate, totalValues, "qprop", tags.configTag, tags.okTag, [], [tags.dashTag], "127.0.0.1", 8001);
+        break;
+    case "driving":
+        new UseCase_1.QPROPDrivingServiceApp(rate, totalValues, "qprop", tags.drivingTag, [tags.dataTag, tags.geoTag], [tags.dashTag], "127.0.0.1", 8010);
+        break;
+    case "geo":
+        new UseCase_1.QPROPGeoServiceApp(rate, totalValues, "qprop", tags.geoTag, [tags.dataTag], [tags.drivingTag, tags.dashTag], "127.0.0.1", 8003);
+        break;
+    case "dash":
+        new UseCase_1.QPROPDashboardServiceApp(rate, totalValues, "qprop", tags.dashTag, tags.okTag, [tags.drivingTag, tags.geoTag, tags.configTag], [], "127.0.0.1", 8011);
+        break;
+    default:
+        throw new Error("unknown spawning argument");
+}
 //# sourceMappingURL=RunUseCase.js.map

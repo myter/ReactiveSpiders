@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReactiveApplication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReactiveApplication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReactiveApplication.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReactiveApplication.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReactiveApplication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReactiveApplication.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,13 +24,10 @@
       <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+            <state relative-caret-position="382">
+              <caret line="123" column="62" lean-forward="true" selection-start-line="123" selection-start-column="62" selection-end-line="123" selection-end-column="62" />
               <folding>
                 <element signature="e#585#2544#0" expanded="true" />
-                <element signature="e#3587#3893#0" expanded="true" />
-                <element signature="e#3639#3874#0" expanded="true" />
-                <element signature="e#3766#3845#0" expanded="true" />
                 <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
                 <element signature="n#!!block;n#runLoops#0" expanded="true" />
               </folding>
@@ -54,40 +35,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
+      <file leaf-file-name="RunQPROPBench.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunQPROPBench.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
-              <folding>
-                <element signature="n#QPROP#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#4255#4724#0" expanded="true" />
-                <element signature="e#4342#4713#0" expanded="true" />
-                <element signature="e#4785#5055#0" expanded="true" />
-                <element signature="e#4874#5044#0" expanded="true" />
-                <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#11236#11416#0" expanded="true" />
-                <element signature="e#11309#11397#0" expanded="true" />
-                <element signature="e#12900#13921#0" expanded="true" />
-                <element signature="e#12998#13910#0" expanded="true" />
-                <element signature="e#13108#13510#0" expanded="true" />
-                <element signature="n#QPROPActor#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
-              </folding>
+            <state>
+              <caret selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="temp.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/temp.ts">
+      <file leaf-file-name="test.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1665">
-              <caret line="184" column="18" selection-start-line="184" selection-start-column="18" selection-end-line="184" selection-end-column="18" />
-              <folding>
-                <element signature="n#!!block;n#init#0;n#Test#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -95,8 +56,8 @@
       <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2136">
-              <caret line="1059" column="50" selection-start-line="1059" selection-start-column="50" selection-end-line="1059" selection-end-column="50" />
+            <state relative-caret-position="558">
+              <caret line="1005" column="62" selection-start-line="1005" selection-start-column="62" selection-end-line="1005" selection-end-column="62" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#FleetData#0" />
@@ -139,6 +100,7 @@
                 <element signature="n#QPROPGeoService#0" />
                 <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
+                <element signature="n#QPROPGeoServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
@@ -151,6 +113,7 @@
                 <element signature="n#!!block;n#constructor#0;n#QPROPDrivingService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
+                <element signature="n#QPROPDrivingServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
@@ -164,8 +127,13 @@
                 <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
+                <element signature="n#QPROPDashboardServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+                <element signature="e#31818#33696#0" expanded="true" />
+                <element signature="e#33460#33653#0" expanded="true" />
+                <element signature="e#33551#33630#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
                 <element signature="n#UseCaseApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
@@ -258,9 +226,10 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tests/temp.ts" />
         <option value="$PROJECT_DIR$/src/ReactiveApplication.ts" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/test.sh" />
       </list>
     </option>
   </component>
@@ -280,7 +249,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="720" />
+    <option name="width" value="1440" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -298,6 +267,17 @@
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="benchmarks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="benchmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="UseCase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -338,12 +318,13 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/SID-UP" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/benchmarks/UseCase" />
       <recent name="$PROJECT_DIR$/benchmarks/General" />
       <recent name="$PROJECT_DIR$/benchmarks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/SID-UP" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,7 +393,7 @@
       <workItem from="1525172319296" duration="1655000" />
       <workItem from="1525244340955" duration="23250000" />
       <workItem from="1525282610848" duration="2673000" />
-      <workItem from="1525349864234" duration="2013000" />
+      <workItem from="1525349864234" duration="2696000" />
     </task>
     <task id="LOCAL-00001" summary="Finished usecase benchmarks">
       <created>1525260618031</created>
@@ -547,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525283392982</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixing Performance issue with Spiders.js">
+      <created>1525353730132</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1525353730132</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -583,19 +571,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135490000" />
+    <option name="totallyTimeSpent" value="136173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33092487" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33092487" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
@@ -661,6 +649,9 @@
       </list>
     </option>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -682,9 +673,6 @@
           <caret line="127" column="4" lean-forward="true" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="4" />
           <folding>
             <element signature="e#585#2544#0" expanded="true" />
-            <element signature="e#3587#3893#0" expanded="true" />
-            <element signature="e#3639#3874#0" expanded="true" />
-            <element signature="e#3766#3845#0" expanded="true" />
             <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
             <element signature="n#!!block;n#runLoops#0" expanded="true" />
           </folding>
@@ -747,6 +735,7 @@
             <element signature="n#QPROPGeoService#0" />
             <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#QPROPGeoServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
@@ -759,6 +748,7 @@
             <element signature="n#!!block;n#constructor#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#QPROPDrivingServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
@@ -772,8 +762,13 @@
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="n#QPROPDashboardServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="e#31818#33696#0" expanded="true" />
+            <element signature="e#33460#33653#0" expanded="true" />
+            <element signature="e#33551#33630#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
             <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
@@ -813,9 +808,6 @@
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
             <element signature="e#585#2544#0" expanded="true" />
-            <element signature="e#3587#3893#0" expanded="true" />
-            <element signature="e#3639#3874#0" expanded="true" />
-            <element signature="e#3766#3845#0" expanded="true" />
             <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
             <element signature="n#!!block;n#runLoops#0" expanded="true" />
           </folding>
@@ -868,6 +860,7 @@
             <element signature="n#QPROPGeoService#0" />
             <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#QPROPGeoServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
@@ -880,6 +873,7 @@
             <element signature="n#!!block;n#constructor#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#QPROPDrivingServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
@@ -893,8 +887,13 @@
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="n#QPROPDashboardServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="e#31818#33696#0" expanded="true" />
+            <element signature="e#33460#33653#0" expanded="true" />
+            <element signature="e#33551#33630#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
             <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
@@ -984,7 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunQPROPBench.sh" />
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1153,16 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/temp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="184" column="18" selection-start-line="184" selection-start-column="18" selection-end-line="184" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!block;n#init#0;n#Test#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReactiveApplication.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1190,8 +1178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2136">
-          <caret line="1059" column="50" selection-start-line="1059" selection-start-column="50" selection-end-line="1059" selection-end-column="50" />
+        <state relative-caret-position="558">
+          <caret line="1005" column="62" selection-start-line="1005" selection-start-column="62" selection-end-line="1005" selection-end-column="62" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#FleetData#0" />
@@ -1234,6 +1222,7 @@
             <element signature="n#QPROPGeoService#0" />
             <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#QPROPGeoServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
@@ -1246,6 +1235,7 @@
             <element signature="n#!!block;n#constructor#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#QPROPDrivingServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
@@ -1259,8 +1249,13 @@
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="n#QPROPDashboardServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="e#31818#33696#0" expanded="true" />
+            <element signature="e#33460#33653#0" expanded="true" />
+            <element signature="e#33551#33630#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
             <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
@@ -1270,24 +1265,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="e#585#2544#0" expanded="true" />
-            <element signature="e#3587#3893#0" expanded="true" />
-            <element signature="e#3639#3874#0" expanded="true" />
-            <element signature="e#3766#3845#0" expanded="true" />
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="-538">
           <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
           <folding>
             <element signature="n#QPROP#0" />
@@ -1306,6 +1286,42 @@
             <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/temp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="184" column="18" selection-start-line="184" selection-start-column="18" selection-end-line="184" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!block;n#init#0;n#Test#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="123" column="62" lean-forward="true" selection-start-line="123" selection-start-column="62" selection-end-line="123" selection-end-column="62" />
+          <folding>
+            <element signature="e#585#2544#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunQPROPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>

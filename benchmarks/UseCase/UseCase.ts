@@ -1015,17 +1015,15 @@ export class QPROPDashboardServiceApp extends QPROPApplication{
     writer
     tWriter
     pWriter
-    killRef
     okType
 
-    constructor(rate,totalVals,csvFileName,killRef,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
+    constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
         super(ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
         this.close          = false
         this.rate           = rate
         this.totalVals      = totalVals
         this.csvFileName    = csvFileName
         this.thisDir        = __dirname
-        this.killRef        = killRef
         this.okType         = okType
         this.init()
     }
@@ -1092,7 +1090,7 @@ export class QPROPDashboardServiceApp extends QPROPApplication{
                     this.pWriter.end()
                     this.averageResults(this.csvFileName,this.rate).then(()=>{
                         this.averageMem(this.csvFileName,this.rate,"Dashboard").then(()=>{
-                            this.killRef.dashDone()
+                            require('child_process').exec("killall node");
                         })
                     })
                 }
