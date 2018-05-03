@@ -842,6 +842,7 @@ class QPROPDashboardServiceApp extends QPROPActor_1.QPROPApplication {
         return this.libs.lift((driving, geo, config) => {
             if (valsReceived + 1 <= this.totalVals) {
                 console.log("Received: " + valsReceived + " needed: " + this.totalVals);
+                console.log(driving, geo, config);
                 if (firstPropagation) {
                     benchStart = Date.now();
                     firstPropagation = false;
