@@ -913,16 +913,11 @@ class UseCaseApp extends spiders_js_1.Application {
     }
 }
 exports.UseCaseApp = UseCaseApp;
-function getTags(app) {
-    return {
-        dataTag: new app.libs.PubSubTag("Data"),
-        configTag: new app.libs.PubSubTag("Config"),
-        geoTag: new app.libs.PubSubTag("Geo"),
-        drivingTag: new app.libs.PubSubTag("Driving"),
-        dashTag: new app.libs.PubSubTag("Dash"),
-        admitterTag: new app.libs.PubSubTag("Admitter"),
-        okTag: new app.libs.PubSubTag("ok")
-    };
-}
-exports.getTags = getTags;
+exports.dataTag = new spiders_js_1.PubSubTag("Data");
+exports.configTag = new spiders_js_1.PubSubTag("Config");
+exports.geoTag = new spiders_js_1.PubSubTag("Geo");
+exports.drivingTag = new spiders_js_1.PubSubTag("Driving");
+exports.dashTag = new spiders_js_1.PubSubTag("Dash");
+exports.admitterTag = new spiders_js_1.PubSubTag("Admitter");
+exports.okTag = new spiders_js_1.PubSubTag("ok");
 //# sourceMappingURL=UseCase.js.map

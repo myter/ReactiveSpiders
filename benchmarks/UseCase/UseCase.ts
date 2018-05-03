@@ -1128,24 +1128,10 @@ export class UseCaseApp extends Application{
     }
 }
 
-export interface UseCaseTags{
-    dataTag
-    configTag
-    geoTag
-    drivingTag
-    dashTag
-    admitterTag
-    okTag
-}
-
-export function getTags(app : Application) : UseCaseTags{
-    return {
-        dataTag             : new app.libs.PubSubTag("Data"),
-        configTag           : new app.libs.PubSubTag("Config"),
-        geoTag              : new app.libs.PubSubTag("Geo"),
-        drivingTag          : new app.libs.PubSubTag("Driving"),
-        dashTag             : new app.libs.PubSubTag("Dash"),
-        admitterTag         : new app.libs.PubSubTag("Admitter"),
-        okTag               : new app.libs.PubSubTag("ok")
-    }
-}
+export var dataTag      = new PubSubTag("Data")
+export var configTag    = new PubSubTag("Config")
+export var geoTag       = new PubSubTag("Geo")
+export var drivingTag   = new PubSubTag("Driving")
+export var dashTag      = new PubSubTag("Dash")
+export var admitterTag  = new PubSubTag("Admitter")
+export var okTag        = new PubSubTag("ok")
