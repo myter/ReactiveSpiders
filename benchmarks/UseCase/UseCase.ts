@@ -216,9 +216,11 @@ export class QPROPConfigService extends QPROPActor{
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Config")
         }
-        setTimeout(()=>{
+        else{
+            setTimeout(()=>{
                 this.update(signal)
             },1000)
+        }
     }
 
     snapMem(){
@@ -418,9 +420,11 @@ export class QPROPDataAccessService extends QPROPActor{
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Data")
         }
-        setTimeout(()=>{
+        else{
+            setTimeout(()=>{
                 this.update(signal)
             },1000)
+        }
     }
 
     snapMem(){
@@ -577,7 +581,7 @@ export class QPROPGeoService extends QPROPActor{
         let writing     = require(this.thisdir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Geo")
         this.averageMem = writing.averageMem
-        //this.snapMem()
+        this.snapMem()
     }
 
     start(imp){
@@ -726,7 +730,7 @@ export class QPROPDrivingService extends QPROPActor{
         let writing     = require(this.thisDir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Driving")
         this.averageMem = writing.averageMem
-        //this.snapMem()
+        this.snapMem()
     }
 
     start(data,geo){
@@ -933,7 +937,7 @@ export class QPROPDashboardService extends QPROPActor{
         this.memWriter          = new writing.MemoryWriter("Dashboard")
         this.averageMem         = writing.averageMem
         this.averageResults     = writing.averageResults
-        //this.snapMem()
+        this.snapMem()
         this.writer             = csvWriter({headers: ["TTP"]})
         this.tWriter            = csvWriter({sendHeaders: false})
         this.pWriter            = csvWriter({sendHeaders: false})
