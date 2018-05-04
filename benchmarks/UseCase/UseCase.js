@@ -459,7 +459,7 @@ class QPROPGeoService extends QPROPActor_1.QPROPActor {
         let writing = require(this.thisdir + "/writing");
         this.memWriter = new writing.MemoryWriter("Geo");
         this.averageMem = writing.averageMem;
-        this.snapMem();
+        //this.snapMem()
     }
     start(imp) {
         console.log("Geo ready");
@@ -575,7 +575,7 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Driving");
         this.averageMem = writing.averageMem;
-        this.snapMem();
+        //this.snapMem()
     }
     start(data, geo) {
         console.log("Driving ready");
@@ -737,7 +737,7 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
         this.memWriter = new writing.MemoryWriter("Dashboard");
         this.averageMem = writing.averageMem;
         this.averageResults = writing.averageResults;
-        this.snapMem();
+        //this.snapMem()
         this.writer = csvWriter({ headers: ["TTP"] });
         this.tWriter = csvWriter({ sendHeaders: false });
         this.pWriter = csvWriter({ sendHeaders: false });
