@@ -32,7 +32,7 @@ export class QPROP extends SpiderIsolate implements DistGlitchPrevention{
 export class QPROPApplication extends ReactiveApplication{
     //Spiders.js related
     thisDir
-    PropagationValue            : {new(from : PubSubTag,value : Signal,sClocks : Map<string,number>,fClock : number): PropagationValue}
+    PropagationValue            : {new(from : PubSubTag,value : Signal,sClocks : Map<string,number>,fClock : number,isOptimised? : boolean): PropagationValue}
     //General node Info
     ownType                     : PubSubTag
     parentTypes                 : Array<PubSubTag>
@@ -413,7 +413,16 @@ export class QPROPApplication extends ReactiveApplication{
         let matches     = this.getMatchArgs(allArgs)
         matches.forEach((match : Array<PropagationValue>)=>{
             this.lastMatch  = match;
-            let values      = match.map((arg : PropagationValue)=>{return arg.value});
+            let values      = match.map((arg : PropagationValue)=>{
+                if(arg.isOptimised){
+                    let sig = this.inputSignals.get(arg.from.tagVal);
+                    (sig as any).setState(arg.value);
+                    return sig
+                }
+                else{
+                    return arg.value
+                }
+            });
             (this.libs.reflectOnActor() as ReactiveMirror).sourcesChanged(values)
         })
         if(this.lastMatch){
@@ -445,7 +454,13 @@ export class QPROPApplication extends ReactiveApplication{
                         })
                     })
                 }
-                this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
+                if((signal as any).getState){
+                    //TODO what if node dynamically joins, how will it get un-optimised (i.e. real signal object ? )
+                    this.lastProp   = new this.PropagationValue(this.ownType,(signal as any).getState(),clocks,this.clock,true)
+                }
+                else{
+                    this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
+                }
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
                         child.prePropagation(this.lastProp)
