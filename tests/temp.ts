@@ -177,12 +177,33 @@ let b      = app.spawnActor(B,[bType,[sourcetype],[]])
 let sink   = app.spawnActor(TestSink,[sinkType,[aType],[]])
 source.inc()*/
 
-class Test extends ReactiveApplication{
-    init(){
-        console.log("Init called on app")
+class TestSig extends Signal{
+    val
+
+    constructor(mirr){
+        super(mirr)
+        this.val = 5
+    }
+
+    @mutating
+    inc(){
+        this.val++
+    }
+
+    equals(other){
+        return this.val == other.val
+    }
+
+    getState(){
+
+    }
+
+    setState(){
+
     }
 }
-let a = new Test()
+
+let app = new Application()
 
 
 

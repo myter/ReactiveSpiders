@@ -20,6 +20,14 @@ class FleetData extends Signal{
     equals(otherFleetDataSignal : FleetData){
         return this.constructionTime == otherFleetDataSignal.constructionTime
     }
+
+    getState(){
+        return this.constructionTime
+    }
+
+    setState(newState){
+        this.constructionTime = newState
+    }
 }
 
 export class UseCaseAdmitter extends SIDUPAdmitter{

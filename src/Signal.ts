@@ -61,6 +61,14 @@ export abstract class DerivedSignal extends Signal{
     equals(otherDerived : DerivedSignal){
         return this.lastVal == otherDerived.lastVal
     }
+
+    getState(){
+        return this.lastVal
+    }
+
+    setState(newState){
+        this.lastVal = newState
+    }
 }
 
 let scope = new LexScope()

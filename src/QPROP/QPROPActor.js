@@ -59,7 +59,6 @@ class QPROPApplication extends ReactiveApplication_1.ReactiveApplication {
                 this.childRefs.push(childRef);
                 if (this.amSource()) {
                     this.lastProp.sClocks.set(this.ownType.tagVal, this.clock);
-                    console.log("Sending sources to: " + childType.tagVal + " in : " + this.ownType.tagVal);
                     childRef.getSources([this.ownType], this.lastProp);
                 }
                 if (this.gotAllChildren()) {
@@ -777,7 +776,16 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         let matches = this.getMatchArgs(allArgs);
         matches.forEach((match) => {
             this.lastMatch = match;
-            let values = match.map((arg) => { return arg.value; });
+            let values = match.map((arg) => {
+                if (arg.isOptimised) {
+                    let sig = this.inputSignals.get(arg.from.tagVal);
+                    sig.setState(arg.value);
+                    return sig;
+                }
+                else {
+                    return arg.value;
+                }
+            });
             this.libs.reflectOnActor().sourcesChanged(values);
         });
         if (this.lastMatch) {
@@ -807,7 +815,13 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                         });
                     });
                 }
-                this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
+                if (signal.getState) {
+                    //TODO what if node dynamically joins, how will it get un-optimised (i.e. real signal object ? )
+                    this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock, true);
+                }
+                else {
+                    this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
+                }
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
                         child.prePropagation(this.lastProp);

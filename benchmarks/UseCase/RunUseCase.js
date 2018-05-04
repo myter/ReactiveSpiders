@@ -75,7 +75,7 @@ function runLoops(loopRunner, rates) {
 /*runQPROPLoop(100).then(()=>{
     runSIDUPLoop(100)
 })*/
-//runSIDUPLoop(100)
+//runQPROPLoop(100)
 let toSpawn = process.argv[2];
 let rate = 200;
 let totalValues = rate * 30;

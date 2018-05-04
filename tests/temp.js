@@ -65,8 +65,15 @@ x
 let y = matchArgs(x)
 y
 */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const ReactiveApplication_1 = require("../src/ReactiveApplication");
+const spiders_js_1 = require("spiders.js");
+const Signal_1 = require("../src/Signal");
 /*class MyApp extends Application{
     constructor(){
         super(new SpiderActorMirror(),"127.0.0.1",8000)
@@ -168,10 +175,24 @@ let a      = app.spawnActor(A,[aType,[sourcetype],[sinkType]])
 let b      = app.spawnActor(B,[bType,[sourcetype],[]])
 let sink   = app.spawnActor(TestSink,[sinkType,[aType],[]])
 source.inc()*/
-class Test extends ReactiveApplication_1.ReactiveApplication {
-    init() {
-        console.log("Init called on app");
+class TestSig extends Signal_1.Signal {
+    constructor(mirr) {
+        super(mirr);
+        this.val = 5;
+    }
+    inc() {
+        this.val++;
+    }
+    equals(other) {
+        return this.val == other.val;
+    }
+    getState() {
+    }
+    setState() {
     }
 }
-let a = new Test();
+__decorate([
+    Signal_1.mutating
+], TestSig.prototype, "inc", null);
+let app = new spiders_js_1.Application();
 //# sourceMappingURL=temp.js.map

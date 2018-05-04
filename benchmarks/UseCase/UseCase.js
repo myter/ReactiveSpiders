@@ -21,6 +21,12 @@ class FleetData extends Signal_1.Signal {
     equals(otherFleetDataSignal) {
         return this.constructionTime == otherFleetDataSignal.constructionTime;
     }
+    getState() {
+        return this.constructionTime;
+    }
+    setState(newState) {
+        this.constructionTime = newState;
+    }
 }
 __decorate([
     Signal_1.mutating
