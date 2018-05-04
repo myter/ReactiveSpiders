@@ -71,7 +71,7 @@ import {SIDUPAdmitter} from "../src/SID-UP/SIDUPAdmitter";
 import {SIDUPActor} from "../src/SID-UP/SIDUPActor";
 import {mutating, Signal} from "../src/Signal";
 import {ReactiveMirror} from "../src/ReactiveMirror";
-import {QPROPActor} from "../src/QPROP/QPROPActor";
+import {QPROP, QPROPActor} from "../src/QPROP/QPROPActor";
 import {PropagationValue} from "../src/QPROP/PropagationValue";
 import {ReactiveApplication} from "../src/ReactiveApplication";
 
@@ -204,6 +204,10 @@ class TestSig extends Signal{
 }
 
 let app = new Application()
+
+class SourceAct extends QPROPActor{
+
+}
 
 
 

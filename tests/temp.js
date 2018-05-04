@@ -74,6 +74,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const spiders_js_1 = require("spiders.js");
 const Signal_1 = require("../src/Signal");
+const QPROPActor_1 = require("../src/QPROP/QPROPActor");
 /*class MyApp extends Application{
     constructor(){
         super(new SpiderActorMirror(),"127.0.0.1",8000)
@@ -195,4 +196,6 @@ __decorate([
     Signal_1.mutating
 ], TestSig.prototype, "inc", null);
 let app = new spiders_js_1.Application();
+class SourceAct extends QPROPActor_1.QPROPActor {
+}
 //# sourceMappingURL=temp.js.map

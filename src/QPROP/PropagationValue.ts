@@ -20,4 +20,8 @@ export class PropagationValue extends SpiderIsolate{
     asString(){
         return "< " + this.from.tagVal + " , " + this.value.toString() + " , " + this.sClocks + " , " + this.fClock + " >"
     }
+
+    toArray(){
+        return [this.from,this.value,this.sClocks,this.fClock,this.isOptimised]
+    }
 }

@@ -12,6 +12,9 @@ class PropagationValue extends spiders_js_1.SpiderIsolate {
     asString() {
         return "< " + this.from.tagVal + " , " + this.value.toString() + " , " + this.sClocks + " , " + this.fClock + " >";
     }
+    toArray() {
+        return [this.from, this.value, this.sClocks, this.fClock, this.isOptimised];
+    }
 }
 exports.PropagationValue = PropagationValue;
 //# sourceMappingURL=PropagationValue.js.map
