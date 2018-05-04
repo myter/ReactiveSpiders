@@ -180,11 +180,9 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Config");
         }
-        else {
-            setTimeout(() => {
-                this.update(signal);
-            }, 1000);
-        }
+        setTimeout(() => {
+            this.update(signal);
+        }, 1000);
     }
     snapMem() {
         if (!this.close) {
@@ -340,11 +338,9 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Data");
         }
-        else {
-            setTimeout(() => {
-                this.update(signal);
-            }, 1000);
-        }
+        setTimeout(() => {
+            this.update(signal);
+        }, 1000);
     }
     snapMem() {
         if (!this.close) {
