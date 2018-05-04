@@ -122,6 +122,10 @@ export class QPROPApplication extends ReactiveApplication{
     // Helper Functions                   //
     ////////////////////////////////////////
 
+    fromPropValArray(propValArr){
+        return new this.PropagationValue(new this.libs.PubSubTag(propValArr[0]),propValArr[1],new Map(JSON.parse(propValArr[2])),propValArr[3],propValArr[4])
+    }
+
     amSource(){
         return this.parentTypes.length == 0
     }
@@ -346,7 +350,8 @@ export class QPROPApplication extends ReactiveApplication{
         }
     }
 
-    prePropagation(prop : PropagationValue){
+    prePropagation(propArr : Array<any>){
+        let prop        = this.fromPropValArray(propArr)
         let from        = prop.from.tagVal
         if(this.brittle.size == 0){
             this.addToI(from,prop)
@@ -463,7 +468,7 @@ export class QPROPApplication extends ReactiveApplication{
                 }
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
-                        child.prePropagation(this.lastProp)
+                        child.prePropagation(this.lastProp.toArray())
                     })
                 })
             }
