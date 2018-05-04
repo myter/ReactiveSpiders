@@ -635,7 +635,7 @@ export class QPROPActor extends ReactiveActor{
     ////////////////////////////////////////
 
     fromPropValArray(propValArr){
-        return new this.PropagationValue(propValArr[0],propValArr[1],propValArr[2],propValArr[3],propValArr[4])
+        return new this.PropagationValue(new this.libs.PubSubTag(propValArr[0]),propValArr[1],propValArr[2],propValArr[3],propValArr[4])
     }
 
     amSource(){

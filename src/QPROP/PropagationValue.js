@@ -13,7 +13,7 @@ class PropagationValue extends spiders_js_1.SpiderIsolate {
         return "< " + this.from.tagVal + " , " + this.value.toString() + " , " + this.sClocks + " , " + this.fClock + " >";
     }
     toArray() {
-        return [this.from, this.value, this.sClocks, this.fClock, this.isOptimised];
+        return [this.from.tagVal, this.value, this.sClocks, this.fClock, this.isOptimised];
     }
 }
 exports.PropagationValue = PropagationValue;

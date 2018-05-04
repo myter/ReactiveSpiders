@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
+    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="Continues backpressure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/PropagationValue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/PropagationValue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/PropagationValue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/PropagationValue.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +25,7 @@
       <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
+            <state relative-caret-position="420">
               <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
               <folding>
                 <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
@@ -60,12 +48,11 @@
       <file leaf-file-name="PropagationValue.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QPROP/PropagationValue.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="345">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#PropagationValue#0" expanded="true" />
                 <element signature="n#!!block;n#asString#0;n#PropagationValue#0" expanded="true" />
-                <element signature="n#!!block;n#toArray#0;n#PropagationValue#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,8 +61,8 @@
       <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="980" column="59" selection-start-line="980" selection-start-column="59" selection-end-line="980" selection-end-column="68" />
+            <state relative-caret-position="377">
+              <caret line="637" column="79" selection-start-line="637" selection-start-column="79" selection-end-line="637" selection-end-column="79" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
                 <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
@@ -166,7 +153,6 @@
                 <element signature="e#23379#23750#0" expanded="true" />
                 <element signature="e#23822#24092#0" expanded="true" />
                 <element signature="e#23911#24081#0" expanded="true" />
-                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
                 <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
                 <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
                 <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
@@ -222,8 +208,11 @@
                 <element signature="e#33570#34071#0" expanded="true" />
                 <element signature="e#33675#33977#0" expanded="true" />
                 <element signature="e#34161#34373#0" expanded="true" />
+                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
                 <element signature="e#35136#35306#0" expanded="true" />
                 <element signature="e#35200#35283#0" expanded="true" />
+                <element signature="e#35821#35998#0" expanded="true" />
+                <element signature="e#35896#35979#0" expanded="true" />
                 <element signature="e#36132#36215#0" expanded="true" />
                 <element signature="n#!!block;n#newChild#0;n#QPROPActor#0" expanded="true" />
                 <element signature="n#!!block;n#addDependency#0;n#QPROPActor#0" expanded="true" />
@@ -257,8 +246,8 @@
       <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="1116" column="43" lean-forward="true" selection-start-line="1116" selection-start-column="43" selection-end-line="1116" selection-end-column="43" />
+            <state relative-caret-position="421">
+              <caret line="422" column="19" selection-start-line="422" selection-start-column="19" selection-end-line="422" selection-end-column="19" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#FleetData#0" />
@@ -273,7 +262,6 @@
                 <element signature="n#!!block;n#init#0;n#SIDUPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#SIDUPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
-                <element signature="n#QPROPConfigService#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="e#5836#5876#0" expanded="true" />
@@ -288,10 +276,8 @@
                 <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
-                <element signature="n#QPROPDataAccessService#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
-                <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#QPROPDataAccessServiceApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
@@ -426,14 +412,14 @@
         <option value="$PROJECT_DIR$/src/ReactiveApplication.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/test.sh" />
         <option value="$PROJECT_DIR$/src/Signal.ts" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tests/temp.ts" />
-        <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
       </list>
     </option>
@@ -599,7 +585,7 @@
       <workItem from="1525172319296" duration="1655000" />
       <workItem from="1525244340955" duration="23250000" />
       <workItem from="1525282610848" duration="2673000" />
-      <workItem from="1525349864234" duration="17341000" />
+      <workItem from="1525349864234" duration="18036000" />
     </task>
     <task id="LOCAL-00001" summary="Finished usecase benchmarks">
       <created>1525260618031</created>
@@ -846,7 +832,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525441307782</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Switched to Array propagation values">
+      <created>1525444591003</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1525444591003</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Switched to Array propagation values">
+      <created>1525444736518</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1525444736518</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -882,19 +882,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150818000" />
+    <option name="totallyTimeSpent" value="151513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1336" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10831036" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10831036" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32976973" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32976973" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
@@ -970,7 +970,8 @@
     <MESSAGE value="Finished usecase benchmarks" />
     <MESSAGE value="Fixed write after close bug" />
     <MESSAGE value="Fixing Performance issue with Spiders.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Performance issue with Spiders.js" />
+    <MESSAGE value="Switched to Array propagation values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched to Array propagation values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,7 +1019,6 @@
             <element signature="n#!!block;n#init#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
-            <element signature="n#QPROPConfigService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
@@ -1033,10 +1033,8 @@
             <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
-            <element signature="n#QPROPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#QPROPDataAccessServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
@@ -1182,7 +1180,6 @@
             <element signature="e#23379#23750#0" expanded="true" />
             <element signature="e#23822#24092#0" expanded="true" />
             <element signature="e#23911#24081#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
@@ -1238,8 +1235,11 @@
             <element signature="e#33570#34071#0" expanded="true" />
             <element signature="e#33675#33977#0" expanded="true" />
             <element signature="e#34161#34373#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
             <element signature="e#35136#35306#0" expanded="true" />
             <element signature="e#35200#35283#0" expanded="true" />
+            <element signature="e#35821#35998#0" expanded="true" />
+            <element signature="e#35896#35979#0" expanded="true" />
             <element signature="e#36132#36215#0" expanded="true" />
             <element signature="n#!!block;n#newChild#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#addDependency#0;n#QPROPActor#0" expanded="true" />
@@ -1285,7 +1285,6 @@
             <element signature="n#!!block;n#init#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
-            <element signature="n#QPROPConfigService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
@@ -1300,10 +1299,8 @@
             <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
-            <element signature="n#QPROPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#QPROPDataAccessServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
@@ -1449,7 +1446,6 @@
             <element signature="e#23379#23750#0" expanded="true" />
             <element signature="e#23822#24092#0" expanded="true" />
             <element signature="e#23911#24081#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
@@ -1505,8 +1501,11 @@
             <element signature="e#33570#34071#0" expanded="true" />
             <element signature="e#33675#33977#0" expanded="true" />
             <element signature="e#34161#34373#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
             <element signature="e#35136#35306#0" expanded="true" />
             <element signature="e#35200#35283#0" expanded="true" />
+            <element signature="e#35821#35998#0" expanded="true" />
+            <element signature="e#35896#35979#0" expanded="true" />
             <element signature="e#36132#36215#0" expanded="true" />
             <element signature="n#!!block;n#newChild#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#addDependency#0;n#QPROPActor#0" expanded="true" />
@@ -1868,10 +1867,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop200.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="1116" column="43" lean-forward="true" selection-start-line="1116" selection-start-column="43" selection-end-line="1116" selection-end-column="43" />
+        <state relative-caret-position="421">
+          <caret line="422" column="19" selection-start-line="422" selection-start-column="19" selection-end-line="422" selection-end-column="19" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#FleetData#0" />
@@ -1886,7 +1911,6 @@
             <element signature="n#!!block;n#init#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
-            <element signature="n#QPROPConfigService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
@@ -1901,10 +1925,8 @@
             <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
-            <element signature="n#QPROPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#QPROPDataAccessServiceApp#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
@@ -1956,48 +1978,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/PropagationValue.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#PropagationValue#0" expanded="true" />
             <element signature="n#!!block;n#asString#0;n#PropagationValue#0" expanded="true" />
-            <element signature="n#!!block;n#toArray#0;n#PropagationValue#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop200.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="980" column="59" selection-start-line="980" selection-start-column="59" selection-end-line="980" selection-end-column="68" />
+        <state relative-caret-position="377">
+          <caret line="637" column="79" selection-start-line="637" selection-start-column="79" selection-end-line="637" selection-end-column="79" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
@@ -2088,7 +2083,6 @@
             <element signature="e#23379#23750#0" expanded="true" />
             <element signature="e#23822#24092#0" expanded="true" />
             <element signature="e#23911#24081#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
@@ -2144,8 +2138,11 @@
             <element signature="e#33570#34071#0" expanded="true" />
             <element signature="e#33675#33977#0" expanded="true" />
             <element signature="e#34161#34373#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
             <element signature="e#35136#35306#0" expanded="true" />
             <element signature="e#35200#35283#0" expanded="true" />
+            <element signature="e#35821#35998#0" expanded="true" />
+            <element signature="e#35896#35979#0" expanded="true" />
             <element signature="e#36132#36215#0" expanded="true" />
             <element signature="n#!!block;n#newChild#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#addDependency#0;n#QPROPActor#0" expanded="true" />

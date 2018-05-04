@@ -22,6 +22,6 @@ export class PropagationValue extends SpiderIsolate{
     }
 
     toArray(){
-        return [this.from,this.value,this.sClocks,this.fClock,this.isOptimised]
+        return [this.from.tagVal,this.value,this.sClocks,this.fClock,this.isOptimised]
     }
 }
