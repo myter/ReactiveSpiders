@@ -603,13 +603,12 @@ export class QPROPActor extends ReactiveActor{
         this.changeDoneListeners    = []
         this.brittle                = new Map()
         this.psClient               = this.libs.setupPSClient(this.serverAddress,this.serverPort)
-        this.psClient.publish(this,this.ownType)
         this.lastProp               = new this.PropagationValue(this.ownType,null,new Map(),this.clock)
         if(this.amSource()){
             this.lastProp.value = this.invokeStart()
         }
         this.childTypes.forEach((childType : PubSubTag)=>{
-            this.psClient.subscribe(childType).once((childRef : FarRef<QPROPActor>)=>{
+            this.psClient.subscribe(childType).each((childRef : FarRef<QPROPActor>)=>{
                 this.childRefs.push(childRef)
                 if(this.amSource()){
                     this.lastProp.sClocks.set(this.ownType.tagVal,this.clock)
@@ -621,13 +620,14 @@ export class QPROPActor extends ReactiveActor{
             })
         })
         this.parentTypes.forEach((parentType : PubSubTag)=>{
-            this.psClient.subscribe(parentType).once((parentRef : FarRef<QPROPActor>)=>{
+            this.psClient.subscribe(parentType).each((parentRef : FarRef<QPROPActor>)=>{
                 this.parentRefs.push(parentRef)
                 if(this.gotAllParents()){
                     this.flushParentMessages()
                 }
             })
         })
+        this.psClient.publish(this,this.ownType)
     }
 
     ////////////////////////////////////////

@@ -497,13 +497,12 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
         this.changeDoneListeners = [];
         this.brittle = new Map();
         this.psClient = this.libs.setupPSClient(this.serverAddress, this.serverPort);
-        this.psClient.publish(this, this.ownType);
         this.lastProp = new this.PropagationValue(this.ownType, null, new Map(), this.clock);
         if (this.amSource()) {
             this.lastProp.value = this.invokeStart();
         }
         this.childTypes.forEach((childType) => {
-            this.psClient.subscribe(childType).once((childRef) => {
+            this.psClient.subscribe(childType).each((childRef) => {
                 this.childRefs.push(childRef);
                 if (this.amSource()) {
                     this.lastProp.sClocks.set(this.ownType.tagVal, this.clock);
@@ -515,13 +514,14 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
             });
         });
         this.parentTypes.forEach((parentType) => {
-            this.psClient.subscribe(parentType).once((parentRef) => {
+            this.psClient.subscribe(parentType).each((parentRef) => {
                 this.parentRefs.push(parentRef);
                 if (this.gotAllParents()) {
                     this.flushParentMessages();
                 }
             });
         });
+        this.psClient.publish(this, this.ownType);
     }
     ////////////////////////////////////////
     // Helper Functions                   //
