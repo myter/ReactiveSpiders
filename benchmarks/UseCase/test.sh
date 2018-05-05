@@ -1,10 +1,10 @@
 for i in {1..10}
 do
-	node RunUseCase.js  app  &
-	node RunUseCase.js  data  &
-	node RunUseCase.js  config  &
-	node RunUseCase.js  driving &
-	node RunUseCase.js  geo  &
-	node RunUseCase.js  dash
+	node RunUseCaseApp.js  app  &
+	node RunUseCaseApp.js  data  &
+	node RunUseCaseApp.js  config  &
+	node RunUseCaseApp.js  driving &
+	node RunUseCaseApp.js  geo  &
+	node RunUseCaseApp.js  dash
 	 sleep 5
 done
