@@ -6,10 +6,6 @@ import {DerivedSignal, Signal} from "../Signal";
 import {PropagationValue} from "./PropagationValue";
 import {GlitchAlgorithm} from "../GlitchAlgorithm";
 
-class LocalDependencyGraph extends SpiderIsolate{
-
-}
-
 export class QPROPApplication{
     //Spiders.js related
     thisDir
@@ -445,7 +441,7 @@ export class QPROPApplication{
                         })
                     })
                 }
-                this.lastProp   = new this.PropagationValue(this.ownType,signal.getState(),clocks,this.clock)
+                this.lastProp   = new this.PropagationValue(this.ownType,signal.getState(),clocks,this.clock,true)
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPApplication>)=>{
                         child.prePropagation(JSON.stringify(this.lastProp.toArray()))

@@ -1,10 +1,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-const spiders_js_1 = require("spiders.js");
 const ReactiveMirror_1 = require("../ReactiveMirror");
 const Signal_1 = require("../Signal");
 const PropagationValue_1 = require("./PropagationValue");
-class LocalDependencyGraph extends spiders_js_1.SpiderIsolate {
-}
 class QPROPApplication {
     constructor(host, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         this.host = host;
@@ -379,7 +376,7 @@ class QPROPApplication {
                         });
                     });
                 }
-                this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock);
+                this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock, true);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
                         child.prePropagation(JSON.stringify(this.lastProp.toArray()));
