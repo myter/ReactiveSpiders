@@ -50,7 +50,7 @@ class LocalDependencyGraph extends spiders_js_1.SpiderIsolate {
 }
 class QPROPApplication extends spiders_js_1.Application {
     constructor(ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super();
+        super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
         this.thisDir = __dirname;
         this.ownType = ownType;
         this.parentTypes = parentTypes;

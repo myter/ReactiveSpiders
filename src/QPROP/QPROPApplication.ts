@@ -1,5 +1,5 @@
 import {ReactiveActor} from "../ReactiveActor";
-import {Actor, Application, FarRef, PSClient, PubSubTag, SpiderIsolate} from "spiders.js";
+import {Actor, Application, FarRef, PSClient, PubSubTag, SpiderActorMirror, SpiderIsolate} from "spiders.js";
 import {DistGlitchPrevention} from "../DistGlitchPrevention";
 import {_REMOTE_CHANGE_, ReactiveMirror} from "../ReactiveMirror";
 import {DerivedSignal, Signal} from "../Signal";
@@ -97,7 +97,7 @@ export class QPROPApplication extends Application{
     publishedSignalId           : string
 
     constructor(ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super()
+        super(new SpiderActorMirror(),myAddress,myPort)
         this.thisDir            = __dirname
         this.ownType            = ownType
         this.parentTypes        = parentTypes
