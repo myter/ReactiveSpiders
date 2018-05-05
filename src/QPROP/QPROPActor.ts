@@ -348,8 +348,8 @@ export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
         }
     }
 
-    prePropagation(propArr : Array<any>){
-        let prop        = this.fromPropValArray(propArr)
+    prePropagation(propArr : string){
+        let prop        = this.fromPropValArray(JSON.parse(propArr))
         let from        = prop.from.tagVal
         if(this.brittle.size == 0){
             this.addToI(from,prop)
@@ -457,16 +457,13 @@ export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
                         })
                     })
                 }
-                if(signal.getState){
 
-                }
-                else{
-
-                }
                 this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
+                //TODO TEMP
+                this.lastProp   = new this.PropagationValue(this.ownType,signal.getState(),clocks,this.clock)
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
-                        child.prePropagation(this.lastProp.toArray())
+                        child.prePropagation(JSON.stringify(this.lastProp.toArray()))
                     })
                 })
             }

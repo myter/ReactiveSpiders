@@ -21,6 +21,12 @@ class FleetData extends Signal_1.Signal {
     equals(otherFleetDataSignal) {
         return this.constructionTime == otherFleetDataSignal.constructionTime;
     }
+    getState() {
+        return this.constructionTime;
+    }
+    setState(s) {
+        this.constructionTime = s;
+    }
 }
 __decorate([
     Signal_1.mutating
@@ -174,11 +180,14 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Config");
         }
-        else {
-            setTimeout(() => {
-                this.update(signal);
-            }, 1000);
-        }
+        /*else{
+            setTimeout(()=>{
+                this.update(signal)
+            },1000)
+        }*/
+        setTimeout(() => {
+            this.update(signal);
+        }, 500);
     }
     snapMem() {
         if (!this.close) {
@@ -278,11 +287,14 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Data");
         }
-        else {
-            setTimeout(() => {
-                this.update(signal);
-            }, 1000);
-        }
+        /*else{
+            setTimeout(()=>{
+                this.update(signal)
+            },1000)
+        }*/
+        setTimeout(() => {
+            this.update(signal);
+        }, 500);
     }
     snapMem() {
         if (!this.close) {

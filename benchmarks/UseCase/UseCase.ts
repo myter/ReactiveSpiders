@@ -20,6 +20,14 @@ class FleetData extends Signal{
     equals(otherFleetDataSignal : FleetData){
         return this.constructionTime == otherFleetDataSignal.constructionTime
     }
+
+    getState(){
+        return this.constructionTime
+    }
+
+    setState(s){
+        this.constructionTime = s
+    }
 }
 
 export class UseCaseAdmitter extends SIDUPAdmitter{
@@ -208,11 +216,14 @@ export class QPROPConfigService extends QPROPActor{
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Config")
         }
-        else{
+        /*else{
             setTimeout(()=>{
                 this.update(signal)
             },1000)
-        }
+        }*/
+        setTimeout(()=>{
+            this.update(signal)
+        },500)
     }
 
     snapMem(){
@@ -341,11 +352,14 @@ export class QPROPDataAccessService extends QPROPActor{
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Data")
         }
-        else{
+        /*else{
             setTimeout(()=>{
                 this.update(signal)
             },1000)
-        }
+        }*/
+        setTimeout(()=>{
+            this.update(signal)
+        },500)
     }
 
     snapMem(){
