@@ -108,7 +108,6 @@ export class QPROPApplication extends Application{
         this.localGraph           = new LocalDependencyGraph()
         this.DerivedSignal        = DerivedSignal
         this._REMOTE_CHANGE_      = _REMOTE_CHANGE_
-        this.init()
     }
 
     init(){
