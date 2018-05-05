@@ -655,7 +655,7 @@ export class QPROPApplication extends Application{
 
     sourcesChanged(sources : Array<Signal>){
         this.localGraph.updateSources(sources)
-        sources.forEach(this.internalSignalChanged)
+        sources.forEach(this.internalSignalChanged.bind(this))
         let depIds  = []
         let deps    = []
         sources.forEach((source)=>{

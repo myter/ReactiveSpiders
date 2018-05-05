@@ -558,7 +558,7 @@ class QPROPApplication extends spiders_js_1.Application {
     }
     sourcesChanged(sources) {
         this.localGraph.updateSources(sources);
-        sources.forEach(this.internalSignalChanged);
+        sources.forEach(this.internalSignalChanged.bind(this));
         let depIds = [];
         let deps = [];
         sources.forEach((source) => {
