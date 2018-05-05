@@ -3,16 +3,85 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase2.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/arraybuffer.slice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/arraybuffer.slice/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/engine.io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/polling-xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/polling-xhr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/lib/transports/websocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-parser/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/engine.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/engine.io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/lib/transports/polling.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/lib/transports/polling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/engine.io/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-adapter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-adapter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-adapter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-adapter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.slim.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/binary.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/binary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/is-buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/is-buffer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/isarray/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ultron/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ultron/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ultron/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ultron/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ultron/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ultron/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/BufferUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/BufferUtil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/ErrorCodes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/ErrorCodes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Extensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/PerMessageDeflate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/PerMessageDeflate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Receiver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Receiver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Sender.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Sender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/Validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/Validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/WebSocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/WebSocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/WebSocketServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/WebSocketServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlhttprequest-ssl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor2.ts" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+              <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
               <folding>
                 <element signature="e#0#382#0" expanded="true" />
                 <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
@@ -42,11 +111,180 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QPROPApplication.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="98" column="114" selection-start-line="98" selection-start-column="114" selection-end-line="98" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="n#!!block;n#newSource#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="n#!!block;n#updateSource#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="n#!!block;n#updateSources#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="n#!!block;n#newNode#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="n#!!block;n#addDependency#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="n#!!block;n#getDependants#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="e#2326#2386#0" expanded="true" />
+                <element signature="n#!!block;n#getParents#0;n#LocalDependencyGraph#0" expanded="true" />
+                <element signature="e#2513#2563#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#4823#4905#0" expanded="true" />
+                <element signature="e#5904#6379#0" expanded="true" />
+                <element signature="e#5997#6368#0" expanded="true" />
+                <element signature="e#6440#6716#0" expanded="true" />
+                <element signature="e#6535#6705#0" expanded="true" />
+                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#amSource#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#amSink#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllStarts#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllChildren#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllParents#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#flushChildMessages#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#7874#7908#0" expanded="true" />
+                <element signature="n#!!block;n#sendToAllParents#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#flushParentMessages#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#8188#8222#0" expanded="true" />
+                <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#8431#8509#0" expanded="true" />
+                <element signature="n#!!block;n#flushReady#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#8710#8745#0" expanded="true" />
+                <element signature="n#!!block;n#nextChange#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#oneOf#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#guard#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#getAllArgs#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#9258#9518#0" expanded="true" />
+                <element signature="e#9354#9431#0" expanded="true" />
+                <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#9729#9940#0" expanded="true" />
+                <element signature="n#!!block;n#getSourcesFor#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#10098#10268#0" expanded="true" />
+                <element signature="n#!!block;n#getMatchArgs#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#10424#11151#0" expanded="true" />
+                <element signature="e#10520#11033#0" expanded="true" />
+                <element signature="e#10583#11018#0" expanded="true" />
+                <element signature="e#10667#10999#0" expanded="true" />
+                <element signature="e#10817#10976#0" expanded="true" />
+                <element signature="e#11095#11140#0" expanded="true" />
+                <element signature="n#!!block;n#addToI#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#11963#12177#0" expanded="true" />
+                <element signature="e#12390#12543#0" expanded="true" />
+                <element signature="e#12755#12916#0" expanded="true" />
+                <element signature="e#12835#12897#0" expanded="true" />
+                <element signature="e#13092#13278#0" expanded="true" />
+                <element signature="e#13171#13259#0" expanded="true" />
+                <element signature="n#!!block;n#getStart#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#13464#13609#0" expanded="true" />
+                <element signature="e#13540#13594#0" expanded="true" />
+                <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#14333#14677#0" expanded="true" />
+                <element signature="e#14566#14662#0" expanded="true" />
+                <element signature="e#14857#15878#0" expanded="true" />
+                <element signature="e#14955#15867#0" expanded="true" />
+                <element signature="e#15065#15467#0" expanded="true" />
+                <element signature="n#!!block;n#newPropagation#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#16077#16164#0" expanded="true" />
+                <element signature="e#16423#16882#0" expanded="true" />
+                <element signature="e#16528#16830#0" expanded="true" />
+                <element signature="e#16972#17184#0" expanded="true" />
+                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#17947#18117#0" expanded="true" />
+                <element signature="e#18011#18094#0" expanded="true" />
+                <element signature="e#18279#18472#0" expanded="true" />
+                <element signature="e#18360#18453#0" expanded="true" />
+                <element signature="e#18606#18689#0" expanded="true" />
+                <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#19347#19407#0" expanded="true" />
+                <element signature="e#19560#20776#0" expanded="true" />
+                <element signature="e#19646#20761#0" expanded="true" />
+                <element signature="e#19947#20742#0" expanded="true" />
+                <element signature="e#20180#20553#0" expanded="true" />
+                <element signature="e#20326#20526#0" expanded="true" />
+                <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#20911#21141#0" expanded="true" />
+                <element signature="n#!!block;n#lift#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="e#21613#22004#0" expanded="true" />
+                <element signature="e#21759#21964#0" expanded="true" />
+                <element signature="n#!!block;n#liftApp#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="n#!!block;n#containsSignal#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="e#22171#22723#0" expanded="true" />
+                <element signature="n#!!block;n#updateNode#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="e#22864#23042#0" expanded="true" />
+                <element signature="e#23190#23251#0" expanded="true" />
+                <element signature="n#!!block;n#newSource#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="n#!!block;n#sourceChanged#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="e#23538#23599#0" expanded="true" />
+                <element signature="n#!!block;n#sourcesChanged#0;n#QPROPActor2#0" expanded="true" />
+                <element signature="e#23836#24121#0" expanded="true" />
+                <element signature="e#23945#24110#0" expanded="true" />
+                <element signature="e#24151#24212#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UseCaseApp.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="359" column="74" selection-start-line="359" selection-start-column="74" selection-end-line="359" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+                <element signature="n#FleetData#0" />
+                <element signature="n#QPROPConfigService#0" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="n#QPROPDataAccessService#0" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#QPROPGeoService#0" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPGeoService#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPGeoService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
+                <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
+                <element signature="n#QPROPDrivingService#0" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPDrivingService#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPDrivingService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
+                <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
+                <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
+                <element signature="n#UseCaseApp#0" />
+                <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
+                <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
+                <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunUseCaseApp.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#157#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +312,7 @@
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop200.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -169,7 +407,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.waitingChanges</find>
       <find>this.readyR</find>
       <find>updateR</find>
       <find>incM</find>
@@ -199,10 +436,12 @@
       <find>QPROPActor</find>
       <find>newSource</find>
       <find>this.libs.refle</find>
+      <find>QPROPActor2</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
       <replace>QPROPActor2</replace>
+      <replace>QPROPApplication</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -252,6 +491,9 @@
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor2.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.ts" />
       </list>
     </option>
   </component>
@@ -416,14 +658,7 @@
       <workItem from="1525244340955" duration="23250000" />
       <workItem from="1525282610848" duration="2673000" />
       <workItem from="1525349864234" duration="24529000" />
-      <workItem from="1525520564827" duration="3344000" />
-    </task>
-    <task id="LOCAL-00001" summary="Finished usecase benchmarks">
-      <created>1525260618031</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1525260618031</updated>
+      <workItem from="1525520564827" duration="4826000" />
     </task>
     <task id="LOCAL-00002" summary="Fixed write after close bug">
       <created>1525264353712</created>
@@ -761,7 +996,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525523755157</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Switched to latest spiders.js version (new socket.io version)">
+      <created>1525525011765</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1525525011766</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -797,7 +1039,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161350000" />
+    <option name="totallyTimeSpent" value="162832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
@@ -874,10 +1116,12 @@
         <option value="$PROJECT_DIR$/benchmarks/General/writing.js.map" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.js" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.js.map" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor2.js" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor2.js.map" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase2.js.map" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase2.js" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js.map" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js.map" />
       </list>
     </option>
   </component>
@@ -900,7 +1144,8 @@
     <MESSAGE value="Reverted back to regular propagation values" />
     <MESSAGE value="Array prop val obvious performance impact" />
     <MESSAGE value="Added complete base implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added complete base implementation" />
+    <MESSAGE value="Switched to latest spiders.js version (new socket.io version)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched to latest spiders.js version (new socket.io version)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,37 +1153,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
-            <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#16521#16708#0" expanded="true" />
-            <element signature="e#16596#16689#0" expanded="true" />
-            <element signature="e#16842#16925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SID-UP/Mirror.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DistGlitchPrevention.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NoDistGlitch.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1170,6 +1384,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="n#!!block;n#send#0;n#SpiderActorMirror#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,7 +1571,49 @@
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop200.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor2.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2865">
+          <caret line="573" column="44" selection-start-line="573" selection-start-column="44" selection-end-line="573" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
+            <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
+            <element signature="n#!!block;n#newNode#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#16600#16787#0" expanded="true" />
+            <element signature="e#16675#16768#0" expanded="true" />
+            <element signature="e#16921#17004#0" expanded="true" />
+            <element signature="n#!!block;n#addSources#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#22041#22432#0" expanded="true" />
+            <element signature="n#!!block;n#containsSignal#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#22607#23159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#382#0" expanded="true" />
+            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+            <element signature="e#524#2236#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1418,45 +1677,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor2.ts">
+    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2865">
-          <caret line="573" column="44" selection-start-line="573" selection-start-column="44" selection-end-line="573" selection-end-column="44" />
+        <state relative-caret-position="1">
+          <caret line="98" column="114" selection-start-line="98" selection-start-column="114" selection-end-line="98" selection-end-column="114" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
-            <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#newSource#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#updateSource#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#updateSources#0;n#LocalDependencyGraph#0" expanded="true" />
             <element signature="n#!!block;n#newNode#0;n#LocalDependencyGraph#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#16600#16787#0" expanded="true" />
-            <element signature="e#16675#16768#0" expanded="true" />
-            <element signature="e#16921#17004#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#22041#22432#0" expanded="true" />
-            <element signature="n#!!block;n#containsSignal#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#22607#23159#0" expanded="true" />
+            <element signature="n#!!block;n#addDependency#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#getDependants#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="e#2326#2386#0" expanded="true" />
+            <element signature="n#!!block;n#getParents#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="e#2513#2563#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#4823#4905#0" expanded="true" />
+            <element signature="e#5904#6379#0" expanded="true" />
+            <element signature="e#5997#6368#0" expanded="true" />
+            <element signature="e#6440#6716#0" expanded="true" />
+            <element signature="e#6535#6705#0" expanded="true" />
+            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#amSource#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#amSink#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllStarts#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllChildren#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllParents#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#flushChildMessages#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#7874#7908#0" expanded="true" />
+            <element signature="n#!!block;n#sendToAllParents#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#flushParentMessages#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#8188#8222#0" expanded="true" />
+            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#8431#8509#0" expanded="true" />
+            <element signature="n#!!block;n#flushReady#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#8710#8745#0" expanded="true" />
+            <element signature="n#!!block;n#nextChange#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#oneOf#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#guard#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#getAllArgs#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#9258#9518#0" expanded="true" />
+            <element signature="e#9354#9431#0" expanded="true" />
+            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#9729#9940#0" expanded="true" />
+            <element signature="n#!!block;n#getSourcesFor#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#10098#10268#0" expanded="true" />
+            <element signature="n#!!block;n#getMatchArgs#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#10424#11151#0" expanded="true" />
+            <element signature="e#10520#11033#0" expanded="true" />
+            <element signature="e#10583#11018#0" expanded="true" />
+            <element signature="e#10667#10999#0" expanded="true" />
+            <element signature="e#10817#10976#0" expanded="true" />
+            <element signature="e#11095#11140#0" expanded="true" />
+            <element signature="n#!!block;n#addToI#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#11963#12177#0" expanded="true" />
+            <element signature="e#12390#12543#0" expanded="true" />
+            <element signature="e#12755#12916#0" expanded="true" />
+            <element signature="e#12835#12897#0" expanded="true" />
+            <element signature="e#13092#13278#0" expanded="true" />
+            <element signature="e#13171#13259#0" expanded="true" />
+            <element signature="n#!!block;n#getStart#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#13464#13609#0" expanded="true" />
+            <element signature="e#13540#13594#0" expanded="true" />
+            <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#14333#14677#0" expanded="true" />
+            <element signature="e#14566#14662#0" expanded="true" />
+            <element signature="e#14857#15878#0" expanded="true" />
+            <element signature="e#14955#15867#0" expanded="true" />
+            <element signature="e#15065#15467#0" expanded="true" />
+            <element signature="n#!!block;n#newPropagation#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#16077#16164#0" expanded="true" />
+            <element signature="e#16423#16882#0" expanded="true" />
+            <element signature="e#16528#16830#0" expanded="true" />
+            <element signature="e#16972#17184#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#17947#18117#0" expanded="true" />
+            <element signature="e#18011#18094#0" expanded="true" />
+            <element signature="e#18279#18472#0" expanded="true" />
+            <element signature="e#18360#18453#0" expanded="true" />
+            <element signature="e#18606#18689#0" expanded="true" />
+            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#19347#19407#0" expanded="true" />
+            <element signature="e#19560#20776#0" expanded="true" />
+            <element signature="e#19646#20761#0" expanded="true" />
+            <element signature="e#19947#20742#0" expanded="true" />
+            <element signature="e#20180#20553#0" expanded="true" />
+            <element signature="e#20326#20526#0" expanded="true" />
+            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#20911#21141#0" expanded="true" />
+            <element signature="n#!!block;n#lift#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="e#21613#22004#0" expanded="true" />
+            <element signature="e#21759#21964#0" expanded="true" />
+            <element signature="n#!!block;n#liftApp#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="n#!!block;n#containsSignal#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="e#22171#22723#0" expanded="true" />
+            <element signature="n#!!block;n#updateNode#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="e#22864#23042#0" expanded="true" />
+            <element signature="e#23190#23251#0" expanded="true" />
+            <element signature="n#!!block;n#newSource#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="n#!!block;n#sourceChanged#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="e#23538#23599#0" expanded="true" />
+            <element signature="n#!!block;n#sourcesChanged#0;n#QPROPActor2#0" expanded="true" />
+            <element signature="e#23836#24121#0" expanded="true" />
+            <element signature="e#23945#24110#0" expanded="true" />
+            <element signature="e#24151#24212#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+        <state relative-caret-position="389">
+          <caret line="359" column="74" selection-start-line="359" selection-start-column="74" selection-end-line="359" selection-end-column="74" />
           <folding>
-            <element signature="e#0#382#0" expanded="true" />
-            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
-            <element signature="e#524#2236#0" expanded="true" />
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#FleetData#0" />
+            <element signature="n#QPROPConfigService#0" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="n#QPROPDataAccessService#0" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#QPROPGeoService#0" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
+            <element signature="n#QPROPDrivingService#0" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="n#UseCaseApp#0" />
+            <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="127">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#157#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
