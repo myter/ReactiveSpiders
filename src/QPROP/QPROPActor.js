@@ -385,6 +385,10 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                         });
                     });
                 }
+                if (signal.getState) {
+                }
+                else {
+                }
                 this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {

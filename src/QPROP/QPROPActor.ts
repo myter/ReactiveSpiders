@@ -457,6 +457,12 @@ export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
                         })
                     })
                 }
+                if(signal.getState){
+
+                }
+                else{
+
+                }
                 this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
