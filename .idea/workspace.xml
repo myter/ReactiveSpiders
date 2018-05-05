@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,8 +41,8 @@
       <file leaf-file-name="QPROPApplication.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="499" column="114" selection-start-line="499" selection-start-column="114" selection-end-line="499" selection-end-column="114" />
+            <state relative-caret-position="252">
+              <caret line="499" column="108" selection-start-line="499" selection-start-column="108" selection-end-line="499" selection-end-column="108" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#LocalDependencyGraph#0" expanded="true" />
@@ -126,8 +131,8 @@
       <file leaf-file-name="UseCaseApp.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1052">
-              <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+            <state relative-caret-position="15">
+              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
@@ -137,10 +142,11 @@
                 <element signature="n#!!block;n#init#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="e#5818#5858#0" expanded="true" />
-                <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="e#6321#6372#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#QPROPGeoService#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPGeoService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPGeoService#0" expanded="true" />
@@ -471,21 +477,7 @@
       <workItem from="1525244340955" duration="23250000" />
       <workItem from="1525282610848" duration="2673000" />
       <workItem from="1525349864234" duration="24529000" />
-      <workItem from="1525520564827" duration="9075000" />
-    </task>
-    <task id="LOCAL-00018" summary="Fixing Performance issue with Spiders.js">
-      <created>1525283002402</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1525283002402</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Fixing Performance issue with Spiders.js">
-      <created>1525283392982</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1525283392982</updated>
+      <workItem from="1525520564827" duration="9262000" />
     </task>
     <task id="LOCAL-00020" summary="Fixing Performance issue with Spiders.js">
       <created>1525353730132</created>
@@ -816,7 +808,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525532468413</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Stringified prop val">
+      <created>1525532530278</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1525532530278</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Stringified prop val">
+      <created>1525532673816</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1525532673816</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -852,7 +858,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167081000" />
+    <option name="totallyTimeSpent" value="167268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
@@ -1470,17 +1476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/PropagationValue.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#PropagationValue#0" expanded="true" />
-            <element signature="n#!!block;n#asString#0;n#PropagationValue#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Signal.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1506,10 +1501,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/QPROP/PropagationValue.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#PropagationValue#0" expanded="true" />
+            <element signature="n#!!block;n#asString#0;n#PropagationValue#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1052">
-          <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+        <state relative-caret-position="15">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
@@ -1519,10 +1525,11 @@
             <element signature="n#!!block;n#init#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5818#5858#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="e#6321#6372#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#QPROPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPGeoService#0" expanded="true" />
@@ -1548,8 +1555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="499" column="114" selection-start-line="499" selection-start-column="114" selection-end-line="499" selection-end-column="114" />
+        <state relative-caret-position="252">
+          <caret line="499" column="108" selection-start-line="499" selection-start-column="108" selection-end-line="499" selection-end-column="108" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#LocalDependencyGraph#0" expanded="true" />

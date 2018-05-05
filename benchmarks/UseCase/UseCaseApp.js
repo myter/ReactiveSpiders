@@ -74,7 +74,7 @@ class QPROPConfigServiceApp extends spiders_js_1.Application {
         else {
             setTimeout(() => {
                 this.update(signal);
-            }, 500);
+            }, 1000);
         }
     }
     snapMem() {
@@ -131,7 +131,7 @@ class QPROPDataAccessServiceApp extends spiders_js_1.Application {
         else {
             setTimeout(() => {
                 this.update(signal);
-            }, 500);
+            }, 1000);
         }
     }
     snapMem() {
