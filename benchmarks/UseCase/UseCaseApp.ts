@@ -91,7 +91,7 @@ export class QPROPConfigServiceApp extends Application{
         else{
             setTimeout(()=>{
                 this.update(signal)
-            },1000)
+            },500)
         }
     }
 
@@ -164,7 +164,7 @@ export class QPROPDataAccessServiceApp extends Application{
         else{
             setTimeout(()=>{
                 this.update(signal)
-            },1000)
+            },500)
         }
     }
 
