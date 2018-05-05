@@ -45,12 +45,6 @@ class DerivedSignal extends Signal {
     equals(otherDerived) {
         return this.lastVal == otherDerived.lastVal;
     }
-    getState() {
-        return this.lastVal;
-    }
-    setState(newState) {
-        this.lastVal = newState;
-    }
 }
 exports.DerivedSignal = DerivedSignal;
 let scope = new spiders_js_1.LexScope();

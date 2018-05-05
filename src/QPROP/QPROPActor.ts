@@ -974,13 +974,7 @@ export class QPROPActor extends ReactiveActor{
                         })
                     })
                 }
-                if((signal as any).getState){
-                    //TODO what if node dynamically joins, how will it get un-optimised (i.e. real signal object ? )
-                    this.lastProp   = new this.PropagationValue(this.ownType,(signal as any).getState(),clocks,this.clock,true)
-                }
-                else{
-                    this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
-                }
+                this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
                         child.prePropagation(this.lastProp.toArray())

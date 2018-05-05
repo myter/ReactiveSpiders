@@ -20,14 +20,6 @@ class FleetData extends Signal{
     equals(otherFleetDataSignal : FleetData){
         return this.constructionTime == otherFleetDataSignal.constructionTime
     }
-
-    getState(){
-        return this.constructionTime
-    }
-
-    setState(newState){
-        this.constructionTime = newState
-    }
 }
 
 export class UseCaseAdmitter extends SIDUPAdmitter{
@@ -587,14 +579,14 @@ export class QPROPGeoService extends QPROPActor{
     start(imp){
         console.log("Geo ready")
         let propagated = 0
-        return this.libs.lift((fleetData)=>{
+        return this.libs.lift((fleetData : FleetData)=>{
             propagated++
             if(propagated == this.totalVals / 2){
                 this.close = true
                 this.memWriter.end()
                 this.averageMem(this.csvFileName,this.rate,"Geo")
             }
-            return fleetData
+            return fleetData.constructionTime
         })(imp)
     }
 
@@ -743,7 +735,7 @@ export class QPROPDrivingService extends QPROPActor{
                 this.memWriter.end()
                 this.averageMem(this.csvFileName,this.rate,"Driving")
             }
-            return data
+            return geo
         })(data,geo)
     }
 
@@ -964,7 +956,7 @@ export class QPROPDashboardService extends QPROPActor{
                 }
                 let timeToPropagate
                 if(lastDriving != driving){
-                    timeToPropagate = Date.now() - driving.constructionTime
+                    timeToPropagate = Date.now() - driving
                 }
                 else{
                     timeToPropagate = Date.now() - config.constructionTime

@@ -21,12 +21,6 @@ class FleetData extends Signal_1.Signal {
     equals(otherFleetDataSignal) {
         return this.constructionTime == otherFleetDataSignal.constructionTime;
     }
-    getState() {
-        return this.constructionTime;
-    }
-    setState(newState) {
-        this.constructionTime = newState;
-    }
 }
 __decorate([
     Signal_1.mutating
@@ -475,7 +469,7 @@ class QPROPGeoService extends QPROPActor_1.QPROPActor {
                 this.memWriter.end();
                 this.averageMem(this.csvFileName, this.rate, "Geo");
             }
-            return fleetData;
+            return fleetData.constructionTime;
         })(imp);
     }
     snapMem() {
@@ -591,7 +585,7 @@ class QPROPDrivingService extends QPROPActor_1.QPROPActor {
                 this.memWriter.end();
                 this.averageMem(this.csvFileName, this.rate, "Driving");
             }
-            return data;
+            return geo;
         })(data, geo);
     }
     snapMem() {
@@ -767,7 +761,7 @@ class QPROPDashboardService extends QPROPActor_1.QPROPActor {
                 }
                 let timeToPropagate;
                 if (lastDriving != driving) {
-                    timeToPropagate = Date.now() - driving.constructionTime;
+                    timeToPropagate = Date.now() - driving;
                 }
                 else {
                     timeToPropagate = Date.now() - config.constructionTime;
