@@ -7,62 +7,7 @@ import {PropagationValue} from "./PropagationValue";
 import {GlitchAlgorithm} from "../GlitchAlgorithm";
 
 class LocalDependencyGraph extends SpiderIsolate{
-    nodes           : Map<string,Signal>
-    sources         : Array<string>
-    dependencies    : Map<string,Array<string>>
-    parents         : Map<string,Array<string>>
 
-    constructor(){
-        super()
-        this.nodes          = new Map()
-        this.sources        = []
-        this.dependencies   = new Map()
-        this.parents        = new Map()
-    }
-
-    newSource(source : Signal){
-        this.sources.push(source.id)
-        this.nodes.set(source.id,source)
-        this.dependencies.set(source.id,[])
-        this.parents.set(source.id,[])
-    }
-
-    updateSource(source : Signal){
-        this.nodes.set(source.id,source)
-    }
-
-    updateSources(sources : Array<Signal>){
-        sources.forEach(this.updateSource.bind(this))
-    }
-
-    newNode(node : DerivedSignal){
-        this.nodes.set(node.id,node)
-        this.dependencies.set(node.id,[])
-        this.parents.set(node.id,[])
-    }
-
-    addDependency(fromId : string,toId : string){
-        this.dependencies.get(toId).push(fromId)
-        this.parents.get(fromId).push(toId)
-    }
-
-    getDependants(forId : string) : Array<Signal>{
-        if(!this.dependencies.has(forId)){
-            return []
-        }
-        else{
-            return this.dependencies.get(forId).map((depId : string)=>{
-                return this.nodes.get(depId)
-            })
-
-        }
-    }
-
-    getParents(forId : string) : Array<Signal>{
-        return this.parents.get(forId).map((pId : string)=>{
-            return this.nodes.get(pId)
-        })
-    }
 }
 
 export class QPROPApplication{
@@ -106,9 +51,12 @@ export class QPROPApplication{
         this.serverAddress      = psServerAddress
         this.serverPort         = psServerPort
         this.PropagationValue   = PropagationValue
-        this.localGraph           = new LocalDependencyGraph()
         this.DerivedSignal        = DerivedSignal
         this._REMOTE_CHANGE_      = _REMOTE_CHANGE_
+        this.nodes          = new Map()
+        this.sources        = []
+        this.dependencies   = new Map()
+        this.parents        = new Map()
     }
 
     init(){
@@ -547,10 +495,10 @@ export class QPROPApplication{
                         this.parentRefs.push(newParentRef)
                         this.I.set(toParent.tagVal,[])
                         this.inputSignals.forEach((iSignal)=>{
-                            let deps = this.localGraph.getDependants(iSignal.id)
+                            let deps = this.getDependants(iSignal.id)
                             deps.forEach((dependant : Signal)=>{
-                                this.localGraph.newSource(lastProp.value);
-                                this.localGraph.addDependency(dependant.id,lastProp.value.id)
+                                this.newSource(lastProp.value);
+                                this.addDependencyG(dependant.id,lastProp.value.id)
                             })
                         })
                         this.inputSignals.set(toParent.tagVal,lastProp.value)
@@ -580,7 +528,6 @@ export class QPROPApplication{
 
     //TODO TEMP STUFF FOR OPTI
 
-    localGraph              : LocalDependencyGraph
     DerivedSignal
     _REMOTE_CHANGE_         : string
 
@@ -591,10 +538,10 @@ export class QPROPApplication{
     lift(f){
         return (... args)=>{
             let returnSig = new this.DerivedSignal(f,this)
-            this.localGraph.newNode(returnSig)
+            this.newNode(returnSig)
             args.forEach((arg,index)=>{
                 if(arg.isSignal){
-                    this.localGraph.addDependency(returnSig.id,arg.id)
+                    this.addDependencyG(returnSig.id,arg.id)
                 }
                 else{
                     //TODO
@@ -627,7 +574,7 @@ export class QPROPApplication{
     }
 
     private updateNode(node : DerivedSignal){
-        let parentValues = this.localGraph.getParents(node.id).map((parent : Signal)=>{
+        let parentValues = this.getParents(node.id).map((parent : Signal)=>{
             if(parent.isDerived){
                 return (parent as DerivedSignal).lastVal
             }
@@ -637,30 +584,30 @@ export class QPROPApplication{
         })
         node.update(parentValues)
         this.internalSignalChanged(node)
-        this.localGraph.getDependants(node.id).forEach((dep : Signal)=>{
+        this.getDependants(node.id).forEach((dep : Signal)=>{
             this.updateNode(dep as DerivedSignal)
         })
     }
 
     newSource(signal : Signal){
-        this.localGraph.newSource(signal)
+        this.newSourceG(signal)
     }
 
     sourceChanged(source : Signal){
-        this.localGraph.updateSource(source)
+        this.updateSource(source)
         this.internalSignalChanged(source)
-        this.localGraph.getDependants(source.id).forEach((dep : Signal)=>{
+        this.getDependants(source.id).forEach((dep : Signal)=>{
             this.updateNode(dep as DerivedSignal)
         })
     }
 
     sourcesChanged(sources : Array<Signal>){
-        this.localGraph.updateSources(sources)
+        this.updateSources(sources)
         sources.forEach(this.internalSignalChanged.bind(this))
         let depIds  = []
         let deps    = []
         sources.forEach((source)=>{
-            let toAdd = this.localGraph.getDependants(source.id)
+            let toAdd = this.getDependants(source.id)
             toAdd.forEach((dep : Signal)=>{
                 if(!((depIds as any).includes(dep.id))){
                     deps.push(dep)
@@ -670,6 +617,58 @@ export class QPROPApplication{
         })
         deps.forEach((dep)=>{
             this.updateNode(dep as DerivedSignal)
+        })
+    }
+
+
+    //Dependency graph
+
+    nodes           : Map<string,Signal>
+    sources         : Array<string>
+    dependencies    : Map<string,Array<string>>
+    parents         : Map<string,Array<string>>
+
+    newSourceG(source : Signal){
+        this.sources.push(source.id)
+        this.nodes.set(source.id,source)
+        this.dependencies.set(source.id,[])
+        this.parents.set(source.id,[])
+    }
+
+    updateSource(source : Signal){
+        this.nodes.set(source.id,source)
+    }
+
+    updateSources(sources : Array<Signal>){
+        sources.forEach(this.updateSource.bind(this))
+    }
+
+    newNode(node : DerivedSignal){
+        this.nodes.set(node.id,node)
+        this.dependencies.set(node.id,[])
+        this.parents.set(node.id,[])
+    }
+
+    addDependencyG(fromId : string,toId : string){
+        this.dependencies.get(toId).push(fromId)
+        this.parents.get(fromId).push(toId)
+    }
+
+    getDependants(forId : string) : Array<Signal>{
+        if(!this.dependencies.has(forId)){
+            return []
+        }
+        else{
+            return this.dependencies.get(forId).map((depId : string)=>{
+                return this.nodes.get(depId)
+            })
+
+        }
+    }
+
+    getParents(forId : string) : Array<Signal>{
+        return this.parents.get(forId).map((pId : string)=>{
+            return this.nodes.get(pId)
         })
     }
 }

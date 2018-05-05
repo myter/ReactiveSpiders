@@ -4,49 +4,6 @@ const ReactiveMirror_1 = require("../ReactiveMirror");
 const Signal_1 = require("../Signal");
 const PropagationValue_1 = require("./PropagationValue");
 class LocalDependencyGraph extends spiders_js_1.SpiderIsolate {
-    constructor() {
-        super();
-        this.nodes = new Map();
-        this.sources = [];
-        this.dependencies = new Map();
-        this.parents = new Map();
-    }
-    newSource(source) {
-        this.sources.push(source.id);
-        this.nodes.set(source.id, source);
-        this.dependencies.set(source.id, []);
-        this.parents.set(source.id, []);
-    }
-    updateSource(source) {
-        this.nodes.set(source.id, source);
-    }
-    updateSources(sources) {
-        sources.forEach(this.updateSource.bind(this));
-    }
-    newNode(node) {
-        this.nodes.set(node.id, node);
-        this.dependencies.set(node.id, []);
-        this.parents.set(node.id, []);
-    }
-    addDependency(fromId, toId) {
-        this.dependencies.get(toId).push(fromId);
-        this.parents.get(fromId).push(toId);
-    }
-    getDependants(forId) {
-        if (!this.dependencies.has(forId)) {
-            return [];
-        }
-        else {
-            return this.dependencies.get(forId).map((depId) => {
-                return this.nodes.get(depId);
-            });
-        }
-    }
-    getParents(forId) {
-        return this.parents.get(forId).map((pId) => {
-            return this.nodes.get(pId);
-        });
-    }
 }
 class QPROPApplication {
     constructor(host, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
@@ -58,9 +15,12 @@ class QPROPApplication {
         this.serverAddress = psServerAddress;
         this.serverPort = psServerPort;
         this.PropagationValue = PropagationValue_1.PropagationValue;
-        this.localGraph = new LocalDependencyGraph();
         this.DerivedSignal = Signal_1.DerivedSignal;
         this._REMOTE_CHANGE_ = ReactiveMirror_1._REMOTE_CHANGE_;
+        this.nodes = new Map();
+        this.sources = [];
+        this.dependencies = new Map();
+        this.parents = new Map();
     }
     init() {
         Array.prototype.flatMap = function (lambda) {
@@ -466,10 +426,10 @@ class QPROPApplication {
                         this.parentRefs.push(newParentRef);
                         this.I.set(toParent.tagVal, []);
                         this.inputSignals.forEach((iSignal) => {
-                            let deps = this.localGraph.getDependants(iSignal.id);
+                            let deps = this.getDependants(iSignal.id);
                             deps.forEach((dependant) => {
-                                this.localGraph.newSource(lastProp.value);
-                                this.localGraph.addDependency(dependant.id, lastProp.value.id);
+                                this.newSource(lastProp.value);
+                                this.addDependencyG(dependant.id, lastProp.value.id);
                             });
                         });
                         this.inputSignals.set(toParent.tagVal, lastProp.value);
@@ -499,10 +459,10 @@ class QPROPApplication {
     lift(f) {
         return (...args) => {
             let returnSig = new this.DerivedSignal(f, this);
-            this.localGraph.newNode(returnSig);
+            this.newNode(returnSig);
             args.forEach((arg, index) => {
                 if (arg.isSignal) {
-                    this.localGraph.addDependency(returnSig.id, arg.id);
+                    this.addDependencyG(returnSig.id, arg.id);
                 }
                 else {
                     //TODO
@@ -532,7 +492,7 @@ class QPROPApplication {
         });
     }
     updateNode(node) {
-        let parentValues = this.localGraph.getParents(node.id).map((parent) => {
+        let parentValues = this.getParents(node.id).map((parent) => {
             if (parent.isDerived) {
                 return parent.lastVal;
             }
@@ -542,27 +502,27 @@ class QPROPApplication {
         });
         node.update(parentValues);
         this.internalSignalChanged(node);
-        this.localGraph.getDependants(node.id).forEach((dep) => {
+        this.getDependants(node.id).forEach((dep) => {
             this.updateNode(dep);
         });
     }
     newSource(signal) {
-        this.localGraph.newSource(signal);
+        this.newSourceG(signal);
     }
     sourceChanged(source) {
-        this.localGraph.updateSource(source);
+        this.updateSource(source);
         this.internalSignalChanged(source);
-        this.localGraph.getDependants(source.id).forEach((dep) => {
+        this.getDependants(source.id).forEach((dep) => {
             this.updateNode(dep);
         });
     }
     sourcesChanged(sources) {
-        this.localGraph.updateSources(sources);
+        this.updateSources(sources);
         sources.forEach(this.internalSignalChanged.bind(this));
         let depIds = [];
         let deps = [];
         sources.forEach((source) => {
-            let toAdd = this.localGraph.getDependants(source.id);
+            let toAdd = this.getDependants(source.id);
             toAdd.forEach((dep) => {
                 if (!(depIds.includes(dep.id))) {
                     deps.push(dep);
@@ -572,6 +532,42 @@ class QPROPApplication {
         });
         deps.forEach((dep) => {
             this.updateNode(dep);
+        });
+    }
+    newSourceG(source) {
+        this.sources.push(source.id);
+        this.nodes.set(source.id, source);
+        this.dependencies.set(source.id, []);
+        this.parents.set(source.id, []);
+    }
+    updateSource(source) {
+        this.nodes.set(source.id, source);
+    }
+    updateSources(sources) {
+        sources.forEach(this.updateSource.bind(this));
+    }
+    newNode(node) {
+        this.nodes.set(node.id, node);
+        this.dependencies.set(node.id, []);
+        this.parents.set(node.id, []);
+    }
+    addDependencyG(fromId, toId) {
+        this.dependencies.get(toId).push(fromId);
+        this.parents.get(fromId).push(toId);
+    }
+    getDependants(forId) {
+        if (!this.dependencies.has(forId)) {
+            return [];
+        }
+        else {
+            return this.dependencies.get(forId).map((depId) => {
+                return this.nodes.get(depId);
+            });
+        }
+    }
+    getParents(forId) {
+        return this.parents.get(forId).map((pId) => {
+            return this.nodes.get(pId);
         });
     }
 }
