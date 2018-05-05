@@ -4,6 +4,7 @@ import {DistGlitchPrevention} from "../DistGlitchPrevention";
 import {ReactiveMirror} from "../ReactiveMirror";
 import {DerivedSignal, Signal} from "../Signal";
 import {PropagationValue} from "./PropagationValue";
+import {GlitchAlgorithm} from "../GlitchAlgorithm";
 
 export class QPROP extends SpiderIsolate implements DistGlitchPrevention{
     actorMirror : ReactiveMirror
@@ -28,7 +29,7 @@ export class QPROP extends SpiderIsolate implements DistGlitchPrevention{
 
 }
 
-export class QPROPActor extends ReactiveActor{
+export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
     //Spiders.js related
     thisDir
     PropagationValue            : {new(from : PubSubTag,value : Signal,sClocks : Map<string,number>,fClock : number,isOptimised? : boolean): PropagationValue}

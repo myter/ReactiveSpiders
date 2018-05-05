@@ -1,5 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const UseCase_1 = require("./UseCase");
+const UseCase2_1 = require("./UseCase2");
 function runQPROPLoop(rate) {
     let totalValues = rate * 30;
     let loop = (index) => {
@@ -14,6 +15,31 @@ function runQPROPLoop(rate) {
         app.spawnActor(UseCase_1.QPROPDrivingService, [rate, totalValues, "qprop", UseCase_1.drivingTag, [UseCase_1.dataTag, UseCase_1.geoTag], [UseCase_1.dashTag]]);
         //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
         app.spawnActor(UseCase_1.QPROPDashboardService, [rate, totalValues, "qprop", app, UseCase_1.dashTag, UseCase_1.okTag, [UseCase_1.drivingTag, UseCase_1.geoTag, UseCase_1.configTag], []]);
+        if (index > 0) {
+            return app.onComplete().then(() => {
+                return new Promise((resolve) => {
+                    console.log("Finished QPROP " + rate + " iteration " + index);
+                    setTimeout(() => {
+                        resolve(loop(index - 1));
+                    }, 10000);
+                });
+            });
+        }
+        else {
+            app.kill();
+        }
+    };
+    return loop(2);
+}
+function runQPROPLoop2(rate) {
+    let totalValues = rate * 30;
+    let loop = (index) => {
+        let app = new UseCase_1.UseCaseApp();
+        app.spawnActor(UseCase2_1.QPROPConfigService2, [rate, totalValues, "qprop", UseCase_1.configTag, UseCase_1.okTag, [], [UseCase_1.dashTag]]);
+        app.spawnActor(UseCase2_1.QPROPDataAccessService2, [rate, totalValues, "qprop", UseCase_1.dataTag, UseCase_1.okTag, [], [UseCase_1.geoTag, UseCase_1.drivingTag]]);
+        app.spawnActor(UseCase2_1.QPROPGeoService2, [rate, totalValues, "qprop", UseCase_1.geoTag, [UseCase_1.dataTag], [UseCase_1.drivingTag, UseCase_1.dashTag]]);
+        app.spawnActor(UseCase2_1.QPROPDrivingService2, [rate, totalValues, "qprop", UseCase_1.drivingTag, [UseCase_1.dataTag, UseCase_1.geoTag], [UseCase_1.dashTag]]);
+        app.spawnActor(UseCase2_1.QPROPDashboardService2, [rate, totalValues, "qprop", app, UseCase_1.dashTag, UseCase_1.okTag, [UseCase_1.drivingTag, UseCase_1.geoTag, UseCase_1.configTag], []]);
         if (index > 0) {
             return app.onComplete().then(() => {
                 return new Promise((resolve) => {
@@ -75,5 +101,5 @@ function runLoops(loopRunner, rates) {
     runSIDUPLoop(100)
 })*/
 //runQPROPLoop(100)
-runQPROPLoop(200);
+runQPROPLoop2(200);
 //# sourceMappingURL=RunUseCase.js.map
