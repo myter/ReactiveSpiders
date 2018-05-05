@@ -61,7 +61,6 @@ class QPROPApplication {
         this.localGraph = new LocalDependencyGraph();
         this.DerivedSignal = Signal_1.DerivedSignal;
         this._REMOTE_CHANGE_ = ReactiveMirror_1._REMOTE_CHANGE_;
-        this.init();
     }
     init() {
         Array.prototype.flatMap = function (lambda) {

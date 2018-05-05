@@ -38,6 +38,7 @@ class QPROPConfigServiceApp extends spiders_js_1.Application {
         this.init();
     }
     init() {
+        this.qprop.init();
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Config");
         this.averageMem = writing.averageMem;
@@ -95,6 +96,7 @@ class QPROPDataAccessServiceApp extends spiders_js_1.Application {
         this.init();
     }
     init() {
+        this.qprop.init();
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Data");
         this.averageMem = writing.averageMem;
@@ -148,6 +150,7 @@ class QPROPGeoServiceApp extends spiders_js_1.Application {
         this.init();
     }
     init() {
+        this.qprop.init();
         let writing = require(this.thisdir + "/writing");
         this.memWriter = new writing.MemoryWriter("Geo");
         this.averageMem = writing.averageMem;
@@ -188,6 +191,7 @@ class QPROPDrivingServiceApp extends spiders_js_1.Application {
         this.init();
     }
     init() {
+        this.qprop.init();
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Driving");
         this.averageMem = writing.averageMem;
@@ -229,6 +233,7 @@ class QPROPDashboardServiceApp extends spiders_js_1.Application {
         this.init();
     }
     init() {
+        this.qprop.init();
         var csvWriter = require('csv-write-stream');
         var fs = require('fs');
         let writing = require(this.thisDir + "/writing");

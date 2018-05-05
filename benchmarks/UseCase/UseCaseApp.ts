@@ -53,6 +53,7 @@ export class QPROPConfigServiceApp extends Application{
     }
 
     init(){
+        this.qprop.init()
         let writing         = require(this.thisDir+"/writing")
         this.memWriter      = new writing.MemoryWriter("Config")
         this.averageMem     = writing.averageMem
@@ -126,6 +127,7 @@ export class QPROPDataAccessServiceApp extends Application{
     }
 
     init(){
+        this.qprop.init()
         let writing     = require(this.thisDir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Data")
         this.averageMem = writing.averageMem
@@ -192,6 +194,7 @@ export class QPROPGeoServiceApp extends Application{
     }
 
     init(){
+        this.qprop.init()
         let writing     = require(this.thisdir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Geo")
         this.averageMem = writing.averageMem
@@ -244,6 +247,7 @@ export class QPROPDrivingServiceApp extends Application{
     }
 
     init(){
+        this.qprop.init()
         let writing     = require(this.thisDir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Driving")
         this.averageMem = writing.averageMem
@@ -302,6 +306,7 @@ export class QPROPDashboardServiceApp extends Application{
     }
 
     init(){
+        this.qprop.init()
         var csvWriter           = require('csv-write-stream')
         var fs                  = require('fs')
         let writing             = require(this.thisDir+"/writing")
