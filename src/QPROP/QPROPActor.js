@@ -279,8 +279,8 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
             this.flushReady();
         }
     }
-    prePropagation(prop) {
-        //let prop        = this.fromPropValArray(propArr)
+    prePropagation(propArr) {
+        let prop = this.fromPropValArray(propArr);
         let from = prop.from.tagVal;
         if (this.brittle.size == 0) {
             this.addToI(from, prop);
@@ -388,7 +388,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
                 this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
-                        child.prePropagation(this.lastProp);
+                        child.prePropagation(this.lastProp.toArray());
                     });
                 });
             }

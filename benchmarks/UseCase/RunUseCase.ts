@@ -10,12 +10,7 @@ import {
     SIDUPGeoService,
     SIDUPDrivingService,
     SIDUPDashboardService,
-    UseCaseAdmitter,
-    QPROPConfigServiceApp,
-    QPROPDataAccessServiceApp,
-    QPROPGeoServiceApp,
-    QPROPDrivingServiceApp,
-    QPROPDashboardServiceApp, dataTag, configTag, geoTag, drivingTag, admitterTag, okTag, dashTag
+    UseCaseAdmitter, dataTag, configTag, geoTag, drivingTag, admitterTag, okTag, dashTag
 } from "./UseCase"
 import {Application} from "spiders.js";
 
@@ -96,6 +91,6 @@ function runLoops(loopRunner : Function,rates : Array<number>){
     runSIDUPLoop(100)
 })*/
 //runQPROPLoop(100)
-//runQPROPLoop(300)
+runQPROPLoop(200)
 
 

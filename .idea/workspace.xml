@@ -6,9 +6,6 @@
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
@@ -18,9 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,12 +31,56 @@
       <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+            <state relative-caret-position="180">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
                 <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
                 <element signature="n#!!block;n#runLoops#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3831">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+                <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
+                <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllStarts#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllChildren#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#gotAllParents#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#flushChildMessages#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#sendToAllParents#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#flushParentMessages#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#invokeStart#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#flushReady#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#nextChange#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#oneOf#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#guard#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#getAllArgs#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#getSourcesFor#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#getMatchArgs#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#addToI#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#getSources#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#getStart#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+                <element signature="e#16521#16708#0" expanded="true" />
+                <element signature="e#16596#16689#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,177 +108,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="961" column="42" selection-start-line="961" selection-start-column="42" selection-end-line="961" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-                <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
-                <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-                <element signature="n#QPROPApplication#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#3184#3266#0" expanded="true" />
-                <element signature="e#4314#4783#0" expanded="true" />
-                <element signature="e#4401#4772#0" expanded="true" />
-                <element signature="e#4844#5114#0" expanded="true" />
-                <element signature="e#4933#5103#0" expanded="true" />
-                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#amSource#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#amSink#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllSources#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllStarts#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllChildren#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllParents#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#flushChildMessages#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#6024#6058#0" expanded="true" />
-                <element signature="n#!!block;n#sendToAllParents#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#flushParentMessages#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#6338#6372#0" expanded="true" />
-                <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#6581#6659#0" expanded="true" />
-                <element signature="n#!!block;n#flushReady#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#6860#6895#0" expanded="true" />
-                <element signature="n#!!block;n#nextChange#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#oneOf#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#guard#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#getAllArgs#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#7408#7668#0" expanded="true" />
-                <element signature="e#7504#7581#0" expanded="true" />
-                <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#7879#8090#0" expanded="true" />
-                <element signature="n#!!block;n#getSourcesFor#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#8248#8418#0" expanded="true" />
-                <element signature="n#!!block;n#getMatchArgs#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#8574#9301#0" expanded="true" />
-                <element signature="e#8670#9183#0" expanded="true" />
-                <element signature="e#8733#9168#0" expanded="true" />
-                <element signature="e#8817#9149#0" expanded="true" />
-                <element signature="e#8967#9126#0" expanded="true" />
-                <element signature="e#9245#9290#0" expanded="true" />
-                <element signature="e#10254#10468#0" expanded="true" />
-                <element signature="e#10681#10834#0" expanded="true" />
-                <element signature="e#11046#11201#0" expanded="true" />
-                <element signature="e#11120#11182#0" expanded="true" />
-                <element signature="e#11377#11645#0" expanded="true" />
-                <element signature="e#11456#11626#0" expanded="true" />
-                <element signature="e#11831#11970#0" expanded="true" />
-                <element signature="e#11901#11955#0" expanded="true" />
-                <element signature="e#12640#12984#0" expanded="true" />
-                <element signature="e#12873#12969#0" expanded="true" />
-                <element signature="e#13164#14185#0" expanded="true" />
-                <element signature="e#13262#14174#0" expanded="true" />
-                <element signature="e#13372#13774#0" expanded="true" />
-                <element signature="e#14384#14471#0" expanded="true" />
-                <element signature="e#14730#15231#0" expanded="true" />
-                <element signature="e#14835#15137#0" expanded="true" />
-                <element signature="e#15321#15533#0" expanded="true" />
-                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#16296#16466#0" expanded="true" />
-                <element signature="e#16360#16443#0" expanded="true" />
-                <element signature="e#16981#17158#0" expanded="true" />
-                <element signature="e#17056#17139#0" expanded="true" />
-                <element signature="e#17292#17375#0" expanded="true" />
-                <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#18046#18106#0" expanded="true" />
-                <element signature="e#18238#19580#0" expanded="true" />
-                <element signature="e#18324#19565#0" expanded="true" />
-                <element signature="e#18625#19546#0" expanded="true" />
-                <element signature="e#18858#19357#0" expanded="true" />
-                <element signature="e#19046#19330#0" expanded="true" />
-                <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-                <element signature="e#19715#19945#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#22211#22293#0" expanded="true" />
-                <element signature="e#23292#23761#0" expanded="true" />
-                <element signature="e#23379#23750#0" expanded="true" />
-                <element signature="e#23822#24092#0" expanded="true" />
-                <element signature="e#23911#24081#0" expanded="true" />
-                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllStarts#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllChildren#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#gotAllParents#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#flushChildMessages#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#25051#25085#0" expanded="true" />
-                <element signature="n#!!block;n#sendToAllParents#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#flushParentMessages#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#25365#25399#0" expanded="true" />
-                <element signature="n#!!block;n#invokeStart#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#25608#25686#0" expanded="true" />
-                <element signature="n#!!block;n#flushReady#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#25887#25922#0" expanded="true" />
-                <element signature="n#!!block;n#nextChange#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#oneOf#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#guard#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#getAllArgs#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#26435#26695#0" expanded="true" />
-                <element signature="e#26531#26608#0" expanded="true" />
-                <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#26906#27117#0" expanded="true" />
-                <element signature="n#!!block;n#getSourcesFor#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#27275#27445#0" expanded="true" />
-                <element signature="n#!!block;n#getMatchArgs#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#27601#28328#0" expanded="true" />
-                <element signature="e#27697#28210#0" expanded="true" />
-                <element signature="e#27760#28195#0" expanded="true" />
-                <element signature="e#27844#28176#0" expanded="true" />
-                <element signature="e#27994#28153#0" expanded="true" />
-                <element signature="e#28272#28317#0" expanded="true" />
-                <element signature="n#!!block;n#addToI#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#getSources#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#29182#29396#0" expanded="true" />
-                <element signature="e#29609#29762#0" expanded="true" />
-                <element signature="e#29974#30129#0" expanded="true" />
-                <element signature="e#30048#30110#0" expanded="true" />
-                <element signature="e#30305#30485#0" expanded="true" />
-                <element signature="e#30378#30466#0" expanded="true" />
-                <element signature="n#!!block;n#getStart#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#30671#30810#0" expanded="true" />
-                <element signature="e#30741#30795#0" expanded="true" />
-                <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#31480#31824#0" expanded="true" />
-                <element signature="e#31713#31809#0" expanded="true" />
-                <element signature="e#32004#33025#0" expanded="true" />
-                <element signature="e#32102#33014#0" expanded="true" />
-                <element signature="e#32212#32614#0" expanded="true" />
-                <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#33224#33311#0" expanded="true" />
-                <element signature="e#33570#34071#0" expanded="true" />
-                <element signature="e#33675#33977#0" expanded="true" />
-                <element signature="e#34161#34373#0" expanded="true" />
-                <element signature="e#35136#35306#0" expanded="true" />
-                <element signature="e#35200#35283#0" expanded="true" />
-                <element signature="e#36726#36913#0" expanded="true" />
-                <element signature="e#36801#36894#0" expanded="true" />
-                <element signature="e#37047#37130#0" expanded="true" />
-                <element signature="e#37782#37842#0" expanded="true" />
-                <element signature="e#37989#39331#0" expanded="true" />
-                <element signature="e#38075#39316#0" expanded="true" />
-                <element signature="e#38376#39297#0" expanded="true" />
-                <element signature="e#38609#39108#0" expanded="true" />
-                <element signature="e#38797#39081#0" expanded="true" />
-                <element signature="e#39466#39696#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="157" column="50" lean-forward="true" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+                <element signature="n#FleetData#0" />
                 <element signature="n#UseCaseAdmitter#0" />
                 <element signature="n#!!block;n#constructor#0;n#UseCaseAdmitter#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#UseCaseAdmitter#0" expanded="true" />
@@ -254,24 +129,15 @@
                 <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="e#5836#5876#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
-                <element signature="n#QPROPConfigServiceApp#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#update#0;n#QPROPConfigServiceApp#0" expanded="true" />
                 <element signature="n#SIDUPDataAccessService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
+                <element signature="n#QPROPDataAccessService#0" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
-                <element signature="n#QPROPDataAccessServiceApp#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
                 <element signature="n#SIDUPGeoService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -280,11 +146,6 @@
                 <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
                 <element signature="e#16366#16632#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
-                <element signature="n#QPROPGeoServiceApp#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#snapMem#0;n#QPROPGeoServiceApp#0" expanded="true" />
                 <element signature="n#SIDUPDrivingService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPDrivingService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#SIDUPDrivingService#0" expanded="true" />
@@ -294,11 +155,6 @@
                 <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
                 <element signature="e#20479#20744#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
-                <element signature="n#QPROPDrivingServiceApp#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingServiceApp#0" expanded="true" />
                 <element signature="n#SIDUPDashboardService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#SIDUPDashboardService#0" expanded="true" />
@@ -308,11 +164,7 @@
                 <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="e#27941#29751#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
-                <element signature="n#QPROPDashboardServiceApp#0" />
-                <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-                <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+                <element signature="n#UseCaseApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
@@ -422,9 +274,9 @@
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/CommMedium.js" />
         <option value="$PROJECT_DIR$/src/SID-UP/NodePulse.ts" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
         <option value="$PROJECT_DIR$/src/Signal.ts" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
       </list>
     </option>
@@ -596,7 +448,7 @@
       <workItem from="1525172319296" duration="1655000" />
       <workItem from="1525244340955" duration="23250000" />
       <workItem from="1525282610848" duration="2673000" />
-      <workItem from="1525349864234" duration="22743000" />
+      <workItem from="1525349864234" duration="23560000" />
     </task>
     <task id="LOCAL-00001" summary="Finished usecase benchmarks">
       <created>1525260618031</created>
@@ -899,7 +751,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525447312173</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Back to temp backpressure">
+      <created>1525502207310</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1525502207310</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Reverted back to regular propagation values">
+      <created>1525502809196</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1525502809196</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -935,19 +801,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156220000" />
+    <option name="totallyTimeSpent" value="157037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="814" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26224783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26224783" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
@@ -1029,7 +895,8 @@
     <MESSAGE value="Trying optimisations for App version" />
     <MESSAGE value="Memory Snapshot turned off" />
     <MESSAGE value="Back to temp backpressure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Back to temp backpressure" />
+    <MESSAGE value="Reverted back to regular propagation values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverted back to regular propagation values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,88 +912,8 @@
             <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
             <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-            <element signature="n#QPROPApplication#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#3184#3266#0" expanded="true" />
-            <element signature="e#4314#4783#0" expanded="true" />
-            <element signature="e#4401#4772#0" expanded="true" />
-            <element signature="e#4844#5114#0" expanded="true" />
-            <element signature="e#4933#5103#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#amSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#amSink#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllStarts#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllChildren#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllParents#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#flushChildMessages#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6024#6058#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllParents#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#flushParentMessages#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6338#6372#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6581#6659#0" expanded="true" />
-            <element signature="n#!!block;n#flushReady#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6860#6895#0" expanded="true" />
-            <element signature="n#!!block;n#nextChange#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#oneOf#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#guard#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getAllArgs#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#7408#7668#0" expanded="true" />
-            <element signature="e#7504#7581#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#7879#8090#0" expanded="true" />
-            <element signature="n#!!block;n#getSourcesFor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#8248#8418#0" expanded="true" />
-            <element signature="n#!!block;n#getMatchArgs#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#8574#9301#0" expanded="true" />
-            <element signature="e#8670#9183#0" expanded="true" />
-            <element signature="e#8733#9168#0" expanded="true" />
-            <element signature="e#8817#9149#0" expanded="true" />
-            <element signature="e#8967#9126#0" expanded="true" />
-            <element signature="e#9245#9290#0" expanded="true" />
-            <element signature="e#10254#10468#0" expanded="true" />
-            <element signature="e#10681#10834#0" expanded="true" />
-            <element signature="e#11046#11201#0" expanded="true" />
-            <element signature="e#11120#11182#0" expanded="true" />
-            <element signature="e#11377#11645#0" expanded="true" />
-            <element signature="e#11456#11626#0" expanded="true" />
-            <element signature="e#11831#11970#0" expanded="true" />
-            <element signature="e#11901#11955#0" expanded="true" />
-            <element signature="e#12640#12984#0" expanded="true" />
-            <element signature="e#12873#12969#0" expanded="true" />
-            <element signature="e#13164#14185#0" expanded="true" />
-            <element signature="e#13262#14174#0" expanded="true" />
-            <element signature="e#13372#13774#0" expanded="true" />
-            <element signature="e#14384#14471#0" expanded="true" />
-            <element signature="e#14730#15231#0" expanded="true" />
-            <element signature="e#14835#15137#0" expanded="true" />
-            <element signature="e#15321#15533#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#16296#16466#0" expanded="true" />
-            <element signature="e#16360#16443#0" expanded="true" />
-            <element signature="e#16981#17158#0" expanded="true" />
-            <element signature="e#17056#17139#0" expanded="true" />
-            <element signature="e#17292#17375#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#18046#18106#0" expanded="true" />
-            <element signature="e#18238#19580#0" expanded="true" />
-            <element signature="e#18324#19565#0" expanded="true" />
-            <element signature="e#18625#19546#0" expanded="true" />
-            <element signature="e#18858#19357#0" expanded="true" />
-            <element signature="e#19046#19330#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#19715#19945#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#22211#22293#0" expanded="true" />
-            <element signature="e#23292#23761#0" expanded="true" />
-            <element signature="e#23379#23750#0" expanded="true" />
-            <element signature="e#23822#24092#0" expanded="true" />
-            <element signature="e#23911#24081#0" expanded="true" />
             <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
@@ -1136,65 +923,25 @@
             <element signature="n#!!block;n#gotAllParents#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#flushChildMessages#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25051#25085#0" expanded="true" />
             <element signature="n#!!block;n#sendToAllParents#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#flushParentMessages#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25365#25399#0" expanded="true" />
             <element signature="n#!!block;n#invokeStart#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25608#25686#0" expanded="true" />
             <element signature="n#!!block;n#flushReady#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25887#25922#0" expanded="true" />
             <element signature="n#!!block;n#nextChange#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#oneOf#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#guard#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#getAllArgs#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#26435#26695#0" expanded="true" />
-            <element signature="e#26531#26608#0" expanded="true" />
             <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#26906#27117#0" expanded="true" />
             <element signature="n#!!block;n#getSourcesFor#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#27275#27445#0" expanded="true" />
             <element signature="n#!!block;n#getMatchArgs#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#27601#28328#0" expanded="true" />
-            <element signature="e#27697#28210#0" expanded="true" />
-            <element signature="e#27760#28195#0" expanded="true" />
-            <element signature="e#27844#28176#0" expanded="true" />
-            <element signature="e#27994#28153#0" expanded="true" />
-            <element signature="e#28272#28317#0" expanded="true" />
             <element signature="n#!!block;n#addToI#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#getSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#29182#29396#0" expanded="true" />
-            <element signature="e#29609#29762#0" expanded="true" />
-            <element signature="e#29974#30129#0" expanded="true" />
-            <element signature="e#30048#30110#0" expanded="true" />
-            <element signature="e#30305#30485#0" expanded="true" />
-            <element signature="e#30378#30466#0" expanded="true" />
             <element signature="n#!!block;n#getStart#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#30671#30810#0" expanded="true" />
-            <element signature="e#30741#30795#0" expanded="true" />
             <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#31480#31824#0" expanded="true" />
-            <element signature="e#31713#31809#0" expanded="true" />
-            <element signature="e#32004#33025#0" expanded="true" />
-            <element signature="e#32102#33014#0" expanded="true" />
-            <element signature="e#32212#32614#0" expanded="true" />
             <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#33224#33311#0" expanded="true" />
-            <element signature="e#33570#34071#0" expanded="true" />
-            <element signature="e#33675#33977#0" expanded="true" />
-            <element signature="e#34161#34373#0" expanded="true" />
-            <element signature="e#35136#35306#0" expanded="true" />
-            <element signature="e#35200#35283#0" expanded="true" />
-            <element signature="e#36726#36913#0" expanded="true" />
-            <element signature="e#36801#36894#0" expanded="true" />
-            <element signature="e#37047#37130#0" expanded="true" />
-            <element signature="e#37782#37842#0" expanded="true" />
-            <element signature="e#37989#39331#0" expanded="true" />
-            <element signature="e#38075#39316#0" expanded="true" />
-            <element signature="e#38376#39297#0" expanded="true" />
-            <element signature="e#38609#39108#0" expanded="true" />
-            <element signature="e#38797#39081#0" expanded="true" />
-            <element signature="e#39466#39696#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#16521#16708#0" expanded="true" />
+            <element signature="e#16596#16689#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1217,6 +964,7 @@
           <caret line="338" selection-start-line="338" selection-end-line="338" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#FleetData#0" />
             <element signature="n#UseCaseAdmitter#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseAdmitter#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#UseCaseAdmitter#0" expanded="true" />
@@ -1230,24 +978,15 @@
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
-            <element signature="n#QPROPConfigServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#SIDUPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
+            <element signature="n#QPROPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
-            <element signature="n#QPROPDataAccessServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#SIDUPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -1256,11 +995,6 @@
             <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
             <element signature="e#16366#16632#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
-            <element signature="n#QPROPGeoServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#SIDUPDrivingService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPDrivingService#0" expanded="true" />
@@ -1270,11 +1004,6 @@
             <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="e#20479#20744#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
-            <element signature="n#QPROPDrivingServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#SIDUPDashboardService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPDashboardService#0" expanded="true" />
@@ -1284,11 +1013,7 @@
             <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="e#27941#29751#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#QPROPDashboardServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
@@ -1304,88 +1029,8 @@
             <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
             <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-            <element signature="n#QPROPApplication#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#3184#3266#0" expanded="true" />
-            <element signature="e#4314#4783#0" expanded="true" />
-            <element signature="e#4401#4772#0" expanded="true" />
-            <element signature="e#4844#5114#0" expanded="true" />
-            <element signature="e#4933#5103#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#amSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#amSink#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllStarts#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllChildren#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllParents#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#flushChildMessages#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6024#6058#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllParents#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#flushParentMessages#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6338#6372#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6581#6659#0" expanded="true" />
-            <element signature="n#!!block;n#flushReady#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6860#6895#0" expanded="true" />
-            <element signature="n#!!block;n#nextChange#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#oneOf#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#guard#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getAllArgs#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#7408#7668#0" expanded="true" />
-            <element signature="e#7504#7581#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#7879#8090#0" expanded="true" />
-            <element signature="n#!!block;n#getSourcesFor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#8248#8418#0" expanded="true" />
-            <element signature="n#!!block;n#getMatchArgs#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#8574#9301#0" expanded="true" />
-            <element signature="e#8670#9183#0" expanded="true" />
-            <element signature="e#8733#9168#0" expanded="true" />
-            <element signature="e#8817#9149#0" expanded="true" />
-            <element signature="e#8967#9126#0" expanded="true" />
-            <element signature="e#9245#9290#0" expanded="true" />
-            <element signature="e#10254#10468#0" expanded="true" />
-            <element signature="e#10681#10834#0" expanded="true" />
-            <element signature="e#11046#11201#0" expanded="true" />
-            <element signature="e#11120#11182#0" expanded="true" />
-            <element signature="e#11377#11645#0" expanded="true" />
-            <element signature="e#11456#11626#0" expanded="true" />
-            <element signature="e#11831#11970#0" expanded="true" />
-            <element signature="e#11901#11955#0" expanded="true" />
-            <element signature="e#12640#12984#0" expanded="true" />
-            <element signature="e#12873#12969#0" expanded="true" />
-            <element signature="e#13164#14185#0" expanded="true" />
-            <element signature="e#13262#14174#0" expanded="true" />
-            <element signature="e#13372#13774#0" expanded="true" />
-            <element signature="e#14384#14471#0" expanded="true" />
-            <element signature="e#14730#15231#0" expanded="true" />
-            <element signature="e#14835#15137#0" expanded="true" />
-            <element signature="e#15321#15533#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#16296#16466#0" expanded="true" />
-            <element signature="e#16360#16443#0" expanded="true" />
-            <element signature="e#16981#17158#0" expanded="true" />
-            <element signature="e#17056#17139#0" expanded="true" />
-            <element signature="e#17292#17375#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#18046#18106#0" expanded="true" />
-            <element signature="e#18238#19580#0" expanded="true" />
-            <element signature="e#18324#19565#0" expanded="true" />
-            <element signature="e#18625#19546#0" expanded="true" />
-            <element signature="e#18858#19357#0" expanded="true" />
-            <element signature="e#19046#19330#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#19715#19945#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#22211#22293#0" expanded="true" />
-            <element signature="e#23292#23761#0" expanded="true" />
-            <element signature="e#23379#23750#0" expanded="true" />
-            <element signature="e#23822#24092#0" expanded="true" />
-            <element signature="e#23911#24081#0" expanded="true" />
             <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
@@ -1395,65 +1040,25 @@
             <element signature="n#!!block;n#gotAllParents#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#flushChildMessages#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25051#25085#0" expanded="true" />
             <element signature="n#!!block;n#sendToAllParents#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#flushParentMessages#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25365#25399#0" expanded="true" />
             <element signature="n#!!block;n#invokeStart#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25608#25686#0" expanded="true" />
             <element signature="n#!!block;n#flushReady#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25887#25922#0" expanded="true" />
             <element signature="n#!!block;n#nextChange#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#oneOf#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#guard#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#getAllArgs#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#26435#26695#0" expanded="true" />
-            <element signature="e#26531#26608#0" expanded="true" />
             <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#26906#27117#0" expanded="true" />
             <element signature="n#!!block;n#getSourcesFor#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#27275#27445#0" expanded="true" />
             <element signature="n#!!block;n#getMatchArgs#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#27601#28328#0" expanded="true" />
-            <element signature="e#27697#28210#0" expanded="true" />
-            <element signature="e#27760#28195#0" expanded="true" />
-            <element signature="e#27844#28176#0" expanded="true" />
-            <element signature="e#27994#28153#0" expanded="true" />
-            <element signature="e#28272#28317#0" expanded="true" />
             <element signature="n#!!block;n#addToI#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#getSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#29182#29396#0" expanded="true" />
-            <element signature="e#29609#29762#0" expanded="true" />
-            <element signature="e#29974#30129#0" expanded="true" />
-            <element signature="e#30048#30110#0" expanded="true" />
-            <element signature="e#30305#30485#0" expanded="true" />
-            <element signature="e#30378#30466#0" expanded="true" />
             <element signature="n#!!block;n#getStart#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#30671#30810#0" expanded="true" />
-            <element signature="e#30741#30795#0" expanded="true" />
             <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#31480#31824#0" expanded="true" />
-            <element signature="e#31713#31809#0" expanded="true" />
-            <element signature="e#32004#33025#0" expanded="true" />
-            <element signature="e#32102#33014#0" expanded="true" />
-            <element signature="e#32212#32614#0" expanded="true" />
             <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#33224#33311#0" expanded="true" />
-            <element signature="e#33570#34071#0" expanded="true" />
-            <element signature="e#33675#33977#0" expanded="true" />
-            <element signature="e#34161#34373#0" expanded="true" />
-            <element signature="e#35136#35306#0" expanded="true" />
-            <element signature="e#35200#35283#0" expanded="true" />
-            <element signature="e#36726#36913#0" expanded="true" />
-            <element signature="e#36801#36894#0" expanded="true" />
-            <element signature="e#37047#37130#0" expanded="true" />
-            <element signature="e#37782#37842#0" expanded="true" />
-            <element signature="e#37989#39331#0" expanded="true" />
-            <element signature="e#38075#39316#0" expanded="true" />
-            <element signature="e#38376#39297#0" expanded="true" />
-            <element signature="e#38609#39108#0" expanded="true" />
-            <element signature="e#38797#39081#0" expanded="true" />
-            <element signature="e#39466#39696#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#16521#16708#0" expanded="true" />
+            <element signature="e#16596#16689#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1859,6 +1464,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Signal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#isMutatingMethod#0;n#SignalMirror#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DerivedSignal#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/PropagationValue.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1870,181 +1486,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop200.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="961" column="42" selection-start-line="961" selection-start-column="42" selection-end-line="961" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
-            <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-            <element signature="n#QPROPApplication#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#3184#3266#0" expanded="true" />
-            <element signature="e#4314#4783#0" expanded="true" />
-            <element signature="e#4401#4772#0" expanded="true" />
-            <element signature="e#4844#5114#0" expanded="true" />
-            <element signature="e#4933#5103#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#amSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#amSink#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllStarts#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllChildren#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllParents#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#flushChildMessages#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6024#6058#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllParents#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#flushParentMessages#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6338#6372#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6581#6659#0" expanded="true" />
-            <element signature="n#!!block;n#flushReady#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#6860#6895#0" expanded="true" />
-            <element signature="n#!!block;n#nextChange#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#oneOf#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#guard#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getAllArgs#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#7408#7668#0" expanded="true" />
-            <element signature="e#7504#7581#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#7879#8090#0" expanded="true" />
-            <element signature="n#!!block;n#getSourcesFor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#8248#8418#0" expanded="true" />
-            <element signature="n#!!block;n#getMatchArgs#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#8574#9301#0" expanded="true" />
-            <element signature="e#8670#9183#0" expanded="true" />
-            <element signature="e#8733#9168#0" expanded="true" />
-            <element signature="e#8817#9149#0" expanded="true" />
-            <element signature="e#8967#9126#0" expanded="true" />
-            <element signature="e#9245#9290#0" expanded="true" />
-            <element signature="e#10254#10468#0" expanded="true" />
-            <element signature="e#10681#10834#0" expanded="true" />
-            <element signature="e#11046#11201#0" expanded="true" />
-            <element signature="e#11120#11182#0" expanded="true" />
-            <element signature="e#11377#11645#0" expanded="true" />
-            <element signature="e#11456#11626#0" expanded="true" />
-            <element signature="e#11831#11970#0" expanded="true" />
-            <element signature="e#11901#11955#0" expanded="true" />
-            <element signature="e#12640#12984#0" expanded="true" />
-            <element signature="e#12873#12969#0" expanded="true" />
-            <element signature="e#13164#14185#0" expanded="true" />
-            <element signature="e#13262#14174#0" expanded="true" />
-            <element signature="e#13372#13774#0" expanded="true" />
-            <element signature="e#14384#14471#0" expanded="true" />
-            <element signature="e#14730#15231#0" expanded="true" />
-            <element signature="e#14835#15137#0" expanded="true" />
-            <element signature="e#15321#15533#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#16296#16466#0" expanded="true" />
-            <element signature="e#16360#16443#0" expanded="true" />
-            <element signature="e#16981#17158#0" expanded="true" />
-            <element signature="e#17056#17139#0" expanded="true" />
-            <element signature="e#17292#17375#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#18046#18106#0" expanded="true" />
-            <element signature="e#18238#19580#0" expanded="true" />
-            <element signature="e#18324#19565#0" expanded="true" />
-            <element signature="e#18625#19546#0" expanded="true" />
-            <element signature="e#18858#19357#0" expanded="true" />
-            <element signature="e#19046#19330#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#19715#19945#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#22211#22293#0" expanded="true" />
-            <element signature="e#23292#23761#0" expanded="true" />
-            <element signature="e#23379#23750#0" expanded="true" />
-            <element signature="e#23822#24092#0" expanded="true" />
-            <element signature="e#23911#24081#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllStarts#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllChildren#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#gotAllParents#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#flushChildMessages#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25051#25085#0" expanded="true" />
-            <element signature="n#!!block;n#sendToAllParents#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#flushParentMessages#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25365#25399#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25608#25686#0" expanded="true" />
-            <element signature="n#!!block;n#flushReady#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#25887#25922#0" expanded="true" />
-            <element signature="n#!!block;n#nextChange#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#oneOf#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#guard#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#getAllArgs#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#26435#26695#0" expanded="true" />
-            <element signature="e#26531#26608#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#26906#27117#0" expanded="true" />
-            <element signature="n#!!block;n#getSourcesFor#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#27275#27445#0" expanded="true" />
-            <element signature="n#!!block;n#getMatchArgs#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#27601#28328#0" expanded="true" />
-            <element signature="e#27697#28210#0" expanded="true" />
-            <element signature="e#27760#28195#0" expanded="true" />
-            <element signature="e#27844#28176#0" expanded="true" />
-            <element signature="e#27994#28153#0" expanded="true" />
-            <element signature="e#28272#28317#0" expanded="true" />
-            <element signature="n#!!block;n#addToI#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#getSources#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#29182#29396#0" expanded="true" />
-            <element signature="e#29609#29762#0" expanded="true" />
-            <element signature="e#29974#30129#0" expanded="true" />
-            <element signature="e#30048#30110#0" expanded="true" />
-            <element signature="e#30305#30485#0" expanded="true" />
-            <element signature="e#30378#30466#0" expanded="true" />
-            <element signature="n#!!block;n#getStart#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#30671#30810#0" expanded="true" />
-            <element signature="e#30741#30795#0" expanded="true" />
-            <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#31480#31824#0" expanded="true" />
-            <element signature="e#31713#31809#0" expanded="true" />
-            <element signature="e#32004#33025#0" expanded="true" />
-            <element signature="e#32102#33014#0" expanded="true" />
-            <element signature="e#32212#32614#0" expanded="true" />
-            <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#33224#33311#0" expanded="true" />
-            <element signature="e#33570#34071#0" expanded="true" />
-            <element signature="e#33675#33977#0" expanded="true" />
-            <element signature="e#34161#34373#0" expanded="true" />
-            <element signature="e#35136#35306#0" expanded="true" />
-            <element signature="e#35200#35283#0" expanded="true" />
-            <element signature="e#36726#36913#0" expanded="true" />
-            <element signature="e#36801#36894#0" expanded="true" />
-            <element signature="e#37047#37130#0" expanded="true" />
-            <element signature="e#37782#37842#0" expanded="true" />
-            <element signature="e#37989#39331#0" expanded="true" />
-            <element signature="e#38075#39316#0" expanded="true" />
-            <element signature="e#38376#39297#0" expanded="true" />
-            <element signature="e#38609#39108#0" expanded="true" />
-            <element signature="e#38797#39081#0" expanded="true" />
-            <element signature="e#39466#39696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="157" column="50" lean-forward="true" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#FleetData#0" />
             <element signature="n#UseCaseAdmitter#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseAdmitter#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#UseCaseAdmitter#0" expanded="true" />
@@ -2058,24 +1506,15 @@
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#5836#5876#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
-            <element signature="n#QPROPConfigServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPConfigServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPConfigServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPConfigServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPConfigServiceApp#0" expanded="true" />
             <element signature="n#SIDUPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
+            <element signature="n#QPROPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
-            <element signature="n#QPROPDataAccessServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
             <element signature="n#SIDUPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -2084,11 +1523,6 @@
             <element signature="n#!!block;n#start#0;n#QPROPGeoService#0" expanded="true" />
             <element signature="e#16366#16632#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPGeoService#0" expanded="true" />
-            <element signature="n#QPROPGeoServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPGeoServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPGeoServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPGeoServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#QPROPGeoServiceApp#0" expanded="true" />
             <element signature="n#SIDUPDrivingService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDrivingService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPDrivingService#0" expanded="true" />
@@ -2098,11 +1532,6 @@
             <element signature="n#!!block;n#start#0;n#QPROPDrivingService#0" expanded="true" />
             <element signature="e#20479#20744#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingService#0" expanded="true" />
-            <element signature="n#QPROPDrivingServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#QPROPDrivingServiceApp#0" expanded="true" />
             <element signature="n#SIDUPDashboardService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPDashboardService#0" expanded="true" />
@@ -2112,11 +1541,7 @@
             <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="e#27941#29751#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#QPROPDashboardServiceApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardServiceApp#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardServiceApp#0" expanded="true" />
+            <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
             <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
@@ -2124,21 +1549,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Signal.ts">
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop200.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3831">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="n#!!block;n#isMutatingMethod#0;n#SignalMirror#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#DerivedSignal#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
+            <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#amSource#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#amSink#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllSources#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllStarts#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllChildren#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#gotAllParents#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#sendToAllChildren#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#flushChildMessages#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#sendToAllParents#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#flushParentMessages#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#invokeStart#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#flushReady#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#nextChange#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#oneOf#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#guard#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#getAllArgs#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#getSourcesFor#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#getMatchArgs#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#addToI#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#getSources#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#getStart#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#16521#16708#0" expanded="true" />
+            <element signature="e#16596#16689#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
             <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
