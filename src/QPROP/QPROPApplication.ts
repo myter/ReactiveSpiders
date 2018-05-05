@@ -65,7 +65,7 @@ class LocalDependencyGraph extends SpiderIsolate{
     }
 }
 
-export class QPROPApplication extends Application{
+export class QPROPApplication{
     //Spiders.js related
     thisDir
     PropagationValue            : {new(from : PubSubTag,value : Signal,sClocks : Map<string,number>,fClock : number,isOptimised? : boolean): PropagationValue}
@@ -95,9 +95,10 @@ export class QPROPApplication extends Application{
     allChildListeners           : Array<Function>
     allParentListeners          : Array<Function>
     publishedSignalId           : string
+    host                        : Application
 
-    constructor(ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(new SpiderActorMirror(),myAddress,myPort)
+    constructor(host,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
+        this.host               = host
         this.thisDir            = __dirname
         this.ownType            = ownType
         this.parentTypes        = parentTypes
@@ -129,7 +130,7 @@ export class QPROPApplication extends Application{
         this.inChange               = false
         this.changeDoneListeners    = []
         this.brittle                = new Map()
-        this.psClient               = this.libs.setupPSClient(this.serverAddress,this.serverPort)
+        this.psClient               = this.host.libs.setupPSClient(this.serverAddress,this.serverPort)
         this.lastProp               = new this.PropagationValue(this.ownType,null,new Map(),this.clock)
         if(this.amSource()){
             this.lastProp.value = this.invokeStart()
@@ -162,7 +163,7 @@ export class QPROPApplication extends Application{
     ////////////////////////////////////////
 
     fromPropValArray(propValArr){
-        return new this.PropagationValue(new this.libs.PubSubTag(propValArr[0]),propValArr[1],new Map(JSON.parse(propValArr[2])),propValArr[3],propValArr[4])
+        return new this.PropagationValue(new this.host.libs.PubSubTag(propValArr[0]),propValArr[1],new Map(JSON.parse(propValArr[2])),propValArr[3],propValArr[4])
     }
 
     amSource(){
@@ -225,7 +226,7 @@ export class QPROPApplication extends Application{
         this.parentTypes.forEach((parentType : PubSubTag,index : number)=>{
             args[index] = this.inputSignals.get(parentType.tagVal)
         });
-        let returnSig = (this as any).start(...args)
+        let returnSig = (this.host as any).start(...args)
         this.publishedSignalId = returnSig.id
         return returnSig
     }
@@ -346,7 +347,7 @@ export class QPROPApplication extends Application{
             let allSources      : Array<PubSubTag>      = []
             let sourceClocks    : Map<string,number>    = new Map()
             this.S.forEach((_,source : string)=>{
-                let tag = new this.libs.PubSubTag(source)
+                let tag = new this.host.libs.PubSubTag(source)
                 allSources.push(tag)
                 sourceClocks.set(source,0)
             })
@@ -504,7 +505,7 @@ export class QPROPApplication extends Application{
                 })
             }
             else{
-                let sigClone = this.libs.clone(signal)
+                let sigClone = this.host.libs.clone(signal)
                 this.readyListeners.push(()=>{
                     this.internalSignalChanged(sigClone as any)
                 })

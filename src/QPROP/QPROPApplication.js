@@ -48,9 +48,9 @@ class LocalDependencyGraph extends spiders_js_1.SpiderIsolate {
         });
     }
 }
-class QPROPApplication extends spiders_js_1.Application {
-    constructor(ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
+class QPROPApplication {
+    constructor(host, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
+        this.host = host;
         this.thisDir = __dirname;
         this.ownType = ownType;
         this.parentTypes = parentTypes;
@@ -81,7 +81,7 @@ class QPROPApplication extends spiders_js_1.Application {
         this.inChange = false;
         this.changeDoneListeners = [];
         this.brittle = new Map();
-        this.psClient = this.libs.setupPSClient(this.serverAddress, this.serverPort);
+        this.psClient = this.host.libs.setupPSClient(this.serverAddress, this.serverPort);
         this.lastProp = new this.PropagationValue(this.ownType, null, new Map(), this.clock);
         if (this.amSource()) {
             this.lastProp.value = this.invokeStart();
@@ -112,7 +112,7 @@ class QPROPApplication extends spiders_js_1.Application {
     // Helper Functions                   //
     ////////////////////////////////////////
     fromPropValArray(propValArr) {
-        return new this.PropagationValue(new this.libs.PubSubTag(propValArr[0]), propValArr[1], new Map(JSON.parse(propValArr[2])), propValArr[3], propValArr[4]);
+        return new this.PropagationValue(new this.host.libs.PubSubTag(propValArr[0]), propValArr[1], new Map(JSON.parse(propValArr[2])), propValArr[3], propValArr[4]);
     }
     amSource() {
         return this.parentTypes.length == 0;
@@ -164,7 +164,7 @@ class QPROPApplication extends spiders_js_1.Application {
         this.parentTypes.forEach((parentType, index) => {
             args[index] = this.inputSignals.get(parentType.tagVal);
         });
-        let returnSig = this.start(...args);
+        let returnSig = this.host.start(...args);
         this.publishedSignalId = returnSig.id;
         return returnSig;
     }
@@ -274,7 +274,7 @@ class QPROPApplication extends spiders_js_1.Application {
             let allSources = [];
             let sourceClocks = new Map();
             this.S.forEach((_, source) => {
-                let tag = new this.libs.PubSubTag(source);
+                let tag = new this.host.libs.PubSubTag(source);
                 allSources.push(tag);
                 sourceClocks.set(source, 0);
             });
@@ -427,7 +427,7 @@ class QPROPApplication extends spiders_js_1.Application {
                 });
             }
             else {
-                let sigClone = this.libs.clone(signal);
+                let sigClone = this.host.libs.clone(signal);
                 this.readyListeners.push(() => {
                     this.internalSignalChanged(sigClone);
                 });

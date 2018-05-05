@@ -25,7 +25,7 @@ class FleetData extends Signal{
 
 
 
-export class QPROPConfigServiceApp extends QPROPApplication{
+export class QPROPConfigServiceApp extends Application{
     FleetData
     rate
     totalVals
@@ -36,9 +36,11 @@ export class QPROPConfigServiceApp extends QPROPApplication{
     close
     thisDir
     okType
+    qprop
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
+        super(new SpiderActorMirror(),myAddress,myPort)
+        this.qprop          = new QPROPApplication(this,ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
         this.rate           = rate / 2
         this.totalVals      = totalVals / 2
         this.FleetData      = FleetData
@@ -51,7 +53,6 @@ export class QPROPConfigServiceApp extends QPROPApplication{
     }
 
     init(){
-        super.init()
         let writing         = require(this.thisDir+"/writing")
         this.memWriter      = new writing.MemoryWriter("Config")
         this.averageMem     = writing.averageMem
@@ -60,9 +61,9 @@ export class QPROPConfigServiceApp extends QPROPApplication{
 
     start(){
         console.log("Config ready")
-        let sig = new this.FleetData(this)
+        let sig = new this.FleetData(this.qprop)
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        this.psClient.subscribe(this.okType).once(()=>{
+        this.qprop.psClient.subscribe(this.okType).once(()=>{
             this.update(sig)
         })
         return sig
@@ -97,7 +98,7 @@ export class QPROPConfigServiceApp extends QPROPApplication{
     }
 }
 
-export class QPROPDataAccessServiceApp extends QPROPApplication{
+export class QPROPDataAccessServiceApp extends Application{
     rate
     totalVals
     memWriter
@@ -108,9 +109,11 @@ export class QPROPDataAccessServiceApp extends QPROPApplication{
     thisDir
     FleetData
     okType
+    qprop
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
+        super(new SpiderActorMirror(),myAddress,myPort)
+        this.qprop          = new QPROPApplication(this,ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
         this.rate           = rate / 2
         this.totalVals      = totalVals / 2
         this.csvFileName    = csvFileName
@@ -123,7 +126,6 @@ export class QPROPDataAccessServiceApp extends QPROPApplication{
     }
 
     init(){
-        super.init()
         let writing     = require(this.thisDir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Data")
         this.averageMem = writing.averageMem
@@ -132,9 +134,9 @@ export class QPROPDataAccessServiceApp extends QPROPApplication{
 
     start(){
         console.log("Data ready")
-        let sig = new this.FleetData(this)
+        let sig = new this.FleetData(this.qprop)
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        this.psClient.subscribe(this.okType).once(()=>{
+        this.qprop.psClient.subscribe(this.okType).once(()=>{
             this.update(sig)
         })
         return sig
@@ -168,7 +170,7 @@ export class QPROPDataAccessServiceApp extends QPROPApplication{
     }
 }
 
-export class QPROPGeoServiceApp extends QPROPApplication{
+export class QPROPGeoServiceApp extends Application{
     memWriter
     averageMem
     close
@@ -176,9 +178,11 @@ export class QPROPGeoServiceApp extends QPROPApplication{
     rate
     totalVals
     csvFileName
+    qprop
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
+        super(new SpiderActorMirror(),myAddress,myPort)
+        this.qprop          = new QPROPApplication(this,ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
         this.close          = false
         this.thisdir        = __dirname
         this.totalVals      = totalVals
@@ -188,7 +192,6 @@ export class QPROPGeoServiceApp extends QPROPApplication{
     }
 
     init(){
-        super.init()
         let writing     = require(this.thisdir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Geo")
         this.averageMem = writing.averageMem
@@ -198,7 +201,7 @@ export class QPROPGeoServiceApp extends QPROPApplication{
     start(imp){
         console.log("Geo ready")
         let propagated = 0
-        return this.lift((fleetData : FleetData)=>{
+        return this.qprop.lift((fleetData : FleetData)=>{
             propagated++
             if(propagated == this.totalVals / 2){
                 this.close = true
@@ -219,7 +222,7 @@ export class QPROPGeoServiceApp extends QPROPApplication{
     }
 }
 
-export class QPROPDrivingServiceApp extends QPROPApplication{
+export class QPROPDrivingServiceApp extends Application{
     memWriter
     averageMem
     close
@@ -227,9 +230,11 @@ export class QPROPDrivingServiceApp extends QPROPApplication{
     totalVals
     csvFileName
     thisDir
+    qprop
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
+        super(new SpiderActorMirror(),myAddress,myPort)
+        this.qprop          = new QPROPApplication(this,ownType,parentTypes,childTypes,myAddress,myPort,psServerAddress,psServerPort)
         this.close          = false
         this.thisDir        = __dirname
         this.rate           = rate
@@ -239,7 +244,6 @@ export class QPROPDrivingServiceApp extends QPROPApplication{
     }
 
     init(){
-        super.init()
         let writing     = require(this.thisDir+"/writing")
         this.memWriter  = new writing.MemoryWriter("Driving")
         this.averageMem = writing.averageMem
@@ -249,7 +253,7 @@ export class QPROPDrivingServiceApp extends QPROPApplication{
     start(data,geo){
         console.log("Driving ready")
         let propagated = 0
-        return this.lift((data,geo)=>{
+        return this.qprop.lift((data,geo)=>{
             propagated++
             if(propagated == this.totalVals / 2){
                 this.close = true
@@ -270,7 +274,7 @@ export class QPROPDrivingServiceApp extends QPROPApplication{
     }
 }
 
-export class QPROPDashboardServiceApp extends QPROPApplication{
+export class QPROPDashboardServiceApp extends Application{
     memWriter
     averageMem
     averageResults
@@ -283,9 +287,11 @@ export class QPROPDashboardServiceApp extends QPROPApplication{
     tWriter
     pWriter
     okType
+    qprop
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAdress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
-        super(ownType,parentTypes,childTypes,myAdress,myPort,psServerAddress,psServerPort)
+        super(new SpiderActorMirror(),myAdress,myPort)
+        this.qprop          = new QPROPApplication(this,ownType,parentTypes,childTypes,myAdress,myPort,psServerAddress,psServerPort)
         this.close          = false
         this.rate           = rate
         this.totalVals      = totalVals
@@ -296,7 +302,6 @@ export class QPROPDashboardServiceApp extends QPROPApplication{
     }
 
     init(){
-        super.init()
         var csvWriter           = require('csv-write-stream')
         var fs                  = require('fs')
         let writing             = require(this.thisDir+"/writing")
@@ -320,8 +325,8 @@ export class QPROPDashboardServiceApp extends QPROPApplication{
         let firstPropagation = true
         let benchStart
         let processingTimes = []
-        this.psClient.publish("ok",this.okType)
-        return this.lift((driving,geo,config)=>{
+        this.qprop.psClient.publish("ok",this.okType)
+        return this.qprop.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
                 console.log("Received: " + valsReceived + " needed: " + this.totalVals)
                 if(firstPropagation){

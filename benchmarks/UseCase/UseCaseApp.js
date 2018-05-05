@@ -23,9 +23,10 @@ class FleetData extends Signal_1.Signal {
 __decorate([
     Signal_1.mutating
 ], FleetData.prototype, "actualise", null);
-class QPROPConfigServiceApp extends QPROPApplication_1.QPROPApplication {
+class QPROPConfigServiceApp extends spiders_js_1.Application {
     constructor(rate, totalVals, csvFileName, ownType, okType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
+        super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
+        this.qprop = new QPROPApplication_1.QPROPApplication(this, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
         this.FleetData = FleetData;
@@ -37,7 +38,6 @@ class QPROPConfigServiceApp extends QPROPApplication_1.QPROPApplication {
         this.init();
     }
     init() {
-        super.init();
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Config");
         this.averageMem = writing.averageMem;
@@ -45,9 +45,9 @@ class QPROPConfigServiceApp extends QPROPApplication_1.QPROPApplication {
     }
     start() {
         console.log("Config ready");
-        let sig = new this.FleetData(this);
+        let sig = new this.FleetData(this.qprop);
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        this.psClient.subscribe(this.okType).once(() => {
+        this.qprop.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
         });
         return sig;
@@ -80,9 +80,10 @@ class QPROPConfigServiceApp extends QPROPApplication_1.QPROPApplication {
     }
 }
 exports.QPROPConfigServiceApp = QPROPConfigServiceApp;
-class QPROPDataAccessServiceApp extends QPROPApplication_1.QPROPApplication {
+class QPROPDataAccessServiceApp extends spiders_js_1.Application {
     constructor(rate, totalVals, csvFileName, ownType, okType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
+        super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
+        this.qprop = new QPROPApplication_1.QPROPApplication(this, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
         this.csvFileName = csvFileName;
@@ -94,7 +95,6 @@ class QPROPDataAccessServiceApp extends QPROPApplication_1.QPROPApplication {
         this.init();
     }
     init() {
-        super.init();
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Data");
         this.averageMem = writing.averageMem;
@@ -102,9 +102,9 @@ class QPROPDataAccessServiceApp extends QPROPApplication_1.QPROPApplication {
     }
     start() {
         console.log("Data ready");
-        let sig = new this.FleetData(this);
+        let sig = new this.FleetData(this.qprop);
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        this.psClient.subscribe(this.okType).once(() => {
+        this.qprop.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
         });
         return sig;
@@ -136,9 +136,10 @@ class QPROPDataAccessServiceApp extends QPROPApplication_1.QPROPApplication {
     }
 }
 exports.QPROPDataAccessServiceApp = QPROPDataAccessServiceApp;
-class QPROPGeoServiceApp extends QPROPApplication_1.QPROPApplication {
+class QPROPGeoServiceApp extends spiders_js_1.Application {
     constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
+        super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
+        this.qprop = new QPROPApplication_1.QPROPApplication(this, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
         this.close = false;
         this.thisdir = __dirname;
         this.totalVals = totalVals;
@@ -147,7 +148,6 @@ class QPROPGeoServiceApp extends QPROPApplication_1.QPROPApplication {
         this.init();
     }
     init() {
-        super.init();
         let writing = require(this.thisdir + "/writing");
         this.memWriter = new writing.MemoryWriter("Geo");
         this.averageMem = writing.averageMem;
@@ -156,7 +156,7 @@ class QPROPGeoServiceApp extends QPROPApplication_1.QPROPApplication {
     start(imp) {
         console.log("Geo ready");
         let propagated = 0;
-        return this.lift((fleetData) => {
+        return this.qprop.lift((fleetData) => {
             propagated++;
             if (propagated == this.totalVals / 2) {
                 this.close = true;
@@ -176,9 +176,10 @@ class QPROPGeoServiceApp extends QPROPApplication_1.QPROPApplication {
     }
 }
 exports.QPROPGeoServiceApp = QPROPGeoServiceApp;
-class QPROPDrivingServiceApp extends QPROPApplication_1.QPROPApplication {
+class QPROPDrivingServiceApp extends spiders_js_1.Application {
     constructor(rate, totalVals, csvFileName, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
+        super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
+        this.qprop = new QPROPApplication_1.QPROPApplication(this, ownType, parentTypes, childTypes, myAddress, myPort, psServerAddress, psServerPort);
         this.close = false;
         this.thisDir = __dirname;
         this.rate = rate;
@@ -187,7 +188,6 @@ class QPROPDrivingServiceApp extends QPROPApplication_1.QPROPApplication {
         this.init();
     }
     init() {
-        super.init();
         let writing = require(this.thisDir + "/writing");
         this.memWriter = new writing.MemoryWriter("Driving");
         this.averageMem = writing.averageMem;
@@ -196,7 +196,7 @@ class QPROPDrivingServiceApp extends QPROPApplication_1.QPROPApplication {
     start(data, geo) {
         console.log("Driving ready");
         let propagated = 0;
-        return this.lift((data, geo) => {
+        return this.qprop.lift((data, geo) => {
             propagated++;
             if (propagated == this.totalVals / 2) {
                 this.close = true;
@@ -216,9 +216,10 @@ class QPROPDrivingServiceApp extends QPROPApplication_1.QPROPApplication {
     }
 }
 exports.QPROPDrivingServiceApp = QPROPDrivingServiceApp;
-class QPROPDashboardServiceApp extends QPROPApplication_1.QPROPApplication {
+class QPROPDashboardServiceApp extends spiders_js_1.Application {
     constructor(rate, totalVals, csvFileName, ownType, okType, parentTypes, childTypes, myAdress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
-        super(ownType, parentTypes, childTypes, myAdress, myPort, psServerAddress, psServerPort);
+        super(new spiders_js_1.SpiderActorMirror(), myAdress, myPort);
+        this.qprop = new QPROPApplication_1.QPROPApplication(this, ownType, parentTypes, childTypes, myAdress, myPort, psServerAddress, psServerPort);
         this.close = false;
         this.rate = rate;
         this.totalVals = totalVals;
@@ -228,7 +229,6 @@ class QPROPDashboardServiceApp extends QPROPApplication_1.QPROPApplication {
         this.init();
     }
     init() {
-        super.init();
         var csvWriter = require('csv-write-stream');
         var fs = require('fs');
         let writing = require(this.thisDir + "/writing");
@@ -251,8 +251,8 @@ class QPROPDashboardServiceApp extends QPROPApplication_1.QPROPApplication {
         let firstPropagation = true;
         let benchStart;
         let processingTimes = [];
-        this.psClient.publish("ok", this.okType);
-        return this.lift((driving, geo, config) => {
+        this.qprop.psClient.publish("ok", this.okType);
+        return this.qprop.lift((driving, geo, config) => {
             if (valsReceived + 1 <= this.totalVals) {
                 console.log("Received: " + valsReceived + " needed: " + this.totalVals);
                 if (firstPropagation) {
