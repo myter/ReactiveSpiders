@@ -21,6 +21,14 @@ class FleetData extends Signal{
     equals(otherFleetDataSignal : FleetData){
         return this.constructionTime == otherFleetDataSignal.constructionTime
     }
+
+    getState(){
+        return this.constructionTime
+    }
+
+    setState(s){
+        this.constructionTime = s
+    }
 }
 
 export class QPROPConfigServiceApp extends Application{
