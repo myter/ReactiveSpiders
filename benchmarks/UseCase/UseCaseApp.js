@@ -1,9 +1,3 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const Signal_1 = require("../../src/Signal");
 const spiders_js_1 = require("spiders.js");
@@ -20,9 +14,6 @@ class FleetData extends Signal_1.Signal {
         return this.constructionTime == otherFleetDataSignal.constructionTime;
     }
 }
-__decorate([
-    Signal_1.mutating
-], FleetData.prototype, "actualise", null);
 class QPROPConfigServiceApp extends spiders_js_1.Application {
     constructor(rate, totalVals, csvFileName, ownType, okType, parentTypes, childTypes, myAddress, myPort, psServerAddress = "127.0.0.1", psServerPort = 8000) {
         super(new spiders_js_1.SpiderActorMirror(), myAddress, myPort);
@@ -58,6 +49,7 @@ class QPROPConfigServiceApp extends spiders_js_1.Application {
             this.totalVals--;
             this.produced++;
             signal.actualise();
+            this.qprop.internalSignalChanged(signal);
         }
         //Memory not measured for max throughput benchmarks
         if (this.totalVals <= 0) {
@@ -116,6 +108,7 @@ class QPROPDataAccessServiceApp extends spiders_js_1.Application {
             this.totalVals--;
             this.produced++;
             signal.actualise();
+            this.qprop.internalSignalChanged(signal);
         }
         if (this.totalVals <= 0) {
             this.close = true;

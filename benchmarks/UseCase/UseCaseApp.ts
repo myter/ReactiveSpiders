@@ -13,7 +13,6 @@ class FleetData extends Signal{
         this.constructionTime = Date.now()
     }
 
-    @mutating
     actualise(){
         this.constructionTime = Date.now()
     }
@@ -22,8 +21,6 @@ class FleetData extends Signal{
         return this.constructionTime == otherFleetDataSignal.constructionTime
     }
 }
-
-
 
 export class QPROPConfigServiceApp extends Application{
     FleetData
@@ -36,7 +33,7 @@ export class QPROPConfigServiceApp extends Application{
     close
     thisDir
     okType
-    qprop
+    qprop : QPROPApplication
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
         super(new SpiderActorMirror(),myAddress,myPort)
@@ -75,6 +72,7 @@ export class QPROPConfigServiceApp extends Application{
             this.totalVals--
             this.produced++
             signal.actualise()
+            this.qprop.internalSignalChanged(signal)
         }
         //Memory not measured for max throughput benchmarks
         if(this.totalVals <= 0){
@@ -110,7 +108,7 @@ export class QPROPDataAccessServiceApp extends Application{
     thisDir
     FleetData
     okType
-    qprop
+    qprop : QPROPApplication
 
     constructor(rate,totalVals,csvFileName,ownType : PubSubTag,okType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,myAddress,myPort,psServerAddress = "127.0.0.1",psServerPort = 8000){
         super(new SpiderActorMirror(),myAddress,myPort)
@@ -149,6 +147,7 @@ export class QPROPDataAccessServiceApp extends Application{
             this.totalVals--
             this.produced++
             signal.actualise()
+            this.qprop.internalSignalChanged(signal)
         }
         if(this.totalVals <= 0){
             this.close = true
