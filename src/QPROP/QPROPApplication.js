@@ -419,7 +419,7 @@ class QPROPApplication {
                         });
                     });
                 }
-                this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock);
+                this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock, true);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
                         child.prePropagation(JSON.stringify(this.lastProp.toArray()));
