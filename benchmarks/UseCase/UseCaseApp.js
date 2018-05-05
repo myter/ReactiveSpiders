@@ -45,7 +45,7 @@ class QPROPConfigServiceApp extends QPROPApplication_1.QPROPApplication {
     }
     start() {
         console.log("Config ready");
-        let sig = new this.FleetData(this.libs.reflectOnActor());
+        let sig = new this.FleetData(this);
         //Wait for construction to be completed (for both QPROP and SIDUP)
         this.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
@@ -102,7 +102,7 @@ class QPROPDataAccessServiceApp extends QPROPApplication_1.QPROPApplication {
     }
     start() {
         console.log("Data ready");
-        let sig = new this.FleetData(this.libs.reflectOnActor());
+        let sig = new this.FleetData(this);
         //Wait for construction to be completed (for both QPROP and SIDUP)
         this.psClient.subscribe(this.okType).once(() => {
             this.update(sig);
