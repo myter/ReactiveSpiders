@@ -88,11 +88,9 @@ export class QPROPConfigServiceApp extends Application{
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Config")
         }
-        else{
             setTimeout(()=>{
                 this.update(signal)
             },500)
-        }
     }
 
     snapMem(){
@@ -161,11 +159,9 @@ export class QPROPDataAccessServiceApp extends Application{
             this.memWriter.end()
             this.averageMem(this.csvFileName,this.rate*2,"Data")
         }
-        else{
-            setTimeout(()=>{
-                this.update(signal)
-            },500)
-        }
+        setTimeout(()=>{
+            this.update(signal)
+        },500)
     }
 
     snapMem(){
