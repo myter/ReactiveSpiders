@@ -85,7 +85,7 @@ export class QPROPConfigServiceApp extends Application{
         else{
             setTimeout(()=>{
                 this.update(signal)
-            },1000)
+            },500)
         }
     }
 
@@ -158,7 +158,7 @@ export class QPROPDataAccessServiceApp extends Application{
         else{
             setTimeout(()=>{
                 this.update(signal)
-            },1000)
+            },500)
         }
     }
 
@@ -333,7 +333,7 @@ export class QPROPDashboardServiceApp extends Application{
         this.qprop.psClient.publish("ok",this.okType)
         return this.qprop.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
-                //console.log("Received: " + valsReceived + " needed: " + this.totalVals)
+                console.log("Received: " + valsReceived + " needed: " + this.totalVals)
                 if(firstPropagation){
                     benchStart = Date.now()
                     firstPropagation = false
