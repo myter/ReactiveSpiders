@@ -462,7 +462,7 @@ export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
                 this.lastProp   = new this.PropagationValue(this.ownType,signal,clocks,this.clock)
                 this.sendToAllChildren(()=>{
                     this.childRefs.forEach((child : FarRef<QPROPActor>)=>{
-                        child.prePropagation(this.ownType,signal,clocks,this.clock,false)
+                        child.prePropagation(this.ownType,signal,clocks,this.clock,true)
                     })
                 })
             }
