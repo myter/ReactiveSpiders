@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
@@ -43,8 +35,8 @@
       <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="464" column="89" selection-start-line="464" selection-start-column="89" selection-end-line="464" selection-end-column="89" />
+            <state relative-caret-position="359">
+              <caret line="464" column="75" selection-start-line="464" selection-start-column="75" selection-end-line="464" selection-end-column="75" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
                 <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
@@ -92,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+              <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
               <folding>
                 <element signature="e#0#382#0" expanded="true" />
                 <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
@@ -449,21 +441,7 @@
       <workItem from="1525282610848" duration="2673000" />
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
-      <workItem from="1525704870914" duration="2646000" />
-    </task>
-    <task id="LOCAL-00033" summary="Fixing Performance issue with Spiders.js">
-      <created>1525421517472</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1525421517472</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Fixing Performance issue with Spiders.js">
-      <created>1525441060417</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1525441060417</updated>
+      <workItem from="1525704870914" duration="3062000" />
     </task>
     <task id="LOCAL-00035" summary="Fixing Performance issue with Spiders.js">
       <created>1525441307782</created>
@@ -794,7 +772,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525706950573</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Propagation value as argument and not sending isolate">
+      <created>1525707806575</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1525707806575</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Propagation value as argument and not sending isolate">
+      <created>1525708008232</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1525708008232</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -830,7 +822,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172380000" />
+    <option name="totallyTimeSpent" value="172796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -942,7 +934,8 @@
     <MESSAGE value="Stringified prop val" />
     <MESSAGE value="Reverted app back to arr prop vals" />
     <MESSAGE value="Reverted map back to regular map serialisation for app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverted map back to regular map serialisation for app" />
+    <MESSAGE value="Propagation value as argument and not sending isolate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Propagation value as argument and not sending isolate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1362,33 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReactiveMirror.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-          <folding>
-            <element signature="n#!!block;n#updateSource#0;n#LocalDependencyGraph#0" expanded="true" />
-            <element signature="n#!!block;n#updateSources#0;n#LocalDependencyGraph#0" expanded="true" />
-            <element signature="n#!!block;n#newNode#0;n#LocalDependencyGraph#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#ReactiveMirror#0" expanded="true" />
-            <element signature="n#!!block;n#lift#0;n#ReactiveMirror#0" expanded="true" />
-            <element signature="e#2552#2943#0" expanded="true" />
-            <element signature="n#!!block;n#containsSignal#0;n#ReactiveMirror#0" expanded="true" />
-            <element signature="e#3118#3670#0" expanded="true" />
-            <element signature="n#!!block;n#updateNode#0;n#ReactiveMirror#0" expanded="true" />
-            <element signature="e#3811#3989#0" expanded="true" />
-            <element signature="e#4149#4210#0" expanded="true" />
-            <element signature="e#4819#5104#0" expanded="true" />
-            <element signature="e#4928#5093#0" expanded="true" />
-            <element signature="e#5134#5195#0" expanded="true" />
-            <element signature="n#!!block;n#initialise#0;n#ReactiveMirror#0" expanded="true" />
-            <element signature="n#!!block;n#sendInvocation#0;n#ReactiveMirror#0" expanded="true" />
-            <element signature="e#5869#5946#0" expanded="true" />
-            <element signature="n#!!block;n#receiveInvocation#0;n#ReactiveMirror#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -1451,20 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#382#0" expanded="true" />
-            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
-            <element signature="e#524#2236#0" expanded="true" />
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/PropagationValue.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1483,10 +1435,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReactiveMirror.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="n#!!block;n#updateSource#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#updateSources#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#newNode#0;n#LocalDependencyGraph#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ReactiveMirror#0" expanded="true" />
+            <element signature="n#!!block;n#lift#0;n#ReactiveMirror#0" expanded="true" />
+            <element signature="e#2552#2943#0" expanded="true" />
+            <element signature="n#!!block;n#containsSignal#0;n#ReactiveMirror#0" expanded="true" />
+            <element signature="e#3118#3670#0" expanded="true" />
+            <element signature="n#!!block;n#updateNode#0;n#ReactiveMirror#0" expanded="true" />
+            <element signature="e#3811#3989#0" expanded="true" />
+            <element signature="e#4149#4210#0" expanded="true" />
+            <element signature="e#4819#5104#0" expanded="true" />
+            <element signature="e#4928#5093#0" expanded="true" />
+            <element signature="e#5134#5195#0" expanded="true" />
+            <element signature="n#!!block;n#initialise#0;n#ReactiveMirror#0" expanded="true" />
+            <element signature="n#!!block;n#sendInvocation#0;n#ReactiveMirror#0" expanded="true" />
+            <element signature="e#5869#5946#0" expanded="true" />
+            <element signature="n#!!block;n#receiveInvocation#0;n#ReactiveMirror#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#382#0" expanded="true" />
+            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+            <element signature="e#524#2236#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="464" column="89" selection-start-line="464" selection-start-column="89" selection-end-line="464" selection-end-column="89" />
+        <state relative-caret-position="359">
+          <caret line="464" column="75" selection-start-line="464" selection-start-column="75" selection-end-line="464" selection-end-column="75" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
