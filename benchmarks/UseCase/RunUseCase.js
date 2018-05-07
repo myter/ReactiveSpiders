@@ -75,5 +75,5 @@ function runLoops(loopRunner, rates) {
     runSIDUPLoop(100)
 })*/
 //runQPROPLoop(100)
-runQPROPLoop(2);
+runQPROPLoop(300);
 //# sourceMappingURL=RunUseCase.js.map

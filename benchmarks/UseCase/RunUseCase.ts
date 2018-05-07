@@ -91,6 +91,6 @@ function runLoops(loopRunner : Function,rates : Array<number>){
     runSIDUPLoop(100)
 })*/
 //runQPROPLoop(100)
-runQPROPLoop(2)
+runQPROPLoop(300)
 
 
