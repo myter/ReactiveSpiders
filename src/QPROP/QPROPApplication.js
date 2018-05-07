@@ -271,7 +271,7 @@ class QPROPApplication {
         }
     }
     prePropagation(propArr) {
-        let prop = this.fromPropValArray(JSON.parse(propArr));
+        let prop = this.fromPropValArray(propArr);
         let from = prop.from.tagVal;
         if (this.brittle.size == 0) {
             this.addToI(from, prop);
@@ -379,7 +379,7 @@ class QPROPApplication {
                 this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock, true);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
-                        child.prePropagation(JSON.stringify(this.lastProp.toArray()));
+                        child.prePropagation(this.lastProp.toArray());
                     });
                 });
             }
