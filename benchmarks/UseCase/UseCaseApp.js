@@ -71,9 +71,11 @@ class QPROPConfigServiceApp extends spiders_js_1.Application {
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Config");
         }
-        setTimeout(() => {
-            this.update(signal);
-        }, 500);
+        else {
+            setTimeout(() => {
+                this.update(signal);
+            }, 1000);
+        }
     }
     snapMem() {
         if (!this.close) {
@@ -126,9 +128,11 @@ class QPROPDataAccessServiceApp extends spiders_js_1.Application {
             this.memWriter.end();
             this.averageMem(this.csvFileName, this.rate * 2, "Data");
         }
-        setTimeout(() => {
-            this.update(signal);
-        }, 500);
+        else {
+            setTimeout(() => {
+                this.update(signal);
+            }, 1000);
+        }
     }
     snapMem() {
         if (!this.close) {
