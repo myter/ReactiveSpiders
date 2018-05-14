@@ -270,8 +270,9 @@ class QPROPApplication {
             this.flushReady();
         }
     }
-    prePropagation(propArr) {
-        let prop = this.fromPropValArray(propArr);
+    prePropagation(fromm, value, sClocks, fClock, isOptimised) {
+        let prop = new this.PropagationValue(fromm, value, sClocks, fClock, isOptimised);
+        //let prop        = this.fromPropValArray(propArr)
         let from = prop.from.tagVal;
         if (this.brittle.size == 0) {
             this.addToI(from, prop);
@@ -376,10 +377,10 @@ class QPROPApplication {
                         });
                     });
                 }
-                this.lastProp = new this.PropagationValue(this.ownType, signal.getState(), clocks, this.clock, true);
+                this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
-                        child.prePropagation(this.lastProp.toArray());
+                        child.prePropagation(this.ownType, signal.getState(), clocks, this.clock, true);
                     });
                 });
             }

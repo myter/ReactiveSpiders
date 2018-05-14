@@ -94,13 +94,15 @@ export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
         this.lastProp               = new this.PropagationValue(this.ownType,null,new Map(),this.clock)
         if(this.amSource()){
             this.lastProp.value = this.invokeStart()
+            this.lastProp.sClocks.set(this.ownType.tagVal,this.clock)
         }
         this.childTypes.forEach((childType : PubSubTag)=>{
-            this.psClient.subscribe(childType).each((childRef : FarRef<QPROPActor>)=>{
+            this.psClient.subscribe(childType).once((childRef : FarRef<QPROPActor>)=>{
                 this.childRefs.push(childRef)
-                if(this.amSource()){
-                    this.lastProp.sClocks.set(this.ownType.tagVal,this.clock)
-                    childRef.getSources([this.ownType],this.lastProp)
+                if(this.amSource() && this.gotAllChildren()){
+                    this.childRefs.forEach((ref)=>{
+                        ref.getSources([this.ownType],this.lastProp)
+                    })
                 }
                 if(this.gotAllChildren()){
                     this.flushChildMessages()
@@ -108,7 +110,7 @@ export class QPROPActor extends ReactiveActor implements GlitchAlgorithm{
             })
         })
         this.parentTypes.forEach((parentType : PubSubTag)=>{
-            this.psClient.subscribe(parentType).each((parentRef : FarRef<QPROPActor>)=>{
+            this.psClient.subscribe(parentType).once((parentRef : FarRef<QPROPActor>)=>{
                 this.parentRefs.push(parentRef)
                 if(this.gotAllParents()){
                     this.flushParentMessages()

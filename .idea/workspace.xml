@@ -6,8 +6,19 @@
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,16 +48,28 @@
       <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="416" selection-start-line="416" selection-end-line="416" />
+            <state relative-caret-position="816">
+              <caret line="466" column="45" lean-forward="true" selection-start-line="466" selection-start-column="45" selection-end-line="466" selection-end-column="98" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
                 <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
                 <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
+                <element signature="e#4171#4640#0" expanded="true" />
+                <element signature="e#4258#4629#0" expanded="true" />
+                <element signature="e#4488#4536#0" expanded="true" />
+                <element signature="e#4701#4971#0" expanded="true" />
+                <element signature="e#4790#4960#0" expanded="true" />
+                <element signature="e#6665#6743#0" expanded="true" />
+                <element signature="e#10666#10819#0" expanded="true" />
+                <element signature="e#11031#11186#0" expanded="true" />
+                <element signature="e#11105#11167#0" expanded="true" />
+                <element signature="e#11728#11867#0" expanded="true" />
                 <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+                <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
+                <element signature="e#14793#15294#0" expanded="true" />
+                <element signature="e#14898#15200#0" expanded="true" />
+                <element signature="e#15384#15596#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +78,7 @@
       <file leaf-file-name="ReactiveMirror.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReactiveMirror.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
+            <state relative-caret-position="431">
               <caret line="162" selection-start-line="162" selection-end-line="162" />
               <folding>
                 <element signature="n#!!block;n#updateSource#0;n#LocalDependencyGraph#0" expanded="true" />
@@ -81,13 +104,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="326">
+              <caret line="93" column="15" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
               <folding>
                 <element signature="e#0#382#0" expanded="true" />
+                <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+                <element signature="e#524#2236#0" expanded="true" />
                 <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
                 <element signature="n#!!block;n#runLoops#0" expanded="true" />
               </folding>
@@ -95,20 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qprop150.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop150.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+            <state relative-caret-position="-439">
+              <caret line="713" column="52" selection-start-line="713" selection-start-column="52" selection-end-line="713" selection-end-column="52" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
@@ -124,6 +140,8 @@
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
+                <element signature="e#5936#5976#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
                 <element signature="e#6439#6490#0" expanded="true" />
                 <element signature="n#SIDUPDataAccessService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
@@ -131,8 +149,11 @@
                 <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPDataAccessService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="e#9585#9625#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+                <element signature="e#10025#10076#0" expanded="true" />
                 <element signature="n#SIDUPGeoService#0" />
                 <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
                 <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -156,12 +177,58 @@
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-                <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
+                <element signature="e#21123#22916#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#UseCaseApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunUseCaseApp.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QPROPApplication.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="403" column="66" lean-forward="true" selection-start-line="403" selection-start-column="66" selection-end-line="403" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#14543#14845#0" expanded="true" />
+                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="e#16310#16503#0" expanded="true" />
+                <element signature="e#16391#16484#0" expanded="true" />
+                <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#lift#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#containsSignal#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#updateNode#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#newSource#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#sourceChanged#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#sourcesChanged#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#updateSource#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#updateSources#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#newNode#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#getDependants#0;n#QPROPApplication#0" expanded="true" />
+                <element signature="n#!!block;n#getParents#0;n#QPROPApplication#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,7 +255,6 @@
       <find>ReactiveMirror</find>
       <find>newPublished</find>
       <find>start</find>
-      <find>invokeStart</find>
       <find>clone</find>
       <find>newPropagation</find>
       <find>this.I</find>
@@ -210,6 +276,7 @@
       <find>sourcesChanged</find>
       <find>newSource</find>
       <find>this.lastProp</find>
+      <find>invokeStart</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
@@ -250,7 +317,6 @@
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.js" />
         <option value="$PROJECT_DIR$/tests/temp.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/CommMedium.js" />
         <option value="$PROJECT_DIR$/src/SID-UP/NodePulse.ts" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.ts" />
@@ -263,10 +329,11 @@
         <option value="$PROJECT_DIR$/src/ReactiveMirror.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" />
       </list>
     </option>
   </component>
@@ -440,14 +507,7 @@
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
       <workItem from="1525704870914" duration="3849000" />
-      <workItem from="1526299968370" duration="45000" />
-    </task>
-    <task id="LOCAL-00037" summary="Switched to Array propagation values">
-      <created>1525444736518</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1525444736518</updated>
+      <workItem from="1526299968370" duration="4482000" />
     </task>
     <task id="LOCAL-00038" summary="Switched to string for &quot;from&quot; argument in PropagationValue">
       <created>1525445390565</created>
@@ -785,7 +845,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525708612254</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Spawning from file">
+      <created>1526300126256</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1526300126257</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -821,7 +888,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173628000" />
+    <option name="totallyTimeSpent" value="178065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -834,7 +901,7 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26839826" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26695526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -935,7 +1002,8 @@
     <MESSAGE value="Reverted map back to regular map serialisation for app" />
     <MESSAGE value="Propagation value as argument and not sending isolate" />
     <MESSAGE value="Timeout to half" />
-    <option name="LAST_COMMIT_MESSAGE" value="Timeout to half" />
+    <MESSAGE value="Spawning from file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spawning from file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -943,27 +1011,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NoDistGlitch.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="995" column="116" selection-start-line="995" selection-start-column="116" selection-end-line="995" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/reactivity.Test.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -975,6 +1022,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="48" column="94" lean-forward="true" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
+          <folding>
+            <element signature="e#1763#3791#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -982,6 +1032,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#658#970#0" expanded="true" />
+            <element signature="n#!!block;n#averageMem#0" expanded="true" />
+            <element signature="e#1099#1944#0" expanded="true" />
+            <element signature="e#1511#1905#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#MemoryWriter#0" expanded="true" />
+            <element signature="n#!!block;n#snapshot#0;n#MemoryWriter#0" expanded="true" />
+            <element signature="n#!!block;n#end#0;n#MemoryWriter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -989,6 +1048,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="25" column="118" selection-start-line="25" selection-start-column="106" selection-end-line="25" selection-end-column="118" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#SIDUPAdmitter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -996,17 +1058,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!block;n#snapshot#0;n#PersistMemWriter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/General/GenerateBashScripts.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1260" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/General/Services.ts">
@@ -1051,6 +1111,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#729#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,6 +1142,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="194" column="8" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
+          <folding>
+            <element signature="e#87#570#0" expanded="true" />
+            <element signature="e#7804#8104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,13 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="744" column="100" lean-forward="true" selection-start-line="744" selection-start-column="100" selection-end-line="744" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171" />
@@ -1175,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SID-UP/NodePulse.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1193,6 +1246,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="383" column="71" lean-forward="true" selection-start-line="383" selection-start-column="71" selection-end-line="383" selection-end-column="71" />
+          <folding>
+            <element signature="n#!!block;n#publishSignal#0;n#SIDUPActor#0" expanded="true" />
+            <element signature="e#6214#6373#0" expanded="true" />
+            <element signature="e#6287#6362#0" expanded="true" />
+            <element signature="e#6406#6520#0" expanded="true" />
+            <element signature="e#6468#6509#0" expanded="true" />
+            <element signature="n#!!block;n#receiveSignal#0;n#SIDUPActor#0" expanded="true" />
+            <element signature="n#!!block;n#newPulse#0;n#SIDUPActor#0" expanded="true" />
+            <element signature="e#15260#15388#0" expanded="true" />
+            <element signature="e#15654#16118#0" expanded="true" />
+            <element signature="e#15723#16103#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#SIDUPActor#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,50 +1308,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="109" column="112" selection-start-line="109" selection-start-column="112" selection-end-line="109" selection-end-column="112" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newPropagation#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#16339#16548#0" expanded="true" />
-            <element signature="e#16420#16529#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#lift#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#containsSignal#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateNode#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sourceChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sourcesChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newNode#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getDependants#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getParents#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
+            <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
+            <element signature="n#!!block;n#setState#0;n#FleetData#0" expanded="true" />
+            <element signature="e#2757#2808#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
+            <element signature="e#4830#4873#0" expanded="true" />
+            <element signature="n#QPROPDashboardServiceApp#0" />
+            <element signature="n#UseCaseApp#0" />
+            <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1308,9 +1347,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop150.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/ActorEnvironment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Message.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#1875#1929#0" expanded="true" />
+            <element signature="n#!!block;n#sendMessage#0;n#SocketHandler#0" expanded="true" />
+            <element signature="e#2235#2482#0" />
+            <element signature="n#!!block;n#constructor#0;n#ServerSocketManager#0" expanded="true" />
+            <element signature="n#!!block;n#openConnection#0;n#ServerSocketManager#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/CommMedium.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="39" column="112" selection-start-line="39" selection-start-column="112" selection-end-line="39" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#2275#2568#0" expanded="true" />
+            <element signature="e#2612#2837#0" expanded="true" />
+            <element signature="n#!!block;n#resolvePendingConnection#0;n#CommMedium#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3735">
+          <caret line="744" column="100" lean-forward="true" selection-start-line="744" selection-start-column="100" selection-end-line="744" selection-end-column="100" />
+          <folding>
+            <element signature="e#29942#41051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReactiveMirror.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="431">
           <caret line="162" selection-start-line="162" selection-end-line="162" />
           <folding>
             <element signature="n#!!block;n#updateSource#0;n#LocalDependencyGraph#0" expanded="true" />
@@ -1335,10 +1439,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="93" column="15" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#382#0" expanded="true" />
+            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+            <element signature="e#524#2236#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+        <state relative-caret-position="-439">
+          <caret line="713" column="52" selection-start-line="713" selection-start-column="52" selection-end-line="713" selection-end-column="52" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
@@ -1354,6 +1472,8 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPConfigService#0" expanded="true" />
+            <element signature="e#5936#5976#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPConfigService#0" expanded="true" />
             <element signature="e#6439#6490#0" expanded="true" />
             <element signature="n#SIDUPDataAccessService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPDataAccessService#0" expanded="true" />
@@ -1361,8 +1481,11 @@
             <element signature="n#!!block;n#update#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPDataAccessService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="e#9585#9625#0" expanded="true" />
             <element signature="n#!!block;n#update#0;n#QPROPDataAccessService#0" expanded="true" />
+            <element signature="e#10025#10076#0" expanded="true" />
             <element signature="n#SIDUPGeoService#0" />
             <element signature="n#!!block;n#constructor#0;n#SIDUPGeoService#0" expanded="true" />
             <element signature="n#!!block;n#start#0;n#SIDUPGeoService#0" expanded="true" />
@@ -1386,7 +1509,7 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="e#21123#22916#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
@@ -1396,37 +1519,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="416" selection-start-line="416" selection-end-line="416" />
+        <state relative-caret-position="816">
+          <caret line="466" column="45" lean-forward="true" selection-start-line="466" selection-start-column="45" selection-end-line="466" selection-end-column="98" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
             <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#4171#4640#0" expanded="true" />
+            <element signature="e#4258#4629#0" expanded="true" />
+            <element signature="e#4488#4536#0" expanded="true" />
+            <element signature="e#4701#4971#0" expanded="true" />
+            <element signature="e#4790#4960#0" expanded="true" />
+            <element signature="e#6665#6743#0" expanded="true" />
+            <element signature="e#10666#10819#0" expanded="true" />
+            <element signature="e#11031#11186#0" expanded="true" />
+            <element signature="e#11105#11167#0" expanded="true" />
+            <element signature="e#11728#11867#0" expanded="true" />
             <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+            <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#14793#15294#0" expanded="true" />
+            <element signature="e#14898#15200#0" expanded="true" />
+            <element signature="e#15384#15596#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop150.csv">
+    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="186">
+          <caret line="403" column="66" lean-forward="true" selection-start-line="403" selection-start-column="66" selection-end-line="403" selection-end-column="66" />
           <folding>
-            <element signature="e#0#382#0" expanded="true" />
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#14543#14845#0" expanded="true" />
+            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="e#16310#16503#0" expanded="true" />
+            <element signature="e#16391#16484#0" expanded="true" />
+            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#lift#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#containsSignal#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#updateNode#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#newSource#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#sourceChanged#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#sourcesChanged#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#updateSource#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#updateSources#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#newNode#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#getDependants#0;n#QPROPApplication#0" expanded="true" />
+            <element signature="n#!!block;n#getParents#0;n#QPROPApplication#0" expanded="true" />
           </folding>
         </state>
       </provider>
