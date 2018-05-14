@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="Removing all MAP calls">
+    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn-node/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn-node/node_modules/acorn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/browser-resolve/node_modules/resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/browser-resolve/node_modules/resolve/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bufferutil/build/Release/bufferutil.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bufferutil/build/Release/bufferutil.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bufferutil/build/config.gypi" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bufferutil/build/config.gypi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/process-nextick-args/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/process-nextick-args/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cryptiles/node_modules/boom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cryptiles/node_modules/boom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deep-eql/node_modules/type-detect/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deep-eql/node_modules/type-detect/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/detective/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/detective/node_modules/acorn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/insert-module-globals/node_modules/concat-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/insert-module-globals/node_modules/concat-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/labeled-stream-splicer/node_modules/isarray/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/labeled-stream-splicer/node_modules/isarray/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mkdirp/node_modules/minimist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mkdirp/node_modules/minimist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mocha/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/node_modules/string_decoder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/node_modules/string_decoder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/url/node_modules/punycode/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url/node_modules/punycode/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/utf-8-validate/build/Release/validation.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/utf-8-validate/build/Release/validation.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/utf-8-validate/build/config.gypi" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/utf-8-validate/build/config.gypi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,15 +48,17 @@
       <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="352" column="59" selection-start-line="352" selection-start-column="59" selection-end-line="352" selection-end-column="59" />
+            <state relative-caret-position="233">
+              <caret line="447" column="42" selection-start-line="447" selection-start-column="42" selection-end-line="447" selection-end-column="42" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
+                <element signature="n#QPROP#0" />
                 <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
                 <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
-                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+                <element signature="e#14884#15385#0" expanded="true" />
+                <element signature="e#14989#15291#0" expanded="true" />
+                <element signature="e#15475#15687#0" expanded="true" />
                 <element signature="e#16450#16620#0" expanded="true" />
                 <element signature="e#16514#16597#0" expanded="true" />
                 <element signature="e#16783#17000#0" expanded="true" />
@@ -39,11 +68,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MAP.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4650">
+              <caret line="324" selection-start-line="324" selection-end-line="324" />
+              <folding>
+                <element signature="n#!!block;n#sendRoute#0;n#SpiderActorMirror#0" expanded="true" />
+                <element signature="n#!!block;n#send#0;n#SpiderActorMirror#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="93" column="15" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
+            <state relative-caret-position="326">
+              <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
               <folding>
                 <element signature="e#0#382#0" expanded="true" />
                 <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
@@ -67,8 +109,8 @@
       <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="747" column="43" selection-start-line="747" selection-start-column="43" selection-end-line="747" selection-end-column="43" />
+            <state relative-caret-position="303">
+              <caret line="730" column="68" selection-start-line="730" selection-start-column="68" selection-end-line="730" selection-end-column="68" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
@@ -121,6 +163,8 @@
                 <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
+                <element signature="e#22681#22874#0" expanded="true" />
+                <element signature="e#22772#22851#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
                 <element signature="n#UseCaseApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
@@ -199,7 +243,6 @@
         <option value="$PROJECT_DIR$/src/NoDistGlitch.ts" />
         <option value="$PROJECT_DIR$/src/DistGlitchPrevention.ts" />
         <option value="$PROJECT_DIR$/src/SID-UP/SIDUPAdmitter.ts" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.js" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/tests/reactivity.Test.ts" />
         <option value="$PROJECT_DIR$/src/SID-UP/SIDUPActor.ts" />
@@ -213,7 +256,6 @@
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.js" />
         <option value="$PROJECT_DIR$/tests/temp.ts" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/CommMedium.js" />
         <option value="$PROJECT_DIR$/src/SID-UP/NodePulse.ts" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.ts" />
@@ -225,13 +267,15 @@
         <option value="$PROJECT_DIR$/src/ReactiveMirror.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
+        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.js" />
+        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
       </list>
     </option>
@@ -253,7 +297,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="813" />
+    <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -274,6 +318,40 @@
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="benchmarks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MAP.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="serialisation.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -376,21 +454,7 @@
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
       <workItem from="1525704870914" duration="3849000" />
-      <workItem from="1526299968370" duration="8127000" />
-    </task>
-    <task id="LOCAL-00053" summary="Implemented App version with optimisations">
-      <created>1525528526202</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1525528526202</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Implemented App version with optimisations">
-      <created>1525528595733</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1525528595734</updated>
+      <workItem from="1526299968370" duration="9797000" />
     </task>
     <task id="LOCAL-00055" summary="Implemented App version with optimisations">
       <created>1525528671434</created>
@@ -721,7 +785,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526308794516</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Removing all MAP calls">
+      <created>1526309525080</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1526309525081</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Removing all MAP calls">
+      <created>1526309700608</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1526309700608</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -757,20 +835,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181710000" />
+    <option name="totallyTimeSpent" value="183380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26695526" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26695526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -840,6 +918,8 @@
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js.map" />
+        <option value="$PROJECT_DIR$/../Spiders.js/node_modules/spiders.js/src/ActorSTDLib.js" />
+        <option value="$PROJECT_DIR$/../Spiders.js/node_modules/spiders.js/src/ActorSTDLib.js.map" />
       </list>
     </option>
   </component>
@@ -879,17 +959,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="40" />
+      <option name="time" value="41" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1279,20 +1352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="93" column="15" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#382#0" expanded="true" />
-            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
-            <element signature="e#524#2236#0" expanded="true" />
-            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
-            <element signature="n#!!block;n#runLoops#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/ActorSTDLib.js.map">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
@@ -1304,17 +1363,6 @@
           <folding>
             <element signature="n#!!block;n#remote#0;n#ActorSTDLib#0" expanded="true" />
             <element signature="n#!!block;n#buffRemote#0;n#ActorSTDLib#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="79" lean-forward="true" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
-          <folding>
-            <element signature="n#!!block;n#sendRoute#0;n#SpiderActorMirror#0" expanded="true" />
-            <element signature="n#!!block;n#send#0;n#SpiderActorMirror#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1350,17 +1398,33 @@
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="625" column="52" selection-start-line="625" selection-start-column="52" selection-end-line="625" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="352" column="59" selection-start-line="352" selection-start-column="59" selection-end-line="352" selection-end-column="59" />
+        <state relative-caret-position="233">
+          <caret line="447" column="42" selection-start-line="447" selection-start-column="42" selection-end-line="447" selection-end-column="42" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#QPROP#0" />
             <element signature="n#!!block;n#setMirror#0;n#QPROP#0" expanded="true" />
             <element signature="n#!!block;n#localSignalChanged#0;n#QPROP#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#newPropagation#0;n#QPROPActor#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
+            <element signature="e#14884#15385#0" expanded="true" />
+            <element signature="e#14989#15291#0" expanded="true" />
+            <element signature="e#15475#15687#0" expanded="true" />
             <element signature="e#16450#16620#0" expanded="true" />
             <element signature="e#16514#16597#0" expanded="true" />
             <element signature="e#16783#17000#0" expanded="true" />
@@ -1369,17 +1433,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="4650">
+          <caret line="324" selection-start-line="324" selection-end-line="324" />
+          <folding>
+            <element signature="n#!!block;n#sendRoute#0;n#SpiderActorMirror#0" expanded="true" />
+            <element signature="n#!!block;n#send#0;n#SpiderActorMirror#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#382#0" expanded="true" />
+            <element signature="n#!!block;n#runQPROPLoop#0" expanded="true" />
+            <element signature="e#524#2236#0" expanded="true" />
+            <element signature="n#!!block;n#runSIDUPLoop#0" expanded="true" />
+            <element signature="n#!!block;n#runLoops#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="747" column="43" selection-start-line="747" selection-start-column="43" selection-end-line="747" selection-end-column="43" />
+        <state relative-caret-position="303">
+          <caret line="730" column="68" selection-start-line="730" selection-start-column="68" selection-end-line="730" selection-end-column="68" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
@@ -1432,6 +1514,8 @@
             <element signature="n#!!block;n#snapMem#0;n#SIDUPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPDashboardService#0" expanded="true" />
+            <element signature="e#22681#22874#0" expanded="true" />
+            <element signature="e#22772#22851#0" expanded="true" />
             <element signature="n#!!block;n#snapMem#0;n#QPROPDashboardService#0" expanded="true" />
             <element signature="n#UseCaseApp#0" />
             <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
