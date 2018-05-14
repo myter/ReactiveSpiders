@@ -105,15 +105,15 @@
       <file leaf-file-name="FarRef.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="173">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
-                <element signature="n#!!block;n#sendFieldAccess#0;n#FarReference#0" expanded="true" />
+                <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
                 <element signature="n#!!block;n#proxify#0;n#FarReference#0" expanded="true" />
-                <element signature="e#836#3532#0" expanded="true" />
-                <element signature="e#3086#3182#0" expanded="true" />
-                <element signature="e#3244#3333#0" expanded="true" />
+                <element signature="e#1224#3924#0" expanded="true" />
+                <element signature="e#4899#4987#0" expanded="true" />
+                <element signature="e#5045#5126#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
@@ -522,21 +522,7 @@
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
       <workItem from="1525704870914" duration="3849000" />
-      <workItem from="1526299968370" duration="6604000" />
-    </task>
-    <task id="LOCAL-00046" summary="Array prop val obvious performance impact">
-      <created>1525503179154</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1525503179154</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Added complete base implementation">
-      <created>1525523589560</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1525523589560</updated>
+      <workItem from="1526299968370" duration="6883000" />
     </task>
     <task id="LOCAL-00048" summary="Added complete base implementation">
       <created>1525523705629</created>
@@ -867,7 +853,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526307822930</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Removing all MAP calls">
+      <created>1526307881303</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1526307881304</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Removing all MAP calls">
+      <created>1526308067812</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1526308067813</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -903,7 +903,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180187000" />
+    <option name="totallyTimeSpent" value="180466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -1569,15 +1569,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="173">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
-            <element signature="n#!!block;n#sendFieldAccess#0;n#FarReference#0" expanded="true" />
+            <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
             <element signature="n#!!block;n#proxify#0;n#FarReference#0" expanded="true" />
-            <element signature="e#836#3532#0" expanded="true" />
-            <element signature="e#3086#3182#0" expanded="true" />
-            <element signature="e#3244#3333#0" expanded="true" />
+            <element signature="e#1224#3924#0" expanded="true" />
+            <element signature="e#4899#4987#0" expanded="true" />
+            <element signature="e#5045#5126#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
