@@ -105,19 +105,16 @@
       <file leaf-file-name="FarRef.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="281">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendFieldAccess#0;n#FarReference#0" expanded="true" />
-                <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
-                <element signature="n#!!block;n#proxyify#0;n#FarReference#0" expanded="true" />
-                <element signature="e#1213#3109#0" expanded="true" />
-                <element signature="e#2717#2805#0" expanded="true" />
-                <element signature="e#2863#2944#0" expanded="true" />
+                <element signature="n#!!block;n#proxify#0;n#FarReference#0" expanded="true" />
+                <element signature="e#836#3532#0" expanded="true" />
+                <element signature="e#3086#3182#0" expanded="true" />
+                <element signature="e#3244#3333#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
-                <element signature="n#!!block;n#sendRoute#0;n#ClientFarReference#0" expanded="true" />
-                <element signature="n#!!block;n#send#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#ServerFarReference#0" expanded="true" />
@@ -525,21 +522,7 @@
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
       <workItem from="1525704870914" duration="3849000" />
-      <workItem from="1526299968370" duration="6501000" />
-    </task>
-    <task id="LOCAL-00044" summary="Back to temp backpressure">
-      <created>1525502207310</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1525502207310</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Reverted back to regular propagation values">
-      <created>1525502809196</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1525502809196</updated>
+      <workItem from="1526299968370" duration="6604000" />
     </task>
     <task id="LOCAL-00046" summary="Array prop val obvious performance impact">
       <created>1525503179154</created>
@@ -870,7 +853,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526307717878</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Removing all MAP calls">
+      <created>1526307775734</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1526307775734</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Removing all MAP calls">
+      <created>1526307822930</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1526307822930</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -906,7 +903,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180084000" />
+    <option name="totallyTimeSpent" value="180187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -1572,19 +1569,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="281">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendFieldAccess#0;n#FarReference#0" expanded="true" />
-            <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
-            <element signature="n#!!block;n#proxyify#0;n#FarReference#0" expanded="true" />
-            <element signature="e#1213#3109#0" expanded="true" />
-            <element signature="e#2717#2805#0" expanded="true" />
-            <element signature="e#2863#2944#0" expanded="true" />
+            <element signature="n#!!block;n#proxify#0;n#FarReference#0" expanded="true" />
+            <element signature="e#836#3532#0" expanded="true" />
+            <element signature="e#3086#3182#0" expanded="true" />
+            <element signature="e#3244#3333#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
-            <element signature="n#!!block;n#sendRoute#0;n#ClientFarReference#0" expanded="true" />
-            <element signature="n#!!block;n#send#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#ServerFarReference#0" expanded="true" />
