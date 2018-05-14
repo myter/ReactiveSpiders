@@ -713,7 +713,7 @@ export class QPROPDashboardService extends QPROPActor{
         this.psClient.publish("ok",this.okType)
         return this.libs.lift((driving,geo,config)=>{
             if(valsReceived +1 <= this.totalVals){
-                console.log("Received: " + valsReceived + " needed: " + this.totalVals)
+                //console.log("Received: " + valsReceived + " needed: " + this.totalVals)
                 if(firstPropagation){
                     benchStart = Date.now()
                     firstPropagation = false
@@ -728,7 +728,7 @@ export class QPROPDashboardService extends QPROPActor{
                 lastDriving = driving
                 lastConfig  = config
                 valsReceived++
-                this.writer.write([timeToPropagate])
+                //this.writer.write([timeToPropagate])
                 processingTimes.push(timeToPropagate)
                 if(valsReceived == this.totalVals){
                     this.close = true
@@ -745,11 +745,12 @@ export class QPROPDashboardService extends QPROPActor{
                     let avg = total / processingTimes.length
                     this.pWriter.write({pTime: avg})
                     this.pWriter.end()
-                    this.averageResults(this.csvFileName,this.rate).then(()=>{
+                    this.killRef.dashDone()
+                    /*this.averageResults(this.csvFileName,this.rate).then(()=>{
                         this.averageMem(this.csvFileName,this.rate,"Dashboard").then(()=>{
                             this.killRef.dashDone()
                         })
-                    })
+                    })*/
                 }
             }
         })(driving,geo,config)
