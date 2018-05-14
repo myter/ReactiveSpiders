@@ -271,7 +271,7 @@ class QPROPApplication {
         }
     }
     prePropagation(fromm, value, sClocks, fClock, isOptimised) {
-        let prop = new this.PropagationValue(new this.host.libs.PubSubTag(fromm), value, new Map(JSON.parse(sClocks)), fClock, isOptimised);
+        let prop = new this.PropagationValue(fromm, value, new Map(JSON.parse(sClocks)), fClock, isOptimised);
         //let prop        = this.fromPropValArray(propArr)
         let from = prop.from.tagVal;
         if (this.brittle.size == 0) {
@@ -380,7 +380,7 @@ class QPROPApplication {
                 this.lastProp = new this.PropagationValue(this.ownType, signal, clocks, this.clock);
                 this.sendToAllChildren(() => {
                     this.childRefs.forEach((child) => {
-                        child.prePropagation(this.ownType.tagVal, signal.getState(), JSON.stringify([...clocks]), this.clock, true);
+                        child.prePropagation(this.ownType, signal.getState(), JSON.stringify([...clocks]), this.clock, true);
                     });
                 });
             }
