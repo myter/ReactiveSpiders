@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,11 +93,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messageHandler.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messageHandler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="131" column="39" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FarRef.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
+                <element signature="n#!!block;n#sendFieldAccess#0;n#FarReference#0" expanded="true" />
+                <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
+                <element signature="n#!!block;n#proxyify#0;n#FarReference#0" expanded="true" />
+                <element signature="e#1213#3109#0" expanded="true" />
+                <element signature="e#2717#2805#0" expanded="true" />
+                <element signature="e#2863#2944#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
+                <element signature="n#!!block;n#sendRoute#0;n#ClientFarReference#0" expanded="true" />
+                <element signature="n#!!block;n#send#0;n#ClientFarReference#0" expanded="true" />
+                <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
+                <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#ServerFarReference#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MAP.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="40" column="114" lean-forward="true" selection-start-line="40" selection-start-column="114" selection-end-line="40" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+                <element signature="n#!!block;n#send#0;n#SpiderActorMirror#0" expanded="true" />
+                <element signature="n#!!block;n#initialise#0;n#SpiderActorMirror#0" expanded="true" />
+                <element signature="e#13449#13515#0" expanded="true" />
+                <element signature="n#!!block;n#sendInvocation#0;n#SpiderActorMirror#0" expanded="true" />
+                <element signature="e#14428#14506#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -292,6 +333,7 @@
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js" />
+        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" />
       </list>
     </option>
   </component>
@@ -357,6 +399,22 @@
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
               <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="FarRef.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Message.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -467,21 +525,7 @@
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
       <workItem from="1525704870914" duration="3849000" />
-      <workItem from="1526299968370" duration="6136000" />
-    </task>
-    <task id="LOCAL-00042" summary="Back to temp backpressure">
-      <created>1525447287434</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1525447287434</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Back to temp backpressure">
-      <created>1525447312173</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1525447312173</updated>
+      <workItem from="1526299968370" duration="6501000" />
     </task>
     <task id="LOCAL-00044" summary="Back to temp backpressure">
       <created>1525502207310</created>
@@ -812,7 +856,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526306173940</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="PubSubTag from to string as well">
+      <created>1526307410124</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1526307410124</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Removing all MAP calls">
+      <created>1526307717878</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1526307717878</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -848,7 +906,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179719000" />
+    <option name="totallyTimeSpent" value="180084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -941,7 +999,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished usecase benchmarks" />
     <MESSAGE value="Fixed write after close bug" />
     <MESSAGE value="Fixing Performance issue with Spiders.js" />
     <MESSAGE value="Switched to Array propagation values" />
@@ -966,7 +1023,8 @@
     <MESSAGE value="Last fixes to app" />
     <MESSAGE value="Map to string in args for pre-propagation" />
     <MESSAGE value="PubSubTag from to string as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="PubSubTag from to string as well" />
+    <MESSAGE value="Removing all MAP calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing all MAP calls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,44 +1032,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/benchmarks/General/Services.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="242" column="50" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#5568#8374#0" />
-            <element signature="e#5986#6126#0" expanded="true" />
-            <element signature="e#6238#7226#0" expanded="true" />
-            <element signature="e#7793#7839#0" expanded="true" />
-            <element signature="e#7956#8318#0" expanded="true" />
-            <element signature="e#8376#10664#0" />
-            <element signature="e#8666#9522#0" expanded="true" />
-            <element signature="e#9830#9846#0" expanded="true" />
-            <element signature="e#9847#9863#0" expanded="true" />
-            <element signature="e#9869#9989#0" expanded="true" />
-            <element signature="e#9803#10129#0" expanded="true" />
-            <element signature="e#10175#10662#0" expanded="true" />
-            <element signature="e#10246#10608#0" expanded="true" />
-            <element signature="e#10666#12632#0" />
-            <element signature="e#10927#12215#0" expanded="true" />
-            <element signature="e#12732#12748#0" expanded="true" />
-            <element signature="e#12749#12765#0" expanded="true" />
-            <element signature="e#12058#12720#0" expanded="true" />
-            <element signature="e#12225#12325#0" expanded="true" />
-            <element signature="e#12448#12635#0" expanded="true" />
-            <element signature="e#12284#12609#0" expanded="true" />
-            <element signature="e#13159#13560#0" expanded="true" />
-            <element signature="e#12634#16253#0" />
-            <element signature="e#12850#16073#0" expanded="true" />
-            <element signature="e#17521#17537#0" expanded="true" />
-            <element signature="e#15584#17542#0" expanded="true" />
-            <element signature="e#16142#16230#0" expanded="true" />
-            <element signature="e#17335#17736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/General/Regular.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1453,17 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="320" column="42" lean-forward="true" selection-start-line="320" selection-start-column="42" selection-end-line="320" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <element signature="e#13449#13515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/spiders.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1543,6 +1552,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="131" column="39" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="114" lean-forward="true" selection-start-line="40" selection-start-column="114" selection-end-line="40" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+            <element signature="n#!!block;n#send#0;n#SpiderActorMirror#0" expanded="true" />
+            <element signature="n#!!block;n#initialise#0;n#SpiderActorMirror#0" expanded="true" />
+            <element signature="e#13449#13515#0" expanded="true" />
+            <element signature="n#!!block;n#sendInvocation#0;n#SpiderActorMirror#0" expanded="true" />
+            <element signature="e#14428#14506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
+            <element signature="n#!!block;n#sendFieldAccess#0;n#FarReference#0" expanded="true" />
+            <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
+            <element signature="n#!!block;n#proxyify#0;n#FarReference#0" expanded="true" />
+            <element signature="e#1213#3109#0" expanded="true" />
+            <element signature="e#2717#2805#0" expanded="true" />
+            <element signature="e#2863#2944#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
+            <element signature="n#!!block;n#sendRoute#0;n#ClientFarReference#0" expanded="true" />
+            <element signature="n#!!block;n#send#0;n#ClientFarReference#0" expanded="true" />
+            <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
+            <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ServerFarReference#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
