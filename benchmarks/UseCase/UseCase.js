@@ -183,7 +183,7 @@ class QPROPConfigService extends QPROPActor_1.QPROPActor {
         else {
             setTimeout(() => {
                 this.update(signal);
-            }, 500);
+            }, 990);
         }
     }
     snapMem() {
@@ -287,7 +287,7 @@ class QPROPDataAccessService extends QPROPActor_1.QPROPActor {
         else {
             setTimeout(() => {
                 this.update(signal);
-            }, 500);
+            }, 990);
         }
     }
     snapMem() {

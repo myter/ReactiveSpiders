@@ -4,16 +4,16 @@ function runQPROPLoop(rate) {
     let totalValues = rate * 30;
     let loop = (index) => {
         let app = new UseCase_1.UseCaseApp();
-        //app.spawnActorFromFile(__dirname +"/UseCase.js","QPROPConfigService",[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
-        app.spawnActor(UseCase_1.QPROPConfigService, [rate, totalValues, "qprop", UseCase_1.configTag, UseCase_1.okTag, [], [UseCase_1.dashTag]]);
-        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDataAccessService",[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
-        app.spawnActor(UseCase_1.QPROPDataAccessService, [rate, totalValues, "qprop", UseCase_1.dataTag, UseCase_1.okTag, [], [UseCase_1.geoTag, UseCase_1.drivingTag]]);
-        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPGeoService",[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
-        app.spawnActor(UseCase_1.QPROPGeoService, [rate, totalValues, "qprop", UseCase_1.geoTag, [UseCase_1.dataTag], [UseCase_1.drivingTag, UseCase_1.dashTag]]);
-        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDrivingService",[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
-        app.spawnActor(UseCase_1.QPROPDrivingService, [rate, totalValues, "qprop", UseCase_1.drivingTag, [UseCase_1.dataTag, UseCase_1.geoTag], [UseCase_1.dashTag]]);
-        //app.spawnActorFromFile(__dirname+"/UseCase","QPROPDashboardService",[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
-        app.spawnActor(UseCase_1.QPROPDashboardService, [rate, totalValues, "qprop", app, UseCase_1.dashTag, UseCase_1.okTag, [UseCase_1.drivingTag, UseCase_1.geoTag, UseCase_1.configTag], []]);
+        app.spawnActorFromFile(__dirname + "/UseCase.js", "QPROPConfigService", [rate, totalValues, "qprop", UseCase_1.configTag, UseCase_1.okTag, [], [UseCase_1.dashTag]]);
+        //app.spawnActor(QPROPConfigService,[rate,totalValues,"qprop",configTag,okTag,[],[dashTag]])
+        app.spawnActorFromFile(__dirname + "/UseCase", "QPROPDataAccessService", [rate, totalValues, "qprop", UseCase_1.dataTag, UseCase_1.okTag, [], [UseCase_1.geoTag, UseCase_1.drivingTag]]);
+        //app.spawnActor(QPROPDataAccessService,[rate,totalValues,"qprop",dataTag,okTag,[],[geoTag,drivingTag]])
+        app.spawnActorFromFile(__dirname + "/UseCase", "QPROPGeoService", [rate, totalValues, "qprop", UseCase_1.geoTag, [UseCase_1.dataTag], [UseCase_1.drivingTag, UseCase_1.dashTag]]);
+        //app.spawnActor(QPROPGeoService,[rate,totalValues,"qprop",geoTag,[dataTag],[drivingTag,dashTag]])
+        app.spawnActorFromFile(__dirname + "/UseCase", "QPROPDrivingService", [rate, totalValues, "qprop", UseCase_1.drivingTag, [UseCase_1.dataTag, UseCase_1.geoTag], [UseCase_1.dashTag]]);
+        //app.spawnActor(QPROPDrivingService,[rate,totalValues,"qprop",drivingTag,[dataTag,geoTag],[dashTag]])
+        app.spawnActorFromFile(__dirname + "/UseCase", "QPROPDashboardService", [rate, totalValues, "qprop", app, UseCase_1.dashTag, UseCase_1.okTag, [UseCase_1.drivingTag, UseCase_1.geoTag, UseCase_1.configTag], []]);
+        //app.spawnActor(QPROPDashboardService,[rate,totalValues,"qprop",app,dashTag,okTag,[drivingTag,geoTag,configTag],[]])
         if (index > 0) {
             return app.onComplete().then(() => {
                 return new Promise((resolve) => {
@@ -75,5 +75,5 @@ function runLoops(loopRunner, rates) {
     runSIDUPLoop(100)
 })*/
 //runQPROPLoop(100)
-runQPROPLoop(300);
+runQPROPLoop(150);
 //# sourceMappingURL=RunUseCase.js.map

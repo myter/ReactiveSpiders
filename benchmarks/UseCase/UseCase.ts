@@ -219,7 +219,7 @@ export class QPROPConfigService extends QPROPActor{
         else{
             setTimeout(()=>{
                 this.update(signal)
-            },500)
+            },990)
         }
     }
 
@@ -352,7 +352,7 @@ export class QPROPDataAccessService extends QPROPActor{
         else{
             setTimeout(()=>{
                 this.update(signal)
-            },500)
+            },990)
         }
     }
 
