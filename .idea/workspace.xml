@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -102,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FarRef.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FarRef.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="270">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
@@ -114,6 +114,7 @@
                 <element signature="e#1224#3924#0" expanded="true" />
                 <element signature="e#4899#4987#0" expanded="true" />
                 <element signature="e#5045#5126#0" expanded="true" />
+                <element signature="n#ClientFarReference#0" />
                 <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
                 <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
@@ -140,18 +141,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UseCaseApp.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UseCaseApp.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+            <state relative-caret-position="252">
+              <caret line="342" column="18" selection-start-line="342" selection-start-column="18" selection-end-line="342" selection-end-column="18" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
                 <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
                 <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
                 <element signature="n#!!block;n#setState#0;n#FleetData#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#QPROPConfigServiceApp#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-                <element signature="n#QPROPDashboardServiceApp#0" />
+                <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
                 <element signature="n#UseCaseApp#0" />
                 <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
                 <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
@@ -322,7 +324,6 @@
         <option value="$PROJECT_DIR$/benchmarks/UseCase/test.sh" />
         <option value="$PROJECT_DIR$/src/Signal.ts" />
         <option value="$PROJECT_DIR$/src/ReactiveMirror.ts" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
@@ -331,6 +332,7 @@
         <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js" />
+        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
       </list>
     </option>
   </component>
@@ -522,21 +524,7 @@
       <workItem from="1525349864234" duration="24529000" />
       <workItem from="1525520564827" duration="11728000" />
       <workItem from="1525704870914" duration="3849000" />
-      <workItem from="1526299968370" duration="6883000" />
-    </task>
-    <task id="LOCAL-00048" summary="Added complete base implementation">
-      <created>1525523705629</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1525523705629</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Added complete base implementation">
-      <created>1525523755157</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1525523755157</updated>
+      <workItem from="1526299968370" duration="7085000" />
     </task>
     <task id="LOCAL-00050" summary="Switched to latest spiders.js version (new socket.io version)">
       <created>1525525011765</created>
@@ -867,7 +855,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526308067813</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Removing all MAP calls">
+      <created>1526308164965</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1526308164965</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Removing all MAP calls">
+      <created>1526308219070</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1526308219070</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -903,7 +905,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180466000" />
+    <option name="totallyTimeSpent" value="180668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -1441,25 +1443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
-            <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
-            <element signature="n#!!block;n#setState#0;n#FleetData#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
-            <element signature="n#QPROPDashboardServiceApp#0" />
-            <element signature="n#UseCaseApp#0" />
-            <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
-            <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
-            <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -1569,8 +1552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/FarRef.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="270">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#FarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendMethodInvocation#0;n#FarReference#0" expanded="true" />
@@ -1578,10 +1561,31 @@
             <element signature="e#1224#3924#0" expanded="true" />
             <element signature="e#4899#4987#0" expanded="true" />
             <element signature="e#5045#5126#0" expanded="true" />
+            <element signature="n#ClientFarReference#0" />
             <element signature="n#!!block;n#constructor#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendFieldAccess#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#sendMethodInvocation#0;n#ClientFarReference#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#ServerFarReference#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="342" column="18" selection-start-line="342" selection-start-column="18" selection-end-line="342" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
+            <element signature="n#!!block;n#getState#0;n#FleetData#0" expanded="true" />
+            <element signature="n#!!block;n#setState#0;n#FleetData#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPConfigServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#QPROPDataAccessServiceApp#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#QPROPDrivingServiceApp#0" expanded="true" />
+            <element signature="n#UseCaseApp#0" />
+            <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
           </folding>
         </state>
       </provider>

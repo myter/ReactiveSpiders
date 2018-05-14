@@ -265,7 +265,7 @@ class QPROPDashboardServiceApp extends spiders_js_1.Application {
         this.qprop.psClient.publish("ok", this.okType);
         return this.qprop.lift((driving, geo, config) => {
             if (valsReceived + 1 <= this.totalVals) {
-                console.log("Received: " + valsReceived + " needed: " + this.totalVals);
+                //console.log("Received: " + valsReceived + " needed: " + this.totalVals)
                 if (firstPropagation) {
                     benchStart = Date.now();
                     firstPropagation = false;
