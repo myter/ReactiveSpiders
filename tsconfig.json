@@ -6,17 +6,21 @@
     "experimentalDecorators": true,
     "noImplicitUseStrict" : true
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "types":[
-    "./node_modules/@types/mocha",
-    "./node_modules/@types/node"
+  "files": [
+    "./src/spiders.ts"
   ],
   "include": [
     "src/**/*",
     "benchmarks/**/*",
-    "tests/**/*",
-    "typings/**/*"
+    "examples/**/*",
+    "server-tests/**/*",
+    "PerformanceTest(temp)/**/*",
+    "ReactiveMicroserviceExample/**/*",
+    "ChristopheExample/**/*",
+    "FullRepTest/**/*",
+    "typings/**/*" // <-- don't forget this line!
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
