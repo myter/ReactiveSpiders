@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bufferutil/build/Release/bufferutil.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bufferutil/build/Release/bufferutil.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/utf-8-validate/build/Release/validation.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/utf-8-validate/build/Release/validation.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,31 +17,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
+      <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="379" column="83" lean-forward="true" selection-start-line="379" selection-start-column="83" selection-end-line="379" selection-end-column="83" />
+            <state>
               <folding>
-                <element signature="e#13364#14385#0" expanded="true" />
-                <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#16829#17074#0" expanded="true" />
-                <element signature="e#16904#17055#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Signal.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Signal.ts">
+      <file leaf-file-name="RunQPROPBench.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunQPROPBench.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="628">
+              <caret line="60" selection-start-line="60" selection-end-line="69" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tempTest.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunUseCase.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
-                <element signature="n#!!block;n#isMutatingMethod#0;n#SignalMirror#0" expanded="true" />
-                <element signature="n#!!block;n#invoke#0;n#SignalMirror#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#Signal#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#DerivedSignal#0" expanded="true" />
+                <element signature="e#0#115#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,11 +110,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.ts" />
         <option value="$PROJECT_DIR$/src/ReactiveSTDLib.ts" />
         <option value="$PROJECT_DIR$/tests/temp2.ts" />
         <option value="$PROJECT_DIR$/src/SIDUPActor.ts" />
@@ -166,6 +165,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Signal.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxOut.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" />
       </list>
     </option>
   </component>
@@ -176,10 +180,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/CoCode/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/CoCode/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
@@ -207,18 +213,13 @@
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="QPROP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="UseCase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,13 +238,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/SID-UP" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/benchmarks/UseCase" />
       <recent name="$PROJECT_DIR$/benchmarks/General" />
       <recent name="$PROJECT_DIR$/benchmarks" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/SID-UP" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,21 +319,7 @@
       <workItem from="1525704870914" duration="3849000" />
       <workItem from="1526299968370" duration="14168000" />
       <workItem from="1526366320235" duration="130000" />
-      <workItem from="1526366529455" duration="181000" />
-    </task>
-    <task id="LOCAL-00056" summary="Implemented App version with optimisations">
-      <created>1525528782590</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1525528782590</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Implemented App version with optimisations">
-      <created>1525529035817</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1525529035817</updated>
+      <workItem from="1526366529455" duration="1278000" />
     </task>
     <task id="LOCAL-00058" summary="Implemented QPROP as standalone object">
       <created>1525529663796</created>
@@ -662,13 +650,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526317692447</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Pre-branch commit">
+      <created>1526366768446</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1526366768446</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Initial benchmark branch commit">
+      <created>1526367316534</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1526367316534</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_reactivity_Test_ts - 2018.04.30 at 09h 04m 35s.xml">
-      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="tests_reactivity_Test_ts - 2018.04.30 at 16h 13m 23s.xml">
       <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -696,9 +695,12 @@
     <history-entry file="tests_reactivity_Test_ts - 2018.05.04 at 08h 55m 52s.xml">
       <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="tests_reactivity_Test_ts - 2018.05.15 at 08h 45m 50s.xml">
+      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188062000" />
+    <option name="totallyTimeSpent" value="189159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
@@ -710,7 +712,7 @@
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26622844" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26622844" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
@@ -729,60 +731,16 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Signal.js" />
-        <option value="$PROJECT_DIR$/src/Signal.js.map" />
-        <option value="$PROJECT_DIR$/tests/temp.js" />
-        <option value="$PROJECT_DIR$/tests/temp.js.map" />
-        <option value="$PROJECT_DIR$/src/ReactiveMirror.js" />
-        <option value="$PROJECT_DIR$/src/ReactiveMirror.js.map" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/ActorSTDLib.js" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/ActorSTDLib.js.map" />
-        <option value="$PROJECT_DIR$/tests/reactivity.Test.js.map" />
-        <option value="$PROJECT_DIR$/tests/reactivity.Test.js" />
-        <option value="$PROJECT_DIR$/src/ReactiveActor.js.map" />
-        <option value="$PROJECT_DIR$/src/ReactiveActor.js" />
-        <option value="$PROJECT_DIR$/src/ReactiveApplication.js" />
-        <option value="$PROJECT_DIR$/src/ReactiveApplication.js.map" />
-        <option value="$PROJECT_DIR$/src/ReactiveSTDLib.js" />
-        <option value="$PROJECT_DIR$/src/ReactiveSTDLib.js.map" />
-        <option value="$PROJECT_DIR$/src/DistGlitchPrevention.js.map" />
-        <option value="$PROJECT_DIR$/src/DistGlitchPrevention.js" />
-        <option value="$PROJECT_DIR$/src/NoDistGlitch.js.map" />
-        <option value="$PROJECT_DIR$/src/NoDistGlitch.js" />
         <option value="$PROJECT_DIR$/../CAPtain/tests/temp.js" />
         <option value="$PROJECT_DIR$/../CAPtain/tests/temp.js.map" />
-        <option value="$PROJECT_DIR$/src/SID-UP/SIDUPAdmitter.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/SIDUPAdmitter.js.map" />
-        <option value="$PROJECT_DIR$/src/SID-UP/PulseState.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/PulseState.js.map" />
-        <option value="$PROJECT_DIR$/src/SID-UP/NodePulse.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/NodePulse.js.map" />
-        <option value="$PROJECT_DIR$/src/SID-UP/DijkstraScholten.js.map" />
-        <option value="$PROJECT_DIR$/src/SID-UP/DijkstraScholten.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/Mirror.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/Mirror.js.map" />
-        <option value="$PROJECT_DIR$/src/SID-UP/DependencyChangePulse.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/DependencyChangePulse.js.map" />
         <option value="$PROJECT_DIR$/../CAPtain/src/CAPLib.js.map" />
         <option value="$PROJECT_DIR$/../CAPtain/src/CAPLib.js" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.js" />
-        <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.js" />
-        <option value="$PROJECT_DIR$/src/QPROP/PropagationValue.js.map" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/writing.js" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/writing.js.map" />
-        <option value="$PROJECT_DIR$/benchmarks/General/writing.js" />
-        <option value="$PROJECT_DIR$/benchmarks/General/writing.js.map" />
-        <option value="$PROJECT_DIR$/src/GlitchAlgorithm.js" />
-        <option value="$PROJECT_DIR$/src/GlitchAlgorithm.js.map" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js.map" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js.map" />
         <option value="$PROJECT_DIR$/../Spiders.js/node_modules/spiders.js/src/ActorSTDLib.js" />
         <option value="$PROJECT_DIR$/../Spiders.js/node_modules/spiders.js/src/ActorSTDLib.js.map" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/ConfigService.js.map" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/ExampleConfig.js" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/ConfigService.js" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/ExampleConfig.js.map" />
       </list>
     </option>
   </component>
@@ -793,8 +751,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing Performance issue with Spiders.js" />
-    <MESSAGE value="Switched to Array propagation values" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Switched to string for &quot;from&quot; argument in PropagationValue" />
     <MESSAGE value="Stringified sClock maps" />
     <MESSAGE value="Trying optimisations for App version" />
@@ -818,7 +775,9 @@
     <MESSAGE value="PubSubTag from to string as well" />
     <MESSAGE value="Removing all MAP calls" />
     <MESSAGE value="Trying to find time leak" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to find time leak" />
+    <MESSAGE value="Pre-branch commit" />
+    <MESSAGE value="Initial benchmark branch commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial benchmark branch commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -826,98 +785,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newPropagation#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#16427#16671#0" expanded="true" />
-            <element signature="e#16508#16652#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#lift#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#containsSignal#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateNode#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sourceChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sourcesChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newNode#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getDependants#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getParents#0;n#QPROPApplication#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunQPROPBench.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReactiveSTDLib.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReactiveApplication.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/sidup100.csv" />
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -1320,7 +1187,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="-9">
           <caret line="379" column="83" lean-forward="true" selection-start-line="379" selection-start-column="83" selection-end-line="379" selection-end-column="83" />
           <folding>
             <element signature="e#13364#14385#0" expanded="true" />
@@ -1328,6 +1195,80 @@
             <element signature="e#16829#17074#0" expanded="true" />
             <element signature="e#16904#17055#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChristopheExample/christophe.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChristopheExample/christophe.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/qprop2.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="213" column="18" lean-forward="true" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxOut.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/GenerateBashScripts.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/GenerateMTBashScript.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunQPROPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="60" selection-start-line="60" selection-end-line="69" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
