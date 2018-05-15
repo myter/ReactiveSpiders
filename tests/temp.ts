@@ -66,7 +66,7 @@ let y = matchArgs(x)
 y
 */
 
-import {Application, FarRef, PubSubTag, SpiderActorMirror} from "spiders.js";
+import {Actor, Application, FarRef, PubSubTag, SpiderActorMirror} from "spiders.js";
 import {SIDUPAdmitter} from "../src/SID-UP/SIDUPAdmitter";
 import {SIDUPActor} from "../src/SID-UP/SIDUPActor";
 import {mutating, Signal} from "../src/Signal";
@@ -178,36 +178,92 @@ let sink   = app.spawnActor(TestSink,[sinkType,[aType],[]])
 source.inc()*/
 
 class TestSig extends Signal{
-    val
+    time
 
     constructor(mirr){
         super(mirr)
-        this.val = 5
+        this.time = Date.now()
     }
 
     @mutating
-    inc(){
-        this.val++
+    actualise(){
+        this.time = Date.now()
     }
 
     equals(other){
-        return this.val == other.val
+        return this.time == other.time
     }
 
     getState(){
-
+        return this.time
     }
 
-    setState(){
-
+    setState(s){
+        this.time = s
     }
 }
+let sourceTag = new PubSubTag("source")
+let sinkTag  = new PubSubTag("sink")
 
-let app = new Application()
+class UseCaseApp extends Application{
+    completeResolve
+    constructor(){
+        super(new SpiderActorMirror(),"127.0.0.1",8000)
+        this.libs.setupPSServer()
+    }
+
+    dashDone(){
+        this.kill()
+        this.libs.setupPSServer()
+        this.completeResolve()
+    }
+
+    onComplete(){
+        return new Promise((resolve)=>{
+            this.completeResolve = resolve
+        })
+    }
+}
 
 class SourceAct extends QPROPActor{
+    TestSig
+    constructor(){
+        super(sourceTag,[],[sinkTag])
+        this.TestSig = TestSig
+    }
 
+    start(){
+        console.log("Source start")
+        let sig = new this.TestSig(this.libs.reflectOnActor())
+        this.update(sig)
+        return sig
+    }
+
+    update(sig){
+        setTimeout(()=>{
+            sig.actualise()
+            this.update(sig)
+        },1000)
+    }
 }
+
+class SinkAct extends QPROPActor{
+  constructor(){
+      super(sinkTag,[sourceTag],[])
+  }
+
+  start(sig){
+      console.log("sink start")
+        return this.libs.lift((s)=>{
+            console.log("Time taken: " + (Date.now() - s.time))
+        })(sig)
+  }
+}
+
+let app = new UseCaseApp()
+let source = app.spawnActor(SourceAct,)
+let sink = app.spawnActor(SinkAct,)
+
 
 
 
