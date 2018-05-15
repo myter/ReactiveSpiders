@@ -3,7 +3,7 @@ import {PubSubTag} from "../../src/PubSub/SubTag";
 import {MicroServiceApp} from "../../src/MicroService/MicroService";
 
 
-var spiders : SpiderLib = require("../../../src/spiders")
+var spiders : SpiderLib = require("../../src/spiders")
 var dataTag             = new PubSubTag("Data")
 var configTag           = new PubSubTag("Config")
 var geoTag              = new PubSubTag("Geo")

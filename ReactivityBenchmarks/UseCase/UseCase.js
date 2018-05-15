@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const SubTag_1 = require("../../src/PubSub/SubTag");
 const MicroService_1 = require("../../src/MicroService/MicroService");
-var spiders = require("../../../src/spiders");
+var spiders = require("../../src/spiders");
 var dataTag = new SubTag_1.PubSubTag("Data");
 var configTag = new SubTag_1.PubSubTag("Config");
 var geoTag = new SubTag_1.PubSubTag("Geo");
