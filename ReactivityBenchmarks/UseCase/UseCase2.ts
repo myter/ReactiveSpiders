@@ -181,7 +181,7 @@ export class ConfigService extends MicroServiceApp{
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(()=>{
             this.update(sig)
-        },2000)
+        },4000)
     }
 
     update(signal){
@@ -242,7 +242,7 @@ export class DataAccessService extends MicroServiceApp{
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(()=>{
             this.update(sig)
-        },2000)
+        },4000)
     }
 
     update(signal){

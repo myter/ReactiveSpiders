@@ -163,7 +163,7 @@ class ConfigService extends MicroService_1.MicroServiceApp {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 2000);
+        }, 4000);
     }
     update(signal) {
         for (var i = 0; i < this.rate; i++) {
@@ -214,7 +214,7 @@ class DataAccessService extends MicroService_1.MicroServiceApp {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 2000);
+        }, 4000);
     }
     update(signal) {
         for (var i = 0; i < this.rate; i++) {

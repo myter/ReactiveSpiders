@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-tests/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-tests/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-tests/temp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/server-tests/temp.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-tests/temp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-tests/temp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiders.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiders.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiders.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,24 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UseCase2.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UseCase2.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="351" column="53" selection-start-line="351" selection-start-column="53" selection-end-line="351" selection-end-column="53" />
+            <state relative-caret-position="466">
+              <caret line="182" column="28" lean-forward="true" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="n#MemoryWriter#0" />
                 <element signature="n#Admitter#0" />
                 <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
-                <element signature="n#ConfigService#0" />
-                <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
-                <element signature="e#5374#5414#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
                 <element signature="e#5863#5914#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#ConfigService#0" expanded="true" />
                 <element signature="e#6005#6093#0" expanded="true" />
-                <element signature="n#DataAccessService#0" />
                 <element signature="n#!!block;n#constructor#0;n#DataAccessService#0" expanded="true" />
                 <element signature="e#6907#6947#0" expanded="true" />
                 <element signature="n#!!block;n#update#0;n#DataAccessService#0" expanded="true" />
@@ -59,8 +48,8 @@
                 <element signature="e#9147#9398#0" expanded="true" />
                 <element signature="n#!!block;n#snapMem#0;n#DrivingService#0" expanded="true" />
                 <element signature="e#9511#9599#0" expanded="true" />
-                <element signature="n#DashboardService#0" />
                 <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+                <element signature="e#10714#12325#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunUseCase2.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunUseCase2.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -320,9 +309,9 @@
         <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" />
         <option value="$PROJECT_DIR$/server-tests/temp.ts" />
         <option value="$PROJECT_DIR$/src/spiders.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts" />
       </list>
     </option>
   </component>
@@ -497,21 +486,7 @@
       <workItem from="1525704870914" duration="3849000" />
       <workItem from="1526299968370" duration="14168000" />
       <workItem from="1526366320235" duration="130000" />
-      <workItem from="1526366529455" duration="6156000" />
-    </task>
-    <task id="LOCAL-00060" summary="Implemented QPROP as standalone object">
-      <created>1525529851519</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1525529851519</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Implemented QPROP as standalone object">
-      <created>1525530040479</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1525530040479</updated>
+      <workItem from="1526366529455" duration="6449000" />
     </task>
     <task id="LOCAL-00062" summary="Implemented QPROP as standalone object">
       <created>1525530152246</created>
@@ -842,7 +817,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526368507096</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Non-dynamic QPROP2.0 implemented. Testing use case">
+      <created>1526375303029</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1526375303029</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Non-dynamic QPROP2.0 implemented. Testing use case">
+      <created>1526375480112</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1526375480112</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -878,7 +867,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194037000" />
+    <option name="totallyTimeSpent" value="194330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
@@ -936,7 +925,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Trying optimisations for App version" />
     <MESSAGE value="Memory Snapshot turned off" />
     <MESSAGE value="Back to temp backpressure" />
     <MESSAGE value="Reverted back to regular propagation values" />
@@ -961,7 +949,8 @@
     <MESSAGE value="Initial benchmark branch commit" />
     <MESSAGE value="Added and fixed original QPROP benchmarks" />
     <MESSAGE value="Fixing path issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing path issues" />
+    <MESSAGE value="Non-dynamic QPROP2.0 implemented. Testing use case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Non-dynamic QPROP2.0 implemented. Testing use case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1422,45 +1411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="351" column="53" selection-start-line="351" selection-start-column="53" selection-end-line="351" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="n#MemoryWriter#0" />
-            <element signature="n#Admitter#0" />
-            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
-            <element signature="n#ConfigService#0" />
-            <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
-            <element signature="e#5374#5414#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
-            <element signature="e#5863#5914#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#ConfigService#0" expanded="true" />
-            <element signature="e#6005#6093#0" expanded="true" />
-            <element signature="n#DataAccessService#0" />
-            <element signature="n#!!block;n#constructor#0;n#DataAccessService#0" expanded="true" />
-            <element signature="e#6907#6947#0" expanded="true" />
-            <element signature="n#!!block;n#update#0;n#DataAccessService#0" expanded="true" />
-            <element signature="e#7334#7385#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#DataAccessService#0" expanded="true" />
-            <element signature="e#7476#7564#0" expanded="true" />
-            <element signature="n#GeoService#0" />
-            <element signature="n#!!block;n#constructor#0;n#GeoService#0" expanded="true" />
-            <element signature="e#8120#8372#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#GeoService#0" expanded="true" />
-            <element signature="e#8485#8573#0" expanded="true" />
-            <element signature="n#DrivingService#0" />
-            <element signature="n#!!block;n#constructor#0;n#DrivingService#0" expanded="true" />
-            <element signature="e#9147#9398#0" expanded="true" />
-            <element signature="n#!!block;n#snapMem#0;n#DrivingService#0" expanded="true" />
-            <element signature="e#9511#9599#0" expanded="true" />
-            <element signature="n#DashboardService#0" />
-            <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server-tests/temp.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -1647,6 +1597,41 @@
           <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="e#1#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="182" column="28" lean-forward="true" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="n#MemoryWriter#0" />
+            <element signature="n#Admitter#0" />
+            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
+            <element signature="e#5863#5914#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#ConfigService#0" expanded="true" />
+            <element signature="e#6005#6093#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DataAccessService#0" expanded="true" />
+            <element signature="e#6907#6947#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#DataAccessService#0" expanded="true" />
+            <element signature="e#7334#7385#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#DataAccessService#0" expanded="true" />
+            <element signature="e#7476#7564#0" expanded="true" />
+            <element signature="n#GeoService#0" />
+            <element signature="n#!!block;n#constructor#0;n#GeoService#0" expanded="true" />
+            <element signature="e#8120#8372#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#GeoService#0" expanded="true" />
+            <element signature="e#8485#8573#0" expanded="true" />
+            <element signature="n#DrivingService#0" />
+            <element signature="n#!!block;n#constructor#0;n#DrivingService#0" expanded="true" />
+            <element signature="e#9147#9398#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#DrivingService#0" expanded="true" />
+            <element signature="e#9511#9599#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+            <element signature="e#10714#12325#0" expanded="true" />
           </folding>
         </state>
       </provider>
