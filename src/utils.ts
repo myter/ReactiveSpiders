@@ -8,6 +8,7 @@ import {PubSubTag} from "./PubSub/SubTag";
 import {PSServer} from "./PubSub/SubServer";
 import { DependencyChange, QPROPNode, QPROPSourceSignal} from "./Reactivivity/QPROP";
 import {SIDUPAdmitter, SIDUPNode, SIDUPSourceSignal} from "./Reactivivity/SIDUP";
+import {QPROP2Node} from "./Reactivivity/QPROP2";
 /**
  * Created by flo on 05/12/2016.
  */
@@ -212,6 +213,19 @@ export function installSTDLib(appActor : boolean,parentRef : FarReference,behavi
     //Setup QPROP instance
     behaviourObject["QPROP"]        = (ownType : PubSubTag,directParents : Array<PubSubTag>,directChildren : Array<PubSubTag>,defaultValue : any,isDynamic = false) =>{
         let qNode       = new QPROPNode(ownType,directParents,directChildren,behaviourObject,defaultValue,dependencyChangeTag,isDynamic)
+        environment.signalPool.installDPropAlgorithm(qNode)
+        let qNodeSignal = qNode.ownSignal
+        let signal      = new Signal(qNodeSignal)
+        qNodeSignal.setHolder(signal)
+        qNodeSignal.instantiateMeta(environment)
+        signalPool.newSource(signal)
+        return behaviourObject["lift"]((qSignal : QPROPSourceSignal)=>{
+            return qSignal.parentVals
+        })(qNodeSignal)
+    }
+
+    behaviourObject["QPROP2"]       = (ownType : PubSubTag,directParents : Array<PubSubTag>,directChildren : Array<PubSubTag>) =>{
+        let qNode = new QPROP2Node(ownType,directParents,directChildren,behaviourObject)
         environment.signalPool.installDPropAlgorithm(qNode)
         let qNodeSignal = qNode.ownSignal
         let signal      = new Signal(qNodeSignal)

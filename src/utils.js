@@ -6,6 +6,7 @@ const SubTag_1 = require("./PubSub/SubTag");
 const SubServer_1 = require("./PubSub/SubServer");
 const QPROP_1 = require("./Reactivivity/QPROP");
 const SIDUP_1 = require("./Reactivivity/SIDUP");
+const QPROP2_1 = require("./Reactivivity/QPROP2");
 /**
  * Created by flo on 05/12/2016.
  */
@@ -194,6 +195,18 @@ function installSTDLib(appActor, parentRef, behaviourObject, environment) {
     //Setup QPROP instance
     behaviourObject["QPROP"] = (ownType, directParents, directChildren, defaultValue, isDynamic = false) => {
         let qNode = new QPROP_1.QPROPNode(ownType, directParents, directChildren, behaviourObject, defaultValue, dependencyChangeTag, isDynamic);
+        environment.signalPool.installDPropAlgorithm(qNode);
+        let qNodeSignal = qNode.ownSignal;
+        let signal = new signal_1.Signal(qNodeSignal);
+        qNodeSignal.setHolder(signal);
+        qNodeSignal.instantiateMeta(environment);
+        signalPool.newSource(signal);
+        return behaviourObject["lift"]((qSignal) => {
+            return qSignal.parentVals;
+        })(qNodeSignal);
+    };
+    behaviourObject["QPROP2"] = (ownType, directParents, directChildren) => {
+        let qNode = new QPROP2_1.QPROP2Node(ownType, directParents, directChildren, behaviourObject);
         environment.signalPool.installDPropAlgorithm(qNode);
         let qNodeSignal = qNode.ownSignal;
         let signal = new signal_1.Signal(qNodeSignal);
