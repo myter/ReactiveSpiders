@@ -89,11 +89,15 @@ class ServiceB extends  MicroService{
     }
 
     init(){
-        let s = this.QPROP2(this.bTag,[this.sourceTag],[this.sinkTag]);
+        let s = this.QPROP2(this.bTag,[this.sourceTag],[]);
         let ss = this.lift(([s1])=>{
             return (s1.value + 1)
         })(s)
         this.publishSignal(ss)
+        setTimeout(()=>{
+            console.log("Adding dependency")
+            this.addDependency(this.bTag,this.sinkTag)
+        },4000)
     }
 }
 
@@ -111,10 +115,13 @@ class SinkService extends MicroService{
     }
 
     init(){
-        let s = this.QPROP2(this.sinkTag,[this.aTag,this.bTag],[])
-        this.lift(([v1,v2])=>{
+        let s = this.QPROP2(this.sinkTag,[this.aTag],[])
+        /*this.lift(([v1,v2])=>{
             this.resultVal = v1 + v2
             console.log(this.resultVal)
+        })(s)*/
+        this.lift((args)=>{
+            console.log(args)
         })(s)
     }
 }

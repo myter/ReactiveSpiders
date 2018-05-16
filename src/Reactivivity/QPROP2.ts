@@ -52,6 +52,17 @@ export class PropagationValue2{
 
 }
 
+export class DependencyChange{
+    fromType    : PubSubTag
+    toType      : PubSubTag
+
+    constructor(fromType : PubSubTag,toType : PubSubTag){
+        this[IsolateContainer.checkIsolateFuncKey] = true
+        this.fromType   = fromType
+        this.toType     = toType
+    }
+}
+
 export class QPROP2Node implements DPropAlgorithm{
     signalPool                  : SignalPool
     ownType                     : PubSubTag
@@ -76,14 +87,17 @@ export class QPROP2Node implements DPropAlgorithm{
     allParentListeners          : Array<Function>
     publishedSignalId           : string
     hostActor
+    dependencyChangeTag
     ownSignal
+    publishedSignal
 
-    constructor(ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,hostActor){
+    constructor(ownType : PubSubTag,parentTypes : Array<PubSubTag>,childTypes : Array<PubSubTag>,hostActor,dependencyChangeTag){
         this.hostActor          = hostActor
         this.ownType            = ownType
         this.parentTypes        = parentTypes
         this.childTypes         = childTypes
         this.ownSignal          = new QPROPSourceSignal()
+        this.dependencyChangeTag = dependencyChangeTag
         this.init()
     }
 
@@ -132,6 +146,12 @@ export class QPROP2Node implements DPropAlgorithm{
             })
         })
         this.hostActor.publish(this,this.ownType)
+        this.hostActor.subscribe(this.dependencyChangeTag).each((change : DependencyChange)=>{
+            //console.log("Dependency addition detected")
+            if(change.toType.tagVal == this.ownType.tagVal && !this.contains(this.parentTypes,change.fromType)){
+                this.addDependency(change.fromType)
+            }
+        })
     }
 
     ////////////////////////////////////////
@@ -191,17 +211,6 @@ export class QPROP2Node implements DPropAlgorithm{
             sendFunc()
         })
     }
-
-    /*invokeStart(){
-        let args = []
-        //Make sure args are provided in the same order as the parents are specified
-        this.parentTypes.forEach((parentType : PubSubTag,index : number)=>{
-            args[index] = this.inputSignals.get(parentType.tagVal)
-        });
-        let returnSig = (this as any).start(...args)
-        this.publishedSignalId = returnSig.id
-        return returnSig
-    }*/
 
     flushReady(){
         this.readyListeners.forEach((readyList)=>{
@@ -297,6 +306,12 @@ export class QPROP2Node implements DPropAlgorithm{
         }
     }
 
+    contains(typeArray : Array<PubSubTag>,targettype : PubSubTag){
+        return typeArray.filter((type : PubSubTag)=>{
+            return type.tagVal == targettype.tagVal
+        }).length > 0
+    }
+
     ////////////////////////////////////////
     // Calls made by other QPROP nodes    //
     ////////////////////////////////////////
@@ -321,7 +336,6 @@ export class QPROP2Node implements DPropAlgorithm{
                 allSources.push(tag)
                 sourceClocks.set(source,0)
             })
-            //this.lastProp.value                         = this.invokeStart()
             this.lastProp.sClocks                       = sourceClocks
             if(this.amSink()){
                 let send = ()=>{
@@ -446,43 +460,6 @@ export class QPROP2Node implements DPropAlgorithm{
         //Dummy neeed to trigger underlying deserialisation of SpiderS.js
     }
 
-    //////////////////////////////////////////
-    // Calls made by dist glitch prevention //
-    //////////////////////////////////////////
-
-    //Internal propagation starts in "newPropagation", the reactive mirror catches the end of the internal propagation and invokes this method which will ensure that distributed propagation continues
-    internalSignalChanged(signal : Signal){
-        if(signal.id == this.publishedSignalId){
-            if(this.ready){
-                this.clock++
-                let clocks      = new Map()
-                if(this.amSource()){
-                    clocks.set(this.ownType.tagVal,this.clock)
-                }
-                else{
-                    this.lastMatch.forEach((pv : PropagationValue2)=>{
-                        pv.sClocks.forEach((clockVal,source)=>{
-                            clocks.set(source,clockVal)
-                        })
-                    })
-                }
-
-                this.lastProp   = new PropagationValue2(this.ownType,signal,clocks,this.clock)
-                this.sendToAllChildren(()=>{
-                    this.childRefs.forEach((child : FarRef)=>{
-                        //TODO convert sclocks
-                        child.prePropagation(this.lastProp)
-                    })
-                })
-            }
-            else{
-                let sigClone = this.libs.clone(signal)
-                this.readyListeners.push(()=>{
-                    this.internalSignalChanged(sigClone as any)
-                })
-            }
-        }
-    }
 
     ////////////////////////////////////////
     // QPROPD API                         //
@@ -491,6 +468,8 @@ export class QPROP2Node implements DPropAlgorithm{
     newChild(childType : PubSubTag,childRef : FarRef) : Promise<Array<any>>{
         this.childTypes.push(childType)
         this.childRefs.push(childRef)
+        this.startsReceived++
+        childRef.getSignal(this.publishedSignal)
         if(this.amSource()){
             return [this.lastProp,[this.ownType.tagVal]] as any
         }
@@ -517,14 +496,14 @@ export class QPROP2Node implements DPropAlgorithm{
                         this.parentTypes.push(toParent)
                         this.parentRefs.push(newParentRef)
                         this.I.set(toParent.tagVal,[])
-                        this.inputSignals.forEach((iSignal)=>{
+                        /*this.inputSignals.forEach((iSignal)=>{
                             let deps = (this.libs.reflectOnActor() as ReactiveMirror).localGraph.getDependants(iSignal.id)
                             deps.forEach((dependant : Signal)=>{
                                 (this.libs.reflectOnActor() as ReactiveMirror).localGraph.newSource(lastProp.value);
                                 (this.libs.reflectOnActor() as ReactiveMirror).localGraph.addDependency(dependant.id,lastProp.value.id)
                             })
                         })
-                        this.inputSignals.set(toParent.tagVal,lastProp.value)
+                        this.inputSignals.set(toParent.tagVal,lastProp.value)*/
                         this.inChange = false
                         this.nextChange()
                     })
@@ -549,6 +528,7 @@ export class QPROP2Node implements DPropAlgorithm{
 
     publishSignal(signal){
         let publish = () => {
+            this.publishedSignal = signal
             this.childRefs.forEach((childRef : FarRef)=>{
                 childRef.getSignal(signal)
             })
@@ -570,7 +550,6 @@ export class QPROP2Node implements DPropAlgorithm{
 
 
     propagate(signal: Signal, toIds: Array<string>) {
-        var that = this
         let newVal = signal.value
         if(newVal instanceof SignalFunction){
             newVal = newVal.lastVal

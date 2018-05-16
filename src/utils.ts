@@ -225,7 +225,7 @@ export function installSTDLib(appActor : boolean,parentRef : FarReference,behavi
     }
 
     behaviourObject["QPROP2"]       = (ownType : PubSubTag,directParents : Array<PubSubTag>,directChildren : Array<PubSubTag>) =>{
-        let qNode = new QPROP2Node(ownType,directParents,directChildren,behaviourObject)
+        let qNode = new QPROP2Node(ownType,directParents,directChildren,behaviourObject,dependencyChangeTag)
         environment.signalPool.installDPropAlgorithm(qNode)
         let qNodeSignal = qNode.ownSignal
         let signal      = new Signal(qNodeSignal)
