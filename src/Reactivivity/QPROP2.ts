@@ -39,7 +39,7 @@ export class PropagationValue2{
     }
 
     asString(){
-        return "< " + this.from.tagVal + " , " + this.value.toString() + " , " + this.sClocks + " , " + this.fClock + " >"
+        return "< " + this.from.tagVal + " , " + JSON.stringify([...this.sClocks]) + " , " + this.fClock + " >"
     }
 
     serMap(){
@@ -375,45 +375,59 @@ export class QPROP2Node implements DPropAlgorithm{
 
     prePropagation(prop : PropagationValue2){
         prop.deSerMap()
-        let from        = prop.from.tagVal
-        if(this.brittle.size == 0){
-            this.addToI(from,prop)
-            return this.newPropagation(prop)
-        }
-        else if(this.brittle.has(from)){
-            let prevProps = this.brittle.get(from)
-            this.brittle.set(from,prevProps.concat(prop))
-        }
-        else{
-            this.addToI(from,prop)
-            let sources = this.getSourcesFor(from)
-            let cont    = true
-            sources.forEach((source : string)=>{
-                let parents         = this.S.get(source)
-                let brittleCousins  = parents.filter((parent : PubSubTag)=>{return this.brittle.has(parent.tagVal)})
-                brittleCousins.forEach((br : PubSubTag)=>{
-                    cont = cont && (this.brittle.get(br.tagVal).length == 0)
-                })
-            })
-            if(cont){
+        if(!this.inChange){
+            let from        = prop.from.tagVal
+            if(this.brittle.size == 0){
+                this.addToI(from,prop)
                 return this.newPropagation(prop)
             }
-        }
-        this.brittle.forEach((brittleProps : Array<PropagationValue2>,br : string)=>{
-            let sources = this.getSourcesFor(br)
-            sources.forEach((source : string)=>{
-                let preds = this.S.get(source)
-                let check = preds.filter((pred : PubSubTag)=>{
-                    if(pred.tagVal == br){
-                        return false
-                    }
-                    else{
-                        let predFirst   = this.I.get(pred.tagVal)[0]
-                        let brFirst     = this.brittle.get(br)[0]
-                        return  (predFirst.sClocks.get(source) - brFirst.sClocks.get(source)) > 1
-                    }
+            else if(this.brittle.has(from)){
+                let prevProps = this.brittle.get(from)
+                this.brittle.set(from,prevProps.concat(prop))
+            }
+            else{
+                this.addToI(from,prop)
+                let sources = this.getSourcesFor(from)
+                let cont    = true
+                sources.forEach((source : string)=>{
+                    let parents         = this.S.get(source)
+                    let brittleCousins  = parents.filter((parent : PubSubTag)=>{return this.brittle.has(parent.tagVal)})
+                    brittleCousins.forEach((br : PubSubTag)=>{
+                        cont = cont && (this.brittle.get(br.tagVal).length == 0)
+                    })
                 })
-                if(check.length == 0){
+                if(cont){
+                    return this.newPropagation(prop)
+                }
+            }
+            this.brittle.forEach((brittleProps : Array<PropagationValue2>,br : string)=>{
+                let sources = this.getSourcesFor(br)
+                let ok      = true
+                sources.forEach((source : string)=>{
+                    let preds = this.S.get(source)
+                    let check = preds.filter((pred : PubSubTag)=>{
+                        if(pred.tagVal == br){
+                            return false
+                        }
+                        else{
+                            if(this.brittle.has(br)){
+                                if(this.brittle.get(br).length > 0){
+                                    let predFirst   = this.I.get(pred.tagVal)[0]
+                                    let brFirst     = this.brittle.get(br)[0]
+                                    return  (predFirst.sClocks.get(source) - brFirst.sClocks.get(source)) > 1
+                                }
+                                else{
+                                    return false
+                                }
+                            }
+                            else{
+                                return false
+                            }
+                        }
+                    })
+                    ok = ok && check.length == 0
+                })
+                if(ok){
                     if(this.I.has(br)){
                         this.addToI(br,this.brittle.get(br))
                     }
@@ -424,7 +438,12 @@ export class QPROP2Node implements DPropAlgorithm{
                     return this.newPropagation(prop)
                 }
             })
-        })
+        }
+        else{
+            this.changeDoneListeners.push(()=>{
+                this.prePropagation(prop)
+            })
+        }
     }
 
     newPropagation(prop : PropagationValue2){
@@ -439,7 +458,16 @@ export class QPROP2Node implements DPropAlgorithm{
         //Find cross product of new propagation value and all other values
         let allArgs     = this.getAllArgs(is)
         let matches     = this.getMatchArgs(allArgs)
-        matches.forEach((match : Array<PropagationValue2>)=>{
+        /*if(matches.length > 0){
+            let match       = matches[matches.length-1]
+            this.lastMatch  = match;
+            let values      = match.map((arg : PropagationValue2)=>{
+                return arg.value
+            })
+            //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
+            this.ownSignal.change(values)
+        }*/
+        matches.forEach((match)=>{
             this.lastMatch  = match;
             let values      = match.map((arg : PropagationValue2)=>{
                 return arg.value
@@ -496,14 +524,6 @@ export class QPROP2Node implements DPropAlgorithm{
                         this.parentTypes.push(toParent)
                         this.parentRefs.push(newParentRef)
                         this.I.set(toParent.tagVal,[])
-                        /*this.inputSignals.forEach((iSignal)=>{
-                            let deps = (this.libs.reflectOnActor() as ReactiveMirror).localGraph.getDependants(iSignal.id)
-                            deps.forEach((dependant : Signal)=>{
-                                (this.libs.reflectOnActor() as ReactiveMirror).localGraph.newSource(lastProp.value);
-                                (this.libs.reflectOnActor() as ReactiveMirror).localGraph.addDependency(dependant.id,lastProp.value.id)
-                            })
-                        })
-                        this.inputSignals.set(toParent.tagVal,lastProp.value)*/
                         this.inChange = false
                         this.nextChange()
                     })

@@ -1,6 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Services_1 = require("./Services");
-const ServiceMonitor_1 = require("../../../src/MicroService/ServiceMonitor");
+const ServiceMonitor_1 = require("../../src/MicroService/ServiceMonitor");
 var pi2 = new Services_1.ServiceInfo(Services_1.pi2Tag, [], [Services_1.pi12Tag], Services_1.piAddresses[0], Services_1.piPorts[0]);
 var pi3 = new Services_1.ServiceInfo(Services_1.pi3Tag, [], [Services_1.pi12Tag], Services_1.piAddresses[1], Services_1.piPorts[1]);
 var pi4 = new Services_1.ServiceInfo(Services_1.pi4Tag, [], [Services_1.pi13Tag, Services_1.pi15Tag], Services_1.piAddresses[2], Services_1.piPorts[2]);

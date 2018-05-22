@@ -4,10 +4,13 @@ import {MicroService} from "../src/MicroService/MicroService";
 import {SpiderLib} from "../src/spiders";
 var spider  : SpiderLib         = require('../src/spiders')
 let monitor = new ServiceMonitor()
-let sourceTag   = new PubSubTag("source")
-let sinkTag     = new PubSubTag("sink")
-let aTag        = new PubSubTag("a")
-let bTag        = new PubSubTag("b")
+
+
+let aTag        = new PubSubTag("A")
+let bTag        = new PubSubTag("B")
+let cTag        = new PubSubTag("C")
+let dTag        = new PubSubTag("D")
+let eTag        = new PubSubTag("E")
 
 class TestSignal extends spider.Signal{
     value
@@ -23,26 +26,22 @@ class TestSignal extends spider.Signal{
     }
 }
 
-class SourceService extends MicroService{
-    sourceTag
-    sinkTag
+class ServiceA extends MicroService{
     aTag
-    bTag
+    cTag
     TestSignal
     t
 
     constructor(){
         super()
-        this.sourceTag  = sourceTag
         this.aTag       = aTag
-        this.bTag       = bTag
+        this.cTag       = cTag
         this.TestSignal = TestSignal
-        this.sinkTag    = sinkTag
     }
 
     init(){
         this.t  = this.newSignal(this.TestSignal)
-        this.QPROP2(this.sourceTag,[],[this.aTag,this.bTag])
+        this.QPROP2(this.aTag,[],[this.cTag])
         this.publishSignal(this.t)
         this.update()
     }
@@ -51,71 +50,104 @@ class SourceService extends MicroService{
         this.t.inc()
         setTimeout(()=>{
             this.update()
-        },1000)
+        },3000)
     }
 }
 
-class ServiceA extends MicroService{
-    sourceTag
-    sinkTag
-    aTag
-
-    constructor(){
-        super()
-        this.sourceTag  = sourceTag
-        this.sinkTag    = sinkTag
-        this.aTag       = aTag
-    }
-
-    init(){
-        let s = this.QPROP2(this.aTag,[this.sourceTag],[this.sinkTag])
-        let ss = this.lift(([s1])=>{
-            return (s1.value + 1)
-        })(s)
-        this.publishSignal(ss)
-    }
-}
-
-class ServiceB extends  MicroService{
-    sourceTag
-    sinkTag
+class ServiceB extends MicroService{
     bTag
+    cTag
+    aTag
+    dTag
+    TestSignal
+    t
 
     constructor(){
         super()
-        this.sourceTag  = sourceTag
-        this.sinkTag    = sinkTag
         this.bTag       = bTag
+        this.dTag       = dTag
+        this.cTag       = cTag
+        this.aTag       = aTag
+        this.TestSignal = TestSignal
     }
 
     init(){
-        let s = this.QPROP2(this.bTag,[this.sourceTag],[]);
-        let ss = this.lift(([s1])=>{
-            return (s1.value + 1)
-        })(s)
-        this.publishSignal(ss)
+        this.t  = this.newSignal(this.TestSignal)
+        this.QPROP2(this.bTag,[],[this.dTag])
+        this.publishSignal(this.t)
+        this.update()
         setTimeout(()=>{
             console.log("Adding dependency")
-            this.addDependency(this.bTag,this.sinkTag)
+            this.addDependency(this.bTag,this.cTag)
+            console.log("AGAIn")
+            this.addDependency(this.aTag,this.dTag)
         },4000)
+    }
+
+    update(){
+        this.t.inc()
+        setTimeout(()=>{
+            this.update()
+        },2000)
     }
 }
 
-class SinkService extends MicroService{
+class ServiceC extends MicroService{
+    cTag
     aTag
-    bTag
-    sinkTag
-    resultVal
+    eTag
 
     constructor(){
         super()
+        this.cTag       = cTag
         this.aTag       = aTag
-        this.bTag       = bTag
-        this.sinkTag    = sinkTag
+        this.eTag       = eTag
     }
 
     init(){
-        let s = this.QPROP2(this.sinkTag,[this.aTag],[])
+        let s = this.QPROP2(this.cTag,[this.aTag],[this.eTag])
+        let ss = this.lift(([s1])=>{
+            return (s1.value + 1)
+        })(s)
+        this.publishSignal(ss)
+    }
+}
+
+class ServiceD extends  MicroService{
+    bTag
+    dTag
+    eTag
+
+    constructor(){
+        super()
+        this.dTag       = dTag
+        this.eTag       = eTag
+        this.bTag       = bTag
+    }
+
+    init(){
+        let s = this.QPROP2(this.dTag,[this.bTag],[this.eTag]);
+        let ss = this.lift(([s1])=>{
+            return (s1.value + 1)
+        })(s)
+        this.publishSignal(ss)
+    }
+}
+
+class ServiceE extends MicroService{
+    cTag
+    dTag
+    eTag
+
+    constructor(){
+        super()
+        this.cTag = cTag
+        this.dTag = dTag
+        this.eTag = eTag
+    }
+
+    init(){
+        let s = this.QPROP2(this.eTag,[this.cTag,this.dTag],[])
         /*this.lift(([v1,v2])=>{
             this.resultVal = v1 + v2
             console.log(this.resultVal)
@@ -125,10 +157,11 @@ class SinkService extends MicroService{
         })(s)
     }
 }
-monitor.spawnActor(SourceService)
-let sink = monitor.spawnActor(SinkService)
 monitor.spawnActor(ServiceA)
+let sink = monitor.spawnActor(ServiceE)
 monitor.spawnActor(ServiceB)
+monitor.spawnActor(ServiceC)
+monitor.spawnActor(ServiceD)
 /*setTimeout(()=>{
     sink.resultVal.then((v)=>{
         console.log("Result in sink: " + v)

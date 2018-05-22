@@ -1,7 +1,8 @@
-import {MicroServiceApp} from "../../../src/MicroService/MicroService";
-import {SpiderLib} from "../../../src/spiders";
-import {PubSubTag} from "../../../src/PubSub/SubTag";
-var spiders : SpiderLib = require("../../../src/spiders")
+import {SpiderLib} from "../../src/spiders";
+import {PubSubTag} from "../../src/PubSub/SubTag";
+import {MicroServiceApp} from "../../src/MicroService/MicroService";
+
+var spiders : SpiderLib = require("../../src/spiders")
 var csvWriter = require('csv-write-stream')
 var fs = require('fs')
 var csv = require('fast-csv')
@@ -70,7 +71,8 @@ export var admitterTag = new PubSubTag("Admitter")
 //PI tags
 
 
-export var monitorId     = 0
+//Isa setup
+/*export var monitorId     = 0
 export var monitorIP     = "10.0.0.10"
 export var monitorPort   = 8001
 export var admitterId   = 1
@@ -93,6 +95,27 @@ export var piAddresses = piIds.map((id,index)=>{
     else {
         return "10.0.0.13"
     }
+})
+//TODO temp, this is to be removed when benchmark are run for real
+let base = 8003
+export var piPorts      = piIds.map((id,index)=>{
+    return base + index
+})*/
+
+
+//local test setup
+export var monitorId     = 0
+export var monitorIP     = "127.0.0.1"
+export var monitorPort   = 8001
+export var admitterId   = 1
+export var admitterIP   = "127.0.0.1"
+export var admitterPort = 8002
+export var piIds        = []
+for(var i = 2;i < 60;i++){
+    piIds.push(i)
+}
+export var piAddresses = piIds.map((id,index)=>{
+    return "127.0.0.1"
 })
 //TODO temp, this is to be removed when benchmark are run for real
 let base = 8003
@@ -312,6 +335,7 @@ export class SourceService extends MicroServiceApp{
     myTag
     dynamicLinks
     changes
+    isQPROP
 
     constructor(isQPROP,rate,totalVals,csvFileName,myAddress,myPort,myTag,directParentsTags,directChildrenTags,dynamicLinkTags,changes){
         super(myAddress,myPort,monitorIP,monitorPort)
@@ -324,8 +348,9 @@ export class SourceService extends MicroServiceApp{
         this.snapMem()
         this.totalVals = totalVals
         this.csvFileName = csvFileName
+        this.isQPROP     = isQPROP
         if(isQPROP){
-            this.QPROP(myTag,directParentsTags,directChildrenTags,null)
+            this.QPROP2(myTag,directParentsTags,directChildrenTags)
         }
         else{
             this.SIDUP(myTag,directParentsTags,admitterTag)
@@ -334,12 +359,15 @@ export class SourceService extends MicroServiceApp{
 
         this.publishSignal(sig)
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        setTimeout(()=>{
+        /*setTimeout(()=>{
             this.update(sig)
-            if(isQPROP){
-                this.checkDynamicLinks()
+        },5000)*/
+        this.update(sig)
+        setTimeout(()=>{
+            if(this.isQPROP){
+                //this.checkDynamicLinks()
             }
-        },5000)
+        },10000)
     }
 
     update(signal){
@@ -377,7 +405,7 @@ export class SourceService extends MicroServiceApp{
                 console.log("From: " + from.tagVal + " to: " + to.tagVal)
                 this.addDependency(from,to)
                 this.checkDynamicLinks()
-            },Math.floor(Math.random() * 100) + 50)
+            },Math.floor(Math.random() * 1000) + 50)
         }
     }
 }
@@ -400,7 +428,7 @@ export class DerivedService extends MicroServiceApp{
         this.snapMem()
         let imp
         if(isQPROP){
-            imp = this.QPROP(myTag,directParentsTag,directChildrenTags,null)
+            imp = this.QPROP2(myTag,directParentsTag,directChildrenTags)
         }
         else{
             imp = this.SIDUP(myTag,directParentsTag,admitterTag)
@@ -475,7 +503,7 @@ export class SinkService extends MicroServiceApp{
         }
         let imp
         if(isQPROP){
-            imp = this.QPROP(myTag,directParentTags,directChildrenTags,null)
+            imp = this.QPROP2(myTag,directParentTags,directChildrenTags)
         }
         else{
             imp = this.SIDUP(myTag,directParentTags,admitterTag,true)

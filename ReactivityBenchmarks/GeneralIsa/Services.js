@@ -5,9 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const MicroService_1 = require("../../../src/MicroService/MicroService");
-const SubTag_1 = require("../../../src/PubSub/SubTag");
-var spiders = require("../../../src/spiders");
+const SubTag_1 = require("../../src/PubSub/SubTag");
+const MicroService_1 = require("../../src/MicroService/MicroService");
+var spiders = require("../../src/spiders");
 var csvWriter = require('csv-write-stream');
 var fs = require('fs');
 var csv = require('fast-csv');
@@ -72,29 +72,49 @@ exports.pi58Tag = new SubTag_1.PubSubTag("58");
 exports.pi59Tag = new SubTag_1.PubSubTag("59");
 exports.admitterTag = new SubTag_1.PubSubTag("Admitter");
 //PI tags
+//Isa setup
+/*export var monitorId     = 0
+export var monitorIP     = "10.0.0.10"
+export var monitorPort   = 8001
+export var admitterId   = 1
+export var admitterIP   = "10.0.0.10"
+export var admitterPort = 8002
+export var piIds        = []
+for(var i = 2;i < 60;i++){
+    piIds.push(i)
+}
+export var piAddresses = piIds.map((id,index)=>{
+    if(id >= 2 && id <= 14){
+        return "10.0.0.10"
+    }
+    else if(id > 14 && id <= 30){
+        return "10.0.0.11"
+    }
+    else if(id > 30 && id <= 45){
+        return "10.0.0.12"
+    }
+    else {
+        return "10.0.0.13"
+    }
+})
+//TODO temp, this is to be removed when benchmark are run for real
+let base = 8003
+export var piPorts      = piIds.map((id,index)=>{
+    return base + index
+})*/
+//local test setup
 exports.monitorId = 0;
-exports.monitorIP = "10.0.0.10";
+exports.monitorIP = "127.0.0.1";
 exports.monitorPort = 8001;
 exports.admitterId = 1;
-exports.admitterIP = "10.0.0.10";
+exports.admitterIP = "127.0.0.1";
 exports.admitterPort = 8002;
 exports.piIds = [];
 for (var i = 2; i < 60; i++) {
     exports.piIds.push(i);
 }
 exports.piAddresses = exports.piIds.map((id, index) => {
-    if (id >= 2 && id <= 14) {
-        return "10.0.0.10";
-    }
-    else if (id > 14 && id <= 30) {
-        return "10.0.0.11";
-    }
-    else if (id > 30 && id <= 45) {
-        return "10.0.0.12";
-    }
-    else {
-        return "10.0.0.13";
-    }
+    return "127.0.0.1";
 });
 //TODO temp, this is to be removed when benchmark are run for real
 let base = 8003;
@@ -293,8 +313,9 @@ class SourceService extends MicroService_1.MicroServiceApp {
         this.snapMem();
         this.totalVals = totalVals;
         this.csvFileName = csvFileName;
+        this.isQPROP = isQPROP;
         if (isQPROP) {
-            this.QPROP(myTag, directParentsTags, directChildrenTags, null);
+            this.QPROP2(myTag, directParentsTags, directChildrenTags);
         }
         else {
             this.SIDUP(myTag, directParentsTags, exports.admitterTag);
@@ -302,12 +323,15 @@ class SourceService extends MicroService_1.MicroServiceApp {
         let sig = this.newSignal(PropagationValue);
         this.publishSignal(sig);
         //Wait for construction to be completed (for both QPROP and SIDUP)
+        /*setTimeout(()=>{
+            this.update(sig)
+        },5000)*/
+        this.update(sig);
         setTimeout(() => {
-            this.update(sig);
-            if (isQPROP) {
-                this.checkDynamicLinks();
+            if (this.isQPROP) {
+                //this.checkDynamicLinks()
             }
-        }, 5000);
+        }, 10000);
     }
     update(signal) {
         for (var i = 0; i < this.rate; i++) {
@@ -341,7 +365,7 @@ class SourceService extends MicroService_1.MicroServiceApp {
                 console.log("From: " + from.tagVal + " to: " + to.tagVal);
                 this.addDependency(from, to);
                 this.checkDynamicLinks();
-            }, Math.floor(Math.random() * 100) + 50);
+            }, Math.floor(Math.random() * 1000) + 50);
         }
     }
 }
@@ -358,7 +382,7 @@ class DerivedService extends MicroService_1.MicroServiceApp {
         this.snapMem();
         let imp;
         if (isQPROP) {
-            imp = this.QPROP(myTag, directParentsTag, directChildrenTags, null);
+            imp = this.QPROP2(myTag, directParentsTag, directChildrenTags);
         }
         else {
             imp = this.SIDUP(myTag, directParentsTag, exports.admitterTag);
@@ -428,7 +452,7 @@ class SinkService extends MicroService_1.MicroServiceApp {
         }
         let imp;
         if (isQPROP) {
-            imp = this.QPROP(myTag, directParentTags, directChildrenTags, null);
+            imp = this.QPROP2(myTag, directParentTags, directChildrenTags);
         }
         else {
             imp = this.SIDUP(myTag, directParentTags, exports.admitterTag, true);

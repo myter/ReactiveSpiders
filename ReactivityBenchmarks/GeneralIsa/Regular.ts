@@ -14,7 +14,7 @@ import {
     piPorts,
     ServiceInfo, SinkService, SourceService
 } from "./Services";
-import {ServiceMonitor} from "../../../src/MicroService/ServiceMonitor";
+import {ServiceMonitor} from "../../src/MicroService/ServiceMonitor";
 
 var pi2 = new ServiceInfo(pi2Tag,[],[pi12Tag],piAddresses[0],piPorts[0])
 var pi3 = new ServiceInfo(pi3Tag,[],[pi12Tag],piAddresses[1],piPorts[1])
