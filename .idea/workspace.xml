@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-tests/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-tests/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-tests/temp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/server-tests/temp.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-tests/temp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-tests/temp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" afterDir="false" />
-    </list>
+    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -47,8 +33,26 @@
       <file leaf-file-name="test.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="900">
               <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunRegularSIDUPBench.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="191" column="4" lean-forward="true" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -80,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QPROP2.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QPROP2.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="476" column="10" lean-forward="true" selection-start-line="476" selection-start-column="10" selection-end-line="476" selection-end-column="10" />
+              <caret line="476" column="10" selection-start-line="476" selection-start-column="10" selection-end-line="476" selection-end-column="10" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
@@ -150,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clone</find>
       <find>newPropagation</find>
       <find>this.I</find>
       <find>this.addToI</find>
@@ -180,6 +183,7 @@
       <find>qpropRegular</find>
       <find>qpropRegular 1</find>
       <find>fClock</find>
+      <find>sidupRegular</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
@@ -189,6 +193,7 @@
       <replace>qpropRegular</replace>
       <replace>qpropRegular 20</replace>
       <replace>qpropRegular 1</replace>
+      <replace>sidupRegular 20</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/reactivity.Test.ts" />
         <option value="$PROJECT_DIR$/src/SID-UP/SIDUPActor.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/writing.ts" />
         <option value="$PROJECT_DIR$/benchmarks/General/writing.ts" />
@@ -253,6 +257,7 @@
         <option value="$PROJECT_DIR$/src/messageHandler.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" />
         <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh" />
       </list>
     </option>
   </component>
@@ -408,14 +413,7 @@
       <workItem from="1526299968370" duration="14168000" />
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
-      <workItem from="1526972139946" duration="10078000" />
-    </task>
-    <task id="LOCAL-00064" summary="Bypassing @mutating annot">
-      <created>1525532096562</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1525532096563</updated>
+      <workItem from="1526972139946" duration="10287000" />
     </task>
     <task id="LOCAL-00065" summary="Bypassing @mutating annot">
       <created>1525532331378</created>
@@ -753,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526375665104</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Testing Raspberry usecase">
+      <created>1527002631239</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1527002631240</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -789,20 +794,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209766000" />
+    <option name="totallyTimeSpent" value="209975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3270337" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34672305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34672305" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24132948" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24132948" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -847,7 +852,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Memory Snapshot turned off" />
     <MESSAGE value="Back to temp backpressure" />
     <MESSAGE value="Reverted back to regular propagation values" />
     <MESSAGE value="Array prop val obvious performance impact" />
@@ -872,7 +876,8 @@
     <MESSAGE value="Added and fixed original QPROP benchmarks" />
     <MESSAGE value="Fixing path issues" />
     <MESSAGE value="Non-dynamic QPROP2.0 implemented. Testing use case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Non-dynamic QPROP2.0 implemented. Testing use case" />
+    <MESSAGE value="Testing Raspberry usecase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Raspberry usecase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -880,8 +885,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MOP.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/ObjectPool.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.ts" />
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.ts" />
@@ -1116,13 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/messageHandler.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="708">
@@ -1175,7 +1171,7 @@
     <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="476" column="10" lean-forward="true" selection-start-line="476" selection-start-column="10" selection-end-line="476" selection-end-column="10" />
+          <caret line="476" column="10" selection-start-line="476" selection-start-column="10" selection-end-line="476" selection-end-column="10" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
@@ -1212,6 +1208,27 @@
             <element signature="e#17976#18257#0" expanded="true" />
             <element signature="n#!!block;n#addSources#0;n#QPROP2Node#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="191" column="4" lean-forward="true" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
