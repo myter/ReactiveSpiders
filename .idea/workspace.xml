@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="" />
+    <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Latency/qpropRegular20.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Latency/qpropRegular20.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2010Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2010Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2011Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2011Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2012Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2012Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2013Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2013Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2014Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2014Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2015Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2015Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2016Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2016Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2017Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2017Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2018Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2018Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2019Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2019Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2020Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2020Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2021Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2021Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2022Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2022Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2023Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2023Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2024Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2024Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2025Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2025Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2026Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2026Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2027Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2027Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2028Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2028Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2029Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2029Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular202Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular202Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2030Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2030Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2031Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2031Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2032Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2032Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2033Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2033Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2034Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2034Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2035Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2035Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2036Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2036Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2037Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2037Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2038Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2038Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2039Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2039Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular203Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular203Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2040Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2040Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2041Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2041Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2042Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2042Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2043Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2043Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2044Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2044Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2045Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2045Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2046Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2046Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2047Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2047Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2048Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2048Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2049Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2049Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular204Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular204Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2050Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2050Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2051Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2051Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2052Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2052Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2053Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2053Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2054Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2054Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2055Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2055Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2056Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2056Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2057Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2057Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2058Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2058Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2059Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular2059Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular205Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular205Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular206Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular206Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular207Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular207Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular208Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular208Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular209Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Memory/qpropRegular209Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Processing/qpropRegular20.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Processing/qpropRegular20.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Throughput/qpropRegular20.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Throughput/qpropRegular20.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/temp.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/temp59Memory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/temp59Memory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serialisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serialisation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serialisation.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/serialisation.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serialisation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serialisation.ts" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,14 +92,30 @@
       <file leaf-file-name="Services.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="367" column="18" selection-start-line="367" selection-start-column="18" selection-end-line="367" selection-end-column="18" />
+            <state relative-caret-position="666">
+              <caret line="373" column="28" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="28" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#11116#11308#0" expanded="true" />
-                <element signature="e#11253#11296#0" expanded="true" />
-                <element signature="e#11749#12237#0" expanded="true" />
-                <element signature="e#11820#12182#0" expanded="true" />
+                <element signature="e#7210#9162#0" expanded="true" />
+                <element signature="e#8021#9009#0" expanded="true" />
+                <element signature="e#10160#11124#0" expanded="true" />
+                <element signature="e#10915#10955#0" expanded="true" />
+                <element signature="e#11013#11111#0" expanded="true" />
+                <element signature="e#11281#11324#0" expanded="true" />
+                <element signature="e#11810#12298#0" expanded="true" />
+                <element signature="e#11881#12243#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Regular.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="192" column="42" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#729#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,62 +124,26 @@
       <file leaf-file-name="test.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+            <state relative-caret-position="30">
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test2.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test2.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunRegularSIDUPBench.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="191" column="4" lean-forward="true" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="temp.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server-tests/temp.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#SourceService#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#SourceService#0" expanded="true" />
-                <element signature="n#!!block;n#update#0;n#SourceService#0" expanded="true" />
-                <element signature="e#1213#1250#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#ServiceA#1" expanded="true" />
-                <element signature="n#!!block;n#update#0;n#ServiceA#1" expanded="true" />
-                <element signature="e#1631#1668#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#ServiceA#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#ServiceA#0" expanded="true" />
-                <element signature="e#1600#1645#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#ServiceB#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#ServiceB#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#SinkService#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#SinkService#0" expanded="true" />
-                <element signature="e#2689#2730#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QPROP2.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QPROP2.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="476" column="10" selection-start-line="476" selection-start-column="10" selection-end-line="476" selection-end-column="10" />
+            <state relative-caret-position="597">
+              <caret line="499" column="14" selection-start-line="499" selection-start-column="14" selection-end-line="499" selection-end-column="14" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
@@ -99,31 +154,58 @@
                 <element signature="n#!!block;n#deSerMap#0;n#PropagationValue2#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#DependencyChange#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#QPROP2Node#0" expanded="true" />
-                <element signature="n#!!block;n#init#0;n#QPROP2Node#0" expanded="true" />
-                <element signature="n#!!block;n#nextChange#0;n#QPROP2Node#0" expanded="true" />
-                <element signature="n#!!block;n#getMatchArgs#0;n#QPROP2Node#0" expanded="true" />
+                <element signature="e#4166#4302#0" />
+                <element signature="e#4436#4828#0" expanded="true" />
+                <element signature="e#4596#4688#0" expanded="true" />
+                <element signature="e#4978#5148#0" expanded="true" />
+                <element signature="e#7905#8116#0" expanded="true" />
                 <element signature="e#8570#9606#0" expanded="true" />
                 <element signature="e#8974#9488#0" expanded="true" />
                 <element signature="e#9038#9473#0" expanded="true" />
                 <element signature="e#9122#9454#0" expanded="true" />
+                <element signature="e#10245#10459#0" expanded="true" />
+                <element signature="e#10672#10825#0" expanded="true" />
+                <element signature="e#10960#11103#0" expanded="true" />
+                <element signature="e#11022#11084#0" expanded="true" />
+                <element signature="e#11279#11447#0" expanded="true" />
+                <element signature="e#11340#11428#0" expanded="true" />
                 <element signature="n#!!block;n#prePropagation#0;n#QPROP2Node#0" expanded="true" />
-                <element signature="e#12544#12888#0" expanded="true" />
-                <element signature="e#12777#12873#0" expanded="true" />
-                <element signature="e#13069#14296#0" expanded="true" />
-                <element signature="e#13198#13955#0" expanded="true" />
-                <element signature="e#13308#13895#0" expanded="true" />
-                <element signature="e#14592#14624#0" expanded="true" />
-                <element signature="e#14902#14989#0" expanded="true" />
-                <element signature="e#15843#16179#0" expanded="true" />
-                <element signature="e#15949#15997#0" expanded="true" />
-                <element signature="e#16370#16583#0" expanded="true" />
+                <element signature="e#12182#14918#0" />
+                <element signature="e#12747#13115#0" expanded="true" />
+                <element signature="e#12992#13096#0" expanded="true" />
+                <element signature="e#13316#14907#0" expanded="true" />
+                <element signature="e#13457#14522#0" expanded="true" />
+                <element signature="e#13575#14454#0" expanded="true" />
+                <element signature="e#14931#15119#0" />
+                <element signature="e#14979#15108#0" expanded="true" />
+                <element signature="e#15319#15406#0" expanded="true" />
+                <element signature="e#16850#16898#0" expanded="true" />
+                <element signature="e#17081#17294#0" expanded="true" />
                 <element signature="n#!!block;n#newChild#0;n#QPROP2Node#0" expanded="true" />
-                <element signature="n#!!block;n#addDependency#0;n#QPROP2Node#0" expanded="true" />
-                <element signature="e#17393#17453#0" expanded="true" />
-                <element signature="e#17589#18291#0" expanded="true" />
-                <element signature="e#17675#18276#0" expanded="true" />
-                <element signature="e#17976#18257#0" expanded="true" />
+                <element signature="e#18839#18899#0" expanded="true" />
+                <element signature="e#19035#19737#0" expanded="true" />
+                <element signature="e#19121#19722#0" expanded="true" />
+                <element signature="e#19422#19703#0" expanded="true" />
                 <element signature="n#!!block;n#addSources#0;n#QPROP2Node#0" expanded="true" />
+                <element signature="n#!!block;n#propagate#0;n#QPROP2Node#0" expanded="true" />
+                <element signature="e#21055#22145#0" expanded="true" />
+                <element signature="e#21451#21520#0" expanded="true" />
+                <element signature="e#21651#21805#0" expanded="true" />
+                <element signature="e#21711#21786#0" expanded="true" />
+                <element signature="e#22001#22079#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serialisation.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/serialisation.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="599" column="11" selection-start-line="599" selection-start-column="11" selection-end-line="599" selection-end-column="11" />
+              <folding>
+                <element signature="e#38804#39190#0" expanded="true" />
+                <element signature="e#38994#39052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +236,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>newPropagation</find>
-      <find>this.I</find>
       <find>this.addToI</find>
       <find>idleListener</find>
       <find>changeListener</find>
@@ -184,6 +264,8 @@
       <find>qpropRegular 1</find>
       <find>fClock</find>
       <find>sidupRegular</find>
+      <find>100</find>
+      <find>3</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
@@ -194,6 +276,8 @@
       <replace>qpropRegular 20</replace>
       <replace>qpropRegular 1</replace>
       <replace>sidupRegular 20</replace>
+      <replace>3</replace>
+      <replace>100</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -207,7 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SID-UP/SIDUPActor.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/writing.ts" />
         <option value="$PROJECT_DIR$/benchmarks/General/writing.ts" />
         <option value="$PROJECT_DIR$/benchmarks/General/Services.ts" />
@@ -252,12 +335,13 @@
         <option value="$PROJECT_DIR$/src/utils.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularQPROPBench.sh" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh" />
         <option value="$PROJECT_DIR$/server-tests/temp.ts" />
         <option value="$PROJECT_DIR$/src/messageHandler.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh" />
+        <option value="$PROJECT_DIR$/src/serialisation.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" />
         <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh" />
       </list>
     </option>
   </component>
@@ -277,7 +361,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1337" />
@@ -413,14 +497,7 @@
       <workItem from="1526299968370" duration="14168000" />
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
-      <workItem from="1526972139946" duration="10287000" />
-    </task>
-    <task id="LOCAL-00065" summary="Bypassing @mutating annot">
-      <created>1525532331378</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1525532331378</updated>
+      <workItem from="1526972139946" duration="16399000" />
     </task>
     <task id="LOCAL-00066" summary="Stringified prop val">
       <created>1525532468413</created>
@@ -758,7 +835,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527002631240</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Testing Raspberry usecase">
+      <created>1527002765235</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1527002765235</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -794,20 +878,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209975000" />
+    <option name="totallyTimeSpent" value="216087000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3270337" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34672305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19377708" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24132948" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13722268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -885,7 +969,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.ts" />
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/MAP.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/ActorSTDLib.js" />
@@ -942,13 +1025,6 @@
           <folding>
             <element signature="e#87#570#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serialisation.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3285">
-          <caret line="777" column="37" selection-start-line="777" selection-start-column="34" selection-end-line="777" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1070,13 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -1129,6 +1198,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="191" column="4" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server-tests/temp.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1154,24 +1230,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/farRef.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+            <element signature="n#!!block;n#proxyify#0;n#FarReference#0" expanded="true" />
+            <element signature="e#1912#4094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serialisation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="599" column="11" selection-start-line="599" selection-start-column="11" selection-end-line="599" selection-end-column="11" />
+          <folding>
+            <element signature="e#38804#39190#0" expanded="true" />
+            <element signature="e#38994#39052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="192" column="42" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="367" column="18" selection-start-line="367" selection-start-column="18" selection-end-line="367" selection-end-column="18" />
+        <state relative-caret-position="666">
+          <caret line="373" column="28" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="28" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#11116#11308#0" expanded="true" />
-            <element signature="e#11253#11296#0" expanded="true" />
-            <element signature="e#11749#12237#0" expanded="true" />
-            <element signature="e#11820#12182#0" expanded="true" />
+            <element signature="e#7210#9162#0" expanded="true" />
+            <element signature="e#8021#9009#0" expanded="true" />
+            <element signature="e#10160#11124#0" expanded="true" />
+            <element signature="e#10915#10955#0" expanded="true" />
+            <element signature="e#11013#11111#0" expanded="true" />
+            <element signature="e#11281#11324#0" expanded="true" />
+            <element signature="e#11810#12298#0" expanded="true" />
+            <element signature="e#11881#12243#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="476" column="10" selection-start-line="476" selection-start-column="10" selection-end-line="476" selection-end-column="10" />
+        <state relative-caret-position="597">
+          <caret line="499" column="14" selection-start-line="499" selection-start-column="14" selection-end-line="499" selection-end-column="14" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
@@ -1182,53 +1309,46 @@
             <element signature="n#!!block;n#deSerMap#0;n#PropagationValue2#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#DependencyChange#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#nextChange#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#getMatchArgs#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="e#4166#4302#0" />
+            <element signature="e#4436#4828#0" expanded="true" />
+            <element signature="e#4596#4688#0" expanded="true" />
+            <element signature="e#4978#5148#0" expanded="true" />
+            <element signature="e#7905#8116#0" expanded="true" />
             <element signature="e#8570#9606#0" expanded="true" />
             <element signature="e#8974#9488#0" expanded="true" />
             <element signature="e#9038#9473#0" expanded="true" />
             <element signature="e#9122#9454#0" expanded="true" />
+            <element signature="e#10245#10459#0" expanded="true" />
+            <element signature="e#10672#10825#0" expanded="true" />
+            <element signature="e#10960#11103#0" expanded="true" />
+            <element signature="e#11022#11084#0" expanded="true" />
+            <element signature="e#11279#11447#0" expanded="true" />
+            <element signature="e#11340#11428#0" expanded="true" />
             <element signature="n#!!block;n#prePropagation#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="e#12544#12888#0" expanded="true" />
-            <element signature="e#12777#12873#0" expanded="true" />
-            <element signature="e#13069#14296#0" expanded="true" />
-            <element signature="e#13198#13955#0" expanded="true" />
-            <element signature="e#13308#13895#0" expanded="true" />
-            <element signature="e#14592#14624#0" expanded="true" />
-            <element signature="e#14902#14989#0" expanded="true" />
-            <element signature="e#15843#16179#0" expanded="true" />
-            <element signature="e#15949#15997#0" expanded="true" />
-            <element signature="e#16370#16583#0" expanded="true" />
+            <element signature="e#12182#14918#0" />
+            <element signature="e#12747#13115#0" expanded="true" />
+            <element signature="e#12992#13096#0" expanded="true" />
+            <element signature="e#13316#14907#0" expanded="true" />
+            <element signature="e#13457#14522#0" expanded="true" />
+            <element signature="e#13575#14454#0" expanded="true" />
+            <element signature="e#14931#15119#0" />
+            <element signature="e#14979#15108#0" expanded="true" />
+            <element signature="e#15319#15406#0" expanded="true" />
+            <element signature="e#16850#16898#0" expanded="true" />
+            <element signature="e#17081#17294#0" expanded="true" />
             <element signature="n#!!block;n#newChild#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="e#17393#17453#0" expanded="true" />
-            <element signature="e#17589#18291#0" expanded="true" />
-            <element signature="e#17675#18276#0" expanded="true" />
-            <element signature="e#17976#18257#0" expanded="true" />
+            <element signature="e#18839#18899#0" expanded="true" />
+            <element signature="e#19035#19737#0" expanded="true" />
+            <element signature="e#19121#19722#0" expanded="true" />
+            <element signature="e#19422#19703#0" expanded="true" />
             <element signature="n#!!block;n#addSources#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#propagate#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="e#21055#22145#0" expanded="true" />
+            <element signature="e#21451#21520#0" expanded="true" />
+            <element signature="e#21651#21805#0" expanded="true" />
+            <element signature="e#21711#21786#0" expanded="true" />
+            <element signature="e#22001#22079#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="191" column="4" lean-forward="true" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>

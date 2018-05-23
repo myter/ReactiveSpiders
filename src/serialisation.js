@@ -211,6 +211,7 @@ ValueContainer.repliqFieldType = 10;
 ValueContainer.repliqDefinition = 11;
 ValueContainer.signalType = 12;
 ValueContainer.signalDefinition = 13;
+ValueContainer.mapType = 14;
 exports.ValueContainer = ValueContainer;
 class NativeContainer extends ValueContainer {
     constructor(value) {
@@ -356,6 +357,14 @@ class SignalDefinitionContainer extends ValueContainer {
     }
 }
 exports.SignalDefinitionContainer = SignalDefinitionContainer;
+class MapContainer extends ValueContainer {
+    constructor(keys, values) {
+        super(ValueContainer.mapType);
+        this.keys = keys;
+        this.values = values;
+    }
+}
+exports.MapContainer = MapContainer;
 function isClass(func) {
     return typeof func === 'function' && /^\s*class\s+/.test(func.toString());
 }
@@ -475,6 +484,15 @@ function serialiseRepliq(repliqProxy, receiverId, environment, innerName = "") {
     }
     return ret;
 }
+function serialiseMap(map, receiverId, environment) {
+    let keys = [];
+    let values = [];
+    map.forEach((value, key) => {
+        keys.push(serialise(key, receiverId, environment));
+        values.push(serialise(value, receiverId, environment));
+    });
+    return new MapContainer(JSON.stringify(keys), JSON.stringify(values));
+}
 function serialise(value, receiverId, environment) {
     if (typeof value == 'object') {
         if (value == null) {
@@ -486,6 +504,9 @@ function serialise(value, receiverId, environment) {
         else if (value instanceof Error) {
             return new ErrorContainer(value);
         }
+        /*else if(value instanceof Map){
+            return serialiseMap(value,receiverId,environment)
+        }*/
         else if (value[farRef_1.FarReference.ServerProxyTypeKey]) {
             var farRef = value[farRef_1.FarReference.farRefAccessorKey];
             return new ServerFarRefContainer(farRef.objectId, farRef.ownerId, farRef.ownerAddress, farRef.ownerPort);
@@ -744,6 +765,19 @@ function deserialise(value, enviroment) {
         });
         return classObj;
     }
+    function deSerialiseMap(mapContainer) {
+        let keys = JSON.parse(mapContainer.keys).map((key) => {
+            return deserialise(key, enviroment);
+        });
+        let vals = JSON.parse(mapContainer.values).map((val) => {
+            return deserialise(val, enviroment);
+        });
+        let m = new Map();
+        keys.forEach((key, index) => {
+            m.set(key, vals[index]);
+        });
+        return m;
+    }
     switch (value.type) {
         case ValueContainer.nativeType:
             return value.value;
@@ -771,6 +805,8 @@ function deserialise(value, enviroment) {
             return deSerialiseSignal(value);
         case ValueContainer.signalDefinition:
             return deSerialiseSignalDefinition(value);
+        case ValueContainer.mapType:
+            return deSerialiseMap(value);
         default:
             throw "Unknown value container type :  " + value.type;
     }

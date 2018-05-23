@@ -221,6 +221,7 @@ export abstract class ValueContainer{
     static repliqDefinition     : number = 11
     static signalType           : number = 12
     static signalDefinition     : number = 13
+    static mapType              : number = 14
     type                        : number
 
     constructor(type : number){
@@ -435,6 +436,17 @@ export class SignalDefinitionContainer extends ValueContainer{
     }
 }
 
+export class MapContainer extends ValueContainer{
+    keys    : string
+    values  : string
+
+    constructor(keys : string,values : string){
+        super(ValueContainer.mapType)
+        this.keys   = keys
+        this.values = values
+    }
+}
+
 function isClass(func : Function) : boolean{
     return typeof func === 'function' && /^\s*class\s+/.test(func.toString());
 }
@@ -562,6 +574,16 @@ function serialiseRepliq(repliqProxy,receiverId : string,environment : ActorEnvi
     return ret
 }
 
+function serialiseMap(map : Map<any,any>,receiverId : string,environment : ActorEnvironment) : MapContainer{
+    let keys    = []
+    let values  = []
+    map.forEach((value,key)=>{
+        keys.push(serialise(key,receiverId,environment))
+        values.push(serialise(value,receiverId,environment))
+    })
+    return new MapContainer(JSON.stringify(keys),JSON.stringify(values))
+}
+
 export function serialise(value,receiverId : string,environment : ActorEnvironment) : ValueContainer{
     if(typeof value == 'object'){
         if(value == null){
@@ -573,6 +595,9 @@ export function serialise(value,receiverId : string,environment : ActorEnvironme
         else if(value instanceof Error){
             return new ErrorContainer(value)
         }
+        /*else if(value instanceof Map){
+            return serialiseMap(value,receiverId,environment)
+        }*/
         else if(value[FarReference.ServerProxyTypeKey]){
             var farRef : ServerFarReference = value[FarReference.farRefAccessorKey]
             return new ServerFarRefContainer(farRef.objectId,farRef.ownerId,farRef.ownerAddress,farRef.ownerPort)
@@ -844,6 +869,20 @@ export function deserialise(value : ValueContainer,enviroment : ActorEnvironment
         return classObj
     }
 
+    function deSerialiseMap(mapContainer : MapContainer){
+        let keys    = JSON.parse(mapContainer.keys).map((key)=>{
+            return deserialise(key,enviroment)
+        })
+        let vals    = JSON.parse(mapContainer.values).map((val)=>{
+            return deserialise(val,enviroment)
+        })
+        let m       = new Map()
+        keys.forEach((key,index)=>{
+            m.set(key,vals[index])
+        })
+        return m
+    }
+
     switch(value.type){
         case ValueContainer.nativeType :
             return (value as NativeContainer).value
@@ -871,6 +910,8 @@ export function deserialise(value : ValueContainer,enviroment : ActorEnvironment
             return deSerialiseSignal(value as SignalContainer)
         case ValueContainer.signalDefinition:
             return deSerialiseSignalDefinition(value as SignalDefinitionContainer)
+        case ValueContainer.mapType:
+            return deSerialiseMap(value as MapContainer)
         default :
             throw "Unknown value container type :  " + value.type
     }

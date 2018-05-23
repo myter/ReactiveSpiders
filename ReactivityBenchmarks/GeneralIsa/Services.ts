@@ -273,7 +273,7 @@ export class Admitter extends MicroServiceApp{
             valsReceived++
             if(valsReceived > 0){
                 if(valsReceived == 1){
-                    this.checkDynamicLinks()
+                    //this.checkDynamicLinks()
                 }
                 this.close = true
                 let processTime = Date.now() - (admitTimes.splice(0,1)[0])
@@ -359,10 +359,10 @@ export class SourceService extends MicroServiceApp{
 
         this.publishSignal(sig)
         //Wait for construction to be completed (for both QPROP and SIDUP)
-        /*setTimeout(()=>{
+        setTimeout(()=>{
             this.update(sig)
-        },5000)*/
-        this.update(sig)
+        },10000)
+        //this.update(sig)
         setTimeout(()=>{
             if(this.isQPROP){
                 //this.checkDynamicLinks()
@@ -371,7 +371,7 @@ export class SourceService extends MicroServiceApp{
     }
 
     update(signal){
-        for(var i = 0;i < this.rate;i++){
+        for(var i = 0;i < 10;i++){
             this.totalVals--
             signal.actualise()
         }

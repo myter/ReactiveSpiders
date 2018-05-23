@@ -86,9 +86,11 @@ class QPROP2Node {
             this.hostActor.subscribe(childType).once((childRef) => {
                 this.childRefs.push(childRef);
                 if (this.amSource() && this.gotAllChildren()) {
+                    this.lastProp.serMap();
                     this.childRefs.forEach((ref) => {
                         ref.getSources([this.ownType], this.lastProp);
                     });
+                    this.lastProp.deSerMap();
                 }
                 if (this.gotAllChildren()) {
                     this.flushChildMessages();
@@ -252,6 +254,7 @@ class QPROP2Node {
     // Calls made by other QPROP nodes    //
     ////////////////////////////////////////
     getSources(sources, initProp) {
+        initProp.deSerMap();
         let fromParent = initProp.from;
         this.I.set(fromParent.tagVal, [initProp]);
         this.sourcesReceived += 1;
@@ -284,9 +287,11 @@ class QPROP2Node {
             }
             else {
                 let send = () => {
+                    this.lastProp.serMap();
                     this.childRefs.forEach((ref) => {
                         ref.getSources(allSources, this.lastProp);
                     });
+                    this.lastProp.deSerMap();
                 };
                 this.sendToAllChildren(send);
             }
@@ -374,6 +379,7 @@ class QPROP2Node {
         }
         else {
             this.changeDoneListeners.push(() => {
+                //TODO make sure seriaslisation is correct here
                 this.prePropagation(prop);
             });
         }
@@ -390,30 +396,57 @@ class QPROP2Node {
         //Find cross product of new propagation value and all other values
         let allArgs = this.getAllArgs(is);
         let matches = this.getMatchArgs(allArgs);
-        /*if(matches.length > 0){
-            let match       = matches[matches.length-1]
+        //console.log("Args for " + this.ownType.tagVal + "  = " + allArgs.length)
+        //console.log("Matches: " + matches.length)
+        if (this.ownType.tagVal == "26") {
+            //console.log("All : " + allArgs.length)
+            //console.log("Matches: " + matches.length)
+            /*let one = this.I.get("57")
+            let two = this.I.get("56")
+            let three = this.I.get("54")
+            let four = this.I.get("58")
+            console.log("Length of 57 I = " + one.length)
+            console.log("Length of 56 I = " + two.length)
+            console.log("Length of 54 I = " + three.length)
+            console.log("Length of 58 I = " + four.length)
+            console.log("   ")*/
+            /*allArgs.forEach((arg : Array<PropagationValue2>)=>{
+                console.log("<PRINTING POSSIBLE ARGS>")
+                arg.forEach((a)=>{
+                    console.log(a.from.tagVal)
+                    console.log(a.sClocks)
+                })
+            })*/
+        }
+        if (matches.length > 0) {
+            let match = matches[matches.length - 1];
+            this.lastMatch = match;
+            let values = match.map((arg) => {
+                return arg.value;
+            });
+            //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
+            match.forEach((pv) => {
+                let vals = this.I.get(pv.from.tagVal);
+                vals = vals.filter((pvv) => { return pvv.fClock >= pv.fClock; });
+                this.I.set(pv.from.tagVal, vals);
+            });
+            this.ownSignal.change(values);
+        }
+        /*matches.forEach((match)=>{
             this.lastMatch  = match;
             let values      = match.map((arg : PropagationValue2)=>{
                 return arg.value
             })
             //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
             this.ownSignal.change(values)
+        })
+        if(this.lastMatch){
+            this.lastMatch.forEach((pv : PropagationValue2)=>{
+                let vals = this.I.get(pv.from.tagVal)
+                vals = vals.filter((pvv : PropagationValue2)=>{return pvv.fClock >= pv.fClock})
+                this.I.set(pv.from.tagVal,vals)
+            })
         }*/
-        matches.forEach((match) => {
-            this.lastMatch = match;
-            let values = match.map((arg) => {
-                return arg.value;
-            });
-            //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
-            this.ownSignal.change(values);
-        });
-        if (this.lastMatch) {
-            this.lastMatch.forEach((pv) => {
-                let vals = this.I.get(pv.from.tagVal);
-                vals = vals.filter((pvv) => { return pvv.fClock >= pv.fClock; });
-                this.I.set(pv.from.tagVal, vals);
-            });
-        }
     }
     getSignal(signal) {
         //Dummy neeed to trigger underlying deserialisation of SpiderS.js
@@ -500,12 +533,13 @@ class QPROP2Node {
             let clocks = new Map();
             if (this.parentTypes.length == 0) {
                 clocks.set(this.ownType.tagVal, this.clock);
-                this.lastProp = new PropagationValue2(this.ownType, newVal, clocks, this.clock);
-                this.lastProp.serMap();
+                let prop = new PropagationValue2(this.ownType, newVal, clocks, this.clock);
+                this.lastProp = prop;
+                prop.serMap();
                 this.childRefs.forEach((childRef) => {
-                    childRef.prePropagation(this.lastProp);
+                    childRef.prePropagation(prop);
                 });
-                this.lastProp.deSerMap();
+                prop.deSerMap();
             }
             else {
                 this.lastMatch.forEach((pv) => {
