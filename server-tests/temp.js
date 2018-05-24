@@ -32,11 +32,12 @@ class ServiceA extends MicroService_1.MicroService {
         super();
         this.aTag = aTag;
         this.cTag = cTag;
+        this.dTag = dTag;
         this.TestSignal = TestSignal;
     }
     init() {
         this.t = this.newSignal(this.TestSignal);
-        this.QPROP2(this.aTag, [], [this.cTag]);
+        this.QPROP2(this.aTag, [], [this.cTag, this.dTag]);
         this.publishSignal(this.t);
         this.update();
     }
@@ -44,7 +45,7 @@ class ServiceA extends MicroService_1.MicroService {
         this.t.inc();
         setTimeout(() => {
             this.update();
-        }, 3000);
+        }, 10);
     }
 }
 class ServiceB extends MicroService_1.MicroService {
@@ -58,7 +59,7 @@ class ServiceB extends MicroService_1.MicroService {
     }
     init() {
         this.t = this.newSignal(this.TestSignal);
-        this.QPROP2(this.bTag, [], [this.dTag]);
+        this.QPROP2(this.bTag, [], [this.dTag, this.cTag]);
         this.publishSignal(this.t);
         this.update();
         setTimeout(() => {
@@ -72,7 +73,7 @@ class ServiceB extends MicroService_1.MicroService {
         this.t.inc();
         setTimeout(() => {
             this.update();
-        }, 2000);
+        }, 10);
     }
 }
 class ServiceC extends MicroService_1.MicroService {
@@ -81,11 +82,17 @@ class ServiceC extends MicroService_1.MicroService {
         this.cTag = cTag;
         this.aTag = aTag;
         this.eTag = eTag;
+        this.bTag = bTag;
     }
     init() {
-        let s = this.QPROP2(this.cTag, [this.aTag], [this.eTag]);
-        let ss = this.lift(([s1]) => {
-            return (s1.value + 1);
+        let s = this.QPROP2(this.cTag, [this.aTag, this.bTag], [this.eTag]);
+        let ss = this.lift(([s1, s2]) => {
+            if (s1 != null) {
+                return s1.value;
+            }
+            else {
+                return s2.value;
+            }
         })(s);
         this.publishSignal(ss);
     }
@@ -96,11 +103,17 @@ class ServiceD extends MicroService_1.MicroService {
         this.dTag = dTag;
         this.eTag = eTag;
         this.bTag = bTag;
+        this.aTag = aTag;
     }
     init() {
-        let s = this.QPROP2(this.dTag, [this.bTag], [this.eTag]);
-        let ss = this.lift(([s1]) => {
-            return (s1.value + 1);
+        let s = this.QPROP2(this.dTag, [this.bTag, this.aTag], [this.eTag]);
+        let ss = this.lift(([s1, s2]) => {
+            if (s1 != null) {
+                return s1.value;
+            }
+            else {
+                return s2.value;
+            }
         })(s);
         this.publishSignal(ss);
     }

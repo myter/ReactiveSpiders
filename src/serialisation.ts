@@ -595,9 +595,9 @@ export function serialise(value,receiverId : string,environment : ActorEnvironme
         else if(value instanceof Error){
             return new ErrorContainer(value)
         }
-        /*else if(value instanceof Map){
+        else if(value instanceof Map){
             return serialiseMap(value,receiverId,environment)
-        }*/
+        }
         else if(value[FarReference.ServerProxyTypeKey]){
             var farRef : ServerFarReference = value[FarReference.farRefAccessorKey]
             return new ServerFarRefContainer(farRef.objectId,farRef.ownerId,farRef.ownerAddress,farRef.ownerPort)

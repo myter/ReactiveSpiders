@@ -504,9 +504,9 @@ function serialise(value, receiverId, environment) {
         else if (value instanceof Error) {
             return new ErrorContainer(value);
         }
-        /*else if(value instanceof Map){
-            return serialiseMap(value,receiverId,environment)
-        }*/
+        else if (value instanceof Map) {
+            return serialiseMap(value, receiverId, environment);
+        }
         else if (value[farRef_1.FarReference.ServerProxyTypeKey]) {
             var farRef = value[farRef_1.FarReference.farRefAccessorKey];
             return new ServerFarRefContainer(farRef.objectId, farRef.ownerId, farRef.ownerAddress, farRef.ownerPort);

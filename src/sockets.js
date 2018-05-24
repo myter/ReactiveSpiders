@@ -102,7 +102,12 @@ class ServerSocketManager extends commMedium_1.CommMedium {
     }
     sendMessage(actorId, msg) {
         if (this.connectedClients.has(actorId)) {
-            this.connectedClients.get(actorId).emit('message', JSON.stringify(msg));
+            try {
+                this.connectedClients.get(actorId).emit('message', JSON.stringify(msg));
+            }
+            catch (e) {
+                console.log("Went wrong for sending message !");
+            }
         }
         else {
             this.socketHandler.sendMessage(actorId, msg);

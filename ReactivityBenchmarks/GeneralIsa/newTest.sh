@@ -1,0 +1,63 @@
+for i in {1..10}
+do
+	node Regular2.js true monitor 100 qpropRegular 20 &
+	node Regular2.js true pi2 100 qpropRegular 20 &
+	node Regular2.js true pi3 100 qpropRegular 20 &
+    node Regular2.js true pi4 100 qpropRegular 20 &
+    node Regular2.js true pi5 100 qpropRegular 20 &
+    node Regular2.js true pi6 100 qpropRegular 20 &
+	node Regular2.js true pi7 100 qpropRegular 20 &
+	node Regular2.js true pi8 100 qpropRegular 20 &
+    node Regular2.js true pi9 100 qpropRegular 20 &
+    node Regular2.js true pi10 100 qpropRegular 20 &
+    node Regular2.js true pi11 100 qpropRegular 20 &
+	node Regular2.js true pi12 100 qpropRegular 20 &
+	node Regular2.js true pi13 100 qpropRegular 20 &
+	node Regular2.js true pi14 100 qpropRegular 20 &
+	node Regular2.js true pi15 100 qpropRegular 20 &
+	node Regular2.js true pi16 100 qpropRegular 20 &
+	node Regular2.js true pi17 100 qpropRegular 20 &
+	node Regular2.js true pi18 100 qpropRegular 20 &
+	node Regular2.js true pi19 100 qpropRegular 20 &
+	node Regular2.js true pi20 100 qpropRegular 20 &
+	node Regular2.js true pi21 100 qpropRegular 20 &
+	node Regular2.js true pi22 100 qpropRegular 20 &
+	node Regular2.js true pi23 100 qpropRegular 20 &
+	node Regular2.js true pi24 100 qpropRegular 20 &
+	node Regular2.js true pi25 100 qpropRegular 20 &
+	node Regular2.js true pi26 100 qpropRegular 20 &
+	node Regular2.js true pi27 100 qpropRegular 20 &
+	node Regular2.js true pi28 100 qpropRegular 20 &
+	node Regular2.js true pi29 100 qpropRegular 20 &
+	node Regular2.js true pi30 100 qpropRegular 20 &
+	node Regular2.js true pi31 100 qpropRegular 20 &
+	node Regular2.js true pi32 100 qpropRegular 20 &
+	node Regular2.js true pi33 100 qpropRegular 20 &
+	node Regular2.js true pi34 100 qpropRegular 20 &
+	node Regular2.js true pi35 100 qpropRegular 20 &
+	node Regular2.js true pi36 100 qpropRegular 20 &
+	node Regular2.js true pi37 100 qpropRegular 20 &
+	node Regular2.js true pi38 100 qpropRegular 20 &
+	node Regular2.js true pi39 100 qpropRegular 20 &
+	node Regular2.js true pi40 100 qpropRegular 20 &
+	node Regular2.js true pi41 100 qpropRegular 20 &
+	node Regular2.js true pi42 100 qpropRegular 20 &
+	node Regular2.js true pi43 100 qpropRegular 20 &
+	node Regular2.js true pi44 100 qpropRegular 20 &
+	node Regular2.js true pi45 100 qpropRegular 20 &
+	node Regular2.js true pi46 100 qpropRegular 20 &
+	node Regular2.js true pi47 100 qpropRegular 20 &
+	node Regular2.js true pi48 100 qpropRegular 20 &
+	node Regular2.js true pi49 100 qpropRegular 20 &
+	node Regular2.js true pi50 100 qpropRegular 20 &
+	node Regular2.js true pi51 100 qpropRegular 20 &
+	node Regular2.js true pi52 100 qpropRegular 20 &
+	node Regular2.js true pi53 100 qpropRegular 20 &
+	node Regular2.js true pi54 100 qpropRegular 20 &
+	node Regular2.js true pi55 100 qpropRegular 20 &
+	node Regular2.js true pi56 100 qpropRegular 20 &
+	node Regular2.js true pi57 100 qpropRegular 20 &
+	node Regular2.js true pi58 100 qpropRegular 20 &
+	node Regular2.js true pi59 100 qpropRegular 20
+	 sleep 5
+done

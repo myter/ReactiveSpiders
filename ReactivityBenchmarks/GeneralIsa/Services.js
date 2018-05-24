@@ -250,7 +250,7 @@ class Admitter extends MicroService_1.MicroServiceApp {
             valsReceived++;
             if (valsReceived > 0) {
                 if (valsReceived == 1) {
-                    //this.checkDynamicLinks()
+                    this.checkDynamicLinks();
                 }
                 this.close = true;
                 let processTime = Date.now() - (admitTimes.splice(0, 1)[0]);
@@ -296,7 +296,7 @@ class Admitter extends MicroService_1.MicroServiceApp {
                 console.log("From: " + from.tagVal + " to: " + to.tagVal);
                 this.addDependency(from, to);
                 this.checkDynamicLinks();
-            }, Math.floor(Math.random() * 100) + 50);
+            }, Math.floor(Math.random() * 200) + 50);
         }
     }
 }
@@ -325,16 +325,13 @@ class SourceService extends MicroService_1.MicroServiceApp {
         //Wait for construction to be completed (for both QPROP and SIDUP)
         setTimeout(() => {
             this.update(sig);
-        }, 10000);
-        //this.update(sig)
-        setTimeout(() => {
             if (this.isQPROP) {
-                //this.checkDynamicLinks()
+                this.checkDynamicLinks();
             }
         }, 10000);
     }
     update(signal) {
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < this.rate; i++) {
             this.totalVals--;
             signal.actualise();
         }
@@ -365,7 +362,7 @@ class SourceService extends MicroService_1.MicroServiceApp {
                 console.log("From: " + from.tagVal + " to: " + to.tagVal);
                 this.addDependency(from, to);
                 this.checkDynamicLinks();
-            }, Math.floor(Math.random() * 1000) + 50);
+            }, Math.floor(Math.random() * 200) + 50);
         }
     }
 }
@@ -399,6 +396,7 @@ class DerivedService extends MicroService_1.MicroServiceApp {
                         ret = v;
                     }
                 });
+                //this.sleep(500,()=>{})
                 return ret;
             }
             else {
@@ -410,10 +408,18 @@ class DerivedService extends MicroService_1.MicroServiceApp {
                     }
                 });
                 lastArgs = args;
+                //this.sleep(500,()=>{})
                 return newV;
             }
         })(imp);
         this.publishSignal(exp);
+    }
+    sleep(time, callback) {
+        var stop = new Date().getTime();
+        while (new Date().getTime() < stop + time) {
+            ;
+        }
+        callback();
     }
     snapMem() {
         if (!this.close) {
@@ -438,6 +444,7 @@ class SinkService extends MicroService_1.MicroServiceApp {
         this.memWriter = new MemoryWriter(myTag.tagVal);
         this.snapMem();
         let valsReceived = 0;
+        let prev;
         let writer = csvWriter({ headers: ["TTP"] });
         let tWriter = csvWriter({ sendHeaders: false });
         let pWriter = csvWriter({ sendHeaders: false });
@@ -470,18 +477,26 @@ class SinkService extends MicroService_1.MicroServiceApp {
                 args.forEach((v) => {
                     if (v) {
                         timeToPropagate = Date.now() - v.constructionTime;
+                        prev = timeToPropagate;
                     }
                 });
             }
             else {
                 let newV;
                 args.some((v, index) => {
-                    if (lastArgs[index] != v && v != undefined && v != null) {
+                    if (lastArgs[index] != v && v != undefined && v != null && v.constructionTime) {
                         newV = v;
                         return true;
                     }
                 });
-                timeToPropagate = Date.now() - newV.constructionTime;
+                //Socket.io message loss (Spiders.js issue which needs fixing)
+                if (newV) {
+                    timeToPropagate = Date.now() - newV.constructionTime;
+                    prev = timeToPropagate;
+                }
+                else {
+                    timeToPropagate = prev;
+                }
             }
             lastArgs = args;
             valsReceived++;

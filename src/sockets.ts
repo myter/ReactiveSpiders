@@ -128,7 +128,13 @@ export class ServerSocketManager extends CommMedium{
 
     sendMessage(actorId : string,msg : Message) : void{
         if(this.connectedClients.has(actorId)){
-            this.connectedClients.get(actorId).emit('message',JSON.stringify(msg))
+            try{
+                this.connectedClients.get(actorId).emit('message',JSON.stringify(msg))
+
+            }
+            catch(e){
+                console.log("Went wrong for sending message !")
+            }
         }
         else{
             this.socketHandler.sendMessage(actorId,msg)

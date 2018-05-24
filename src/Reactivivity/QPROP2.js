@@ -33,12 +33,6 @@ class PropagationValue2 {
     asString() {
         return "< " + this.from.tagVal + " , " + JSON.stringify([...this.sClocks]) + " , " + this.fClock + " >";
     }
-    serMap() {
-        this.sClocks = JSON.stringify([...this.sClocks]);
-    }
-    deSerMap() {
-        this.sClocks = new Map(JSON.parse(this.sClocks));
-    }
 }
 exports.PropagationValue2 = PropagationValue2;
 class DependencyChange {
@@ -86,11 +80,11 @@ class QPROP2Node {
             this.hostActor.subscribe(childType).once((childRef) => {
                 this.childRefs.push(childRef);
                 if (this.amSource() && this.gotAllChildren()) {
-                    this.lastProp.serMap();
+                    //this.lastProp.serMap()
                     this.childRefs.forEach((ref) => {
                         ref.getSources([this.ownType], this.lastProp);
                     });
-                    this.lastProp.deSerMap();
+                    //this.lastProp.deSerMap()
                 }
                 if (this.gotAllChildren()) {
                     this.flushChildMessages();
@@ -254,7 +248,7 @@ class QPROP2Node {
     // Calls made by other QPROP nodes    //
     ////////////////////////////////////////
     getSources(sources, initProp) {
-        initProp.deSerMap();
+        //initProp.deSerMap()
         let fromParent = initProp.from;
         this.I.set(fromParent.tagVal, [initProp]);
         this.sourcesReceived += 1;
@@ -287,11 +281,11 @@ class QPROP2Node {
             }
             else {
                 let send = () => {
-                    this.lastProp.serMap();
+                    //this.lastProp.serMap()
                     this.childRefs.forEach((ref) => {
                         ref.getSources(allSources, this.lastProp);
                     });
-                    this.lastProp.deSerMap();
+                    //this.lastProp.deSerMap()
                 };
                 this.sendToAllChildren(send);
             }
@@ -312,7 +306,7 @@ class QPROP2Node {
         }
     }
     prePropagation(prop) {
-        prop.deSerMap();
+        //prop.deSerMap()
         if (!this.inChange) {
             let from = prop.from.tagVal;
             if (this.brittle.size == 0) {
@@ -349,7 +343,7 @@ class QPROP2Node {
                         }
                         else {
                             if (this.brittle.has(br)) {
-                                if (this.brittle.get(br).length > 0) {
+                                if (this.brittle.get(br).length > 0 && this.I.get(pred.tagVal)[0]) {
                                     let predFirst = this.I.get(pred.tagVal)[0];
                                     let brFirst = this.brittle.get(br)[0];
                                     return (predFirst.sClocks.get(source) - brFirst.sClocks.get(source)) > 1;
@@ -379,7 +373,6 @@ class QPROP2Node {
         }
         else {
             this.changeDoneListeners.push(() => {
-                //TODO make sure seriaslisation is correct here
                 this.prePropagation(prop);
             });
         }
@@ -396,28 +389,6 @@ class QPROP2Node {
         //Find cross product of new propagation value and all other values
         let allArgs = this.getAllArgs(is);
         let matches = this.getMatchArgs(allArgs);
-        //console.log("Args for " + this.ownType.tagVal + "  = " + allArgs.length)
-        //console.log("Matches: " + matches.length)
-        if (this.ownType.tagVal == "26") {
-            //console.log("All : " + allArgs.length)
-            //console.log("Matches: " + matches.length)
-            /*let one = this.I.get("57")
-            let two = this.I.get("56")
-            let three = this.I.get("54")
-            let four = this.I.get("58")
-            console.log("Length of 57 I = " + one.length)
-            console.log("Length of 56 I = " + two.length)
-            console.log("Length of 54 I = " + three.length)
-            console.log("Length of 58 I = " + four.length)
-            console.log("   ")*/
-            /*allArgs.forEach((arg : Array<PropagationValue2>)=>{
-                console.log("<PRINTING POSSIBLE ARGS>")
-                arg.forEach((a)=>{
-                    console.log(a.from.tagVal)
-                    console.log(a.sClocks)
-                })
-            })*/
-        }
         if (matches.length > 0) {
             let match = matches[matches.length - 1];
             this.lastMatch = match;
@@ -438,15 +409,13 @@ class QPROP2Node {
                 return arg.value
             })
             //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
-            this.ownSignal.change(values)
-        })
-        if(this.lastMatch){
             this.lastMatch.forEach((pv : PropagationValue2)=>{
                 let vals = this.I.get(pv.from.tagVal)
                 vals = vals.filter((pvv : PropagationValue2)=>{return pvv.fClock >= pv.fClock})
                 this.I.set(pv.from.tagVal,vals)
             })
-        }*/
+            this.ownSignal.change(values)
+        })*/
     }
     getSignal(signal) {
         //Dummy neeed to trigger underlying deserialisation of SpiderS.js
@@ -458,7 +427,7 @@ class QPROP2Node {
         this.childTypes.push(childType);
         this.childRefs.push(childRef);
         this.startsReceived++;
-        childRef.getSignal(this.publishedSignal);
+        //childRef.getsignal(this.publishedSignal)
         if (this.amSource()) {
             return [this.lastProp, [this.ownType.tagVal]];
         }
@@ -535,11 +504,11 @@ class QPROP2Node {
                 clocks.set(this.ownType.tagVal, this.clock);
                 let prop = new PropagationValue2(this.ownType, newVal, clocks, this.clock);
                 this.lastProp = prop;
-                prop.serMap();
+                //prop.serMap()
                 this.childRefs.forEach((childRef) => {
                     childRef.prePropagation(prop);
                 });
-                prop.deSerMap();
+                //prop.deSerMap()
             }
             else {
                 this.lastMatch.forEach((pv) => {
@@ -548,11 +517,11 @@ class QPROP2Node {
                     });
                 });
                 this.lastProp = new PropagationValue2(this.ownType, newVal, clocks, this.clock);
-                this.lastProp.serMap();
+                //this.lastProp.serMap()
                 this.childRefs.forEach((childRef) => {
                     childRef.prePropagation(this.lastProp);
                 });
-                this.lastProp.deSerMap();
+                //this.lastProp.deSerMap()
             }
         };
         if (this.startsReceived == this.childTypes.length) {
