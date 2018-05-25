@@ -3,590 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Latency/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop10000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop2000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop3000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop4000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop5000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop6000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop7000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop8000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Processing/qprop9000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop10000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop2000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop3000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop4000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop5000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop6000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop7000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop8000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMax/Throughput/qprop9000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop100ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop100DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop100DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop100DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop100GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop150ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop150DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop150DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop150DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop150GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop200ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop200DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop200DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop200DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop200GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop250ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop250DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop250DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop250DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop250GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop2ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop2DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop2DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop2DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop2GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop300ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop300DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop300DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop300DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop300GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop50ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop50DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop50DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop50DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/qprop50GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup100AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup100ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup100DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup100DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup100DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup100GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup150AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup150ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup150DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup150DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup150DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup150GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup200AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup200ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup200DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup200DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup200DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup200GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup250AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup250ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup250DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup250DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup250DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup250GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup2AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup2ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup2DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup2DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup2DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup2GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup300AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup300ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup300DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup300DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup300DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup300GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup50AdmitterMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup50ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup50DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup50DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup50DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/Memory/sidup50GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaMemory/windows.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop110.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop120.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop140.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop150.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop160.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop170.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop180.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop190.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop200.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop210.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop220.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop230.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop260.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop270.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop280.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop290.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop300.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/qprop90.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup110.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup120.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup140.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup150.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup160.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup170.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup180.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup190.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup200.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup210.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup220.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup230.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup260.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup270.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup280.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup290.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup300.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Latency/sidup90.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop100ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop100DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop100DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop100DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop100GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop10ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop10DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop10DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop10DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop10GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop110ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop110DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop110DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop110DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop110GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop120ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop120DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop120DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop120DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop120GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop130ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop130DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop130DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop130DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop130GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop140ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop140DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop140DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop140DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop140GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop150ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop150DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop150DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop150DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop150GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop160ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop160DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop160DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop160DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop160GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop170ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop170DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop170DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop170DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop170GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop180ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop180DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop180DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop180DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop180GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop190ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop190DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop190DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop190DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop190GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop200ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop200DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop200DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop200DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop200GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop20ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop20DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop20DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop20DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop20GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop210ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop210DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop210DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop210DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop210GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop220ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop220DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop220DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop220DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop220GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop230ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop230DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop230DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop230DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop230GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop240ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop240DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop240DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop240DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop240GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop250ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop250DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop250DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop250DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop250GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop260ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop260DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop260DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop260DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop260GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop270ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop270DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop270DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop270DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop270GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop280ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop280DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop280DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop280DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop280GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop290ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop290DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop290DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop290DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop290GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop2ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop2DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop2DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop2DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop2GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop300ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop300DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop300DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop300DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop300GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop30ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop30DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop30DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop30DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop30GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop40ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop40DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop40DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop40DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop40GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop50ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop50DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop50DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop50DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop50GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop60ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop60DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop60DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop60DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop60GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop70ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop70DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop70DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop70DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop70GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop80ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop80DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop80DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop80DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop80GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop90ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop90DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop90DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop90DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/qprop90GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup100ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup100DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup100DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup100DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup100GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup10ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup10DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup10DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup10DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup10GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup110ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup110DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup110DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup110DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup110GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup120ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup120DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup120DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup120DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup120GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup130ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup130DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup130DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup130DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup130GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup140ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup140DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup140DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup140DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup140GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup150ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup150DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup150DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup150DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup150GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup160ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup160DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup160DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup160DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup160GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup170ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup170DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup170DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup170DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup170GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup180ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup180DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup180DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup180DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup180GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup190ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup190DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup190DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup190DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup190GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup200ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup200DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup200DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup200DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup200GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup20ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup20DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup20DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup20DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup20GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup210ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup210DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup210DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup210DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup210GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup220ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup220DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup220DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup220DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup220GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup230ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup230DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup230DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup230DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup230GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup240ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup240DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup240DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup240DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup240GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup250ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup250DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup250DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup250DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup250GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup260ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup260DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup260DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup260DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup260GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup270ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup270DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup270DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup270DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup270GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup280ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup280DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup280DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup280DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup280GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup290ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup290DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup290DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup290DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup290GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup2ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup2DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup2DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup2DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup2GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup300ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup300DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup300DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup300DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup300GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup30ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup30DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup30DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup30DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup30GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup40ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup40DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup40DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup40DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup40GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup50ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup50DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup50DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup50DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup50GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup60ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup60DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup60DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup60DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup60GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup70ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup70DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup70DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup70DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup70GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup80ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup80DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup80DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup80DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup80GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup90ConfigMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup90DashboardMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup90DataMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup90DrivingMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Memory/sidup90GeoMemory.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup110.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup120.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup140.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup150.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup160.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup170.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup180.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup190.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup200.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup210.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup220.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup230.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup260.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup270.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup280.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup290.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup300.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Processing/sidup90.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop110.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop120.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop140.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop150.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop160.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop170.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop180.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop190.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop200.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop210.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop220.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop230.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop260.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop270.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop280.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop290.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop300.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/qprop90.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup110.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup120.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup140.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup150.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup160.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup170.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup180.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup190.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup200.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup210.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup220.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup230.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup260.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup270.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup280.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup290.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup300.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/BerthaResults/Throughput/sidup90.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Processing/qprop0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Processing/qprop2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Throughput/qprop0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Throughput/qprop2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -603,37 +29,89 @@
       <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="356" column="26" selection-start-line="356" selection-start-column="26" selection-end-line="356" selection-end-column="26" />
+            <state relative-caret-position="630">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
               <folding>
+                <element signature="e#2368#2408#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
+                <element signature="e#3564#4267#0" expanded="true" />
+                <element signature="e#4292#4343#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
                 <element signature="e#10718#12325#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxThroughput.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts">
+      <file leaf-file-name="RegularJane.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <element signature="n#FleetData#0" />
-                <element signature="n#ConfigService#0" />
-                <element signature="n#DataAccessService#0" />
-                <element signature="n#DashboardService#0" />
-                <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+                <element signature="e#5967#6018#0" />
+                <element signature="e#6040#6287#0" />
+                <element signature="e#6310#6802#0" />
+                <element signature="e#6825#7564#0" />
+                <element signature="e#7587#8569#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunQPROPMTBench.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunQPROPMTBench.sh">
+      <file leaf-file-name="Regular2.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="76" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="76" />
+            <state relative-caret-position="804">
+              <caret line="165" column="3" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Services.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="198" column="19" selection-start-line="198" selection-start-column="19" selection-end-line="198" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#3837#3863#0" expanded="true" />
+                <element signature="e#3996#4023#0" expanded="true" />
+                <element signature="e#4602#5276#0" expanded="true" />
+                <element signature="e#4810#4952#0" expanded="true" />
+                <element signature="e#4983#5245#0" expanded="true" />
+                <element signature="e#6077#6117#0" expanded="true" />
+                <element signature="e#7210#9162#0" expanded="true" />
+                <element signature="e#7769#7909#0" expanded="true" />
+                <element signature="e#8021#9009#0" expanded="true" />
+                <element signature="e#8473#8535#0" expanded="true" />
+                <element signature="e#9365#9852#0" expanded="true" />
+                <element signature="e#14629#18187#0" expanded="true" />
+                <element signature="e#15895#18175#0" expanded="true" />
+                <element signature="e#17583#17645#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunSIDUPBench.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -651,10 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>QPROPActor</find>
-      <find>QPROPActor2</find>
-      <find>this.libs.refle</find>
-      <find>sourcesChanged</find>
       <find>newSource</find>
       <find>this.lastProp</find>
       <find>invokeStart</find>
@@ -681,6 +155,10 @@
       <find>sClocks</find>
       <find>RunUseCase.js</find>
       <find>this.QPROP</find>
+      <find>got all</find>
+      <find>averageResults</find>
+      <find>temp.csv</find>
+      <find>..10</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
@@ -698,6 +176,7 @@
       <replace>sidupRegular 20</replace>
       <replace>qpropRegular 10</replace>
       <replace>qpropRegular 20</replace>
+      <replace>..2</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -711,12 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/ActorEnvironment.js" />
-        <option value="$PROJECT_DIR$/src/ReactiveApplication.ts" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.js" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.js" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/CommMedium.js" />
-        <option value="$PROJECT_DIR$/src/SID-UP/NodePulse.ts" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.ts" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase2.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor2.ts" />
@@ -741,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxOut.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" />
         <option value="$PROJECT_DIR$/src/spiders.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" />
@@ -757,11 +229,18 @@
         <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" />
         <option value="$PROJECT_DIR$/src/messageHandler.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/newTestSIDUP.sh" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/newTest.sh" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts" />
+        <option value="$PROJECT_DIR$/src/Jane/JaneSlave.ts" />
+        <option value="$PROJECT_DIR$/src/Jane/JaneMaster.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" />
       </list>
     </option>
   </component>
@@ -811,23 +290,25 @@
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="GeneralIsa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
               <item name="UseCase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="server-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="UseCase" type="462c0819:PsiDirectoryNode" />
+              <item name="Latency" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MicroService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -852,14 +333,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/SID-UP" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/benchmarks/UseCase" />
       <recent name="$PROJECT_DIR$/benchmarks/General" />
       <recent name="$PROJECT_DIR$/benchmarks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa" />
+      <recent name="$PROJECT_DIR$/src/SID-UP" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -917,14 +399,7 @@
       <workItem from="1526299968370" duration="14168000" />
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
-      <workItem from="1526972139946" duration="33373000" />
-    </task>
-    <task id="LOCAL-00068" summary="Stringified prop val">
-      <created>1525532673816</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1525532673816</updated>
+      <workItem from="1526972139946" duration="38814000" />
     </task>
     <task id="LOCAL-00069" summary="Stringified prop val">
       <created>1525532718198</created>
@@ -1262,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527175299979</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Pre-usecase bench run">
+      <created>1527231205483</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1527231205484</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1298,7 +780,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233061000" />
+    <option name="totallyTimeSpent" value="238502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
@@ -1341,10 +823,10 @@
         <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/ExampleConfig.js.map" />
         <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" />
         <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.js" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.js" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.js.map" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.js.map" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.js" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js.map" />
       </list>
     </option>
   </component>
@@ -1356,7 +838,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Reverted back to regular propagation values" />
     <MESSAGE value="Array prop val obvious performance impact" />
     <MESSAGE value="Added complete base implementation" />
     <MESSAGE value="Switched to latest spiders.js version (new socket.io version)" />
@@ -1381,7 +862,8 @@
     <MESSAGE value="Non-dynamic QPROP2.0 implemented. Testing use case" />
     <MESSAGE value="Testing Raspberry usecase" />
     <MESSAGE value="Benchmarks tested and ok locally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Benchmarks tested and ok locally" />
+    <MESSAGE value="Pre-usecase bench run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pre-usecase bench run" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1389,116 +871,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChristopheExample/christophe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#87#570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ActorEnvironment.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="30" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="156" column="13" lean-forward="true" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="n#MemoryWriter#0" />
-            <element signature="n#Admitter#0" />
-            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-tests/reactivity.Test.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="59" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#7671#15996#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="343" column="82" selection-start-line="343" selection-start-column="82" selection-end-line="343" selection-end-column="97" />
-          <folding>
-            <element signature="e#13259#13476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MicroService/ServiceMonitor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularQPROPBench.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1074">
-          <caret line="188" column="4" lean-forward="true" selection-start-line="126" selection-end-line="188" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunAQPROP.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunBQPROP.sh">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MicroService/MicroService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spiders.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1543,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="191" column="4" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/farRef.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1558,23 +925,6 @@
             <element signature="e#0#61#0" expanded="true" />
             <element signature="n#!!block;n#proxyify#0;n#FarReference#0" expanded="true" />
             <element signature="e#1912#4094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#729#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1678,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="63" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Throughput/qpropRegular20.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1728,80 +1071,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="422" column="33" selection-start-line="422" selection-start-column="33" selection-end-line="422" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
-            <element signature="n#!!block;n#change#0;n#QPROPSourceSignal#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#PropagationValue2#0" expanded="true" />
-            <element signature="n#!!block;n#asString#0;n#PropagationValue2#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#DependencyChange#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#getSources#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="e#15048#15105#0" expanded="true" />
-            <element signature="n#!!block;n#newPropagation#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#getSignal#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="e#17764#17825#0" expanded="true" />
-            <element signature="e#17961#18667#0" expanded="true" />
-            <element signature="e#18047#18652#0" expanded="true" />
-            <element signature="e#18295#18576#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="e#18798#19028#0" expanded="true" />
-            <element signature="n#!!block;n#publishSignal#0;n#QPROP2Node#0" expanded="true" />
-            <element signature="e#19916#20085#0" expanded="true" />
-            <element signature="e#20016#20074#0" expanded="true" />
-            <element signature="e#20359#20423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2168">
-          <caret line="158" column="48" selection-start-line="158" selection-start-column="48" selection-end-line="158" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#729#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/newTest.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="323" column="42" selection-start-line="323" selection-start-column="42" selection-end-line="323" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#7210#9164#0" expanded="true" />
-            <element signature="e#7769#7909#0" expanded="true" />
-            <element signature="e#8021#9011#0" expanded="true" />
-            <element signature="e#9438#9800#0" expanded="true" />
-            <element signature="e#10160#11126#0" expanded="true" />
-            <element signature="e#10916#10956#0" expanded="true" />
-            <element signature="e#11146#11338#0" expanded="true" />
-            <element signature="e#11283#11326#0" expanded="true" />
-            <element signature="e#11706#12193#0" expanded="true" />
-            <element signature="e#11777#12139#0" expanded="true" />
-            <element signature="e#12532#13894#0" expanded="true" />
-            <element signature="e#13110#13850#0" expanded="true" />
-            <element signature="e#14701#17920#0" expanded="true" />
-            <element signature="e#15950#17908#0" expanded="true" />
-            <element signature="e#16165#16307#0" expanded="true" />
-            <element signature="e#16403#16590#0" expanded="true" />
-            <element signature="e#17316#17378#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1818,9 +1091,6 @@
           <caret line="60" selection-start-line="60" selection-end-line="69" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1839,16 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="356" column="26" selection-start-line="356" selection-start-column="26" selection-end-line="356" selection-end-column="26" />
-          <folding>
-            <element signature="e#10718#12325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1860,6 +1120,205 @@
             <element signature="n#DataAccessService#0" />
             <element signature="n#DashboardService#0" />
             <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="368" column="55" selection-start-line="368" selection-start-column="48" selection-end-line="368" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
+            <element signature="n#!!block;n#change#0;n#QPROPSourceSignal#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#PropagationValue2#0" expanded="true" />
+            <element signature="n#!!block;n#asString#0;n#PropagationValue2#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DependencyChange#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#getSources#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#prePropagation#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="e#13385#15006#0" expanded="true" />
+            <element signature="e#13526#14621#0" expanded="true" />
+            <element signature="e#13644#14553#0" expanded="true" />
+            <element signature="n#!!block;n#newPropagation#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#getSignal#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#newChild#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#addDependency#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#addSources#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#publishSignal#0;n#QPROP2Node#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
+            <element signature="e#291#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+          <folding>
+            <element signature="e#5967#6018#0" />
+            <element signature="e#6040#6287#0" />
+            <element signature="e#6310#6802#0" />
+            <element signature="e#6825#7564#0" />
+            <element signature="e#7587#8569#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MicroService/MicroService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="64" column="102" selection-start-line="64" selection-start-column="102" selection-end-line="64" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#MicroServiceApp#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Throughput/sidup100.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/sidup2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/sidup50.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#2368#2408#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
+            <element signature="e#3564#4267#0" expanded="true" />
+            <element signature="e#4292#4343#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+            <element signature="e#10718#12325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="165" column="3" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="198" column="19" selection-start-line="198" selection-start-column="19" selection-end-line="198" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#3837#3863#0" expanded="true" />
+            <element signature="e#3996#4023#0" expanded="true" />
+            <element signature="e#4602#5276#0" expanded="true" />
+            <element signature="e#4810#4952#0" expanded="true" />
+            <element signature="e#4983#5245#0" expanded="true" />
+            <element signature="e#6077#6117#0" expanded="true" />
+            <element signature="e#7210#9162#0" expanded="true" />
+            <element signature="e#7769#7909#0" expanded="true" />
+            <element signature="e#8021#9009#0" expanded="true" />
+            <element signature="e#8473#8535#0" expanded="true" />
+            <element signature="e#9365#9852#0" expanded="true" />
+            <element signature="e#14629#18187#0" expanded="true" />
+            <element signature="e#15895#18175#0" expanded="true" />
+            <element signature="e#17583#17645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunCQPROP.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunDSIDUP.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2753">
+          <caret line="191" column="4" selection-start-line="128" selection-end-line="191" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularQPROPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="188" column="4" selection-start-line="126" selection-end-line="188" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunAQPROP.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/sidup100.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/sidup150.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
           </folding>
         </state>
       </provider>

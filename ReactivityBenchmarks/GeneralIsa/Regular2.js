@@ -59,25 +59,12 @@ var pi56 = new Services_1.ServiceInfo(Services_1.pi56Tag, [Services_1.pi51Tag, S
 var pi57 = new Services_1.ServiceInfo(Services_1.pi57Tag, [Services_1.pi48Tag, Services_1.pi49Tag, Services_1.pi50Tag], [Services_1.pi59Tag], Services_1.piAddresses[55], Services_1.piPorts[55]);
 var pi58 = new Services_1.ServiceInfo(Services_1.pi58Tag, [Services_1.pi53Tag, Services_1.pi54Tag, Services_1.pi55Tag], [Services_1.pi59Tag], Services_1.piAddresses[56], Services_1.piPorts[56]);
 var pi59 = new Services_1.ServiceInfo(Services_1.pi59Tag, [Services_1.pi57Tag, Services_1.pi56Tag, Services_1.pi58Tag], [], Services_1.piAddresses[57], Services_1.piPorts[57]);
-/*for(var i =2;i<60;i++){
-console.log("var pi"+i+" = new ServiceInfo(pi"+i+"Tag,[],[],piAddresses["+(i-2)+"],piPorts["+(i-2)+"])")
-}*/
 let isQPROP = process.argv[2] == "true";
 let toSpawn = Services_1.mapToName(process.argv[3]);
 let dataRate = parseInt(process.argv[4]) / 10;
 let totalVals = dataRate * 30;
 let csvFile = process.argv[5];
 let changes = parseInt(process.argv[6]);
-/*function getRandomPi(lesserBound,upperbound){
-    let index = Math.floor(Math.random() * piIds.length) + 2
-    //return eval("pi"+index)
-    if(index <= lesserBound || index >= upperbound){
-        return getRandomPi(lesserBound,upperbound)
-    }
-    else{
-        return index
-    }
-}*/
 //Avoid introducing cycles and double dependencies
 let dynLinks = [];
 if (changes == 1) {

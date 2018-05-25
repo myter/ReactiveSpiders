@@ -71,12 +71,6 @@ var pi57 = new ServiceInfo(pi57Tag,[pi48Tag,pi49Tag,pi50Tag],[pi59Tag],piAddress
 var pi58 = new ServiceInfo(pi58Tag,[pi53Tag,pi54Tag,pi55Tag],[pi59Tag],piAddresses[56],piPorts[56])
 var pi59 = new ServiceInfo(pi59Tag,[pi57Tag,pi56Tag,pi58Tag],[],piAddresses[57],piPorts[57])
 
-
-/*for(var i =2;i<60;i++){
-console.log("var pi"+i+" = new ServiceInfo(pi"+i+"Tag,[],[],piAddresses["+(i-2)+"],piPorts["+(i-2)+"])")
-}*/
-
-
 let isQPROP     = process.argv[2] == "true"
 let toSpawn     = mapToName(process.argv[3])
 let dataRate    = parseInt(process.argv[4]) / 10
@@ -84,16 +78,6 @@ let totalVals   = dataRate * 30
 let csvFile     = process.argv[5]
 let changes     = parseInt(process.argv[6])
 
-/*function getRandomPi(lesserBound,upperbound){
-    let index = Math.floor(Math.random() * piIds.length) + 2
-    //return eval("pi"+index)
-    if(index <= lesserBound || index >= upperbound){
-        return getRandomPi(lesserBound,upperbound)
-    }
-    else{
-        return index
-    }
-}*/
 
 //Avoid introducing cycles and double dependencies
 let dynLinks = []

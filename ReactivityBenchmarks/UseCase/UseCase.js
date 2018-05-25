@@ -70,7 +70,9 @@ function averageMem(writeTo, dataRate, node, kill) {
         writer.write({ heap: avgHeap, rss: avgRss });
         writer.end();
         if (kill) {
-            require('child_process').exec("killall node");
+            setTimeout(() => {
+                require('child_process').exec("killall node");
+            }, 2000);
         }
     });
     stream.pipe(csvStream);
