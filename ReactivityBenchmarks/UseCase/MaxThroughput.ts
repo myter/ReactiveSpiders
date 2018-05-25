@@ -197,7 +197,9 @@ export class DashboardService extends MicroServiceApp{
                         pWriter.end()
                     }
                     averageResults(csvFileName,rate)
-                    require('child_process').exec("killall node");
+                    setTimeout(()=>{
+                        require('child_process').exec("killall node");
+                    },2000)
                 }
             }
         })(imp)

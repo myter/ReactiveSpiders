@@ -183,7 +183,9 @@ class DashboardService extends MicroService_1.MicroServiceApp {
                         pWriter.end();
                     }
                     averageResults(csvFileName, rate);
-                    require('child_process').exec("killall node");
+                    setTimeout(() => {
+                        require('child_process').exec("killall node");
+                    }, 2000);
                 }
             }
         })(imp);
