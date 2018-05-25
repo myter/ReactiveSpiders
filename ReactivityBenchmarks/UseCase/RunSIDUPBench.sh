@@ -1,4 +1,4 @@
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 2 sidup &
 	node RunUseCase.js false monitor 2 sidup &
@@ -9,7 +9,7 @@ do
 	node RunUseCase.js false dash 2 sidup
 	 sleep 5
 done
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 50 sidup &
 	node RunUseCase.js false monitor 50 sidup &
@@ -20,7 +20,7 @@ do
 	node RunUseCase.js false dash 50 sidup
 	 sleep 5
 done
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 100 sidup &
 	node RunUseCase.js false monitor 100 sidup &
@@ -31,7 +31,7 @@ do
 	node RunUseCase.js false dash 100 sidup
 	 sleep 5
 done
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 150 sidup &
 	node RunUseCase.js false monitor 150 sidup &
@@ -42,7 +42,7 @@ do
 	node RunUseCase.js false dash 150 sidup
 	 sleep 5
 done
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 200 sidup &
 	node RunUseCase.js false monitor 200 sidup &
@@ -53,7 +53,7 @@ do
 	node RunUseCase.js false dash 200 sidup
 	 sleep 5
 done
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 250 sidup &
 	node RunUseCase.js false monitor 250 sidup &
@@ -64,7 +64,7 @@ do
 	node RunUseCase.js false dash 250 sidup
 	 sleep 5
 done
-for i in {1..2}
+for i in {1..10}
 do
 	node RunUseCase.js false admitter 300 sidup &
 	node RunUseCase.js false monitor 300 sidup &
