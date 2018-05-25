@@ -4,7 +4,7 @@ import {MicroServiceApp} from "../../src/MicroService/MicroService";
 import {ServiceMonitor} from "../../src/MicroService/ServiceMonitor";
 
 
-var spiders : SpiderLib = require("../../../src/spiders")
+var spiders : SpiderLib = require("../../src/spiders")
 var dataTag             = new PubSubTag("Data")
 var configTag           = new PubSubTag("Config")
 var geoTag              = new PubSubTag("Geo")
@@ -63,7 +63,7 @@ export class ConfigService extends MicroServiceApp{
         this.totalVals = totalVals / 2
         this.csvFileName = csvFileName
         this.produced = 0
-        this.QPROP(configTag,[],[dashTag],null)
+        this.QPROP2(configTag,[],[dashTag])
         let sig = this.newSignal(FleetData)
 
         this.publishSignal(sig)
@@ -96,7 +96,7 @@ export class DataAccessService extends MicroServiceApp{
         this.totalVals = totalVals / 2
         this.csvFileName = csvFileName
         this.produced = 0
-        this.QPROP(dataTag,[],[geoTag,drivingTag],null)
+        this.QPROP2(dataTag,[],[geoTag,drivingTag])
         let sig = this.newSignal(FleetData)
 
         this.publishSignal(sig)
@@ -120,7 +120,7 @@ export class DataAccessService extends MicroServiceApp{
 export class GeoService extends MicroServiceApp{
     constructor(isQPROP,rate,totalVals,csvFileName){
         super("127.0.0.1",8002)
-        let imp = this.QPROP(geoTag,[dataTag],[drivingTag,dashTag],null)
+        let imp = this.QPROP2(geoTag,[dataTag],[drivingTag,dashTag])
         let propagated = 0
         let exp = this.lift(([fleetData])=>{
             propagated++
@@ -133,7 +133,7 @@ export class GeoService extends MicroServiceApp{
 export class DrivingService extends MicroServiceApp{
     constructor(isQPROP,rate,totalVals,csvFileName){
         super("127.0.0.1",8003)
-        let imp = this.QPROP(drivingTag,[dataTag,geoTag],[dashTag],null)
+        let imp = this.QPROP2(drivingTag,[dataTag,geoTag],[dashTag])
         let propagated = 0
         let exp = this.lift(([data,geo])=>{
             propagated++
@@ -153,7 +153,7 @@ export class DashboardService extends MicroServiceApp{
         writer.pipe(fs.createWriteStream('temp.csv'))
         tWriter.pipe(fs.createWriteStream("Throughput/"+csvFileName+rate+".csv",{flags: 'a'}))
         pWriter.pipe(fs.createWriteStream("Processing/"+csvFileName+rate+".csv",{flags: 'a'}))
-        let imp= this.QPROP(dashTag,[drivingTag,geoTag,configTag],[],null)
+        let imp= this.QPROP2(dashTag,[drivingTag,geoTag,configTag],[])
         let lastDriving
         let lastConfig
         let firstPropagation = true

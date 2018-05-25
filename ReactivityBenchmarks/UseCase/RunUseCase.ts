@@ -1,5 +1,6 @@
-import {Admitter, ConfigService, DashboardService, DataAccessService, DrivingService, GeoService} from "./UseCase";
+
 import {ServiceMonitor} from "../../src/MicroService/ServiceMonitor";
+import {Admitter, ConfigService, DashboardService, DataAccessService, DrivingService, GeoService} from "./UseCase";
 let isQPROP     = process.argv[2] == "true"
 let toSpawn     = process.argv[3]
 let dataRate    = parseInt(process.argv[4])

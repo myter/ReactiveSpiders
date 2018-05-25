@@ -170,7 +170,7 @@ export class ConfigService extends MicroServiceApp{
         this.produced = 0
         this.close = false
         if(isQPROP){
-            this.QPROP(configTag,[],[dashTag],null)
+            this.QPROP2(configTag,[],[dashTag])
         }
         else{
             this.SIDUP(configTag,[],admitterTag)
@@ -231,7 +231,7 @@ export class DataAccessService extends MicroServiceApp{
         this.produced = 0
         this.close = false
         if(isQPROP){
-            this.QPROP(dataTag,[],[geoTag,drivingTag],null)
+            this.QPROP2(dataTag,[],[geoTag,drivingTag])
         }
         else{
             this.SIDUP(dataTag,[],admitterTag)
@@ -246,7 +246,7 @@ export class DataAccessService extends MicroServiceApp{
     }
 
     update(signal){
-        for(var i = 0;i < this.rate;i++){
+        for(var i = 0;i < this.rate + 1;i++){
             this.totalVals--
             this.produced++
             signal.actualise()
@@ -281,10 +281,10 @@ export class GeoService extends MicroServiceApp{
         this.close = false
         let imp
         if(isQPROP){
-            imp = this.QPROP(geoTag,[dataTag],[drivingTag,dashTag],null)
+            imp = this.QPROP2(geoTag,[dataTag],[drivingTag,dashTag])
         }
         else{
-           imp = this.SIDUP(geoTag,[dataTag],admitterTag)
+            imp = this.SIDUP(geoTag,[dataTag],admitterTag)
         }
         let propagated = 0
         this.memWriter = new MemoryWriter("Geo")
@@ -319,7 +319,7 @@ export class DrivingService extends MicroServiceApp{
         this.close = false
         let imp
         if(isQPROP){
-            imp = this.QPROP(drivingTag,[dataTag,geoTag],[dashTag],null)
+            imp = this.QPROP2(drivingTag,[dataTag,geoTag],[dashTag])
         }
         else{
             imp = this.SIDUP(drivingTag,[dataTag,geoTag],admitterTag)
@@ -364,7 +364,7 @@ export class DashboardService extends MicroServiceApp{
         pWriter.pipe(fs.createWriteStream("Processing/"+csvFileName+rate+".csv",{flags: 'a'}))
         let imp
         if(isQPROP){
-            imp = this.QPROP(dashTag,[drivingTag,geoTag,configTag],[],null)
+            imp = this.QPROP2(dashTag,[drivingTag,geoTag,configTag],[])
         }
         else{
             imp = this.SIDUP(dashTag,[drivingTag,geoTag,configTag],admitterTag,true)

@@ -8,7 +8,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const SubTag_1 = require("../../src/PubSub/SubTag");
 const MicroService_1 = require("../../src/MicroService/MicroService");
 const ServiceMonitor_1 = require("../../src/MicroService/ServiceMonitor");
-var spiders = require("../../../src/spiders");
+var spiders = require("../../src/spiders");
 var dataTag = new SubTag_1.PubSubTag("Data");
 var configTag = new SubTag_1.PubSubTag("Config");
 var geoTag = new SubTag_1.PubSubTag("Geo");
@@ -58,7 +58,7 @@ class ConfigService extends MicroService_1.MicroServiceApp {
         this.totalVals = totalVals / 2;
         this.csvFileName = csvFileName;
         this.produced = 0;
-        this.QPROP(configTag, [], [dashTag], null);
+        this.QPROP2(configTag, [], [dashTag]);
         let sig = this.newSignal(FleetData);
         this.publishSignal(sig);
         //Wait for construction to be completed (for both QPROP and SIDUP)
@@ -84,7 +84,7 @@ class DataAccessService extends MicroService_1.MicroServiceApp {
         this.totalVals = totalVals / 2;
         this.csvFileName = csvFileName;
         this.produced = 0;
-        this.QPROP(dataTag, [], [geoTag, drivingTag], null);
+        this.QPROP2(dataTag, [], [geoTag, drivingTag]);
         let sig = this.newSignal(FleetData);
         this.publishSignal(sig);
         //Wait for construction to be completed (for both QPROP and SIDUP)
@@ -106,7 +106,7 @@ exports.DataAccessService = DataAccessService;
 class GeoService extends MicroService_1.MicroServiceApp {
     constructor(isQPROP, rate, totalVals, csvFileName) {
         super("127.0.0.1", 8002);
-        let imp = this.QPROP(geoTag, [dataTag], [drivingTag, dashTag], null);
+        let imp = this.QPROP2(geoTag, [dataTag], [drivingTag, dashTag]);
         let propagated = 0;
         let exp = this.lift(([fleetData]) => {
             propagated++;
@@ -119,7 +119,7 @@ exports.GeoService = GeoService;
 class DrivingService extends MicroService_1.MicroServiceApp {
     constructor(isQPROP, rate, totalVals, csvFileName) {
         super("127.0.0.1", 8003);
-        let imp = this.QPROP(drivingTag, [dataTag, geoTag], [dashTag], null);
+        let imp = this.QPROP2(drivingTag, [dataTag, geoTag], [dashTag]);
         let propagated = 0;
         let exp = this.lift(([data, geo]) => {
             propagated++;
@@ -139,7 +139,7 @@ class DashboardService extends MicroService_1.MicroServiceApp {
         writer.pipe(fs.createWriteStream('temp.csv'));
         tWriter.pipe(fs.createWriteStream("Throughput/" + csvFileName + rate + ".csv", { flags: 'a' }));
         pWriter.pipe(fs.createWriteStream("Processing/" + csvFileName + rate + ".csv", { flags: 'a' }));
-        let imp = this.QPROP(dashTag, [drivingTag, geoTag, configTag], [], null);
+        let imp = this.QPROP2(dashTag, [drivingTag, geoTag, configTag], []);
         let lastDriving;
         let lastConfig;
         let firstPropagation = true;

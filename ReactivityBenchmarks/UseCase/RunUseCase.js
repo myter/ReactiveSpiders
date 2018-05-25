@@ -1,6 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-const UseCase_1 = require("./UseCase");
 const ServiceMonitor_1 = require("../../src/MicroService/ServiceMonitor");
+const UseCase_1 = require("./UseCase");
 let isQPROP = process.argv[2] == "true";
 let toSpawn = process.argv[3];
 let dataRate = parseInt(process.argv[4]);
