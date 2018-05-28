@@ -1,6 +1,6 @@
 var fs = require('fs');
 var qpropScript = fs.createWriteStream('RunQPROPMTBench.sh');
-for (var i = 0; i <= 10000; i += 1000) {
+for (var i = 0; i <= 10000; i += 100) {
     if (i == 0) {
         qpropScript.write("for i in {1..10}\n" +
             "do\n" +

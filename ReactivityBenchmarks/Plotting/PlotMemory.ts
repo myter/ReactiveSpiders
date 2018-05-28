@@ -17,11 +17,11 @@ let getMemoryData = (prefix,fileIndex) => {
     }
     let results = names.map((nodeName)=>{
         return new Promise((resolve)=>{
-            var stream          = fss.createReadStream("../UseCase/BerthaMemory/Memory/"+prefix+fileIndex+nodeName+"Memory.csv");
+            var stream          = fss.createReadStream("../UseCase/Bertha/Regular/Memory/"+prefix+fileIndex+nodeName+"Memory.csv");
             let allData         = []
             var csvStream = csv()
                 .on("data", function(data){
-                    allData.push((parseInt(data[1])))
+                    allData.push((parseInt(data[0])))
                 })
                 .on("end", function(){
                     let s = new Stats()
@@ -63,7 +63,7 @@ getMemoryData("qprop",300).then((qpropResults)=>{
                 x: 1,
                 y: 1
             },
-            title: "RSS Memory Usage per Service",
+            title: "Heap Memory Usage per Service",
             yaxis: {
                 title: "Memory Usage (bytes)"
             }
@@ -81,7 +81,7 @@ getMemoryData("qprop",300).then((qpropResults)=>{
         plotly.getImage(figure, imgOpts, function (error, imageStream) {
             if (error) return console.log (error);
 
-            var fileStream = fss.createWriteStream('rssMemory.pdf');
+            var fileStream = fss.createWriteStream('heapMemory.pdf');
             imageStream.pipe(fileStream);
         });
     })

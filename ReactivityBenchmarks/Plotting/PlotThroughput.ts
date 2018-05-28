@@ -5,7 +5,7 @@ var csv = require('fast-csv')
 var Stats = require('fast-stats').Stats;
 
 var xVals : string[] = []
-for(var i = 0;i < 310;i+=10){
+for(var i = 0;i < 350;i+=50){
     if(i == 0){
         xVals.push("1")
     }
@@ -18,10 +18,10 @@ let getAllData = (prefix,arrayIndex,fileIndex,resolver,valuesArray,errorArray) =
     return new Promise((resolve)=>{
         let stream
         if(fileIndex == 0){
-            stream          = fss.createReadStream("../UseCase/BerthaResults/Throughput/"+prefix+"2.csv");
+            stream          = fss.createReadStream("../UseCase/Bertha/Regular/Throughput/"+prefix+"2.csv");
         }
         else{
-            stream          = fss.createReadStream("../UseCase/BerthaResults/Throughput/"+prefix+fileIndex+".csv");
+            stream          = fss.createReadStream("../UseCase/Bertha/Regular/Throughput/"+prefix+fileIndex+".csv");
         }
         let allData         = []
         var csvStream = csv()
@@ -36,21 +36,21 @@ let getAllData = (prefix,arrayIndex,fileIndex,resolver,valuesArray,errorArray) =
                 s.push(allData)
                 valuesArray[arrayIndex] = s.median()
                 errorArray[arrayIndex] = s.moe()
-                if(arrayIndex == 30){
+                if(arrayIndex == 6){
                     resolver([valuesArray,errorArray])
                 }
                 else if(arrayIndex == 0){
-                    return getAllData(prefix,arrayIndex+1,fileIndex+10,resolve,valuesArray,errorArray)
+                    return getAllData(prefix,arrayIndex+1,fileIndex+50,resolve,valuesArray,errorArray)
                 }
                 else{
-                    return getAllData(prefix,arrayIndex+1,fileIndex+10,resolver,valuesArray,errorArray)
+                    return getAllData(prefix,arrayIndex+1,fileIndex+50,resolver,valuesArray,errorArray)
                 }
             });
         stream.pipe(csvStream)
     })
 }
-getAllData("qprop",0,0,null,new Array(30),new Array(30)).then(([qpropValues,qpropError])=>{
-    getAllData("sidup",0,0,null,new Array(30),new Array(30)).then(([sidupValues,sidupError])=>{
+getAllData("qprop",0,0,null,new Array(7),new Array(7)).then(([qpropValues,qpropError])=>{
+    getAllData("sidup",0,0,null,new Array(7),new Array(7)).then(([sidupValues,sidupError])=>{
         let qpropData = {
             x: xVals,
             y: qpropValues,

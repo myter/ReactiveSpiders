@@ -26,11 +26,11 @@ let getMemoryData = (prefix,fileIndex) => {
     }
     let results = names.map((nodeName)=>{
         return new Promise((resolve)=>{
-            var stream          = fss.createReadStream("../UseCase/BerthaMemory/Memory/"+prefix+fileIndex+nodeName+"Memory.csv");
+            var stream          = fss.createReadStream("../UseCase/Bertha/Regular/Memory/"+prefix+fileIndex+nodeName+"Memory.csv");
             let allData         = []
             var csvStream = csv()
                 .on("data", function(data){
-                    allData.push((parseInt(data[1])))
+                    allData.push((parseInt(data[0])))
                 })
                 .on("end", function(){
                     let s = new Stats()
@@ -94,7 +94,7 @@ Promise.all(allQPROPResults).then((qpropResults)=>{
                 x: 0,
                 y: 1
             },
-            title: "RSS Memory Usage under Varying Load",
+            title: "Heap Memory Usage under Varying Load",
             xaxis: {
                 title: "Load (requests/s)",
                 showline: true,
@@ -115,7 +115,7 @@ Promise.all(allQPROPResults).then((qpropResults)=>{
         plotly.getImage(figure, imgOpts, function (error, imageStream) {
             if (error) return console.log (error);
 
-            var fileStream = fss.createWriteStream('rssTotalMemory.pdf');
+            var fileStream = fss.createWriteStream('heapTotalMemory.pdf');
             imageStream.pipe(fileStream);
         });
     })
