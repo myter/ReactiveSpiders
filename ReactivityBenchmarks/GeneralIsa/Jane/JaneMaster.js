@@ -20,6 +20,7 @@ let networkInterface = "em1";
 var os = require('os');
 var networkInterfaces = os.networkInterfaces();
 var thisIP = networkInterfaces[networkInterface][1].address;
+console.log("Master running on " + thisIP);
 var masterPort = 8000;
 var monitorPort = 8001;
 var monitorIP = thisIP;
