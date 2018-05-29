@@ -31,6 +31,7 @@ class JaneMaster extends spiders.Application{
 
     register(slaveRef){
         console.log("Slave registered!!")
+        slaveRef.spawn("59",isQPROP,1,1,"t",1,monitorIP,monitorPort)
     }
 
     benchEnd(){
