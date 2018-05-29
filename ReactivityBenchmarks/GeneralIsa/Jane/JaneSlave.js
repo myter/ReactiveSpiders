@@ -17,7 +17,7 @@ class JaneSlave extends spiders.Application {
 let networkInterface = "em1";
 var os = require('os');
 var networkInterfaces = os.networkInterfaces();
-var thisIP = networkInterfaces[networkInterface][1].address;
+var thisIP = networkInterfaces[networkInterface][0].address;
 let slavePort = 8005;
 let piPort = 8006;
 let masterIP = process.argv[2];

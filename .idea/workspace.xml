@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="42" selection-start-line="42" selection-end-line="45" selection-end-column="66" />
+            <state relative-caret-position="375">
+              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
                 <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
                 <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
@@ -37,10 +37,11 @@
       <file leaf-file-name="JaneSlave.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
                 <element signature="e#342#392#0" expanded="true" />
                 <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
               </folding>
@@ -352,21 +353,7 @@
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
       <workItem from="1526972139946" duration="48016000" />
-      <workItem from="1527600192869" duration="1320000" />
-    </task>
-    <task id="LOCAL-00080" summary="Reverted map back to regular map serialisation for app">
-      <created>1525706889994</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1525706889995</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Reverted map back to regular map serialisation for app">
-      <created>1525706950573</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1525706950573</updated>
+      <workItem from="1527600192869" duration="1581000" />
     </task>
     <task id="LOCAL-00082" summary="Propagation value as argument and not sending isolate">
       <created>1525707806575</created>
@@ -697,7 +684,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527601447346</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Started implementing Jane">
+      <created>1527601534539</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1527601534539</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Started implementing Jane">
+      <created>1527601735400</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1527601735400</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -733,7 +734,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249024000" />
+    <option name="totallyTimeSpent" value="249285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
@@ -852,6 +853,7 @@
           <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
             <element signature="e#342#392#0" expanded="true" />
             <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
           </folding>
@@ -1109,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="42" selection-start-line="42" selection-end-line="45" selection-end-column="66" />
+        <state relative-caret-position="375">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
           <folding>
             <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
             <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
@@ -1122,10 +1124,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
             <element signature="e#342#392#0" expanded="true" />
             <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
           </folding>
