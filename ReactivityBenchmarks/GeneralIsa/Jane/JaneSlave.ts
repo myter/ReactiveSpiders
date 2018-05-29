@@ -6,7 +6,7 @@ class JaneSlave extends spiders.Application {
     masterRef
 
     constructor() {
-        super(myIP, slavePort)
+        super(thisIP, slavePort)
         this.remote(masterIP, masterPort).then((masterRef) => {
             this.masterRef = masterRef
             masterRef.register(this)
@@ -14,14 +14,17 @@ class JaneSlave extends spiders.Application {
     }
 
     spawn(toSpawn,isQPROP,dataRate,totalVals,csvFile,changes,monitorIP,monitorPort){
-        spawnPi(toSpawn,isQPROP,dataRate,totalVals,csvFile,changes,myIP,piPort,monitorIP,monitorPort)
+        spawnPi(toSpawn,isQPROP,dataRate,totalVals,csvFile,changes,thisIP,piPort,monitorIP,monitorPort)
         console.log("PI SPAWNED!!")
     }
 }
 
-let myIP
-let slavePort        = 8005
-let piPort           = 8006
-let masterIP         = process.argv[2]
-let masterPort       = parseInt(process.argv[3])
-let slav             = new JaneSlave()
+let networkInterface = "em1"
+var os = require( 'os' );
+var networkInterfaces   = os.networkInterfaces( );
+var thisIP              = networkInterfaces[networkInterface][1].address
+let slavePort           = 8005
+let piPort              = 8006
+let masterIP            = process.argv[2]
+let masterPort          = parseInt(process.argv[3])
+let slav                = new JaneSlave()
