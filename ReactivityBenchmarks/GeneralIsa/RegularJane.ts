@@ -322,7 +322,7 @@ export function spawnPi(toSpawn,isQPROP,dataRate,totalVals,csvFile,changes,ownIp
             new SinkService(isQPROP,dataRate,totalVals,csvFile,ownIp,ownPort,monitorIP,monitorPort,pi59.tag,pi59.parents,pi59.children,10,changes,master)
             break;
         default:
-            throw new Error("unknown spawning argument")
+            throw new Error("unknown spawning argument: " + toSpawn)
     }
 }
 

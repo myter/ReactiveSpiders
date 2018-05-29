@@ -11,7 +11,7 @@ class JaneMaster extends spiders.Application {
     }
     register(slaveRef) {
         console.log("Slave registered!!");
-        slaveRef.spawn("59", isQPROP, 1, 1, "t", 1, monitorIP, monitorPort);
+        slaveRef.spawn("pi59", isQPROP, 1, 1, "t", 1, monitorIP, monitorPort);
     }
     benchEnd() {
     }
@@ -107,7 +107,7 @@ function runBenchmark(rate, changes) {
     let totalVals = rate * 30;
     RegularJane_1.spawnPi("monitor", isQPROP, rate, totalVals, csvFile, changes, thisIP, monitorPort, monitorIP, monitorPort);
     //TODO need to provide ref to Jane Master to sink service for termination detection
-    RegularJane_1.spawnPi("59", isQPROP, rate, totalVals, csvFile, changes, thisIP, 8005, monitorIP, 8004);
+    RegularJane_1.spawnPi("pi59", isQPROP, rate, totalVals, csvFile, changes, thisIP, 8005, monitorIP, 8004);
     //TODO instruct master to start and return completion promise
     if (!isQPROP) {
         RegularJane_1.spawnPi("admitter", isQPROP, rate, totalVals, csvFile, changes, thisIP, admitterPort, monitorIP, monitorPort);

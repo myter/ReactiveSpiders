@@ -305,7 +305,7 @@ function spawnPi(toSpawn, isQPROP, dataRate, totalVals, csvFile, changes, ownIp,
             new ServicesJane_1.SinkService(isQPROP, dataRate, totalVals, csvFile, ownIp, ownPort, monitorIP, monitorPort, exports.pi59.tag, exports.pi59.parents, exports.pi59.children, 10, changes, master);
             break;
         default:
-            throw new Error("unknown spawning argument");
+            throw new Error("unknown spawning argument: " + toSpawn);
     }
 }
 exports.spawnPi = spawnPi;
