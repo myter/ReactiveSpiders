@@ -10,6 +10,7 @@ class JaneMaster extends spiders.Application {
         super(ip, port);
     }
     register(slaveRef) {
+        console.log("Slave registered!!");
     }
     benchEnd() {
     }

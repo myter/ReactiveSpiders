@@ -30,7 +30,7 @@ class JaneMaster extends spiders.Application{
     }
 
     register(slaveRef){
-
+        console.log("Slave registered!!")
     }
 
     benchEnd(){
