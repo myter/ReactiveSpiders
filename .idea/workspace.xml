@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="330">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
                 <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
@@ -30,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JaneSlave.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JaneSlave.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -183,8 +184,8 @@
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/plotTotalMemory.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotMemory.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/GenerateMTBashScript.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" />
       </list>
     </option>
   </component>
@@ -239,8 +240,7 @@
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
-              <item name="GeneralIsa" type="462c0819:PsiDirectoryNode" />
-              <item name="Jane" type="462c0819:PsiDirectoryNode" />
+              <item name="UseCase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -353,21 +353,7 @@
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
       <workItem from="1526972139946" duration="48016000" />
-      <workItem from="1527600192869" duration="295000" />
-    </task>
-    <task id="LOCAL-00074" summary="Stringified prop val">
-      <created>1525534522544</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1525534522544</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Stringified prop val">
-      <created>1525534595796</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1525534595796</updated>
+      <workItem from="1527600192869" duration="776000" />
     </task>
     <task id="LOCAL-00076" summary="Stringified prop val">
       <created>1525534883140</created>
@@ -698,7 +684,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527497613504</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Started implementing Jane">
+      <created>1527600566930</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1527600566930</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Started implementing Jane">
+      <created>1527600771303</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1527600771303</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -734,22 +734,23 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247999000" />
+    <option name="totallyTimeSpent" value="248480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3270337" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16266246" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Statistic" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23376623" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3270337" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16266246" />
+      <window_info anchor="bottom" id="Statistic" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3253903" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3978671" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -758,7 +759,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32611832" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -794,7 +794,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Switched to latest spiders.js version (new socket.io version)" />
     <MESSAGE value="Implemented App version with optimisations" />
     <MESSAGE value="Implemented QPROP as standalone object" />
     <MESSAGE value="Bypassing @mutating annot" />
@@ -819,7 +818,8 @@
     <MESSAGE value="Pre-usecase bench run" />
     <MESSAGE value="Fixed write after end issue (for Latency)" />
     <MESSAGE value="Fixed write after end issue (for Latency) (max)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed write after end issue (for Latency) (max)" />
+    <MESSAGE value="Started implementing Jane" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started implementing Jane" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,6 +952,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#2368#2408#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
+            <element signature="e#3564#4267#0" expanded="true" />
+            <element signature="e#4292#4343#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+            <element signature="e#10718#12325#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,6 +1071,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="201" column="27" selection-start-line="201" selection-start-column="27" selection-end-line="201" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="n#FleetData#0" />
+            <element signature="n#ConfigService#0" />
+            <element signature="n#DataAccessService#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,18 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1121,6 +1123,18 @@
             <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
             <element signature="e#342#392#0" expanded="true" />
             <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
+            <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
+            <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
           </folding>
         </state>
       </provider>

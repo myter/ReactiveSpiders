@@ -17,7 +17,7 @@ class JaneMaster extends spiders.Application {
 let networkInterface = "em1";
 var os = require('os');
 var networkInterfaces = os.networkInterfaces();
-var thisIP = networkInterface[networkInterface][1].address;
+var thisIP = networkInterfaces[networkInterface][1].address;
 var masterPort = 8000;
 var monitorPort = 8001;
 var monitorIP = thisIP;
