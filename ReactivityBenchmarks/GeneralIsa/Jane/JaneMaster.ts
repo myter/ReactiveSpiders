@@ -39,11 +39,11 @@ var os = require( 'os' );
 var networkInterfaces = os.networkInterfaces( );
 var thisIP        = networkInterfaces[networkInterface][0].address
 console.log("Master running on " + thisIP)
-var masterPort    = 8000
-var monitorPort   = 8001
+var masterPort    = 8001
+var monitorPort   = 8002
 var monitorIP     = thisIP
-var fiftyPort     = 8002
-var admitterPort  = 8003
+var fiftyPort     = 8003
+var admitterPort  = 8004
 
 let isQPROP         = process.argv[2] == "true"
 let csvFile         = process.argv[3]
