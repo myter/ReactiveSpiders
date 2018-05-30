@@ -47,9 +47,6 @@ let dynamic = process.argv[4] == "true";
 let allRates = [10, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 let allChanges = [1, 5, 10, 15, 20];
 let master = new JaneMaster(thisIP, masterPort);
-let monitor;
-let admitter;
-let pi59;
 function spawn(toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, monitorIP, monitorPort, sync) {
     let command = util.format("node ../RegularJane.js %s %s %d %s %d %s %d %s %d", toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, monitorIP, monitorPort);
     if (sync) {
@@ -62,18 +59,15 @@ function spawn(toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, mon
 }
 function runBenchmark(rate, changes) {
     return master.startRound(rate, changes).then(() => {
-        monitor = spawn("monitor", isQPROP, rate, csvFile, changes, thisIP, monitorPort, monitorIP, monitorPort, false);
+        spawn("monitor", isQPROP, rate, csvFile, changes, thisIP, monitorPort, monitorIP, monitorPort, false);
         if (!isQPROP) {
-            pi59 = spawn("pi59", isQPROP, rate, csvFile, changes, thisIP, 8005, monitorIP, monitorPort, false);
+            spawn("pi59", isQPROP, rate, csvFile, changes, thisIP, 8005, monitorIP, monitorPort, false);
             spawn("admitter", isQPROP, rate, csvFile, changes, thisIP, admitterPort, monitorIP, monitorPort, true);
         }
         else {
             spawn("pi59", isQPROP, rate, csvFile, changes, thisIP, 8005, monitorIP, monitorPort, true);
         }
-        monitor.kill();
-        if (pi59) {
-            pi59.kill();
-        }
+        require('child_process').exec("kill $(ps aux | grep '[R]egularJane' | awk '{print $2}')");
         let ps = master.slaves.map((slave) => {
             return slave.killPi();
         });
