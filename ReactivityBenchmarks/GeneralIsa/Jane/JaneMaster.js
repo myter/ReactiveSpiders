@@ -26,7 +26,7 @@ class JaneMaster extends spiders.Application {
     }
 }
 //let networkInterface = "em1" (set back to 0)
-let networkInterface = "eno49";
+let networkInterface = "enp0s25";
 var os = require('os');
 var networkInterfaces = os.networkInterfaces();
 var thisIP = networkInterfaces[networkInterface][0].address;

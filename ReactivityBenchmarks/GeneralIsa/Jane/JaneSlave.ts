@@ -26,7 +26,7 @@ class JaneSlave extends spiders.Application {
 }
 
 //let networkInterface = "em1"
-let networkInterface = "eno49"
+let networkInterface = "eth0"
 var os = require( 'os' );
 var networkInterfaces   = os.networkInterfaces( );
 var thisIP              = networkInterfaces[networkInterface][0].address
