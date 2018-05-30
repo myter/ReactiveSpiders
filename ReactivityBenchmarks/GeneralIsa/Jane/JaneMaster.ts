@@ -113,14 +113,14 @@ function runConfigs(){
         if(dynamic){
             if(index < allChanges.length){
                 return iter(10,100,allChanges[index]).then(()=>{
-                    return iterConfigs(index+1)
+                    //return iterConfigs(index+1)
                 })
             }
         }
         else{
             if(index < allRates.length){
                 return iter(10,allRates[index],0).then(()=>{
-                    return iterConfigs(index+1)
+                    //return iterConfigs(index+1)
                 })
             }
         }

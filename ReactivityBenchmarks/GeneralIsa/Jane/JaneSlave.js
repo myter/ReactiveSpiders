@@ -12,7 +12,6 @@ class JaneSlave extends spiders.Application {
     spawn(toSpawn, isQPROP, dataRate, csvFile, changes, monitorIP, monitorPort) {
         let command = util.format("node ../RegularJane.js %s %s %d %s %d %s %d %s %d", toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, monitorIP, monitorPort);
         this.pi = require('child_process').exec(command);
-        this.pi.stdout.pipe(process.stdout);
     }
     killPi() {
         if (this.pi) {
