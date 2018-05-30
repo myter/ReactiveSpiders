@@ -14,7 +14,7 @@ class JaneSlave extends spiders.Application {
         this.pi = require('child_process').exec(command);
     }
     killPi() {
-        this.pi.kill('SIGINT');
+        this.pi.kill('SIGKILL');
     }
 }
 //let networkInterface = "em1"
