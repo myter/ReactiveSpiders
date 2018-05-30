@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+            <state relative-caret-position="423">
+              <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
                 <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
@@ -31,10 +33,28 @@
                 <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
                 <element signature="e#2228#2946#0" expanded="true" />
                 <element signature="e#2863#2908#0" expanded="true" />
+                <element signature="n#!!block;n#runConfigs#0" expanded="true" />
                 <element signature="n#!!block;n#iter#0;n#!!block;n#runForConfig#0" expanded="true" />
                 <element signature="e#3148#3303#0" expanded="true" />
+                <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runConfigs#0" expanded="true" />
                 <element signature="e#3501#3541#0" expanded="true" />
                 <element signature="e#3844#3911#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotThroughputISA.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/Plotting/plotThroughputISA.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="52" column="94" lean-forward="true" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+              <folding>
+                <element signature="e#408#1755#0" expanded="true" />
+                <element signature="e#444#1752#0" expanded="true" />
+                <element signature="e#862#1075#0" expanded="true" />
+                <element signature="e#1110#1713#0" expanded="true" />
+                <element signature="e#1942#3282#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,6 +242,17 @@
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="Plotting" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -322,14 +353,7 @@
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
       <workItem from="1526972139946" duration="48016000" />
-      <workItem from="1527600192869" duration="27240000" />
-    </task>
-    <task id="LOCAL-00105" summary="Pre-branch commit">
-      <created>1526366768446</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1526366768446</updated>
+      <workItem from="1527600192869" duration="28217000" />
     </task>
     <task id="LOCAL-00106" summary="Initial benchmark branch commit">
       <created>1526367316534</created>
@@ -667,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527691489148</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="Lowered sample size to test results quickly">
+      <created>1527692198430</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1527692198430</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -703,7 +734,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274944000" />
+    <option name="totallyTimeSpent" value="275921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
@@ -763,7 +794,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Map to string in args for pre-propagation" />
     <MESSAGE value="PubSubTag from to string as well" />
     <MESSAGE value="Removing all MAP calls" />
     <MESSAGE value="Trying to find time leak" />
@@ -788,7 +818,8 @@
     <MESSAGE value="Completed benchmark loop v1" />
     <MESSAGE value="Found solution to unkillable service" />
     <MESSAGE value="Same issue for master?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Same issue for master?" />
+    <MESSAGE value="Lowered sample size to test results quickly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lowered sample size to test results quickly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -796,13 +827,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularSIDUPBench.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2753">
@@ -1229,10 +1253,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/Plotting/plotThroughputISA.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="94" lean-forward="true" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+          <folding>
+            <element signature="e#408#1755#0" expanded="true" />
+            <element signature="e#444#1752#0" expanded="true" />
+            <element signature="e#862#1075#0" expanded="true" />
+            <element signature="e#1110#1713#0" expanded="true" />
+            <element signature="e#1942#3282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        <state relative-caret-position="423">
+          <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
             <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
@@ -1242,8 +1280,10 @@
             <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
             <element signature="e#2228#2946#0" expanded="true" />
             <element signature="e#2863#2908#0" expanded="true" />
+            <element signature="n#!!block;n#runConfigs#0" expanded="true" />
             <element signature="n#!!block;n#iter#0;n#!!block;n#runForConfig#0" expanded="true" />
             <element signature="e#3148#3303#0" expanded="true" />
+            <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runConfigs#0" expanded="true" />
             <element signature="e#3501#3541#0" expanded="true" />
             <element signature="e#3844#3911#0" expanded="true" />
           </folding>
