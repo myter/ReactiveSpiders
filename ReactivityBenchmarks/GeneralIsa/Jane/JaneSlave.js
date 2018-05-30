@@ -15,7 +15,9 @@ class JaneSlave extends spiders.Application {
         this.pi.stdout.pipe(process.stdout);
     }
     killPi() {
-        this.pi.kill();
+        if (this.pi) {
+            this.pi.kill();
+        }
     }
 }
 //let networkInterface = "em1"
