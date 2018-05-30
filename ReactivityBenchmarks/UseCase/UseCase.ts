@@ -374,7 +374,6 @@ export class DashboardService extends MicroServiceApp{
         this.memWriter = new MemoryWriter("Dashboard")
         this.snapMem()
         let lastDriving
-        let lastConfig
         let firstPropagation = true
         let benchStart
         let processingTimes = []
@@ -384,14 +383,18 @@ export class DashboardService extends MicroServiceApp{
                 firstPropagation = false
             }
             let timeToPropagate
-            if(lastDriving != driving){
-                timeToPropagate = Date.now() - driving.constructionTime
+            if(driving != null){
+                if(lastDriving != driving.constructionTime){
+                    timeToPropagate = Date.now() - driving.constructionTime
+                    lastDriving     = driving.constructionTime
+                }
+                else{
+                    timeToPropagate = Date.now() - config.constructionTime
+                }
             }
             else{
                 timeToPropagate = Date.now() - config.constructionTime
             }
-            lastDriving = driving
-            lastConfig  = config
             valsReceived++
             console.log("Values propagated: " + valsReceived)
             if(valsReceived.toString().endsWith("000")){

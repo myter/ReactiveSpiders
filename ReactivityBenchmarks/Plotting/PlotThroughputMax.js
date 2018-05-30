@@ -4,7 +4,7 @@ var fss = require('fs');
 var csv = require('fast-csv');
 var Stats = require('fast-stats').Stats;
 var xVals = [];
-for (var i = 0; i < 1600; i += 100) {
+for (var i = 0; i < 1500; i += 100) {
     xVals.push(i.toString());
 }
 let getAllData = (prefix, arrayIndex, fileIndex, resolver, valuesArray, errorArray) => {
@@ -62,7 +62,8 @@ getAllData("qprop", 0, 0, null, new Array(16), new Array(16)).then(([qpropValues
         title: "Throughput under Varying Load",
         xaxis: {
             title: "Load (requests/s)",
-            range: [0, 1500]
+            range: [0, 1500],
+            nticks: 10
         },
         yaxis: {
             title: "Throughput (requests/s)",

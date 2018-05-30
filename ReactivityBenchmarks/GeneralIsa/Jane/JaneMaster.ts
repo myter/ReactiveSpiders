@@ -34,10 +34,10 @@ class JaneMaster extends spiders.Application{
 }
 
 //let networkInterface = "em1" (set back to 0)
-let networkInterface = "en0"
+let networkInterface = "eno49"
 var os = require( 'os' );
 var networkInterfaces = os.networkInterfaces( );
-var thisIP        = networkInterfaces[networkInterface][1].address
+var thisIP        = networkInterfaces[networkInterface][0].address
 console.log("Master running on " + thisIP)
 var masterPort    = 8000
 var monitorPort   = 8001
