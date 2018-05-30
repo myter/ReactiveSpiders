@@ -8,13 +8,15 @@ class JaneMaster extends spiders.Application {
         this.slaves = [];
     }
     register(slaveRef) {
-        this.slaves.push(slaveRef);
-        console.log("Slaves registered : " + this.slaves.length);
-        if (this.slaves.length == 57) {
-            console.log("STARTING BENCHMARKS");
-            runConfigs().then(() => {
-                console.log("EVERYTHING FINISHED");
-            });
+        if (this.slaves.length < 57) {
+            this.slaves.push(slaveRef);
+            console.log("Slaves registered : " + this.slaves.length);
+            if (this.slaves.length == 57) {
+                console.log("STARTING BENCHMARKS");
+                runConfigs().then(() => {
+                    console.log("EVERYTHING FINISHED");
+                });
+            }
         }
     }
     startRound(rate, changes) {
@@ -41,7 +43,6 @@ var admitterPort = 8004;
 let isQPROP = process.argv[2] == "true";
 let csvFile = process.argv[3];
 let dynamic = process.argv[4] == "true";
-//1,50,100,150,200,250,300 are the datarates
 let allRates = [10, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 let allChanges = [1, 5, 10, 15, 20];
 let master = new JaneMaster(thisIP, masterPort);
