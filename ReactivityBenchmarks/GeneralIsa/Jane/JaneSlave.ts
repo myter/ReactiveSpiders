@@ -20,9 +20,7 @@ class JaneSlave extends spiders.Application {
     }
 
     killPi(){
-        if(this.pi){
-            this.pi.kill('SIGINT')
-        }
+        this.pi.kill('SIGINT')
     }
 }
 
