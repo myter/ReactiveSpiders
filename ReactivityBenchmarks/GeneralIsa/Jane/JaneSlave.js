@@ -11,10 +11,10 @@ class JaneSlave extends spiders.Application {
     }
     spawn(toSpawn, isQPROP, dataRate, csvFile, changes, monitorIP, monitorPort) {
         let command = util.format("node ../RegularJane.js %s %s %d %s %d %s %d %s %d", toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, monitorIP, monitorPort);
-        this.pi = require('child_process').exec(command);
+        require('child_process').exec(command);
     }
     killPi() {
-        this.pi.kill('SIGKILL');
+        require('child_process').exec("kill $(ps aux | grep '[R]egularJane' | awk '{print $2}')");
     }
 }
 //let networkInterface = "em1"
