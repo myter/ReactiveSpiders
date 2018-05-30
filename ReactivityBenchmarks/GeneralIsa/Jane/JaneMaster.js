@@ -95,7 +95,7 @@ function runConfigs() {
         }
         else {
             if (index < allRates.length) {
-                return iter(10, allRates[index], 0).then(() => {
+                return iter(3, allRates[index], 0).then(() => {
                     return iterConfigs(index + 1);
                 });
             }
