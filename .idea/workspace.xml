@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,18 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="1260">
+              <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
               <folding>
-                <element signature="n#JaneMaster#0" />
                 <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
                 <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
+                <element signature="e#643#675#0" expanded="true" />
                 <element signature="n#!!block;n#startRound#0;n#JaneMaster#0" expanded="true" />
-                <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
-                <element signature="n#!!block;n#runAll#0" expanded="true" />
+                <element signature="n#!!block;n#spawn#0" expanded="true" />
+                <element signature="e#2863#2908#0" expanded="true" />
+                <element signature="n#!!block;n#runForConfig#0" expanded="true" />
+                <element signature="n#!!block;n#iter#0;n#!!block;n#runForConfig#0" expanded="true" />
+                <element signature="e#3148#3303#0" expanded="true" />
+                <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runForConfig#0" expanded="true" />
+                <element signature="e#3501#3541#0" expanded="true" />
+                <element signature="e#3724#3764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,22 +45,12 @@
       <file leaf-file-name="JaneSlave.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
                 <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
-                <element signature="n#!!block;n#killPi#0;n#JaneSlave#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spawnSlaves.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="71" selection-start-column="71" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -183,9 +181,9 @@
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/test.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Bertha/Regular/Latency/qprop2.csv" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh" />
       </list>
     </option>
   </component>
@@ -360,21 +358,7 @@
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
       <workItem from="1526972139946" duration="48016000" />
-      <workItem from="1527600192869" duration="20260000" />
-    </task>
-    <task id="LOCAL-00091" summary="PubSubTag from to string as well">
-      <created>1526307410124</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1526307410124</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Removing all MAP calls">
-      <created>1526307717878</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1526307717878</updated>
+      <workItem from="1527600192869" duration="22770000" />
     </task>
     <task id="LOCAL-00093" summary="Removing all MAP calls">
       <created>1526307775734</created>
@@ -705,7 +689,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527680465623</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Fixing port issue">
+      <created>1527681723038</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1527681723038</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Fixing Kill bug in Jane slaves">
+      <created>1527684094292</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1527684094292</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -741,7 +739,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267964000" />
+    <option name="totallyTimeSpent" value="270474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
@@ -801,7 +799,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Propagation value as argument and not sending isolate" />
     <MESSAGE value="Timeout to half" />
     <MESSAGE value="Spawning from file" />
     <MESSAGE value="Last fixes to app" />
@@ -826,7 +823,8 @@
     <MESSAGE value="Fixed range bug in script" />
     <MESSAGE value="Fixed IPS for pizilla" />
     <MESSAGE value="Fixing port issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing port issue" />
+    <MESSAGE value="Fixing Kill bug in Jane slaves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing Kill bug in Jane slaves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1252,37 +1250,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding>
-            <element signature="n#JaneMaster#0" />
-            <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#startRound#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
-            <element signature="n#!!block;n#runAll#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="345">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
             <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
-            <element signature="n#!!block;n#killPi#0;n#JaneSlave#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/spawnSlaves.sh">
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="71" selection-start-column="71" selection-end-column="71" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
+            <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
+            <element signature="e#643#675#0" expanded="true" />
+            <element signature="n#!!block;n#startRound#0;n#JaneMaster#0" expanded="true" />
+            <element signature="n#!!block;n#spawn#0" expanded="true" />
+            <element signature="e#2863#2908#0" expanded="true" />
+            <element signature="n#!!block;n#runForConfig#0" expanded="true" />
+            <element signature="n#!!block;n#iter#0;n#!!block;n#runForConfig#0" expanded="true" />
+            <element signature="e#3148#3303#0" expanded="true" />
+            <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runForConfig#0" expanded="true" />
+            <element signature="e#3501#3541#0" expanded="true" />
+            <element signature="e#3724#3764#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

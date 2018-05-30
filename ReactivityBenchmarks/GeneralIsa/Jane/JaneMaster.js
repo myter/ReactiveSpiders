@@ -12,7 +12,9 @@ class JaneMaster extends spiders.Application {
         console.log("Slaves registered : " + this.slaves.length);
         if (this.slaves.length == 57) {
             console.log("STARTING BENCHMARKS");
-            runAll();
+            runConfigs().then(() => {
+                console.log("EVERYTHING FINISHED");
+            });
         }
     }
     startRound(rate, changes) {
@@ -40,7 +42,7 @@ let isQPROP = process.argv[2] == "true";
 let csvFile = process.argv[3];
 let dynamic = process.argv[4] == "true";
 //1,50,100,150,200,250,300 are the datarates
-let allRates = [1, 50, 100, 150, 200, 250];
+let allRates = [10, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 let allChanges = [1, 5, 10, 15, 20];
 let master = new JaneMaster(thisIP, masterPort);
 let monitor;
@@ -66,7 +68,6 @@ function runBenchmark(rate, changes) {
         else {
             spawn("pi59", isQPROP, rate, csvFile, changes, thisIP, 8005, monitorIP, monitorPort, true);
         }
-        console.log("BENCHMARK FINISHED !!");
         monitor.kill();
         if (pi59) {
             pi59.kill();
@@ -77,24 +78,34 @@ function runBenchmark(rate, changes) {
         return Promise.all(ps);
     });
 }
-function runAll() {
-    if (dynamic) {
-        //TODO run for each config yada yada
-        runBenchmark(100, 20).then(() => {
-            console.log("Running second iteration");
-            runBenchmark(100, 20).then(() => {
-                console.log("ALL DONE !!!");
+function runConfigs() {
+    function iter(times, rate, changes) {
+        if (times == 0) {
+            return "ok";
+        }
+        else {
+            return runBenchmark(rate, changes).then(() => {
+                console.log("finished iteration " + times + " of " + rate + " , " + changes);
+                return iter(times - 1, rate, changes);
             });
-        });
+        }
     }
-    else {
-        //TODO run for each config yada yada
-        runBenchmark(10, 0).then(() => {
-            console.log("Running second iteration");
-            runBenchmark(10, 0).then(() => {
-                console.log("ALL DONE !!!");
-            });
-        });
+    function iterConfigs(index) {
+        if (dynamic) {
+            if (index < allChanges.length) {
+                return iter(10, 100, allChanges[index]).then(() => {
+                    return iterConfigs(index + 1);
+                });
+            }
+        }
+        else {
+            if (index < allRates.length) {
+                return iter(10, allRates[index], 0).then(() => {
+                    return iterConfigs(index + 1);
+                });
+            }
+        }
     }
+    return iterConfigs(0);
 }
 //# sourceMappingURL=JaneMaster.js.map
