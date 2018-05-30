@@ -1,7 +1,7 @@
 ///<reference path="../../../Library/Preferences/WebStorm2016.3/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_node_node.d.ts"/>
 import {FarReference} from "./farRef";
 import {Isolate, ArrayIsolate, SignalObjectClass} from "./spiders";
-import {lift, liftGarbage, Signal, SignalDependency, SignalValue} from "./Reactivivity/signal";
+import {lift, liftGarbage, Signal, SignalDependency} from "./Reactivivity/signal";
 import {ActorEnvironment} from "./ActorEnvironment";
 import {PSClient} from "./PubSub/SubClient";
 import {PubSubTag} from "./PubSub/SubTag";
@@ -114,51 +114,6 @@ function getInitChain(behaviourObject : any,result : Array<Function>){
 
 const CONSTRAINT_OK = "ok"
 
-function checkRegularLiftConstraints(...liftArgs) : string{
-    let someGarbage = false
-    liftArgs.forEach((a)=>{
-        if(a instanceof SignalValue){
-            someGarbage = someGarbage || a.holder.isGarbage
-        }
-    })
-    if(someGarbage){
-        return "Cannot use regular lift (i.e. lift/liftStrong/liftStrong) on signal part of garbage dependency graph"
-    }
-    else{
-        return CONSTRAINT_OK
-    }
-}
-
-function checkFailureLiftConstraints(...liftArgs) : string{
-    let someStrong = false
-    liftArgs.forEach((a)=>{
-        if(a instanceof SignalValue){
-            someStrong = someStrong || a.holder.strong
-        }
-    })
-    if(someStrong){
-        return "Calling failure lift on strong signal (which will never propagate garbage collection event)"
-    }
-    else{
-        return CONSTRAINT_OK
-    }
-}
-
-function checkStrongLiftConstraints(...liftArgs) : string {
-    let allStrong = true
-    liftArgs.forEach((a)=>{
-        if(a instanceof SignalValue){
-            allStrong = allStrong && a.holder.strong
-        }
-    })
-    if(allStrong){
-        return CONSTRAINT_OK
-    }
-    else{
-        return "Trying to create strong lifted signal with a weak dependency"
-    }
-}
-
 
 export function installSTDLib(appActor : boolean,parentRef : FarReference,behaviourObject : Object,environment : ActorEnvironment){
     let commMedium  = environment.commMedium
@@ -215,7 +170,9 @@ export function installSTDLib(appActor : boolean,parentRef : FarReference,behavi
         let qNode       = new QPROPNode(ownType,directParents,directChildren,behaviourObject,defaultValue,dependencyChangeTag,isDynamic)
         environment.signalPool.installDPropAlgorithm(qNode)
         let qNodeSignal = qNode.ownSignal
+
         let signal      = new Signal(qNodeSignal)
+
         qNodeSignal.setHolder(signal)
         qNodeSignal.instantiateMeta(environment)
         signalPool.newSource(signal)
@@ -276,92 +233,22 @@ export function installSTDLib(appActor : boolean,parentRef : FarReference,behavi
     behaviourObject["lift"] = (func) => {
         let inner = lift(func)
         return (... args) => {
-            let constraintsOk = checkRegularLiftConstraints(...args)
-            if(constraintsOk == CONSTRAINT_OK){
-                let sig = inner(...args)
-                let allStrong = true
-                sig.signalDependencies.forEach((dep : SignalDependency)=>{
-                    allStrong = allStrong && dep.signal.strong
-                })
-                if(!allStrong){
-                    signalPool.newSignal(sig)
-                    sig.value.setHolder(sig)
-                    sig.makeWeak()
-                    return sig.value
-                }
-                else{
-                    signalPool.newSignal(sig)
-                    sig.value.setHolder(sig)
-                    return sig.value
-                }
-            }
-            else{
-                throw new Error(constraintsOk)
-            }
-
-        }
-    }
-    //Re-wrap the lift function to catch creation of new signals as the result of lifted function application
-    behaviourObject["liftStrong"]         = (func) => {
-        let inner = lift(func)
-        return (...args) => {
-            let regularConstraints = checkRegularLiftConstraints(...args)
-            if(regularConstraints == CONSTRAINT_OK){
-                let sig = inner(...args)
-                let constraint = checkStrongLiftConstraints(... args)
-                if(constraint != CONSTRAINT_OK){
-                    throw new Error(constraint)
-                }
-                else{
-                    signalPool.newSignal(sig)
-                    sig.value.setHolder(sig)
-                    return sig.value
-                }
-            }
-            else{
-                throw new Error(regularConstraints)
-            }
-
-        }
-    }
-    behaviourObject["liftWeak"] = (func) => {
-        let inner = lift(func)
-        return (...args) => {
-            let constraints = checkRegularLiftConstraints(...args)
-            if(constraints == CONSTRAINT_OK){
-                let sig     = inner(...args)
+            let sig = inner(...args)
+            let allStrong = true
+            sig.signalDependencies.forEach((dep : SignalDependency)=>{
+                allStrong = allStrong && dep.signal.strong
+            })
+            if(!allStrong){
                 signalPool.newSignal(sig)
                 sig.value.setHolder(sig)
                 sig.makeWeak()
                 return sig.value
             }
             else{
-                throw new Error(constraints)
-            }
-
-        }
-    }
-    behaviourObject["liftFailure"] = (func) =>{
-        let inner = liftGarbage(func)
-        return (...args)=>{
-            let constraint = checkFailureLiftConstraints(...args)
-            if(constraint == CONSTRAINT_OK){
-                let sig     = inner(...args)
-                signalPool.newGarbageSignal(sig)
-                args.forEach((a)=>{
-                    if(a instanceof SignalValue){
-                        if(!a.holder.isGarbage){
-                            signalPool.addGarbageDependency(a.holder.id,sig.id)
-                        }
-                    }
-                })
+                signalPool.newSignal(sig)
                 sig.value.setHolder(sig)
                 return sig.value
             }
-            else{
-                throw new Error(constraint)
-            }
-
         }
     }
     if(!appActor){

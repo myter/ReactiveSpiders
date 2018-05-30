@@ -170,7 +170,7 @@ function mapToName(piHostName) {
 }
 exports.mapToName = mapToName;
 class Admitter extends MicroService_1.MicroServiceApp {
-    constructor(myIP, myPort, monitorIP, monitorPort, totalVals, csvFileName, dataRate, numSources, dynamicLinks, changes, master) {
+    constructor(myIP, myPort, monitorIP, monitorPort, totalVals, csvFileName, dataRate, numSources, dynamicLinks, changes) {
         super(myIP, myPort, monitorIP, monitorPort);
         this.close = false;
         this.dynamicLinks = dynamicLinks;
@@ -216,7 +216,8 @@ class Admitter extends MicroService_1.MicroServiceApp {
                         averageMem(csvFileName, dataRate, "Admitter");
                     }
                     setTimeout(() => {
-                        master.benchEnd();
+                        console.log("Admitter killing ! ");
+                        process.exit();
                     }, 5000);
                 }
             }
@@ -385,7 +386,7 @@ class DerivedService extends MicroService_1.MicroServiceApp {
 }
 exports.DerivedService = DerivedService;
 class SinkService extends MicroService_1.MicroServiceApp {
-    constructor(isQPROP, rate, totalVals, csvFileName, myAddress, myPort, monitorIP, monitorPort, myTag, directParentTags, directChildrenTags, numSources, changes, master) {
+    constructor(isQPROP, rate, totalVals, csvFileName, myAddress, myPort, monitorIP, monitorPort, myTag, directParentTags, directChildrenTags, numSources, changes) {
         super(myAddress, myPort, monitorIP, monitorPort);
         this.close = false;
         this.changes = changes;
@@ -476,7 +477,9 @@ class SinkService extends MicroService_1.MicroServiceApp {
                     averageMem(csvFileName, rate, myTag.tagVal);
                 }
                 setTimeout(() => {
-                    master.benchEnd();
+                    if (isQPROP) {
+                        process.exit();
+                    }
                 }, 5000);
             }
         })(imp);

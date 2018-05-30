@@ -127,14 +127,14 @@ class Signal {
         this.onDeleteListeners = new Array();
         this.clock = 0;
         this.isGarbage = isGarbage;
-        if (Reflect.has(signalObject, SignalValue.LOWER_BOUND)) {
-            this.rateLowerBound = signalObject[SignalValue.LOWER_BOUND];
-            this.rateUpperBound = signalObject[SignalValue.UPPER_BOUND];
+        /*if(Reflect.has(signalObject,SignalValue.LOWER_BOUND)){
+            this.rateLowerBound                     = signalObject[SignalValue.LOWER_BOUND]
+            this.rateUpperBound                     = signalObject[SignalValue.UPPER_BOUND]
         }
-        else {
-            this.rateLowerBound = -1;
-            this.rateUpperBound = -1;
-        }
+        else{
+            this.rateLowerBound                     = -1
+            this.rateUpperBound                     = -1
+        }*/
         this.isSource = true;
         if (Reflect.has(signalObject, SignalValue.WEAK_ANN)) {
             this.strong = false;

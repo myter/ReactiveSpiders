@@ -4,7 +4,6 @@ import {SignalPool} from "./signalPool";
 import {IsolateContainer} from "../serialisation";
 import {PubSubTag} from "../PubSub/SubTag";
 import {FarRef} from "../spiders";
-import {PropagationValue} from "./QPROP";
 
 class SourceIsolate{
     sources

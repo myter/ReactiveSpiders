@@ -186,7 +186,7 @@ export class Admitter extends MicroServiceApp{
     close
     dynamicLinks
 
-    constructor(myIP,myPort,monitorIP,monitorPort,totalVals,csvFileName,dataRate,numSources,dynamicLinks,changes,master){
+    constructor(myIP,myPort,monitorIP,monitorPort,totalVals,csvFileName,dataRate,numSources,dynamicLinks,changes){
         super(myIP,myPort,monitorIP,monitorPort)
         this.close = false
         this.dynamicLinks = dynamicLinks
@@ -232,7 +232,8 @@ export class Admitter extends MicroServiceApp{
                         averageMem(csvFileName,dataRate,"Admitter")
                     }
                     setTimeout(()=>{
-                        master.benchEnd()
+                        console.log("Admitter killing ! ")
+                        process.exit()
                     },5000)
                 }
             }
@@ -430,7 +431,7 @@ export class SinkService extends MicroServiceApp{
     memWriter
     changes
 
-    constructor(isQPROP,rate,totalVals,csvFileName,myAddress,myPort,monitorIP,monitorPort,myTag,directParentTags,directChildrenTags,numSources,changes,master){
+    constructor(isQPROP,rate,totalVals,csvFileName,myAddress,myPort,monitorIP,monitorPort,myTag,directParentTags,directChildrenTags,numSources,changes){
         super(myAddress,myPort,monitorIP,monitorPort)
         this.close = false
         this.changes = changes
@@ -521,7 +522,9 @@ export class SinkService extends MicroServiceApp{
                     averageMem(csvFileName,rate,myTag.tagVal)
                 }
                 setTimeout(()=>{
-                    master.benchEnd()
+                    if(isQPROP){
+                        process.exit()
+                    }
                 },5000)
 
             }

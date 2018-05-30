@@ -5,17 +5,17 @@ var csv = require('fast-csv')
 var Stats = require('fast-stats').Stats;
 
 var xVals : string[] = []
-for(var i = 0;i < 11000;i+=1000){
+for(var i = 0;i < 1600;i+=100){
     xVals.push(i.toString())
 }
 let getAllData = (prefix,arrayIndex,fileIndex,resolver,valuesArray,errorArray) =>{
     return new Promise((resolve)=>{
         let stream
         if(fileIndex == 0){
-            stream          = fss.createReadStream("../UseCase/BerthaMax/Throughput/"+prefix+"2.csv");
+            stream          = fss.createReadStream("../UseCase/Bertha/Max/Throughput/"+prefix+"2.csv");
         }
         else{
-            stream          = fss.createReadStream("../UseCase/BerthaMax/Throughput/"+prefix+fileIndex+".csv");
+            stream          = fss.createReadStream("../UseCase/Bertha/Max/Throughput/"+prefix+fileIndex+".csv");
         }
         let allData         = []
         var csvStream = csv()
@@ -30,20 +30,20 @@ let getAllData = (prefix,arrayIndex,fileIndex,resolver,valuesArray,errorArray) =
                 s.push(allData)
                 valuesArray[arrayIndex] = s.median()
                 errorArray[arrayIndex] = s.moe()
-                if(arrayIndex == 10){
+                if(arrayIndex == 15){
                     resolver([valuesArray,errorArray])
                 }
                 else if(fileIndex == 0){
-                    return getAllData(prefix,arrayIndex+1,1000,resolve,valuesArray,errorArray)
+                    return getAllData(prefix,arrayIndex+1,100,resolve,valuesArray,errorArray)
                 }
                 else{
-                    return getAllData(prefix,arrayIndex+1,fileIndex+1000,resolver,valuesArray,errorArray)
+                    return getAllData(prefix,arrayIndex+1,fileIndex+100,resolver,valuesArray,errorArray)
                 }
             });
         stream.pipe(csvStream)
     })
 }
-getAllData("qprop",0,0,null,new Array(10),new Array(10)).then(([qpropValues,qpropError])=>{
+getAllData("qprop",0,0,null,new Array(16),new Array(16)).then(([qpropValues,qpropError])=>{
     let qpropData = {
         x: xVals,
         y: qpropValues,
@@ -63,7 +63,7 @@ getAllData("qprop",0,0,null,new Array(10),new Array(10)).then(([qpropValues,qpro
         title: "Throughput under Varying Load",
         xaxis: {
             title: "Load (requests/s)",
-            range:[0,10000]
+            range:[0,1500]
         },
         yaxis: {
             title: "Throughput (requests/s)",

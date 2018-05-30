@@ -1,25 +1,35 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-const RegularJane_1 = require("../RegularJane");
-const ServicesJane_1 = require("../ServicesJane");
 var spiders = require("../../../src/spiders");
-//TODO REPL to send commands to slaves
-//TODO monitoring of down nodes + check if all nodes there before sending message
+var util = require('util');
 //Jane master is either going to run the sink node in the case of QPROP or the admitter in the case of SIDUP
 class JaneMaster extends spiders.Application {
     constructor(ip, port) {
         super(ip, port);
+        this.slaves = [];
     }
     register(slaveRef) {
-        console.log("Slave registered!!");
-        slaveRef.spawn("pi59", isQPROP, 1, 1, "t", 1, monitorIP, monitorPort);
+        this.slaves.push(slaveRef);
+        console.log("Slaves registered : " + this.slaves.length);
+        if (this.slaves.length == 57) {
+            console.log("STARTING BENCHMARKS");
+            runAll();
+        }
     }
-    benchEnd() {
+    startRound(rate, changes) {
+        let slaveIndex = 0;
+        let proms = [];
+        for (var i = 2; i < 59; i++) {
+            proms.push(this.slaves[slaveIndex].spawn("pi" + i, isQPROP, rate, csvFile, changes, monitorIP, monitorPort));
+            slaveIndex++;
+        }
+        return Promise.all(proms);
     }
 }
-let networkInterface = "em1";
+//let networkInterface = "em1" (set back to 0)
+let networkInterface = "en0";
 var os = require('os');
 var networkInterfaces = os.networkInterfaces();
-var thisIP = networkInterfaces[networkInterface][0].address;
+var thisIP = networkInterfaces[networkInterface][1].address;
 console.log("Master running on " + thisIP);
 var masterPort = 8000;
 var monitorPort = 8001;
@@ -27,97 +37,64 @@ var monitorIP = thisIP;
 var fiftyPort = 8002;
 var admitterPort = 8003;
 let isQPROP = process.argv[2] == "true";
-let toSpawn = ServicesJane_1.mapToName(process.argv[3]);
-let csvFile = process.argv[4];
-let dynamic = process.argv[5] == "true";
-/*let dataRate    = parseInt(process.argv[3]) / 10
-let totalVals   = dataRate * 30
-let csvFile     = process.argv[4]
-let changes     = parseInt(process.argv[5])*/
+let csvFile = process.argv[3];
+let dynamic = process.argv[4] == "true";
 //1,50,100,150,200,250,300 are the datarates
 let allRates = [1, 50, 100, 150, 200, 250];
 let allChanges = [1, 5, 10, 15, 20];
-function generateDynLinks(changes) {
-    //Avoid introducing cycles and double dependencies
-    let dynLinks = [];
-    if (changes == 1) {
-        dynLinks.push({ from: RegularJane_1.pi6.tag, to: RegularJane_1.pi31.tag });
-    }
-    else if (changes == 5) {
-        dynLinks.push({ from: RegularJane_1.pi6.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi32.tag });
-        dynLinks.push({ from: RegularJane_1.pi39.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi49.tag, to: RegularJane_1.pi50.tag });
-        dynLinks.push({ from: RegularJane_1.pi32.tag, to: RegularJane_1.pi42.tag });
-    }
-    else if (changes == 10) {
-        dynLinks.push({ from: RegularJane_1.pi6.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi32.tag });
-        dynLinks.push({ from: RegularJane_1.pi39.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi49.tag, to: RegularJane_1.pi50.tag });
-        dynLinks.push({ from: RegularJane_1.pi32.tag, to: RegularJane_1.pi42.tag });
-        dynLinks.push({ from: RegularJane_1.pi48.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi30.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi22.tag });
-        dynLinks.push({ from: RegularJane_1.pi31.tag, to: RegularJane_1.pi41.tag });
-        dynLinks.push({ from: RegularJane_1.pi12.tag, to: RegularJane_1.pi13.tag });
-    }
-    else if (changes == 15) {
-        dynLinks.push({ from: RegularJane_1.pi8.tag, to: RegularJane_1.pi17.tag });
-        dynLinks.push({ from: RegularJane_1.pi16.tag, to: RegularJane_1.pi17.tag });
-        dynLinks.push({ from: RegularJane_1.pi25.tag, to: RegularJane_1.pi26.tag });
-        dynLinks.push({ from: RegularJane_1.pi34.tag, to: RegularJane_1.pi35.tag });
-        dynLinks.push({ from: RegularJane_1.pi32.tag, to: RegularJane_1.pi33.tag });
-        dynLinks.push({ from: RegularJane_1.pi6.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi32.tag });
-        dynLinks.push({ from: RegularJane_1.pi39.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi49.tag, to: RegularJane_1.pi50.tag });
-        dynLinks.push({ from: RegularJane_1.pi32.tag, to: RegularJane_1.pi42.tag });
-        dynLinks.push({ from: RegularJane_1.pi48.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi30.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi22.tag });
-        dynLinks.push({ from: RegularJane_1.pi31.tag, to: RegularJane_1.pi41.tag });
-        dynLinks.push({ from: RegularJane_1.pi12.tag, to: RegularJane_1.pi13.tag });
-    }
-    else if (changes == 20) {
-        dynLinks.push({ from: RegularJane_1.pi8.tag, to: RegularJane_1.pi17.tag });
-        dynLinks.push({ from: RegularJane_1.pi16.tag, to: RegularJane_1.pi17.tag });
-        dynLinks.push({ from: RegularJane_1.pi25.tag, to: RegularJane_1.pi26.tag });
-        dynLinks.push({ from: RegularJane_1.pi34.tag, to: RegularJane_1.pi35.tag });
-        dynLinks.push({ from: RegularJane_1.pi32.tag, to: RegularJane_1.pi33.tag });
-        dynLinks.push({ from: RegularJane_1.pi6.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi32.tag });
-        dynLinks.push({ from: RegularJane_1.pi39.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi49.tag, to: RegularJane_1.pi50.tag });
-        dynLinks.push({ from: RegularJane_1.pi32.tag, to: RegularJane_1.pi42.tag });
-        dynLinks.push({ from: RegularJane_1.pi48.tag, to: RegularJane_1.pi49.tag });
-        dynLinks.push({ from: RegularJane_1.pi30.tag, to: RegularJane_1.pi31.tag });
-        dynLinks.push({ from: RegularJane_1.pi21.tag, to: RegularJane_1.pi22.tag });
-        dynLinks.push({ from: RegularJane_1.pi31.tag, to: RegularJane_1.pi41.tag });
-        dynLinks.push({ from: RegularJane_1.pi12.tag, to: RegularJane_1.pi13.tag });
-        dynLinks.push({ from: RegularJane_1.pi28.tag, to: RegularJane_1.pi29.tag });
-        dynLinks.push({ from: RegularJane_1.pi43.tag, to: RegularJane_1.pi44.tag });
-        dynLinks.push({ from: RegularJane_1.pi28.tag, to: RegularJane_1.pi33.tag });
-        dynLinks.push({ from: RegularJane_1.pi37.tag, to: RegularJane_1.pi47.tag });
-        dynLinks.push({ from: RegularJane_1.pi37.tag, to: RegularJane_1.pi38.tag });
-    }
-    return dynLinks;
-}
 let master = new JaneMaster(thisIP, masterPort);
-function runBenchmark(rate, changes) {
-    let totalVals = rate * 30;
-    RegularJane_1.spawnPi("monitor", isQPROP, rate, totalVals, csvFile, changes, thisIP, monitorPort, monitorIP, monitorPort);
-    //TODO need to provide ref to Jane Master to sink service for termination detection
-    RegularJane_1.spawnPi("pi59", isQPROP, rate, totalVals, csvFile, changes, thisIP, 8005, monitorIP, 8004);
-    //TODO instruct master to start and return completion promise
-    if (!isQPROP) {
-        RegularJane_1.spawnPi("admitter", isQPROP, rate, totalVals, csvFile, changes, thisIP, admitterPort, monitorIP, monitorPort);
+let monitor;
+let admitter;
+let pi59;
+function spawn(toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, monitorIP, monitorPort, sync) {
+    let command = util.format("node ../RegularJane.js %s %s %d %s %d %s %d %s %d", toSpawn, isQPROP, dataRate, csvFile, changes, thisIP, piPort, monitorIP, monitorPort);
+    if (sync) {
+        let pi = require('child_process').execSync(command, { stdio: [0, 1, 2] });
+        return pi;
     }
+    else {
+        return require('child_process').exec(command);
+    }
+}
+function runBenchmark(rate, changes) {
+    return master.startRound(rate, changes).then(() => {
+        monitor = spawn("monitor", isQPROP, rate, csvFile, changes, thisIP, monitorPort, monitorIP, monitorPort, false);
+        if (!isQPROP) {
+            pi59 = spawn("pi59", isQPROP, rate, csvFile, changes, thisIP, 8005, monitorIP, monitorPort, false);
+            spawn("admitter", isQPROP, rate, csvFile, changes, thisIP, admitterPort, monitorIP, monitorPort, true);
+        }
+        else {
+            spawn("pi59", isQPROP, rate, csvFile, changes, thisIP, 8005, monitorIP, monitorPort, true);
+        }
+        console.log("BENCHMARK FINISHED !!");
+        monitor.kill();
+        if (pi59) {
+            pi59.kill();
+        }
+        let ps = master.slaves.map((slave) => {
+            return slave.killPi();
+        });
+        return Promise.all(ps);
+    });
 }
 function runAll() {
     if (dynamic) {
+        //TODO run for each config yada yada
+        runBenchmark(100, 20).then(() => {
+            console.log("Running second iteration");
+            runBenchmark(100, 20).then(() => {
+                console.log("ALL DONE !!!");
+            });
+        });
     }
     else {
+        //TODO run for each config yada yada
+        runBenchmark(10, 0).then(() => {
+            console.log("Running second iteration");
+            runBenchmark(10, 0).then(() => {
+                console.log("ALL DONE !!!");
+            });
+        });
     }
 }
 //# sourceMappingURL=JaneMaster.js.map

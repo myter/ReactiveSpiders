@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/signal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/signal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/signal.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/signal.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reactivivity/signal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reactivivity/signal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,41 +43,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
+      <file leaf-file-name="PlotThroughputMax.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+            <state relative-caret-position="105">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
-                <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
-                <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
-                <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
-                <element signature="n#!!block;n#runAll#0" expanded="true" />
+                <element signature="e#343#1664#0" expanded="true" />
+                <element signature="e#379#1661#0" expanded="true" />
+                <element signature="e#1026#1622#0" expanded="true" />
+                <element signature="e#1755#2693#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JaneSlave.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
+      <file leaf-file-name="UseCase.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="638">
+              <caret line="375" column="23" lean-forward="true" selection-start-line="375" selection-start-column="23" selection-end-line="375" selection-end-column="23" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
-                <element signature="e#342#392#0" expanded="true" />
-                <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
+                <element signature="n#!!block;n#averageMem#0" expanded="true" />
+                <element signature="e#1984#2484#0" expanded="true" />
+                <element signature="n#Admitter#0" />
+                <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
+                <element signature="n#!!block;n#snapMem#0;n#Admitter#0" expanded="true" />
+                <element signature="e#4541#4629#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#snapMem#0;n#ConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#DataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#DataAccessService#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#GeoService#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#DrivingService#0" expanded="true" />
+                <element signature="e#10779#12386#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegularJane.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts">
+      <file leaf-file-name="test.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="324" column="68" selection-start-line="324" selection-start-column="68" selection-end-line="324" selection-end-column="68" />
+            <state relative-caret-position="135">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -71,12 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Map</find>
-      <find>ownSignal</find>
-      <find>getSignal</find>
-      <find>fClock</find>
-      <find>100</find>
-      <find>3</find>
       <find>pi3Tag</find>
       <find>sleep</find>
       <find>from</find>
@@ -101,6 +129,12 @@
       <find>(pi).+(port)</find>
       <find>var</find>
       <find>12000</find>
+      <find>break</find>
+      <find>instantiate</find>
+      <find>SignalValue</find>
+      <find>return</find>
+      <find>;</find>
+      <find>map</find>
     </findStrings>
     <replaceStrings>
       <replace>app.libs.PubSubTag</replace>
@@ -122,6 +156,7 @@
       <replace>ownPort,monitorIP,monitorPort</replace>
       <replace>export var</replace>
       <replace>28000</replace>
+      <replace>break;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -135,10 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts" />
-        <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts" />
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/spiders.js" />
-        <option value="$PROJECT_DIR$/tests/temp.ts" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/messageHandler.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/Sockets.js" />
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/MAP.js" />
@@ -150,11 +181,9 @@
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxOut.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/spiders.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunUseCase2.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/tempTest.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase2.ts" />
-        <option value="$PROJECT_DIR$/src/utils.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunRegularQPROPBench.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh" />
@@ -162,7 +191,6 @@
         <option value="$PROJECT_DIR$/server-tests/temp.ts" />
         <option value="$PROJECT_DIR$/src/sockets.ts" />
         <option value="$PROJECT_DIR$/src/serialisation.ts" />
-        <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" />
         <option value="$PROJECT_DIR$/src/messageHandler.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/newTestSIDUP.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/newTest.sh" />
@@ -170,10 +198,8 @@
         <option value="$PROJECT_DIR$/src/Jane/JaneSlave.ts" />
         <option value="$PROJECT_DIR$/src/Jane/JaneMaster.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunSIDUPBench.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/MaxThroughput.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunQPROPMTBench.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughput.ts" />
@@ -183,9 +209,18 @@
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/plotTotalMemory.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotMemory.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/GenerateMTBashScript.ts" />
+        <option value="$PROJECT_DIR$/src/Reactivivity/QPROP2.ts" />
+        <option value="$PROJECT_DIR$/src/spiders.ts" />
+        <option value="$PROJECT_DIR$/src/utils.ts" />
+        <option value="$PROJECT_DIR$/src/Reactivivity/signal.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/test.sh" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts" />
-        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" />
         <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts" />
+        <option value="$PROJECT_DIR$/ReactivityBenchmarks/UseCase/test.sh" />
       </list>
     </option>
   </component>
@@ -205,7 +240,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1337" />
@@ -234,18 +269,18 @@
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
-              <item name="GeneralIsa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="ReactivityBenchmarks" type="462c0819:PsiDirectoryNode" />
               <item name="UseCase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MicroService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -294,26 +329,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.GenerateMTBashScript.js">
+  <component name="RunManager" selected="Node.js.PlotThroughputMax.js">
     <configuration name="GenerateMTBashScript.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="GenerateMTBashScript.js" working-dir="$PROJECT_DIR$/ReactivityBenchmarks/UseCase" />
-    <configuration name="PlotLatency.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="PlotLatency.js" working-dir="$PROJECT_DIR$/ReactivityBenchmarks/Plotting" />
     <configuration name="PlotMemory.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="PlotMemory.js" working-dir="$PROJECT_DIR$/ReactivityBenchmarks/Plotting" />
     <configuration name="PlotProcessing.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="PlotProcessing.js" working-dir="$PROJECT_DIR$/ReactivityBenchmarks/Plotting" />
+    <configuration name="PlotThroughputMax.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="PlotThroughputMax.js" working-dir="$PROJECT_DIR$/ReactivityBenchmarks/Plotting" />
     <configuration name="plotTotalMemory.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="plotTotalMemory.js" working-dir="$PROJECT_DIR$/ReactivityBenchmarks/Plotting" />
     <list>
-      <item itemvalue="Node.js.PlotLatency.js" />
       <item itemvalue="Node.js.PlotMemory.js" />
       <item itemvalue="Node.js.PlotProcessing.js" />
       <item itemvalue="Node.js.plotTotalMemory.js" />
       <item itemvalue="Node.js.GenerateMTBashScript.js" />
+      <item itemvalue="Node.js.PlotThroughputMax.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.PlotThroughputMax.js" />
         <item itemvalue="Node.js.GenerateMTBashScript.js" />
         <item itemvalue="Node.js.PlotMemory.js" />
         <item itemvalue="Node.js.plotTotalMemory.js" />
         <item itemvalue="Node.js.PlotProcessing.js" />
-        <item itemvalue="Node.js.PlotLatency.js" />
       </list>
     </recent_temporary>
   </component>
@@ -353,14 +388,7 @@
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
       <workItem from="1526972139946" duration="48016000" />
-      <workItem from="1527600192869" duration="1581000" />
-    </task>
-    <task id="LOCAL-00082" summary="Propagation value as argument and not sending isolate">
-      <created>1525707806575</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1525707806575</updated>
+      <workItem from="1527600192869" duration="13185000" />
     </task>
     <task id="LOCAL-00083" summary="Propagation value as argument and not sending isolate">
       <created>1525708008232</created>
@@ -698,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527601735400</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Started implementing Jane">
+      <created>1527601796744</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1527601796744</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -734,16 +769,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249285000" />
+    <option name="totallyTimeSpent" value="260889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23376623" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23336072" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3270337" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16266246" />
@@ -827,39 +862,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" column="5" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
-            <element signature="n#!!block;n#runAll#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="74" column="119" lean-forward="true" selection-start-line="74" selection-start-column="119" selection-end-line="74" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
-            <element signature="e#342#392#0" expanded="true" />
-            <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Throughput/sidupRegular20.csv" />
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Processing/qpropRegular10.csv" />
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Throughput/qpropRegular10.csv" />
@@ -891,43 +893,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="368" column="55" selection-start-line="368" selection-start-column="48" selection-end-line="368" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MicroService/MicroService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="64" column="102" selection-start-line="64" selection-start-column="102" selection-end-line="64" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#MicroServiceApp#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/sidup2.csv" />
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test2.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -946,37 +916,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Latency/sidup100.csv" />
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-          <folding>
-            <element signature="e#2368#2408#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
-            <element signature="e#3564#4267#0" expanded="true" />
-            <element signature="e#4292#4343#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
-            <element signature="e#10718#12325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="81" column="15" selection-end-line="596" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#3837#3863#0" expanded="true" />
-            <element signature="e#3996#4023#0" expanded="true" />
-            <element signature="e#4810#4952#0" expanded="true" />
-            <element signature="e#4983#5245#0" expanded="true" />
-            <element signature="e#5693#6193#0" expanded="true" />
-            <element signature="e#7271#9223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular2.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -1085,53 +1024,299 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunQPROPBench.sh">
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunMaxOut.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/temp.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/test.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.ts">
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RunCSIDUP.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/Throughput/test100.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MicroService/MicroService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="38" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#MicroServiceApp#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts">
+    <entry file="file://$PROJECT_DIR$/src/Reactivivity/signalPool.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="324" column="68" selection-start-line="324" selection-start-column="68" selection-end-line="324" selection-end-column="68" />
+        <state relative-caret-position="420">
+          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#!!block;n#installDPropAlgorithm#0;n#SignalPool#0" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reactivivity/signal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#SignalValue#0" expanded="true" />
+            <element signature="n#!!block;n#setHolder#0;n#SignalValue#0" expanded="true" />
+            <element signature="n#!!block;n#mutator#0" expanded="true" />
+            <element signature="n#!!block;n#instantiateMeta#0;n#SignalObject#0" expanded="true" />
+            <element signature="e#2369#3755#0" expanded="true" />
+            <element signature="e#2697#2820#0" expanded="true" />
+            <element signature="e#3315#3438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reactivivity/QPROP2.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#SourceIsolate#0" expanded="true" />
+            <element signature="n#!!block;n#change#0;n#QPROPSourceSignal#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#PropagationValue2#0" expanded="true" />
+            <element signature="n#!!block;n#asString#0;n#PropagationValue2#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DependencyChange#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="e#4353#4924#0" expanded="true" />
+            <element signature="e#4429#4913#0" expanded="true" />
+            <element signature="e#4985#5244#0" expanded="true" />
+            <element signature="e#5063#5233#0" expanded="true" />
+            <element signature="e#5389#5637#0" expanded="true" />
+            <element signature="n#!!block;n#getSources#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#getStart#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#prePropagation#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="e#13385#15006#0" expanded="true" />
+            <element signature="e#13526#14621#0" expanded="true" />
+            <element signature="e#13644#14553#0" expanded="true" />
+            <element signature="n#!!block;n#newPropagation#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#getSignal#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#newChild#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#addDependency#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#addSources#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#publishSignal#0;n#QPROP2Node#0" expanded="true" />
+            <element signature="n#!!block;n#propagate#0;n#QPROP2Node#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="190" column="18" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="18" />
+          <folding>
+            <element signature="e#160#198#0" expanded="true" />
+            <element signature="e#7112#7666#0" expanded="true" />
+            <element signature="e#8254#8303#0" expanded="true" />
+            <element signature="e#10246#11152#0" expanded="true" />
+            <element signature="e#10308#11146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spiders.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Regular.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="83" selection-start-line="83" selection-end-line="88" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Services.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="197" column="66" lean-forward="true" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#3837#3863#0" expanded="true" />
+            <element signature="e#3996#4023#0" expanded="true" />
+            <element signature="e#4810#4952#0" expanded="true" />
+            <element signature="e#4983#5245#0" expanded="true" />
+            <element signature="e#7271#9223#0" expanded="true" />
+            <element signature="e#14690#18248#0" expanded="true" />
+            <element signature="e#15956#18236#0" expanded="true" />
+            <element signature="e#17644#17706#0" expanded="true" />
+            <element signature="e#18263#18426#0" expanded="true" />
+            <element signature="e#18317#18405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-737" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="885">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
           <folding>
+            <element signature="n#JaneMaster#0" />
+            <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
             <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
-            <element signature="n#!!block;n#benchEnd#0;n#JaneMaster#0" expanded="true" />
+            <element signature="n#!!block;n#startRound#0;n#JaneMaster#0" expanded="true" />
             <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
-            <element signature="n#!!block;n#runAll#0" expanded="true" />
+            <element signature="e#2183#2817#0" expanded="true" />
+            <element signature="e#2765#2810#0" expanded="true" />
+            <element signature="e#2941#3105#0" expanded="true" />
+            <element signature="e#3035#3094#0" expanded="true" />
+            <element signature="e#2956#3120#0" expanded="true" />
+            <element signature="e#3050#3109#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
             <element signature="e#342#392#0" expanded="true" />
-            <element signature="n#!!block;n#spawn#0;n#JaneSlave#0" expanded="true" />
+            <element signature="n#!!block;n#killPi#0;n#JaneSlave#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/RegularJane.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/ServicesJane.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#2743#2992#0" />
+            <element signature="e#2994#3186#0" />
+            <element signature="e#3090#3184#0" expanded="true" />
+            <element signature="e#4315#4655#0" expanded="true" />
+            <element signature="e#4688#5099#0" />
+            <element signature="e#5101#5499#0" />
+            <element signature="e#7683#7734#0" expanded="true" />
+            <element signature="e#8829#9722#0" expanded="true" />
+            <element signature="e#9584#9709#0" expanded="true" />
+            <element signature="e#9742#9934#0" expanded="true" />
+            <element signature="e#9879#9922#0" expanded="true" />
+            <element signature="e#11149#12515#0" expanded="true" />
+            <element signature="e#13351#16988#0" expanded="true" />
+            <element signature="e#14617#16976#0" expanded="true" />
+            <element signature="e#16888#16945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Bertha/Max/Throughput/qprop1300.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Bertha/Max/Throughput/qprop1400.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Bertha/Max/Throughput/qprop1500.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/Bertha/Max/Processing/qprop2.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/Plotting/PlotThroughputMax.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#343#1664#0" expanded="true" />
+            <element signature="e#379#1661#0" expanded="true" />
+            <element signature="e#1026#1622#0" expanded="true" />
+            <element signature="e#1755#2693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/UseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="375" column="23" lean-forward="true" selection-start-line="375" selection-start-column="23" selection-end-line="375" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#averageMem#0" expanded="true" />
+            <element signature="e#1984#2484#0" expanded="true" />
+            <element signature="n#Admitter#0" />
+            <element signature="n#!!block;n#constructor#0;n#Admitter#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#Admitter#0" expanded="true" />
+            <element signature="e#4541#4629#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#snapMem#0;n#ConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#DataAccessService#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#GeoService#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DrivingService#0" expanded="true" />
+            <element signature="e#10779#12386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/RunQPROPBench.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/UseCase/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
