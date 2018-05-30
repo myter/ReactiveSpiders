@@ -462,7 +462,7 @@ export class QPROP2Node implements DPropAlgorithm{
         //Find cross product of new propagation value and all other values
         let allArgs     = this.getAllArgs(is)
         let matches     = this.getMatchArgs(allArgs)
-        if(matches.length > 0){
+        /*if(matches.length > 0){
             let match       = matches[matches.length-1]
             this.lastMatch  = match;
             let values      = match.map((arg : PropagationValue2)=>{
@@ -476,8 +476,8 @@ export class QPROP2Node implements DPropAlgorithm{
             })
             this.ownSignal.change(values)
 
-        }
-        /*matches.forEach((match)=>{
+        }*/
+        matches.forEach((match)=>{
             this.lastMatch  = match;
             let values      = match.map((arg : PropagationValue2)=>{
                 return arg.value
@@ -489,7 +489,7 @@ export class QPROP2Node implements DPropAlgorithm{
                 this.I.set(pv.from.tagVal,vals)
             })
             this.ownSignal.change(values)
-        })*/
+        })
     }
 
     getSignal(signal){
