@@ -27,8 +27,9 @@ class JaneMaster extends spiders.Application{
     startRound(rate,changes){
         let slaveIndex = 0
         let proms = []
+        console.log("Starting round for rate: " + rate)
         for(var i = 2;i < 59;i++){
-            proms.push(this.slaves[slaveIndex].spawn("pi"+i,isQPROP,rate,csvFile,changes,monitorIP,monitorPort))
+            proms.push(this.slaves[slaveIndex].spawn("pi"+i,isQPROP,rate/10,csvFile,changes,monitorIP,monitorPort))
             slaveIndex++
         }
         return Promise.all(proms)
