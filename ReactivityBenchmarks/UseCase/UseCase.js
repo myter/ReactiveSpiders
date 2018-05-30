@@ -150,7 +150,7 @@ class ConfigService extends MicroService_1.MicroServiceApp {
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
         this.memWriter = new MemoryWriter("Config");
-        //this.snapMem()
+        this.snapMem();
         this.csvFileName = csvFileName;
         this.produced = 0;
         this.close = false;
@@ -201,7 +201,7 @@ class DataAccessService extends MicroService_1.MicroServiceApp {
         this.rate = rate / 2;
         this.totalVals = totalVals / 2;
         this.memWriter = new MemoryWriter("Data");
-        //this.snapMem()
+        this.snapMem();
         this.csvFileName = csvFileName;
         this.produced = 0;
         this.close = false;
@@ -219,7 +219,7 @@ class DataAccessService extends MicroService_1.MicroServiceApp {
         }, 2000);
     }
     update(signal) {
-        for (var i = 0; i < this.rate + 1; i++) {
+        for (var i = 0; i < this.rate; i++) {
             this.totalVals--;
             this.produced++;
             signal.actualise();
@@ -258,7 +258,7 @@ class GeoService extends MicroService_1.MicroServiceApp {
         }
         let propagated = 0;
         this.memWriter = new MemoryWriter("Geo");
-        //this.snapMem()
+        this.snapMem();
         let exp = this.lift(([fleetData]) => {
             propagated++;
             if (propagated == totalVals / 2) {
@@ -293,7 +293,7 @@ class DrivingService extends MicroService_1.MicroServiceApp {
         }
         let propagated = 0;
         this.memWriter = new MemoryWriter("Driving");
-        //this.snapMem()
+        this.snapMem();
         let exp = this.lift(([data, geo]) => {
             propagated++;
             if (propagated == totalVals / 2) {
@@ -334,7 +334,7 @@ class DashboardService extends MicroService_1.MicroServiceApp {
             imp = this.SIDUP(dashTag, [drivingTag, geoTag, configTag], admitterTag, true);
         }
         this.memWriter = new MemoryWriter("Dashboard");
-        //this.snapMem()
+        this.snapMem();
         let lastDriving;
         let lastConfig;
         let firstPropagation = true;
@@ -356,9 +356,9 @@ class DashboardService extends MicroService_1.MicroServiceApp {
             lastConfig = config;
             valsReceived++;
             console.log("Values propagated: " + valsReceived);
-            /*if(valsReceived.toString().endsWith("000")){
-                console.log("Values propagated: " + valsReceived)
-            }*/
+            if (valsReceived.toString().endsWith("000")) {
+                console.log("Values propagated: " + valsReceived);
+            }
             writer.write([timeToPropagate]);
             processingTimes.push(timeToPropagate);
             if (valsReceived == totalVals) {

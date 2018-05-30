@@ -389,34 +389,33 @@ class QPROP2Node {
         //Find cross product of new propagation value and all other values
         let allArgs = this.getAllArgs(is);
         let matches = this.getMatchArgs(allArgs);
-        /*if(matches.length > 0){
-            let match       = matches[matches.length-1]
-            this.lastMatch  = match;
-            let values      = match.map((arg : PropagationValue2)=>{
-                return arg.value
-            })
-            //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
-            match.forEach((pv : PropagationValue2)=>{
-                let vals = this.I.get(pv.from.tagVal)
-                vals = vals.filter((pvv : PropagationValue2)=>{return pvv.fClock >= pv.fClock})
-                this.I.set(pv.from.tagVal,vals)
-            })
-            this.ownSignal.change(values)
-
-        }*/
-        matches.forEach((match) => {
+        if (matches.length > 0) {
+            let match = matches[matches.length - 1];
             this.lastMatch = match;
             let values = match.map((arg) => {
                 return arg.value;
             });
             //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
-            this.lastMatch.forEach((pv) => {
+            match.forEach((pv) => {
                 let vals = this.I.get(pv.from.tagVal);
                 vals = vals.filter((pvv) => { return pvv.fClock >= pv.fClock; });
                 this.I.set(pv.from.tagVal, vals);
             });
             this.ownSignal.change(values);
-        });
+        }
+        /*matches.forEach((match)=>{
+            this.lastMatch  = match;
+            let values      = match.map((arg : PropagationValue2)=>{
+                return arg.value
+            })
+            //This will start propagation of local change. The exported signal will invoke the propagate method (which will send
+            this.lastMatch.forEach((pv : PropagationValue2)=>{
+                let vals = this.I.get(pv.from.tagVal)
+                vals = vals.filter((pvv : PropagationValue2)=>{return pvv.fClock >= pv.fClock})
+                this.I.set(pv.from.tagVal,vals)
+            })
+            this.ownSignal.change(values)
+        })*/
     }
     getSignal(signal) {
         //Dummy neeed to trigger underlying deserialisation of SpiderS.js

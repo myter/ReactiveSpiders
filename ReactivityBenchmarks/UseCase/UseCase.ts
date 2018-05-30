@@ -167,7 +167,7 @@ export class ConfigService extends MicroServiceApp{
         this.rate = rate / 2
         this.totalVals = totalVals / 2
         this.memWriter = new MemoryWriter("Config")
-        //this.snapMem()
+        this.snapMem()
         this.csvFileName = csvFileName
         this.produced = 0
         this.close = false
@@ -228,7 +228,7 @@ export class DataAccessService extends MicroServiceApp{
         this.rate = rate / 2
         this.totalVals = totalVals / 2
         this.memWriter = new MemoryWriter("Data")
-        //this.snapMem()
+        this.snapMem()
         this.csvFileName = csvFileName
         this.produced = 0
         this.close = false
@@ -248,7 +248,7 @@ export class DataAccessService extends MicroServiceApp{
     }
 
     update(signal){
-        for(var i = 0;i < this.rate + 1;i++){
+        for(var i = 0;i < this.rate;i++){
             this.totalVals--
             this.produced++
             signal.actualise()
@@ -290,7 +290,7 @@ export class GeoService extends MicroServiceApp{
         }
         let propagated = 0
         this.memWriter = new MemoryWriter("Geo")
-        //this.snapMem()
+        this.snapMem()
         let exp = this.lift(([fleetData])=>{
             propagated++
             if(propagated == totalVals / 2){
@@ -328,7 +328,7 @@ export class DrivingService extends MicroServiceApp{
         }
         let propagated = 0
         this.memWriter = new MemoryWriter("Driving")
-        //this.snapMem()
+        this.snapMem()
         let exp = this.lift(([data,geo])=>{
             propagated++
             if(propagated == totalVals / 2){
@@ -372,7 +372,7 @@ export class DashboardService extends MicroServiceApp{
             imp = this.SIDUP(dashTag,[drivingTag,geoTag,configTag],admitterTag,true)
         }
         this.memWriter = new MemoryWriter("Dashboard")
-        //this.snapMem()
+        this.snapMem()
         let lastDriving
         let lastConfig
         let firstPropagation = true
@@ -394,9 +394,9 @@ export class DashboardService extends MicroServiceApp{
             lastConfig  = config
             valsReceived++
             console.log("Values propagated: " + valsReceived)
-            /*if(valsReceived.toString().endsWith("000")){
+            if(valsReceived.toString().endsWith("000")){
                 console.log("Values propagated: " + valsReceived)
-            }*/
+            }
             writer.write([timeToPropagate])
             processingTimes.push(timeToPropagate)
             if(valsReceived == totalVals){
