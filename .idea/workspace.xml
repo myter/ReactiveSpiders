@@ -22,22 +22,19 @@
       <file leaf-file-name="JaneMaster.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+            <state relative-caret-position="466">
+              <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
                 <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
                 <element signature="e#683#749#0" expanded="true" />
+                <element signature="n#!!block;n#startRound#0;n#JaneMaster#0" expanded="true" />
                 <element signature="n#!!block;n#spawn#0" expanded="true" />
                 <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
                 <element signature="e#2228#2946#0" expanded="true" />
                 <element signature="e#2863#2908#0" expanded="true" />
-                <element signature="n#!!block;n#runForConfig#0" expanded="true" />
-                <element signature="n#!!block;n#iter#0;n#!!block;n#runForConfig#0" expanded="true" />
-                <element signature="e#3148#3303#0" expanded="true" />
-                <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runForConfig#0" expanded="true" />
+                <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runConfigs#0" expanded="true" />
                 <element signature="e#3501#3541#0" expanded="true" />
-                <element signature="e#3724#3764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +43,8 @@
       <file leaf-file-name="JaneSlave.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="110" selection-start-line="17" selection-start-column="102" selection-end-line="17" selection-end-column="110" />
+            <state relative-caret-position="225">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
                 <element signature="n#!!block;n#killPi#0;n#JaneSlave#0" expanded="true" />
@@ -359,21 +356,7 @@
       <workItem from="1526366320235" duration="130000" />
       <workItem from="1526366529455" duration="11807000" />
       <workItem from="1526972139946" duration="48016000" />
-      <workItem from="1527600192869" duration="23675000" />
-    </task>
-    <task id="LOCAL-00095" summary="Removing all MAP calls">
-      <created>1526307881303</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1526307881304</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Removing all MAP calls">
-      <created>1526308067812</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1526308067813</updated>
+      <workItem from="1527600192869" duration="24467000" />
     </task>
     <task id="LOCAL-00097" summary="Removing all MAP calls">
       <created>1526308164965</created>
@@ -704,7 +687,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527687286693</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Completed benchmark loop v1">
+      <created>1527688041653</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1527688041653</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Completed benchmark loop v1">
+      <created>1527688690953</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1527688690953</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -740,7 +737,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271379000" />
+    <option name="totallyTimeSpent" value="272171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
@@ -1251,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneSlave.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="110" selection-start-line="17" selection-start-column="102" selection-end-line="17" selection-end-column="110" />
+        <state relative-caret-position="225">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#JaneSlave#0" expanded="true" />
             <element signature="n#!!block;n#killPi#0;n#JaneSlave#0" expanded="true" />
@@ -1262,22 +1259,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReactivityBenchmarks/GeneralIsa/Jane/JaneMaster.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="466">
+          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#JaneMaster#0" expanded="true" />
             <element signature="n#!!block;n#register#0;n#JaneMaster#0" expanded="true" />
             <element signature="e#683#749#0" expanded="true" />
+            <element signature="n#!!block;n#startRound#0;n#JaneMaster#0" expanded="true" />
             <element signature="n#!!block;n#spawn#0" expanded="true" />
             <element signature="n#!!block;n#runBenchmark#0" expanded="true" />
             <element signature="e#2228#2946#0" expanded="true" />
             <element signature="e#2863#2908#0" expanded="true" />
-            <element signature="n#!!block;n#runForConfig#0" expanded="true" />
-            <element signature="n#!!block;n#iter#0;n#!!block;n#runForConfig#0" expanded="true" />
-            <element signature="e#3148#3303#0" expanded="true" />
-            <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runForConfig#0" expanded="true" />
+            <element signature="n#!!block;n#iterConfigs#0;n#!!block;n#runConfigs#0" expanded="true" />
             <element signature="e#3501#3541#0" expanded="true" />
-            <element signature="e#3724#3764#0" expanded="true" />
           </folding>
         </state>
       </provider>

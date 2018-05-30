@@ -88,7 +88,7 @@ function runConfigs() {
         else {
             return runBenchmark(rate, changes).then(() => {
                 console.log("finished iteration " + times + " of " + rate + " , " + changes);
-                return iter(times - 1, rate, changes);
+                //return iter(times -1,rate,changes)
             });
         }
     }
@@ -102,9 +102,9 @@ function runConfigs() {
         }
         else {
             if (index < allRates.length) {
-                return iter(10, allRates[index], 0).then(() => {
-                    //return iterConfigs(index+1)
-                });
+                return iter(10, allRates[index], 0); /*.then(()=>{
+                    return iterConfigs(index+1)
+                })*/
             }
         }
     }
