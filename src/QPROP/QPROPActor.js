@@ -271,6 +271,7 @@ class QPROPActor extends ReactiveActor_1.ReactiveActor {
     getStart() {
         this.startsReceived += 1;
         if (this.gotAllStarts()) {
+            console.log(this.ownType.tagVal + " got all starts");
             let send = () => {
                 this.parentRefs.forEach((ref) => {
                     ref.getStart();

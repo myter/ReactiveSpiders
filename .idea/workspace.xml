@@ -3,23 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f5545e97-4c1a-489c-829b-71d0d0c0e1f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/temp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempConfigMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDashboardMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDataMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempDrivingMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmarks/UseCase/tempGeoMemory.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bufferutil/build/Release/bufferutil.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bufferutil/build/Release/bufferutil.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/utf-8-validate/build/Release/validation.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/utf-8-validate/build/Release/validation.node" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signal.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/temp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QPROP/QPROPApplication.ts" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,31 +22,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QPROPActor.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="379" column="83" lean-forward="true" selection-start-line="379" selection-start-column="83" selection-end-line="379" selection-end-column="83" />
+            <state relative-caret-position="278">
+              <caret line="341" column="62" selection-start-line="341" selection-start-column="62" selection-end-line="341" selection-end-column="62" />
               <folding>
-                <element signature="e#13364#14385#0" expanded="true" />
+                <element signature="e#11819#11958#0" expanded="true" />
+                <element signature="e#11889#11943#0" expanded="true" />
+                <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
                 <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
-                <element signature="e#16829#17074#0" expanded="true" />
-                <element signature="e#16904#17055#0" expanded="true" />
+                <element signature="e#16797#17104#0" expanded="true" />
+                <element signature="e#16872#17085#0" expanded="true" />
+                <element signature="e#17238#17321#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Signal.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Signal.ts">
+      <file leaf-file-name="temp.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/temp.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="236">
+              <caret line="212" column="5" selection-start-line="208" selection-start-column="4" selection-end-line="212" selection-end-column="5" />
               <folding>
-                <element signature="n#!!block;n#isMutatingMethod#0;n#SignalMirror#0" expanded="true" />
-                <element signature="n#!!block;n#invoke#0;n#SignalMirror#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#Signal#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#DerivedSignal#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#TestSig#0" expanded="true" />
+                <element signature="n#!!block;n#equals#0;n#TestSig#0" expanded="true" />
+                <element signature="n#!!block;n#getState#0;n#TestSig#0" expanded="true" />
+                <element signature="n#!!block;n#setState#0;n#TestSig#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
+                <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
+                <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#SourceAct#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#SourceAct#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#SourceAct#0" expanded="true" />
+                <element signature="e#5875#5943#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#SinkAct#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#SinkAct#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Services.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/Services.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="217" column="35" selection-start-line="217" selection-start-column="35" selection-end-line="217" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+                <element signature="n#Monitor#0" />
+                <element signature="n#!!block;n#constructor#0;n#Monitor#0" expanded="true" />
+                <element signature="n#ConfigSignal#0" />
+                <element signature="n#!!block;n#constructor#0;n#ConfigSignal#0" expanded="true" />
+                <element signature="n#!!block;n#change#0;n#ConfigSignal#0" expanded="true" />
+                <element signature="n#!!block;n#equals#0;n#ConfigSignal#0" expanded="true" />
+                <element signature="n#ConfigService#0" />
+                <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#ConfigService#0" expanded="true" />
+                <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
+                <element signature="e#1000#1024#0" expanded="true" />
+                <element signature="n#DashboardService#0" />
+                <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#DashboardService#0" expanded="true" />
+                <element signature="e#1131#1764#0" expanded="true" />
+                <element signature="e#1174#1752#0" expanded="true" />
+                <element signature="e#1230#1737#0" expanded="true" />
+                <element signature="n#DataService#0" />
+                <element signature="n#!!block;n#constructor#0;n#DataService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#DataService#0" expanded="true" />
+                <element signature="e#2950#4061#0" expanded="true" />
+                <element signature="e#3518#3745#0" expanded="true" />
+                <element signature="e#3801#3874#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#DrivingService#0" expanded="true" />
+                <element signature="n#!!block;n#start#0;n#DrivingService#0" expanded="true" />
+                <element signature="e#4531#4740#0" expanded="true" />
+                <element signature="e#4600#4729#0" expanded="true" />
+                <element signature="n#!!block;n#speedViolation#0;n#DrivingService#0" expanded="true" />
+                <element signature="e#5014#5130#0" expanded="true" />
+                <element signature="e#5161#5212#0" expanded="true" />
+                <element signature="n#AddressSignal#0" />
+                <element signature="n#!!block;n#constructor#0;n#AddressSignal#0" expanded="true" />
+                <element signature="n#AddressData#0" />
+                <element signature="n#!!block;n#constructor#0;n#GeoService#0" expanded="true" />
+                <element signature="n#!!block;n#reverseGeoCode#0;n#GeoService#0" expanded="true" />
+                <element signature="e#6336#6640#0" expanded="true" />
+                <element signature="e#6408#6609#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/run.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#1#110#0" expanded="true" />
+                <element signature="e#343#479#0" expanded="true" />
+                <element signature="e#364#471#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,14 +178,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Benchmarks" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.ts" />
-        <option value="$PROJECT_DIR$/src/ReactiveSTDLib.ts" />
-        <option value="$PROJECT_DIR$/tests/temp2.ts" />
-        <option value="$PROJECT_DIR$/src/SIDUPActor.ts" />
         <option value="$PROJECT_DIR$/src/SID-UP/PulseState.ts" />
         <option value="$PROJECT_DIR$/src/SID-UP/DijkstraScholten.ts" />
         <option value="$PROJECT_DIR$/src/ReactiveActor.ts" />
@@ -165,7 +229,15 @@
         <option value="$PROJECT_DIR$/node_modules/spiders.js/src/serialisation.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Signal.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/ConfigService.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/DashboardService.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/FleetData.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/DrivingService.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/GeoService.ts" />
         <option value="$PROJECT_DIR$/src/QPROP/QPROPActor.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/run.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/FleetMember.ts" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/Services.ts" />
       </list>
     </option>
   </component>
@@ -207,13 +279,7 @@
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactiveSpiders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="QPROP" type="462c0819:PsiDirectoryNode" />
+              <item name="ReactiveMicroserviceExample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactiveSpiders" type="b2602c69:ProjectViewProjectNode" />
@@ -237,13 +303,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/SID-UP" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/benchmarks/UseCase" />
       <recent name="$PROJECT_DIR$/benchmarks/General" />
       <recent name="$PROJECT_DIR$/benchmarks" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/SID-UP" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,6 +327,7 @@
   </component>
   <component name="RunManager" selected="Mocha.tests/reactivity.Test.ts">
     <configuration name="RunUseCase.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="RunUseCase.js" working-dir="$PROJECT_DIR$/benchmarks/UseCase" />
+    <configuration name="run.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="run.js" working-dir="$PROJECT_DIR$/ReactiveMicroserviceExample" />
     <configuration name="temp.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="temp.js" working-dir="$PROJECT_DIR$/tests" />
     <configuration name="tests/reactivity.Test.ts" type="mocha-javascript-test-runner" factoryName="Mocha" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
@@ -275,9 +343,13 @@
       <item itemvalue="Mocha.tests/reactivity.Test.ts" />
       <item itemvalue="Node.js.temp.js" />
       <item itemvalue="Node.js.RunUseCase.js" />
+      <item itemvalue="Node.js.run.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.run.js" />
+        <item itemvalue="Node.js.RunUseCase.js" />
+        <item itemvalue="Node.js.temp.js" />
         <item itemvalue="Node.js.temp.js" />
         <item itemvalue="Node.js.RunUseCase.js" />
       </list>
@@ -666,9 +738,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_reactivity_Test_ts - 2018.04.30 at 09h 04m 35s.xml">
-      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="tests_reactivity_Test_ts - 2018.04.30 at 16h 13m 23s.xml">
       <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -696,33 +765,47 @@
     <history-entry file="tests_reactivity_Test_ts - 2018.05.04 at 08h 55m 52s.xml">
       <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="tests_reactivity_Test_ts - 2018.05.31 at 16h 45m 02s.xml">
+      <configuration name="tests/reactivity.Test.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188062000" />
+    <option name="totallyTimeSpent" value="190732000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19377708" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3270337" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29105005" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26622844" />
       <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26695526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3978671" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3978671" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26622844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19377708" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32730263" />
+      <window_info anchor="bottom" id="Statistic" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3978671" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3266187" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32922825" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -775,14 +858,14 @@
         <option value="$PROJECT_DIR$/benchmarks/General/writing.js.map" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.js" />
         <option value="$PROJECT_DIR$/src/GlitchAlgorithm.js.map" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.js.map" />
-        <option value="$PROJECT_DIR$/src/QPROP/QPROPApplication.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js.map" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/UseCaseApp.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js" />
         <option value="$PROJECT_DIR$/benchmarks/UseCase/RunUseCaseApp.js.map" />
         <option value="$PROJECT_DIR$/../Spiders.js/node_modules/spiders.js/src/ActorSTDLib.js" />
         <option value="$PROJECT_DIR$/../Spiders.js/node_modules/spiders.js/src/ActorSTDLib.js.map" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/Services.js" />
+        <option value="$PROJECT_DIR$/ReactiveMicroserviceExample/Services.js.map" />
       </list>
     </option>
   </component>
@@ -826,112 +909,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getCommonSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#prePropagation#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newPropagation#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="e#16427#16671#0" expanded="true" />
-            <element signature="e#16508#16652#0" expanded="true" />
-            <element signature="n#!!block;n#newChild#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addDependency#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#addSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#lift#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#containsSignal#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateNode#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sourceChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#sourcesChanged#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateSource#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#updateSources#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#newNode#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getDependants#0;n#QPROPApplication#0" expanded="true" />
-            <element signature="n#!!block;n#getParents#0;n#QPROPApplication#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunQPROPBench.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReactiveSTDLib.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReactiveApplication.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/sidup100.csv" />
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubServer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/PubSub/SubClient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="56" column="84" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SID-UP/NodePulse.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -977,13 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop150.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/Throughput/qprop150.csv" />
     <entry file="file://$PROJECT_DIR$/node_modules/spiders.js/src/CommMedium.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1113,29 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/temp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="245" column="15" selection-start-line="245" selection-start-column="15" selection-end-line="245" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#TestSig#0" expanded="true" />
-            <element signature="n#!!block;n#actual#0;n#TestSig#0" expanded="true" />
-            <element signature="n#!!block;n#equals#0;n#TestSig#0" expanded="true" />
-            <element signature="n#!!block;n#getState#0;n#TestSig#0" expanded="true" />
-            <element signature="n#!!block;n#setState#0;n#TestSig#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
-            <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
-            <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#SourceAct#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#SourceAct#0" expanded="true" />
-            <element signature="e#5762#5786#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#SinkAct#0" expanded="true" />
-            <element signature="n#!!block;n#start#0;n#SinkAct#0" expanded="true" />
-            <element signature="e#6051#6075#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/UseCase.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-741">
@@ -1256,13 +1204,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPApplication.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="750">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#QPROPApplication#0" expanded="true" />
             <element signature="n#!!block;n#init#0;n#QPROPApplication#0" expanded="true" />
             <element signature="n#!!block;n#fromPropValArray#0;n#QPROPApplication#0" expanded="true" />
             <element signature="n#!!block;n#invokeStart#0;n#QPROPApplication#0" expanded="true" />
@@ -1291,23 +1252,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benchmarks/UseCase/RunUseCase.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/run.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Signal.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="475">
           <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#isMutatingMethod#0;n#SignalMirror#0" expanded="true" />
@@ -1318,15 +1268,185 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/ConfigService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/DashboardService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/DataService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="65" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/DrivingService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/FleetData.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#FleetData#0" expanded="true" />
+            <element signature="n#!!block;n#actualise#0;n#FleetData#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/GeoService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/ExampleConfig.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/MyConfig.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/temp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="212" column="5" selection-start-line="208" selection-start-column="4" selection-end-line="212" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#TestSig#0" expanded="true" />
+            <element signature="n#!!block;n#equals#0;n#TestSig#0" expanded="true" />
+            <element signature="n#!!block;n#getState#0;n#TestSig#0" expanded="true" />
+            <element signature="n#!!block;n#setState#0;n#TestSig#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#dashDone#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#onComplete#0;n#UseCaseApp#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#SourceAct#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#SourceAct#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#SourceAct#0" expanded="true" />
+            <element signature="e#5875#5943#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#SinkAct#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#SinkAct#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QPROP/QPROPActor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="379" column="83" lean-forward="true" selection-start-line="379" selection-start-column="83" selection-end-line="379" selection-end-column="83" />
+        <state relative-caret-position="278">
+          <caret line="341" column="62" selection-start-line="341" selection-start-column="62" selection-end-line="341" selection-end-column="62" />
           <folding>
-            <element signature="e#13364#14385#0" expanded="true" />
+            <element signature="e#11819#11958#0" expanded="true" />
+            <element signature="e#11889#11943#0" expanded="true" />
+            <element signature="n#!!block;n#prePropagation#0;n#QPROPActor#0" expanded="true" />
             <element signature="n#!!block;n#internalSignalChanged#0;n#QPROPActor#0" expanded="true" />
-            <element signature="e#16829#17074#0" expanded="true" />
-            <element signature="e#16904#17055#0" expanded="true" />
+            <element signature="e#16797#17104#0" expanded="true" />
+            <element signature="e#16872#17085#0" expanded="true" />
+            <element signature="e#17238#17321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/FleetMember.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/FleetMember.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#DataPacket#0" />
+            <element signature="n#!!block;n#constructor#0;n#DataPacket#0" expanded="true" />
+            <element signature="n#!!block;n#compress#0;n#DataPacket#0" expanded="true" />
+            <element signature="n#!!block;n#decompress#0;n#DataPacket#0" expanded="true" />
+            <element signature="n#FleetMember#0" />
+            <element signature="n#!!block;n#sendData#0;n#FleetMember#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/run.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#1#110#0" expanded="true" />
+            <element signature="e#343#479#0" expanded="true" />
+            <element signature="e#364#471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactiveMicroserviceExample/Services.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="217" column="35" selection-start-line="217" selection-start-column="35" selection-end-line="217" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="n#Monitor#0" />
+            <element signature="n#!!block;n#constructor#0;n#Monitor#0" expanded="true" />
+            <element signature="n#ConfigSignal#0" />
+            <element signature="n#!!block;n#constructor#0;n#ConfigSignal#0" expanded="true" />
+            <element signature="n#!!block;n#change#0;n#ConfigSignal#0" expanded="true" />
+            <element signature="n#!!block;n#equals#0;n#ConfigSignal#0" expanded="true" />
+            <element signature="n#ConfigService#0" />
+            <element signature="n#!!block;n#constructor#0;n#ConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#ConfigService#0" expanded="true" />
+            <element signature="n#!!block;n#update#0;n#ConfigService#0" expanded="true" />
+            <element signature="e#1000#1024#0" expanded="true" />
+            <element signature="n#DashboardService#0" />
+            <element signature="n#!!block;n#constructor#0;n#DashboardService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#DashboardService#0" expanded="true" />
+            <element signature="e#1131#1764#0" expanded="true" />
+            <element signature="e#1174#1752#0" expanded="true" />
+            <element signature="e#1230#1737#0" expanded="true" />
+            <element signature="n#DataService#0" />
+            <element signature="n#!!block;n#constructor#0;n#DataService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#DataService#0" expanded="true" />
+            <element signature="e#2950#4061#0" expanded="true" />
+            <element signature="e#3518#3745#0" expanded="true" />
+            <element signature="e#3801#3874#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DrivingService#0" expanded="true" />
+            <element signature="n#!!block;n#start#0;n#DrivingService#0" expanded="true" />
+            <element signature="e#4531#4740#0" expanded="true" />
+            <element signature="e#4600#4729#0" expanded="true" />
+            <element signature="n#!!block;n#speedViolation#0;n#DrivingService#0" expanded="true" />
+            <element signature="e#5014#5130#0" expanded="true" />
+            <element signature="e#5161#5212#0" expanded="true" />
+            <element signature="n#AddressSignal#0" />
+            <element signature="n#!!block;n#constructor#0;n#AddressSignal#0" expanded="true" />
+            <element signature="n#AddressData#0" />
+            <element signature="n#!!block;n#constructor#0;n#GeoService#0" expanded="true" />
+            <element signature="n#!!block;n#reverseGeoCode#0;n#GeoService#0" expanded="true" />
+            <element signature="e#6336#6640#0" expanded="true" />
+            <element signature="e#6408#6609#0" expanded="true" />
           </folding>
         </state>
       </provider>
