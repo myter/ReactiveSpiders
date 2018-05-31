@@ -5,7 +5,7 @@ var csv = require('fast-csv')
 var Stats = require('fast-stats').Stats;
 
 var xVals : string[] = []
-for(var i = 0;i < 1100;i+=100){
+for(var i = 0;i < 110;i+=10){
     if(i == 0){
         xVals.push("1")
     }
@@ -18,10 +18,10 @@ let getAllData = (prefix,arrayIndex,fileIndex,resolver,valuesArray,errorArray) =
     return new Promise((resolve)=>{
         let stream
         if(fileIndex == 0){
-            stream          = fss.createReadStream("../GeneralIsa/results/Throughput/"+prefix+"Regular1.csv");
+            stream          = fss.createReadStream("../GeneralIsa/PI/Regular/Throughput/"+prefix+"1.csv");
         }
         else{
-            stream          = fss.createReadStream("../GeneralIsa/results/Throughput/"+prefix+"Regular"+fileIndex+".csv");
+            stream          = fss.createReadStream("../GeneralIsa/PI/Regular/Throughput/"+prefix+fileIndex+".csv");
         }
         let allData         = []
         var csvStream = csv()
@@ -40,10 +40,10 @@ let getAllData = (prefix,arrayIndex,fileIndex,resolver,valuesArray,errorArray) =
                     resolver([valuesArray,errorArray])
                 }
                 else if(arrayIndex == 0){
-                    return getAllData(prefix,arrayIndex+1,fileIndex+10,resolve,valuesArray,errorArray)
+                    return getAllData(prefix,arrayIndex+1,fileIndex+1,resolve,valuesArray,errorArray)
                 }
                 else{
-                    return getAllData(prefix,arrayIndex+1,fileIndex+10,resolver,valuesArray,errorArray)
+                    return getAllData(prefix,arrayIndex+1,fileIndex+1,resolver,valuesArray,errorArray)
                 }
             });
         stream.pipe(csvStream)
@@ -79,7 +79,7 @@ getAllData("qprop",0,0,null,new Array(11),new Array(11)).then(([qpropValues,qpro
             title: "Throughput under Varying Load",
             xaxis: {
                 title: "Load (requests/s)",
-                range:[0,1010]
+                range:[0,100]
             },
             yaxis: {
                 title: "Throughput (requests/s)",
