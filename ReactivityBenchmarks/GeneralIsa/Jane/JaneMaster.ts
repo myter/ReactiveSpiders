@@ -17,9 +17,16 @@ class JaneMaster extends spiders.Application{
             console.log("Slaves registered : " + this.slaves.length)
             if(this.slaves.length == 57){
                 console.log("STARTING BENCHMARKS")
-                runConfigs().then(()=>{
-                    console.log("EVERYTHING FINISHED")
-                })
+                if(rate > 0){
+                    runSingle(10,rate,changes).then(()=>{
+                        console.log("EVERYTHING FINISHED")
+                    })
+                }
+                else{
+                    runConfigs().then(()=>{
+                        console.log("EVERYTHING FINISHED")
+                    })
+                }
             }
         }
     }
@@ -52,6 +59,8 @@ var admitterPort  = 8004
 let isQPROP         = process.argv[2] == "true"
 let csvFile         = process.argv[3]
 let dynamic         = process.argv[4] == "true"
+let rate            = parseInt(process.argv[5])
+let changes         = parseInt(process.argv[6])
 
 
 //let allRates        = [10,100,200,300,400,500,600,700,800,900,1000]
@@ -119,4 +128,16 @@ function runConfigs(){
         }
     }
     return iterConfigs(0)
+}
+
+function runSingle(times,rate,changes){
+    if(times == 0){
+        return "ok"
+    }
+    else{
+        return runBenchmark(rate,changes).then(()=>{
+            console.log("finished iteration " + times + " for " + rate + " , " + changes)
+            return runSingle(times -1,rate,changes)
+        })
+    }
 }
